@@ -2,7 +2,22 @@
 
 // Styles
 import logo from './assets/images/logo.svg';
+import './assets/fonts/Benzin Bold.ttf'
 import './styles/App.css';
+
+// Navigation
+import Sidebar from './Sidebar';
+
+// Pages
+import Home from './components/pages/Home';
+import Contact from './components/pages/Contact';
+
+// Projects Pages
+import DungeonQuad from './components/projects/DungeonQuad';
+import Nebula from './components/projects/Nebula';
+import OrcaSwipe from './components/projects/OrcaSwipe';
+
+const sectionRefs = {};
 
 function App() {
   return (
