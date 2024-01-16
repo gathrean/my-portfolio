@@ -1,7 +1,7 @@
 // App.js focuses on the component logic
 
 // Styles
-import logo from './images/logo.svg';
+import logo from './assets/images/logo.svg';
 import './styles/App.css';
 
 function App() {
