@@ -2,26 +2,26 @@
 
 import React, { useState, useEffect } from 'react';
 
-// Styles
-import './Styles/App.css';
-import './Styles/Banner.css';
-import './Styles/Fonts.css';
-import './Styles/Global.css';
-import './Styles/Sidebar.css';
+// styles
+import './styles/App.css';
+import './styles/Banner.css';
+import './styles/Fonts.css';
+import './styles/Global.css';
+import './styles/Sidebar.css';
 
-import bannerImage from './Assets/Images/mountain.jpg';
+import bannerImage from './assets/images/mountain.jpg';
 
 // Navigation
 import Sidebar from './Sidebar';
 
 // Pages
-import Home from './Components/Pages/Home';
-import Contact from './Components/Pages/Contact';
+import Home from './components/pages/Home';
+import Contact from './components/pages/Contact';
 
 // Projects Pages
-import DungeonQuad from './Components/Projects/DungeonQuad';
-import Nebula from './Components/Projects/Nebula';
-import OrcaSwipe from './Components/Projects/OrcaSwipe'
+import DungeonQuad from './components/projects/DungeonQuad';
+import Nebula from './components/projects/Nebula';
+import OrcaSwipe from './components/projects/OrcaSwipe'
 
 function App() {
   return (
