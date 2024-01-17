@@ -5,11 +5,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 // Styles
-// import './Styles/index.css';
+import './index.css';
 import App from './App';
 
 // Tests
-import reportWebVitals from './Tests/reportWebVitals';
+import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
