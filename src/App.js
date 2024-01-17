@@ -12,16 +12,16 @@ import './styles/Sidebar.css';
 import bannerImage from './assets/images/mountain.jpg';
 
 // Navigation
-import Sidebar from './Sidebar';
+// import Sidebar from './Sidebar';
 
 // Pages
-import Home from './components/pages/Home';
-import Contact from './components/pages/Contact';
+// import Home from './components/pages/Home';
+// import Contact from './components/pages/Contact';
 
 // Projects Pages
-import DungeonQuad from './components/projects/DungeonQuad';
-import Nebula from './components/projects/Nebula';
-import OrcaSwipe from './components/projects/OrcaSwipe'
+// import DungeonQuad from './components/projects/DungeonQuad';
+// import Nebula from './components/projects/Nebula';
+// import OrcaSwipe from './components/projects/OrcaSwipe'
 
 function App() {
   return (
