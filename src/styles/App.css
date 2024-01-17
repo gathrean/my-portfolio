@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+* {
+  /* text-transform: lowercase; */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  background-color: #0062f7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Main container */
+.container {
+  color: white;
+  display: flex;
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+/* Benzin Font */
+@font-face {
+  font-family: 'Benzin Bold';
+  src: url('../Assets/Fonts/Benzin Bold.ttf') format('truetype');
+}
+
+.benzin-font {
+  font-family: 'Benzin Bold', sans-serif;
+}
+
+h1 {
+  font-family: 'Benzin Bold';
+  src: url('../Assets/Fonts/Benzin Bold.ttf') format('truetype');
+  font-size: 3rem;
+}
+
+#home,
+#discography,
+#beats,
+#contact {
+  padding-top: 20px;
+  /* Adjust the value as needed */
+}
+
+.section {
+  scroll-behavior: smooth;
+  transition-duration: 5s;
 }
