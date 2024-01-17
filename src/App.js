@@ -1,41 +1,98 @@
 // App.js focuses on the component logic
 
+import React, { useState, useEffect } from 'react';
+
 // Styles
-import logo from './assets/images/logo.svg';
-import './assets/fonts/Benzin Bold.ttf'
-import './styles/App.css';
+// import logo from './assets/images/logo.svg';
+import './Assets/Fonts/Benzin Bold.ttf'
+import './Styles/App.css';
 
 // Navigation
 import Sidebar from './Sidebar';
 
 // Pages
-import Home from './components/pages/Home';
-import Contact from './components/pages/Contact';
+import Home from './Components/Pages/Home';
+import Contact from './Components/Pages/Contact';
 
 // Projects Pages
-import DungeonQuad from './components/projects/DungeonQuad';
-import Nebula from './components/projects/Nebula';
-import OrcaSwipe from './components/projects/OrcaSwipe';
+import DungeonQuad from './Components/Projects/DungeonQuad';
+import Nebula from './Components/Projects/Nebula';
+import OrcaSwipe from './Components/Projects/OrcaSwipe'
 
 const sectionRefs = {};
 
 function App() {
+  const [activePage, setActivePage] = useState('Home');
+
+  // Define section data
+  const sections = [
+    { id: 'Home', component: Home },
+    { id: 'Nebula', component: Nebula },
+    { id: 'OrcaSwipe', component: OrcaSwipe },
+    { id: 'DungeonQuad', component: DungeonQuad },
+    { id: 'Contact', component: Contact },
+  ];
+
+  // Handle click on a page link in the sidebar
+  const handlePageClick = (page) => {
+    setActivePage(page);
+    scrollToSection(page);
+  };
+
+  // Scroll to a section by its id
+  const scrollToSection = (section) => {
+    const ref = sectionRefs[section] || sectionRefs.about;
+    ref.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
+  };
+
+  // Set the active page based on the section that is in view
+  useEffect(() => {
+    const observerOptions = {
+      rootMargin: '-100px 0px -100px 0px',
+    };
+
+    // Handle intersection of a section with the viewport
+    const handleIntersection = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActivePage(entry.target.id);
+        }
+      });
+    };
+
+    // Create an intersection observer instance
+    const observer = new IntersectionObserver(handleIntersection, observerOptions);
+
+    // Observe the section refs
+    sections.forEach((section) => {
+      const sectionElement = sectionRefs[section.id]; // Get the actual DOM element
+      if (sectionElement) {
+        observer.observe(sectionElement);
+      }
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [sections]); // Add sections as a dependency to ensure observer gets updated when sections change
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // The sidebar and the content
+    <div className="container">
+
+      <Sidebar activePage={activePage} handlePageClick={handlePageClick} />
+
+      <div className="content">
+        {sections.map((section) => (
+          <div className="section" id={section.id} key={section.id} ref={(el) => (sectionRefs[section.id] = el)}>
+            {section.component}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
