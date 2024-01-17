@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Benzin Bold';
+    src: url('../Assets/Fonts/Benzin Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Benzin Regular';
+    src: url('../Assets/Fonts/Benzin Regular.ttf') format('truetype');
+}
+
+.benzin-bold {
+    font-family: 'Benzin Bold', sans-serif;
+}
+
+.benzin-regular {
+    font-family: 'Benzin Regular', sans-serif;
+}
+
+h1 {
+    font-family: 'Benzin Bold';
+    font-size: 6rem;
+}

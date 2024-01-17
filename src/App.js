@@ -3,9 +3,11 @@
 import React, { useState, useEffect } from 'react';
 
 // Styles
-// import logo from './assets/images/logo.svg';
-import './Assets/Fonts/Benzin Bold.ttf'
 import './Styles/App.css';
+import './Styles/Banner.css';
+import './Styles/Fonts.css';
+import './Styles/Global.css';
+import './Styles/Sidebar.css';
 
 import bannerImage from './Assets/Images/mountain.jpg';
 
