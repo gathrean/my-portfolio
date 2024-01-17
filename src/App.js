@@ -7,7 +7,7 @@ import React, { useState, useEffect } from 'react';
 import './Assets/Fonts/Benzin Bold.ttf'
 import './Styles/App.css';
 
-import bannerImage from './Assets/Images/banner.JPG';
+import bannerImage from './Assets/Images/mountain.jpg';
 
 // Navigation
 import Sidebar from './Sidebar';
@@ -88,8 +88,10 @@ function App() {
       <div className="banner-section">
         <img src={bannerImage} alt="Banner" />
         <div className="banner-text">
-          <h1>Your Portfolio Title</h1>
-          <p>Welcome to my portfolio. Explore my work below.</p>
+          <h1 className="banner-title">Gathrean Dela Cruz</h1>
+          <p className="banner-subtitle benzin-regular">
+            I AM A DEVELOPER, MUSIC PRODUCER, AND GRAPHIC DESIGNER BASED IN VANCOUVER, BC.
+          </p>
         </div>
       </div>
 
