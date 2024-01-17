@@ -35,7 +35,7 @@ function App() {
           <h1 className="banner-title benzin-regular">Gathrean Dela Cruz</h1>
 
           <p className="banner-subtitle benzin-regular">
-            I AM A DEVELOPER, MUSIC PRODUCER, AND GRAPHIC DESIGNER BASED IN VANCOUVER, BC.
+            I AM A DEVELOPER & GRAPHIC DESIGNER BASED IN VANCOUVER, BC.
           </p>
 
         </div>
