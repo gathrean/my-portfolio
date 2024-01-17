@@ -1,6 +1,5 @@
 * {
   color: #292c33;
-
 }
 
 body {
@@ -32,6 +31,16 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  /* Add overlay */
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust the opacity as needed */
+  }
 }
 
 .banner-section img {
@@ -49,21 +58,38 @@ body {
   color: #fff;
 }
 
+.banner-title {
+  color: white;
+}
+
+.banner-subtitle {
+  color: white;
+  font-size: larger;
+}
+
 /* Benzin Font */
 @font-face {
   font-family: 'Benzin Bold';
   src: url('../Assets/Fonts/Benzin Bold.ttf') format('truetype');
 }
 
-.benzin-font {
+@font-face {
+  font-family: 'Benzin Regular';
+  src: url('../Assets/Fonts/Benzin Regular.ttf') format('truetype');
+}
+
+.benzin-bold {
   font-family: 'Benzin Bold', sans-serif;
+}
+
+.benzin-regular {
+  font-family: 'Benzin Regular', sans-serif;
 }
 
 h1 {
   font-family: 'Benzin Bold';
-  font-size: 3rem;
+  font-size: 6rem;
 }
-
 
 /* Content Styles */
 .content {
