@@ -1,20 +1,52 @@
 * {
-  /* text-transform: lowercase; */
-  color: white;
+  color: #292c33;
+
 }
 
 body {
-  background-color: #0062f7;
+  background-color: #f2f2f2;
+  font-family: 'Benzin Bold', sans-serif;
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
 /* Main container */
 .container {
-  color: white;
   display: flex;
-  max-width: 90vw;
-  margin: 0 auto;
-  padding: 2rem;
   flex-direction: column;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+/* Banner Section */
+.banner-section {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.banner-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
 }
 
 /* Benzin Font */
@@ -29,16 +61,16 @@ body {
 
 h1 {
   font-family: 'Benzin Bold';
-  src: url('../Assets/Fonts/Benzin Bold.ttf') format('truetype');
   font-size: 3rem;
 }
 
-#home,
-#discography,
-#beats,
-#contact {
-  padding-top: 20px;
-  /* Adjust the value as needed */
+
+/* Content Styles */
+.content {
+  padding: 2rem;
+  background-color: white;
+  margin-top: -100vh;
+  /* Move the content up by the height of the viewport */
 }
 
 .section {

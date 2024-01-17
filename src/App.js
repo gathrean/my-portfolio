@@ -7,6 +7,8 @@ import React, { useState, useEffect } from 'react';
 import './Assets/Fonts/Benzin Bold.ttf'
 import './Styles/App.css';
 
+import bannerImage from './Assets/Images/banner.JPG';
+
 // Navigation
 import Sidebar from './Sidebar';
 
@@ -81,9 +83,17 @@ function App() {
   }, [sections]); // Add sections as a dependency to ensure observer gets updated when sections change
 
   return (
-    // The sidebar and the content
     <div className="container">
+      {/* Banner Section */}
+      <div className="banner-section">
+        <img src={bannerImage} alt="Banner" />
+        <div className="banner-text">
+          <h1>Your Portfolio Title</h1>
+          <p>Welcome to my portfolio. Explore my work below.</p>
+        </div>
+      </div>
 
+      {/* Sidebar and Content */}
       <Sidebar activePage={activePage} handlePageClick={handlePageClick} />
 
       <div className="content">
