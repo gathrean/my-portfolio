@@ -1,22 +1,22 @@
 @font-face {
-    font-family: 'Benzin Bold';
-    src: url('../assets/fonts/Benzin Bold.ttf') format('truetype');
+    font-family: 'SecretFont Bold';
+    src: url('../assets/fonts/SecretFont Bold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Benzin Regular';
-    src: url('../assets/fonts/Benzin Regular.ttf') format('truetype');
+    font-family: 'SecretFont Regular';
+    src: url('../assets/fonts/SecretFont Regular.ttf') format('truetype');
 }
 
-.benzin-bold {
-    font-family: 'Benzin Bold', sans-serif;
+.sf-bold {
+    font-family: 'SecretFont Bold', sans-serif;
 }
 
-.benzin-regular {
-    font-family: 'Benzin Regular', sans-serif;
+.sf-regular {
+    font-family: 'SecretFont Regular', sans-serif;
 }
 
 h1 {
-    font-family: 'Benzin Bold';
+    font-family: 'SecretFont Bold';
     font-size: 6rem;
 }
