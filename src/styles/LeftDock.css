@@ -1,0 +1,43 @@
+.LeftDock {
+    position: fixed;
+
+    width: 60px;
+    height: 90vh;
+
+    margin: 4px;
+    top: 5%;
+
+    border-radius: 15px;
+
+    background-color: rgba(34, 33, 33, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1000;
+}
+
+/* Represents the app icon */
+.LeftDockItem {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    width: 45px;
+    height: 45px;
+    background-color: #4CAF50;
+    border-radius: 20%;
+}
+
+.LeftDockItem::before {
+    content: '';
+    position: absolute;
+    left: 0.5px;
+    bottom: 49.50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+}

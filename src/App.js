@@ -7,6 +7,7 @@ import './styles/App.css';
 import './styles/Banner.css';
 import './styles/Fonts.css';
 import './styles/Global.css';
+import './styles/LeftDock.css';
 import './styles/Sidebar.css';
 
 import bannerImage from './assets/images/mountain.jpg';
@@ -40,6 +41,11 @@ function App() {
 
         </div>
 
+      </div>
+
+      <div className="LeftDock">
+        <div className="LeftDockItem"></div>
+        {/* Add more items as needed */}
       </div>
 
     </div>
