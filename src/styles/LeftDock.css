@@ -18,6 +18,14 @@
     justify-content: center;
 
     z-index: 1000;
+
+    /* Animation */
+    transition: left 0.5s ease;
+    left: -60px;
+}
+
+.LeftDock.active {
+    left: 4px; 
 }
 
 /* Represents the app icon */

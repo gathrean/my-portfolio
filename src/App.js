@@ -25,6 +25,16 @@ import bannerImage from './assets/images/mountain.jpg';
 // import OrcaSwipe from './components/projects/OrcaSwipe'
 
 function App() {
+
+  const [isLeftDockActive, setLeftDockActive] = useState(false);
+
+  useEffect(() => {
+    // After the component mounts, trigger the animation
+    setTimeout(() => {
+      setLeftDockActive(true);
+    }, 100);
+  }, []); // Empty dependency array to run the effect only once on mount
+
   return (
     <div className="container">
 
@@ -43,7 +53,7 @@ function App() {
 
       </div>
 
-      <div className="LeftDock">
+      <div className={`LeftDock ${isLeftDockActive ? 'active' : ''}`}>
         <div className="LeftDockItem"></div>
         {/* Add more items as needed */}
       </div>
