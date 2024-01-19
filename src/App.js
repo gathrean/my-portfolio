@@ -39,14 +39,20 @@ function App() {
     <div className="container">
 
       <div className="banner-section">
-        <img src={bannerImage} alt="Banner" />
+        {/* <img src={bannerImage} alt="Banner" /> */}
 
         <div className="banner-text">
 
-          <h1 className="banner-title sf-regular">Gathrean Dela Cruz</h1>
+          <h1 className="banner-title sf-regular">Gathrean <br></br>Dela Cruz</h1>
 
           <p className="banner-subtitle sf-regular">
-            I AM A DEVELOPER & GRAPHIC DESIGNER BASED IN VANCOUVER, BC.
+            👋🏽 I AM A DEVELOPER & GRAPHIC DESIGNER BASED IN VANCOUVER, BC.
+          </p>
+          <br></br>
+          <p className="banner-subtitle sf-regular">
+            *I appreciate your curiosity, but
+            <br></br>
+            this website is currently under construction!
           </p>
 
         </div>
