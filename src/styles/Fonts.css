@@ -1,22 +1,43 @@
-@font-face {
-    font-family: 'SecretFont Bold';
-    src: url('../assets/fonts/SecretFont Bold.ttf') format('truetype');
-}
+/* SECRET FONT */
 
 @font-face {
     font-family: 'SecretFont Regular';
     src: url('../assets/fonts/SecretFont Regular.ttf') format('truetype');
 }
 
-.sf-bold {
-    font-family: 'SecretFont Bold', sans-serif;
+@font-face {
+    font-family: 'SecretFont Bold';
+    src: url('../assets/fonts/SecretFont Bold.ttf') format('truetype');
 }
 
 .sf-regular {
     font-family: 'SecretFont Regular', sans-serif;
 }
 
-/* h1 {
-    font-family: 'SecretFont Bold';
-    font-size: 4rem;
-} */
+.sf-bold {
+    font-family: 'SecretFont Bold', sans-serif;
+}
+
+/* MONTSERRAT FONT */
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../assets/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}
+
+.montserrat-regular {
+    font-family: 'Montserrat Regular', sans-serif;
+}
+
+.montserrat-bold {
+    font-family: 'Montserrat Bold', sans-serif;
+}
