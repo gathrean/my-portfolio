@@ -50,7 +50,7 @@ function App() {
           </p>
           <br></br>
           <p className="banner-subtitle sf-regular">
-            *I appreciate your curiosity, but
+            *🫡 I appreciate your curiosity, but
             <br></br>
             this website is currently under construction!
           </p>
