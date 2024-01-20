@@ -45,11 +45,11 @@ function App() {
 
           <h1 className="banner-title sf-regular">Gathrean <br></br>Dela Cruz</h1>
 
-          <p className="banner-subtitle sf-regular">
+          <p className="banner-subtitle montserrat-regular">
             👋🏽 I AM A DEVELOPER & GRAPHIC DESIGNER BASED IN VANCOUVER, BC.
           </p>
           <br></br>
-          <p className="banner-subtitle sf-regular">
+          <p className="banner-subtitle montserrat-regular">
             *🫡 I appreciate your curiosity, but
             <br></br>
             this website is currently under construction!
