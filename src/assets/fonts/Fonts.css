@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'SecretFont Regular';
-    src: url('../assets/fonts/SecretFont Regular.ttf') format('truetype');
+    src: url('SecretFont Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'SecretFont Bold';
-    src: url('../assets/fonts/SecretFont Bold.ttf') format('truetype');
+    src: url('SecretFont Bold.ttf') format('truetype');
 }
 
 .sf-regular {
@@ -22,14 +22,14 @@
 
 @font-face {
     font-family: 'Montserrat Regular';
-    src: url('../assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    src: url('Montserrat-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat Bold';
-    src: url('../assets/fonts/Montserrat-Bold.ttf') format('truetype');
+    src: url('Montserrat-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: bold;
 }

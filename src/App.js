@@ -3,15 +3,16 @@ import React, { useState, useEffect } from 'react';
 // BANNER //
 import Banner from './components/banner/Banner';
 import './components/banner/Banner.css';
-// import bannerImage from './assets/images/mountain.jpg';
 
 // SIDEBAR //
 import Sidebar from './components/sidebar/Sidebar';
 import './components/sidebar/Sidebar.css';
 
+// FONTS //
+import './assets/fonts/Fonts.css';
+
 // styles
 import './styles/App.css';
-import './styles/Fonts.css';
 import './styles/Global.css';
 
 // Project 1
