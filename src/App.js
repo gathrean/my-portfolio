@@ -1,26 +1,18 @@
-// App.js focuses on the component logic
-
 import React, { useState, useEffect } from 'react';
+
+// BANNER //
+import Banner from './components/banner/Banner';
+import './components/banner/Banner.css';
+// import bannerImage from './assets/images/mountain.jpg';
+
+// SIDEBAR //
+import Sidebar from './components/sidebar/Sidebar';
+import './components/sidebar/Sidebar.css';
 
 // styles
 import './styles/App.css';
-import './styles/Banner.css';
 import './styles/Fonts.css';
 import './styles/Global.css';
-import './styles/LeftDock.css';
-import './styles/Sidebar.css';
-
-// import bannerImage from './assets/images/mountain.jpg';
-
-// Navigation
-// import Sidebar from './Sidebar';
-
-// Pages
-import Banner from './components/pages/Banner';
-// import Home from './components/pages/Home';
-// import Contact from './components/pages/Contact';
-
-
 
 // Project 1
 const Project1 = () => (
@@ -58,11 +50,11 @@ const Project3 = () => (
 
 function App() {
 
-  const [isLeftDockActive, setLeftDockActive] = useState(false);
+  const [isSidebarActive, setSidebarActive] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
-      setLeftDockActive(true);
+      setSidebarActive(true);
     }, 100);
   }, []);
 
@@ -70,8 +62,8 @@ function App() {
     <div className="container">
       <Banner />
 
-      <div className={`LeftDock ${isLeftDockActive ? 'active' : ''}`}>
-        <div className="LeftDockItem"></div>
+      <div className={`Sidebar ${isSidebarActive ? 'active' : ''}`}>
+        <div className="SidebarItem"></div>
       </div>
 
       {/* Project Sections */}

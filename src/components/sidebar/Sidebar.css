@@ -1,4 +1,4 @@
-.LeftDock {
+.Sidebar {
     position: fixed;
 
     width: 60px;
@@ -26,12 +26,12 @@
     left: -60px;
 }
 
-.LeftDock.active {
+.Sidebar.active {
     left: 4px; 
 }
 
 /* Represents the app icon */
-.LeftDockItem {
+.SidebarItem {
     margin-bottom: 10px;
     margin-left: 5px;
     width: 45px;
@@ -40,7 +40,7 @@
     border-radius: 20%;
 }
 
-.LeftDockItem::before {
+.SidebarItem::before {
     content: '';
     position: absolute;
     left: 0.5px;
