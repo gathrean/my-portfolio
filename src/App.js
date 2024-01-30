@@ -62,7 +62,6 @@ function App() {
     <div className="container">
       <Banner />
 
-      {/* <Sidebar /> */}
       <div className={`Sidebar ${isSidebarActive ? 'active' : ''}`}>
         <div className="SidebarItem"></div>
         <div className="SidebarItem"></div>
