@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
+// APP //
+import './App.css';
+
 // BANNER //
 import Banner from './components/banner/Banner';
 import './components/banner/Banner.css';
@@ -10,10 +13,6 @@ import './components/sidebar/Sidebar.css';
 
 // FONTS //
 import './assets/fonts/Fonts.css';
-
-// styles
-import './styles/App.css';
-import './styles/Global.css';
 
 // Project 1
 const Project1 = () => (
@@ -63,7 +62,13 @@ function App() {
     <div className="container">
       <Banner />
 
+      {/* <Sidebar /> */}
       <div className={`Sidebar ${isSidebarActive ? 'active' : ''}`}>
+        <div className="SidebarItem"></div>
+        <div className="SidebarItem"></div>
+        <div className="SidebarItem"></div>
+        <div className="SidebarItem"></div>
+        <div className="SidebarItem"></div>
         <div className="SidebarItem"></div>
       </div>
 
