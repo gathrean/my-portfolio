@@ -72,7 +72,7 @@ ul li.non-highlight a:hover::after {
     right: 0;
     bottom: -5px;
     height: 2px;
-    background-color: #00A878;
+    background-color: #4f82c5;
 }
 
 /* Highlighted Link Style */
