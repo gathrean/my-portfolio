@@ -1,8 +1,9 @@
 import React from 'react';
-import Navbar from './components/Navbar/Navbar'; // Import the Navbar component
+import Navbar from './components/Navbar/Navbar';
 
 // CSS //
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // FONTS //
 import './assets/fonts/Fonts.css';
