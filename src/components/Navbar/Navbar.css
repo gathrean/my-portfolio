@@ -1,27 +1,86 @@
-/* components/Navbar.css */
-
 nav {
-    background-color: #333; /* Background color for the navbar */
-    width: 100%; /* Make the navbar stretch across the page width */
-  }
-  
-  ul {
-    list-style-type: none; /* Remove bullet points from list */
+    background-color: #333;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle.active .hamburger:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.menu-toggle.active .hamburger:after {
+    transform: rotate(45deg);
+    bottom: 0;
+}
+
+.hamburger {
+    background-color: #fff;
+    width: 30px;
+    height: 3px;
+    position: relative;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-list {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  
-  li {
-    display: inline; /* Display list items horizontally */
-  }
-  
-  li a {
-    display: inline-block; /* Make anchor tags behave like blocks */
-    color: white; /* Text color for navbar links */
-    padding: 14px 20px; /* Padding for each navbar link */
-    text-decoration: none; /* Remove underline from links */
-  }
-  
-  li a:hover {
-    background-color: #555; /* Background color on hover */
-  }  
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list.active {
+    display: block;
+}
+
+.nav-list li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        /* display: none; */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+    }
+
+    .nav-list li {
+        display: block;
+        margin: 15px 0;
+    }
+}
