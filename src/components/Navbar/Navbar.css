@@ -1,13 +1,3 @@
-/* .navbar>.container {
-    display: flex;
-    flex-direction: row;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.nav-link-container {
-    display: flex;
-} */
 .navbar {
     background-color: #fefefe;
     overflow: hidden;
