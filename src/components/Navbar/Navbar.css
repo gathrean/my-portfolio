@@ -1,4 +1,4 @@
-.navbar>.container {
+/* .navbar>.container {
     display: flex;
     flex-direction: row;
     padding-left: 20px;
@@ -7,4 +7,138 @@
 
 .nav-link-container {
     display: flex;
+} */
+.navbar {
+    background-color: #fefefe;
+    overflow: hidden;
+    height: 64px;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    backdrop-filter: blur(10px);
+}
+
+.brand {
+    color: #181818;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul {
+    height: 64px;
+    line-height: 64px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #181818;
+    font-size: 16px;
+    position: relative;
+}
+
+ul li.non-highlight a:hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #00A878;
+}
+
+/* Highlighted Link Style */
+ul li.highlight a {
+    background-color: white;
+    color: #0B2027;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+ul li.highlight a:hover {
+    background-color: #042A2B;
+    color: white;
+}
+
+ul li.highlight a:hover::after {
+    content: '';
+    display: hidden;
+}
+
+.brand.logo-home {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+}
+
+.brand-text {
+    color: #181818;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.mobile-view {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .desktop-view {
+        display: none;
+    }
+
+    .mobile-view {
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-view img {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ul li {
+        display: inline;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .navbar {
+        padding-right: 10px;
+    }
 }
