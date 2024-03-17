@@ -1,29 +1,36 @@
-import React, { useState } from 'react';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
 import './Navbar.css';
 
-function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
-
-    const handleLinkClick = () => {
-        setIsOpen(false); // Close the dropdown when a link is clicked
-    };
-
+function BasicExample() {
     return (
-        <nav>
-            <div className={`menu-toggle ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
-                <div className="hamburger"></div>
-            </div>
-            <ul className={`nav-list ${isOpen ? 'active' : ''}`}>
-                <li><a href="#section1" onClick={handleLinkClick}>Work</a></li>
-                <li><a href="#section2" onClick={handleLinkClick}>About</a></li>
-                <li><a href="#section3" onClick={handleLinkClick}>Contact</a></li>
-            </ul>
-        </nav>
+        <Navbar expand="lg" className="bg-body-tertiary">
+            <Container className="navbar">
+                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav" className="nav-link-container">
+                    <Nav className="me-auto">
+                        <Nav.Link href="#home">Home</Nav.Link>
+                        <Nav.Link href="#link">Link</Nav.Link>
+                        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2">
+                                Another action
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action/3.4">
+                                Separated link
+                            </NavDropdown.Item>
+                        </NavDropdown>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     );
 }
 
-export default Navbar;
+export default BasicExample;
