@@ -1,0 +1,27 @@
+/* components/Navbar.css */
+
+nav {
+    background-color: #333; /* Background color for the navbar */
+    width: 100%; /* Make the navbar stretch across the page width */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove bullet points from list */
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline; /* Display list items horizontally */
+  }
+  
+  li a {
+    display: inline-block; /* Make anchor tags behave like blocks */
+    color: white; /* Text color for navbar links */
+    padding: 14px 20px; /* Padding for each navbar link */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  li a:hover {
+    background-color: #555; /* Background color on hover */
+  }  
