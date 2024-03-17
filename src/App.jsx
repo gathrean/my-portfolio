@@ -40,7 +40,7 @@ function App() {
       {/* Footer */}
       <footer>
         <div className="content">
-          <p>&copy; 2024 YourWebsite. All rights reserved.</p>
+          <p>&copy; 2024 Gathrean Dela Cruz. All rights reserved.</p>
         </div>
       </footer>
     </div>
