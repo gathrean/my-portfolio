@@ -7,7 +7,6 @@ import './Navbar-Logo.css';
 
 export function Navbar() {
     const [scroll, setScroll] = useState(false);
-    const [hover, setHover] = useState(false);
     const location = useLocation();
 
     useEffect(() => {
@@ -33,30 +32,8 @@ export function Navbar() {
         });
     };
 
-    const handleMouseEnter = (event) => {
-        const navbarWidth = event.target.offsetWidth;
-        const mouseX = event.clientX;
-        const edgeBuffer = 50; // This prevents the "glitchy" effect where navbar resizes rapidly
-
-        if (mouseX > edgeBuffer && mouseX < navbarWidth - edgeBuffer) {
-            setHover(true);
-        }
-    };
-
-    const handleMouseLeave = (event) => {
-        const navbarWidth = event.target.offsetWidth;
-        const mouseX = event.clientX;
-        const edgeBuffer = 50; // This prevents the "glitchy" effect where navbar resizes rapidly
-
-        if (mouseX <= edgeBuffer || mouseX >= navbarWidth - edgeBuffer) {
-            setHover(false);
-        }
-    };
-
     return (
-        <nav className={`navbar ${scroll || hover ? 'scrolled' : ''}`}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+        <nav className={`navbar ${scroll ? 'scrolled' : ''}`}>
             <div className="brand logo-home">
                 <span className="brand-text">Gathrean</span>
             </div>
