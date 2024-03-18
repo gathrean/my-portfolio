@@ -1,6 +1,9 @@
 {
   "name": "my-react-app",
   "version": "0.1.0",
+  "description": "This is my Portfolio website",
+  "main": "index.js",
+  "author": "Gathrean Dela Cruz",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
