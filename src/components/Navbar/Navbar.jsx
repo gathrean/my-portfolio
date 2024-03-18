@@ -28,7 +28,7 @@ export function Navbar() {
     return (
         <nav className={`navbar ${scroll ? 'scrolled' : ''}`}>
             <div className="brand logo-home">
-                <span className="brand-text">Gathrean Dela Cruz</span>
+                <span className="brand-text">Gathrean</span>
             </div>
             <ul className="navbar-nav">
                 <li>
