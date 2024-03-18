@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 // CSS //
 import './App.css';
@@ -43,12 +44,7 @@ function App() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer>
-        <div className="content">
-          <p>&copy; 2024 Gathrean Dela Cruz. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
