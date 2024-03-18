@@ -7,6 +7,7 @@ import './Navbar-Logo.css';
 
 export function Navbar() {
     const [scroll, setScroll] = useState(false);
+    const [hover, setHover] = useState(false);
     const location = useLocation();
 
     useEffect(() => {
@@ -32,8 +33,18 @@ export function Navbar() {
         });
     };
 
+    const handleMouseEnter = () => {
+        setHover(true);
+    };
+
+    const handleMouseLeave = () => {
+        setHover(false);
+    };
+
     return (
-        <nav className={`navbar ${scroll ? 'scrolled' : ''}`}>
+        <nav className={`navbar ${scroll || hover ? 'scrolled' : ''}`}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>
             <div className="brand logo-home">
                 <span className="brand-text">Gathrean</span>
             </div>
