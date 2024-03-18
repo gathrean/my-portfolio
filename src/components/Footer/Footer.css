@@ -1,0 +1,17 @@
+.footer-body {
+    background-color: #4F82C5;
+    color: black;
+    height: 96vh;
+    padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-title {
+    display: flex;
+    font-size: 100px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
