@@ -3,44 +3,45 @@
     overflow: hidden;
     height: 64px;
     line-height: 64px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
+
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+
     padding-left: 40px;
     padding-right: 40px;
 
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
-    transition: width 0.5s ease, margin 0.5s ease;
+    margin-top: 10px;
+
+    transition: width 0.5s ease, margin 0.5s ease, box-shadow 0.5s ease, border-radius 0.5s ease;
 
     backdrop-filter: blur(10px);
 
-    margin-top: 10px;
+    border-radius: 0px;
 }
 
 .navbar.scrolled {
-    display: flex;
-    align-items: center;
-    z-index: 1000;
-
     width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    transition: width 0.5s ease, margin 0.5s ease, box-shadow 0.5s ease, border-radius 0.5s ease;
+
+    backdrop-filter: blur(5px);
 
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
-    margin-left: 15%;
-    margin-right: 15%;
-    transition: width 0.5s ease, margin 0.5s ease;
-
-    backdrop-filter: blur(2px);
-
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
 .nav-item.highlight {
