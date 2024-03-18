@@ -7,9 +7,9 @@ import { Footer } from './components/Footer/Footer';
 
 // Pages // 
 import { Home } from './pages/LandingPage/LandingPage';
-import { About } from './pages/About/About';
-import { Projects } from './pages/Projects/Projects';
-import { Contact } from './pages/Contact/Contact';
+import { About } from './pages/AboutPage/AboutPage';
+import { Projects } from './pages/ProjectsPage/ProjectsPage';
+import { Contact } from './pages/ContactPage/ContactPage';
 
 // CSS //
 import './App.css';
