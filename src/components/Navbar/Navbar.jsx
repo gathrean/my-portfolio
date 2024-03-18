@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 export function Navbar() {
     const [scroll, setScroll] = useState(false);
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -28,18 +29,18 @@ export function Navbar() {
             </div>
             <ul className="navbar-nav">
                 <li>
-                    <Link className="nav-item" to="/">Home</Link>
+                    <Link className={`nav-item ${location.pathname === '/' ? 'highlight' : ''}`} to="/">Home</Link>
                 </li>
                 <li>
-                    <Link className="nav-item" to="/about">About</Link>
+                    <Link className={`nav-item ${location.pathname === '/about' ? 'highlight' : ''}`} to="/about">About</Link>
                 </li>
                 <li>
-                    <Link className="nav-item" to="/projects">Projects</Link>
+                    <Link className={`nav-item ${location.pathname === '/projects' ? 'highlight' : ''}`} to="/projects">Projects</Link>
                 </li>
                 <li>
-                    <Link className="nav-item" to="/contact">Contact</Link>
+                    <Link className={`nav-item ${location.pathname === '/contact' ? 'highlight' : ''}`} to="/contact">Contact</Link>
                 </li>
             </ul>
         </nav>
     );
-};
+}

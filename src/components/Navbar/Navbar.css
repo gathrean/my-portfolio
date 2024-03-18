@@ -43,6 +43,21 @@
     border-radius: 15px;
 }
 
+.nav-item.highlight {
+    position: relative;
+}
+
+.nav-item.highlight::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 4px;
+    background-color: #4f82c5;
+}
+
 .brand {
     color: #181818;
     font-size: 30px;
