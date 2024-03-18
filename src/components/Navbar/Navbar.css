@@ -13,8 +13,12 @@
     z-index: 1000;
     padding-left: 40px;
     padding-right: 40px;
+
     width: 100%;
-    transition: width 0.3s ease margin 0.5s ease;
+    margin-left: 0%;
+    margin-right: 0%;
+    transition: width 0.5s ease, margin 0.5s ease;
+
     backdrop-filter: blur(10px);
 
     margin-top: 10px;
