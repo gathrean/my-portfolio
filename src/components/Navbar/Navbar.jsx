@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import './Navbar.css';
-import './Navbar-Mobile.css'
-import './Navbar-Logo.css'
+import './Navbar-Mobile.css';
+import './Navbar-Logo.css';
 
 export function Navbar() {
     const [scroll, setScroll] = useState(false);
@@ -25,6 +25,13 @@ export function Navbar() {
         };
     }, []);
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
     return (
         <nav className={`navbar ${scroll ? 'scrolled' : ''}`}>
             <div className="brand logo-home">
@@ -32,16 +39,16 @@ export function Navbar() {
             </div>
             <ul className="navbar-nav">
                 <li>
-                    <Link className={`nav-item ${location.pathname === '/' ? 'highlight' : ''}`} to="/">Home</Link>
+                    <Link className={`nav-item ${location.pathname === '/' ? 'highlight' : ''}`} to="/" onClick={scrollToTop}>Home</Link>
                 </li>
                 <li>
-                    <Link className={`nav-item ${location.pathname === '/about' ? 'highlight' : ''}`} to="/about">About</Link>
+                    <Link className={`nav-item ${location.pathname === '/about' ? 'highlight' : ''}`} to="/about" onClick={scrollToTop}>About</Link>
                 </li>
                 <li>
-                    <Link className={`nav-item ${location.pathname === '/projects' ? 'highlight' : ''}`} to="/projects">Projects</Link>
+                    <Link className={`nav-item ${location.pathname === '/projects' ? 'highlight' : ''}`} to="/projects" onClick={scrollToTop}>Projects</Link>
                 </li>
                 <li>
-                    <Link className={`nav-item ${location.pathname === '/contact' ? 'highlight' : ''}`} to="/contact">Contact</Link>
+                    <Link className={`nav-item ${location.pathname === '/contact' ? 'highlight' : ''}`} to="/contact" onClick={scrollToTop}>Contact</Link>
                 </li>
             </ul>
         </nav>
