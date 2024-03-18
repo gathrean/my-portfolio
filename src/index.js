@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom/client';
 
 // Styles
 import './index.css';
-import App from './App.jsx';
+import App from './App';
 
 // Tests
 import reportWebVitals from './tests/reportWebVitals';
