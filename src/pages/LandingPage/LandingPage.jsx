@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // CSS //
-import './Home.css';
+import './LandingPage.css';
 import '../../App.css';
 
 // Fonts //
