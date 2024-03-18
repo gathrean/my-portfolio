@@ -1,0 +1,31 @@
+@media only screen and (max-width: 768px) {
+    .desktop-view {
+        display: none;
+    }
+
+    .mobile-view {
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-view img {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ul li {
+        display: inline;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .navbar {
+        padding-right: 10px;
+    }
+}

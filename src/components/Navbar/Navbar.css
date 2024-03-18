@@ -59,12 +59,6 @@
     background-color: #4f82c5;
 }
 
-.brand {
-    color: #181818;
-    font-size: 30px;
-    font-weight: 600;
-}
-
 .navbar-nav {
     list-style-type: none;
     margin: 0;
@@ -107,70 +101,6 @@ ul li.non-highlight a:hover::after {
     background-color: #4f82c5;
 }
 
-/* Highlighted Link Style */
-ul li.highlight a {
-    background-color: white;
-    color: #0B2027;
-    border-radius: 15px;
-    padding: 5px 15px;
-}
-
-ul li.highlight a:hover {
-    background-color: #042A2B;
-    color: white;
-}
-
-ul li.highlight a:hover::after {
-    content: '';
-    display: hidden;
-}
-
-.brand.logo-home {
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-    font-weight: 600;
-    position: relative;
-}
-
-.brand-text {
-    color: #181818;
-    font-size: 30px;
-    font-weight: 600;
-}
-
 .mobile-view {
     display: none;
-}
-
-@media only screen and (max-width: 768px) {
-    .desktop-view {
-        display: none;
-    }
-
-    .mobile-view {
-        display: flex;
-        align-items: center;
-    }
-
-    .mobile-view img {
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-
-    .navbar-nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    ul li {
-        display: inline;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .navbar {
-        padding-right: 10px;
-    }
 }
