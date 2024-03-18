@@ -33,12 +33,24 @@ export function Navbar() {
         });
     };
 
-    const handleMouseEnter = () => {
-        setHover(true);
+    const handleMouseEnter = (event) => {
+        const navbarWidth = event.target.offsetWidth;
+        const mouseX = event.clientX;
+        const edgeBuffer = 50; // This prevents the "glitchy" effect where navbar resizes rapidly
+
+        if (mouseX > edgeBuffer && mouseX < navbarWidth - edgeBuffer) {
+            setHover(true);
+        }
     };
 
-    const handleMouseLeave = () => {
-        setHover(false);
+    const handleMouseLeave = (event) => {
+        const navbarWidth = event.target.offsetWidth;
+        const mouseX = event.clientX;
+        const edgeBuffer = 50; // This prevents the "glitchy" effect where navbar resizes rapidly
+
+        if (mouseX <= edgeBuffer || mouseX >= navbarWidth - edgeBuffer) {
+            setHover(false);
+        }
     };
 
     return (
