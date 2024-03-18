@@ -6,34 +6,40 @@ import './App.css';
 
 // FONTS //
 import './assets/fonts/Fonts.css';
- 
+
 function App() {
 
   return (
     <div className="App">
       <header>
-        <Navbar /> {/* Use the Navbar component */}
+        <Navbar />
       </header>
 
-      {/* Page Sections */}
-      <section id="section1">
+      <section id="section1 home">
         <div className="content">
-          <h2>Section 1</h2>
-          {/* Your content for Section 1 goes here */}
+          <h2>Section 1 - Home</h2>
+
         </div>
       </section>
 
-      <section id="section2">
+      <section id="section2 about">
         <div className="content">
-          <h2>Section 2</h2>
-          {/* Your content for Section 2 goes here */}
+          <h2>Section 2 - About Me</h2>
+
         </div>
       </section>
 
-      <section id="section3">
+      <section id="section3 projects">
         <div className="content">
-          <h2>Section 3</h2>
-          {/* Your content for Section 3 goes here */}
+          <h2>Section 3 - Projects</h2>
+
+        </div>
+      </section>
+
+      <section id="section4 contact">
+        <div className="content">
+          <h2>Section 4 - Contact Me</h2>
+
         </div>
       </section>
 
