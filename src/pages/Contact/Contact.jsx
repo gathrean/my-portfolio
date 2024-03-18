@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Contact.css';
 
-function Contact() {
+export function Contact() {
     return (
         <section id="section4 contact">
             <div className="content">
@@ -11,6 +11,4 @@ function Contact() {
             </div>
         </section>
     );
-}
-
-export default Contact;
+};

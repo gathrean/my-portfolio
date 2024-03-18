@@ -2,7 +2,7 @@ import React from 'react';
 
 import './About.css';
 
-function About() {
+export function About() {
     return (
         <section id="section2 about">
             <div className="content">
@@ -11,6 +11,4 @@ function About() {
             </div>
         </section>
     );
-}
-
-export default About;
+};

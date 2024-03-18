@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Projects.css';
 
-function Projects() {
+export function Projects() {
     return (
         <section id="section3 projects">
             <div className="content">
@@ -11,6 +11,4 @@ function Projects() {
             </div>
         </section>
     );
-}
-
-export default Projects;
+};
