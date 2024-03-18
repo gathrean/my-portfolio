@@ -1,12 +1,12 @@
 import React from 'react';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/Navbar/Navbar.jsx';
 
 // CSS //
 import './App.css';
 
 // FONTS //
 import './assets/fonts/Fonts.css';
-
+ 
 function App() {
 
   return (
