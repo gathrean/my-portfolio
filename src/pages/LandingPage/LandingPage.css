@@ -8,7 +8,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 0;
     /* To send it behind the text */
 }
 
@@ -32,19 +32,20 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 15%);
     text-align: left;
-    padding: 0 20px;
+    padding: 20px;
     border-radius: 10px;
     width: 80%;
 }
 
 .overlay-text h2 {
-    font-size: 2rem;
+    font-size: 7rem;
     color: #fff;
 }
 
 .overlay-text p {
-    font-size: 2rem;
+    font-size: 5rem;
     color: #fff;
+    z-index: 2;
 }
