@@ -2,6 +2,10 @@
     color: #181818;
     font-size: 30px;
     font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .brand-text {

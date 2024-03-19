@@ -34,7 +34,7 @@ export function Navbar() {
 
     return (
         <nav className={`navbar ${scroll ? 'scrolled' : ''}`}>
-            <div className="brand logo-home">
+            <div className="brand">
                 <span className="brand-text">Gathrean</span>
             </div>
             <ul className="navbar-nav">
