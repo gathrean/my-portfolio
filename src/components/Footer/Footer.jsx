@@ -21,7 +21,7 @@ export function Footer() {
 
     return (
         <footer>
-            <div className="content footer-body">
+            <div className="footer-content footer-body">
                 <p className="white-text">&copy; 2024 Gathrean Dela Cruz</p>
                 <div className="footer-title" style={{ fontSize: `${fontSize}px` }}>
                     <h1 className="white-text">Gathrean <br />Dela Cruz</h1>
