@@ -92,6 +92,10 @@ ul li a {
     position: relative;
 }
 
+ul li a:hover {
+    color: #0000ff;
+}
+
 ul li.non-highlight a:hover::after {
     content: '';
     display: block;
