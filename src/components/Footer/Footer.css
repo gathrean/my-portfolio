@@ -1,6 +1,6 @@
 .footer-body {
     background-color: #0000ff;
-    color: black;
+    color: #ffffff;
     height: 100vh;
     padding-top: 64px;
     display: flex;
@@ -16,4 +16,12 @@
     justify-content: flex-end;
     width: 100%;
     text-align: center;
+}
+
+.white-text {
+    color: #ffffff;
+}
+
+.blue-background {
+    background-color: #0000ff;
 }

@@ -22,11 +22,12 @@ export function Footer() {
     return (
         <footer>
             <div className="content footer-body">
-                <p>&copy; 2024 Gathrean Dela Cruz</p>
+                <p className="white-text">&copy; 2024 Gathrean Dela Cruz</p>
                 <div className="footer-title" style={{ fontSize: `${fontSize}px` }}>
-                    <h1>Gathrean <br />Dela Cruz</h1>
+                    <h1 className="white-text">Gathrean <br />Dela Cruz</h1>
                 </div>
             </div>
         </footer>
+
     );
 };
