@@ -26,6 +26,7 @@ export function Footer() {
                 <div className="footer-title" style={{ fontSize: `${fontSize}px` }}>
                     <h1 className="white-text">Gathrean <br />Dela Cruz</h1>
                 </div>
+                <p className="white-text baybayin-text">ᜄᜇ᜔ᜍᜒᜌᜈ᜔ ᜇᜒ︀ᜎ ᜃ᜔ᜍᜓᜐ᜔</p>
             </div>
         </footer>
 
