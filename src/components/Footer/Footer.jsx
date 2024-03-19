@@ -8,7 +8,7 @@ export function Footer() {
         const updateFontSize = () => {
             const containerWidth = document.querySelector('.footer-title').offsetWidth;
             const desiredFontSize = containerWidth * 0.1; // You can adjust the scaling factor as needed
-            setFontSize(Math.min(desiredFontSize, 100)); // Limiting the font size to be at most 100px
+            setFontSize(Math.min(desiredFontSize, 75)); // Limiting the font size to be at most 100px
         };
 
         window.addEventListener('resize', updateFontSize);
