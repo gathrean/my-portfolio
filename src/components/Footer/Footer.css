@@ -10,8 +10,10 @@
 
 .footer-title {
     display: flex;
-    font-size: 100px;
+    font-size: auto;
     align-items: center;
     flex-direction: column;
     justify-content: flex-end;
+    width: 100%;
+    text-align: center;
 }
