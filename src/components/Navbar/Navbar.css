@@ -57,7 +57,7 @@
     bottom: -2px;
     width: 100%;
     height: 2px;
-    background-color: #0000ff;
+    background-color: #0000dc;
     border-radius: 25px;
 }
 
@@ -93,7 +93,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color: #0000ff;
+    color: #0000dc;
 }
 
 ul li.non-highlight a:hover::after {
