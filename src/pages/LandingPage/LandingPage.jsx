@@ -41,19 +41,11 @@ export function Home() {
                 </div>
                 <div className="overlay-container" style={{ marginTop: calculateOverlayHeight() }}>
                     <div ref={overlayRef} className="overlay-text">
-                        <h2>Yap yap yap</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        <p>Tempus urna et pharetra pharetra massa. </p>
-                        <p>Nibh tellus molestie nunc non blandit massa. </p>
-                        <p>Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras.</p>
-                        <p>Diam maecenas ultricies mi eget. Dis parturient montes nascetur ridiculus mus mauris. </p>
-                        <p>Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non. </p>
-                        <p>Vel quam elementum pulvinar etiam non quam. Purus ut faucibus pulvinar elementum. </p>
-                        <p>Pharetra pharetra massa massa ultricies mi quis hendrerit. At in tellus integer feugiat.</p>
-                        <p>Blandit cursus risus at ultrices mi tempus imperdiet nulla malesuada. </p>
-                        <p>Tortor aliquam nulla facilisi cras. Lorem ipsum dolor sit amet consectetur. </p>
-                        <p>A condimentum vitae sapien pellentesque habitant morbi tristique senectus. </p>
-                        <p>Posuere ac ut consequat semper. Ac orci phasellus egestas tellus rutrum. </p>
+                        <h2>Hey, my name is Gathrean Dela Cruz</h2>
+                        <p>I am a software developer from Vancouver, BC. <br />
+                           Let's connect on LinkedIn! (button) <br />
+                        Check out my GitHub! (button) <br />
+                        </p>
                     </div>
                 </div>
             </div>
