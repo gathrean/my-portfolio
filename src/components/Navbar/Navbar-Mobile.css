@@ -60,13 +60,13 @@
 
     /* Navbar is closed */
     .navbar-nav.closed {
-        /* height: auto; */
+        height: auto;
         overflow: hidden;
     }
 
     /* Navbar is open */
     .navbar-nav.collapsed {
-        /* height: auto; */
+        height: auto;
         overflow-y: visible;
     }
 
