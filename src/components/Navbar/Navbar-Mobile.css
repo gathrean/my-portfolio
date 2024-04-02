@@ -4,16 +4,31 @@
         margin-left: 0%;
         margin-right: 0%;
         margin-top: 10px;
-        transition: width 0.3s ease, margin 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease, padding 0.3s ease;
+        transition: width 0.3s ease, margin 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease, padding 0.3s ease, height 0.3s ease;
+        /* Add height transition */
         padding-left: 40px;
         padding-right: 40px;
+        overflow: hidden;
+        /* Hide overflow content */
+        /* height: 64px; */
+        /* height: 50vh; */
+        /* Initial height */
+    }
+
+    .navbar.scrolled {
+        display: flex;
+        flex-direction: column;
     }
 
     .navbar.scrolled {
         width: 70%;
         margin-left: 15%;
         margin-right: 15%;
-        transition: width 0.3s ease, margin 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease, padding 0.3s ease;
+        transition: width 0.3s ease, margin 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease, padding 0.3s ease, height 0.3s ease;
+    }
+
+    .navbar {
+        flex-direction: column;
     }
 
     .desktop-view {
@@ -35,22 +50,30 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        /* Change to column layout */
     }
 
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    /* Navbar is closed */
+    .navbar-nav.closed {
+        /* height: auto; */
+        overflow: hidden;
+    }
+
+    /* Navbar is open */
     .navbar-nav.collapsed {
-        display: none;
-        /* Hide the links by default */
+        /* height: auto; */
+        overflow-y: visible;
     }
 
     ul li {
         display: block;
-        /* Change to block layout */
         margin-left: 0;
-        /* Remove margin */
         margin-right: 0;
-        /* Remove margin */
         margin-top: 10px;
-        /* Add margin */
     }
 }

@@ -41,18 +41,20 @@ export function Navbar() {
 
     return (
         <nav className={`navbar ${scroll ? 'scrolled' : ''}`}>
-            <div className="brand">
-                <span className="brand-text">Gathrean</span>
+            <div className="navbar-container">
+                <div className="brand">
+                    <span className="brand-text">Gathrean</span>
+                </div>
+                <div className="mobile-view" onClick={toggleNavbar}>
+                    <img
+                        src={hamburgerImage}
+                        alt="Hamburger Menu"
+                        className={`hamburger ${collapsed ? '' : 'open'}`}
+                        style={{ width: '25px', height: '25px' }}
+                    />
+                </div>
             </div>
-            <div className="mobile-view" onClick={toggleNavbar}>
-                <img
-                    src={hamburgerImage}
-                    alt="Hamburger Menu"
-                    className={`hamburger ${collapsed ? '' : 'open'}`}
-                    style={{ width: '25px', height: '25px' }}
-                />
-            </div>
-            <ul className={`navbar-nav ${collapsed ? 'collapsed' : ''}`}>
+            <ul className={`navbar-nav ${collapsed ? 'collapsed' : 'closed'}`}>
                 <li>
                     <Link className={`nav-item ${location.pathname === '/' ? 'highlight' : ''}`} to="/" onClick={scrollToTop}>Home</Link>
                 </li>
