@@ -5,8 +5,11 @@ import './Navbar.css';
 import './Navbar-Mobile.css';
 import './Navbar-Logo.css';
 
+import hamburgerImage from './hamburger.png';
+
 export function Navbar() {
     const [scroll, setScroll] = useState(false);
+    const [collapsed, setCollapsed] = useState(true);
     const location = useLocation();
 
     useEffect(() => {
@@ -32,12 +35,24 @@ export function Navbar() {
         });
     };
 
+    const toggleNavbar = () => {
+        setCollapsed(!collapsed);
+    };
+
     return (
         <nav className={`navbar ${scroll ? 'scrolled' : ''}`}>
             <div className="brand">
                 <span className="brand-text">Gathrean</span>
             </div>
-            <ul className="navbar-nav">
+            <div className="mobile-view" onClick={toggleNavbar}>
+                <img
+                    src={hamburgerImage}
+                    alt="Hamburger Menu"
+                    className={`hamburger ${collapsed ? '' : 'open'}`}
+                    style={{ width: '25px', height: '25px' }}
+                />
+            </div>
+            <ul className={`navbar-nav ${collapsed ? 'collapsed' : ''}`}>
                 <li>
                     <Link className={`nav-item ${location.pathname === '/' ? 'highlight' : ''}`} to="/" onClick={scrollToTop}>Home</Link>
                 </li>

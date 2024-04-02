@@ -34,11 +34,23 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        /* Change to column layout */
+    }
+
+    .navbar-nav.collapsed {
+        display: none;
+        /* Hide the links by default */
     }
 
     ul li {
-        display: inline;
-        margin-left: 10px;
-        margin-right: 10px;
+        display: block;
+        /* Change to block layout */
+        margin-left: 0;
+        /* Remove margin */
+        margin-right: 0;
+        /* Remove margin */
+        margin-top: 10px;
+        /* Add margin */
     }
 }
