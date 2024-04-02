@@ -10,6 +10,7 @@ import hamburgerImage from './hamburger.png';
 export function Navbar() {
     const [scroll, setScroll] = useState(false);
     const [collapsed, setCollapsed] = useState(true);
+    const [navbarHeight, setNavbarHeight] = useState(64); // Initial height
     const location = useLocation();
 
     useEffect(() => {
@@ -28,6 +29,11 @@ export function Navbar() {
         };
     }, []);
 
+    useEffect(() => {
+        const newHeight = collapsed ? 64 : 'auto';
+        setNavbarHeight(newHeight);
+    }, [collapsed]);
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -40,7 +46,7 @@ export function Navbar() {
     };
 
     return (
-        <nav className={`navbar ${scroll ? 'scrolled' : ''}`}>
+        <nav className={`navbar ${scroll ? 'scrolled' : ''}`} style={{ height: navbarHeight }}>
             <div className="navbar-container">
                 <div className="brand">
                     <span className="brand-text">Gathrean</span>
