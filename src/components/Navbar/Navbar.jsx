@@ -60,20 +60,22 @@ export function Navbar() {
                     />
                 </div>
             </div>
-            <ul className={`navbar-nav ${collapsed ? 'collapsed' : 'closed'}`}>
-                <li>
-                    <Link className={`nav-item ${location.pathname === '/' ? 'highlight' : ''}`} to="/" onClick={scrollToTop}>Home</Link>
-                </li>
-                <li>
-                    <Link className={`nav-item ${location.pathname === '/about' ? 'highlight' : ''}`} to="/about" onClick={scrollToTop}>About</Link>
-                </li>
-                <li>
-                    <Link className={`nav-item ${location.pathname === '/projects' ? 'highlight' : ''}`} to="/projects" onClick={scrollToTop}>Projects</Link>
-                </li>
-                <li>
-                    <Link className={`nav-item ${location.pathname === '/contact' ? 'highlight' : ''}`} to="/contact" onClick={scrollToTop}>Contact</Link>
-                </li>
-            </ul>
+            <div className="navlink-wrapper">
+                <ul className={`navbar-nav ${collapsed ? 'collapsed' : 'closed'}`}>
+                    <li>
+                        <Link className={`nav-item ${location.pathname === '/' ? 'highlight' : ''}`} to="/" onClick={scrollToTop}>Home</Link>
+                    </li>
+                    <li>
+                        <Link className={`nav-item ${location.pathname === '/about' ? 'highlight' : ''}`} to="/about" onClick={scrollToTop}>About</Link>
+                    </li>
+                    <li>
+                        <Link className={`nav-item ${location.pathname === '/projects' ? 'highlight' : ''}`} to="/projects" onClick={scrollToTop}>Projects</Link>
+                    </li>
+                    <li>
+                        <Link className={`nav-item ${location.pathname === '/contact' ? 'highlight' : ''}`} to="/contact" onClick={scrollToTop}>Contact</Link>
+                    </li>
+                </ul>
+            </div>
         </nav>
     );
 }
