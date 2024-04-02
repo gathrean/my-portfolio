@@ -14,6 +14,8 @@
 
 .carousel-content {
     padding: 0rem;
+    position: relative;
+    height: 100vh;
 }
 
 .zoom {
@@ -37,6 +39,7 @@
     padding: 20px;
     border-radius: 10px;
     width: 80%;
+    z-index: 2;
 }
 
 .overlay-text h2 {
