@@ -11,7 +11,7 @@ export function Navbar() {
     const [scroll, setScroll] = useState(false);
     const [floatDock, setFloatDock] = useState(false);
     const [collapsed, setCollapsed] = useState(true);
-    const [navbarHeight, setNavbarHeight] = useState(64); // Initial height
+    const [navbarHeight, setNavbarHeight] = useState(56); // Initial height
     const location = useLocation();
 
     useEffect(() => {
@@ -31,7 +31,7 @@ export function Navbar() {
     }, []);
 
     useEffect(() => {
-        const newHeight = collapsed ? 64 : 'auto';
+        const newHeight = collapsed ? 56 : 'auto';
         setNavbarHeight(newHeight);
     }, [collapsed]);
 
