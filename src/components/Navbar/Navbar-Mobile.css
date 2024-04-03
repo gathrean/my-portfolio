@@ -95,7 +95,10 @@
     ul li {
         height: auto;
         display: block;
-        margin: 0 0px;
+    }
+
+    ul li a {
+        font-size: 60px;
     }
 
     .navlink-wrapper {
