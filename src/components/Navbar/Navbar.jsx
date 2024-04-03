@@ -49,12 +49,12 @@ export function Navbar() {
         // If the navbar is collapsed in general
         if (collapsed) {
             setFloatDock(true);
+            setScroll(false);
         } else {
             // If the navbar is not collapsed, and user has scrolled to the top,
             // setScroll to false and setFloatDock to false
             if (window.scrollY === 0) {
                 setScroll(false);
-                setFloatDock(false);
             } else {
                 setFloatDock(false);
             }
