@@ -1,7 +1,7 @@
 .navbar {
     background-color: #fefefe;
     overflow: hidden;
-    height: 64px;
+    height: 56px;
     line-height: 64px;
 
     display: flex;
@@ -20,15 +20,10 @@
     margin-right: 0%;
     margin-top: 10px;
 
-    transition: width 0.3s ease;
-    transition: margin 0.3s ease;
-    transition: box-shadow 0.3s ease;
-    transition: border-radius 0.3s ease;
-    transition: padding 0.3s ease;
-
+    transition: background-color 0.3s ease, width 0.3s ease, margin 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease, padding 0.3s ease, height 0.3s ease;
     backdrop-filter: blur(10px);
 
-    border-radius: 0px;
+    border-radius: 50px;
 }
 
 .navbar.scrolled {
@@ -40,16 +35,11 @@
     margin-left: 35%;
     margin-right: 35%;
 
-    transition: width 0.3s ease;
-    transition: margin 0.3s ease;
-    transition: box-shadow 0.3s ease;
-    transition: border-radius 0.3s ease;
-    transition: padding 0.3s ease;
-
+    transition: background-color 0.3s ease, width 0.3s ease, margin 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease, padding 0.3s ease, height 0.3s ease;
     backdrop-filter: blur(3px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
-    border-radius: 25px;
+    border-radius: 50px;
 }
 
 .navbar.float-dock {
@@ -61,12 +51,7 @@
     margin-left: 35%;
     margin-right: 35%;
 
-    transition: width 0.3s ease;
-    transition: margin 0.3s ease;
-    transition: box-shadow 0.3s ease;
-    transition: border-radius 0.3s ease;
-    transition: padding 0.3s ease;
-
+    transition: background-color 0.3s ease, width 0.3s ease, margin 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease, padding 0.3s ease, height 0.3s ease;
     backdrop-filter: blur(3px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
