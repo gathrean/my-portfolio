@@ -9,6 +9,7 @@ import hamburgerImage from './hamburger.png';
 
 export function Navbar() {
     const [scroll, setScroll] = useState(false);
+    const [floatDock, setFloatDock] = useState(false);
     const [collapsed, setCollapsed] = useState(true);
     const [navbarHeight, setNavbarHeight] = useState(64); // Initial height
     const location = useLocation();
@@ -42,11 +43,38 @@ export function Navbar() {
     };
 
     const toggleNavbar = () => {
+        // Toggle the collapsed state of the navbar
         setCollapsed(!collapsed);
+
+        // If the navbar is collapsed in general
+        if (collapsed) {
+            setFloatDock(true);
+        } else {
+            // If the navbar is not collapsed, and user has scrolled to the top,
+            // setScroll to false and setFloatDock to false
+            if (window.scrollY === 0) {
+                setScroll(false);
+                setFloatDock(false);
+            } else {
+                setFloatDock(false);
+            }
+        }
+
+        // If the navbar is collapsed and the user has scrolled down
+        if (collapsed && window.scrollY > 0) {
+            setScroll(true);
+            setFloatDock(true);
+        }
+
+        // If the navbar is collapsed and the user has scrolled to the top
+        if (collapsed && window.scrollY === 0) {
+            setScroll(true);
+            setFloatDock(true);
+        }
     };
 
     return (
-        <nav className={`navbar ${scroll ? 'scrolled' : ''}`} style={{ height: navbarHeight }}>
+        <nav className={`navbar ${scroll ? 'float-dock' : ''}`} style={{ height: navbarHeight }}>
             <div className="navbar-container">
                 <div className="brand">
                     <span className="brand-text">Gathrean</span>
