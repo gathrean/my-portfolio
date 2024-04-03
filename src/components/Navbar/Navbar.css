@@ -45,6 +45,23 @@
     border-radius: 25px;
 }
 
+.navbar.float-dock {
+    padding: 0 40px;
+
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+
+    transition: width 0.3s ease, margin 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease, padding 0.3s ease;
+
+    backdrop-filter: blur(3px);
+
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    border-radius: 25px;
+}
+
 .nav-item.highlight {
     position: relative;
 }
