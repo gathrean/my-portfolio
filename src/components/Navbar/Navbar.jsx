@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import './Navbar.css';
@@ -14,7 +14,9 @@ export function Navbar() {
     const [collapsed, setCollapsed] = useState(true);
     const [navbarHeight, setNavbarHeight] = useState(56); // Initial height
     const location = useLocation();
+    const navbarRef = useRef(null);
 
+    // Update the floating state of the navbar depending on the scroll position
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 0) {
@@ -31,11 +33,28 @@ export function Navbar() {
         };
     }, []);
 
+    // Update the height of the navbar when it is collapsed
     useEffect(() => {
         const newHeight = collapsed ? 56 : 'auto';
         setNavbarHeight(newHeight);
     }, [collapsed]);
 
+    // Close the navbar when clicking outside of it
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+                setCollapsed(true);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
+    // Scroll to the top of the page
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -43,8 +62,9 @@ export function Navbar() {
         });
     };
 
+    // Toggle the collapsed state of the navbar
     const toggleNavbar = () => {
-        // Toggle the collapsed state of the navbar
+        
         setCollapsed(!collapsed);
 
         // If the navbar is collapsed in general
@@ -64,7 +84,7 @@ export function Navbar() {
     };
 
     return (
-        <nav className={`navbar ${scroll ? 'float-dock' : ''}`} style={{ height: navbarHeight }}>
+        <nav ref={navbarRef} className={`navbar ${scroll ? 'float-dock' : ''}`} style={{ height: navbarHeight }}>
             <div className="navbar-container">
                 <div className="brand">
                     <span className="brand-text">Gathrean</span>
