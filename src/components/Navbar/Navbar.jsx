@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import './Navbar-Mobile.css';
 import './Navbar-Logo.css';
+import './Navbar-Navlink.css';
 
 import hamburgerImage from './hamburger.png';
 
