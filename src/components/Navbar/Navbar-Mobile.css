@@ -1,4 +1,74 @@
-@media only screen and (max-width: 768px) {
+/* iPad Pro */
+/* Surface Pro 7 */
+/* Nest Hub */
+@media only screen and (max-width: 1024px) {
+    .navbar.scrolled {
+        width: 60%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .navbar.navbar.float-dock {
+        width: 60%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+/* Asus Zenbook Fold */
+@media only screen and (max-width: 853px) {
+    .navbar.scrolled {
+        width: 70%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .navbar.navbar.float-dock {
+        width: 70%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+/* iPad Mini */
+/* iPad Air */
+@media only screen and (max-width: 820px) {
+
+    .navbar.scrolled {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .navbar.float-dock {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+/* iPhone SE */
+/* iPhone XR */
+/* iPhone 12 Pro */
+/* iPhone 14 Pro Max */
+/* Pixel 7 */
+/* Samsung Galaxy S8+ */
+/* Samsung Galaxy S20 Ultra */
+/* Surface Duo */
+/* Samsung Galaxy A51/71 */
+@media only screen and (max-width: 540px) {
     .navbar {
         background-color: white;
         overflow: hidden;
@@ -102,5 +172,30 @@
     .navlink-wrapper {
         width: 100%;
         display: flex;
+    }
+}
+
+/* Galaxy Fold */
+@media only screen and (max-width: 280px) {
+    .navbar.scrolled {
+        width: 80%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .navbar.navbar.float-dock {
+        width: 80%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .brand-text {
+        color: #181818;
+        font-size: 24px !important;
+        font-weight: 600;
     }
 }
