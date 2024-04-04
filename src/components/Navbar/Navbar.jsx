@@ -16,23 +16,6 @@ export function Navbar() {
     const location = useLocation();
     const navbarRef = useRef(null);
 
-    // Update the floating state of the navbar depending on the scroll position
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 0) {
-                setScroll(true);
-            } else {
-                setScroll(false);
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
     // Update the height of the navbar when it is collapsed
     useEffect(() => {
         const newHeight = collapsed ? 56 : 'auto';
@@ -62,24 +45,47 @@ export function Navbar() {
         });
     };
 
-    // Toggle the collapsed state of the navbar
-    const toggleNavbar = () => {
-        
-        setCollapsed(!collapsed);
-
-        // If the navbar is collapsed in general
-        if (!collapsed) {
-            // If the user has scrolled down, keep the navbar floating
+    // Update the floating state of the navbar depending on the scroll position
+    useEffect(() => {
+        const handleScroll = () => {
             if (window.scrollY > 0) {
-                setFloatDock(true);
+                setScroll(true);
             } else {
-                // If the user has scrolled to the top, collapse the navbar
-                setFloatDock(false);
                 setScroll(false);
             }
-        } else {
-            // If the navbar is expanded, always keep it floating
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    // Toggle the collapsed state of the navbar
+    const toggleNavbar = () => {
+
+        setCollapsed(!collapsed);
+
+        // If the navbar is opened
+        if (collapsed) {
+
+            // If the navbar is opened:
             setFloatDock(true);
+
+        } else { // If the navbar is closed
+
+            // If the user has scrolled down:
+            if (window.scrollY > 0) {
+
+                setFloatDock(true);
+
+            } else {
+
+                // If the user has scrolled to the top:
+                setFloatDock(true);
+                setScroll(false);
+            }
         }
     };
 
