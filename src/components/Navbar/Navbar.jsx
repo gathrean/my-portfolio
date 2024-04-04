@@ -84,8 +84,8 @@ export function Navbar() {
     };
 
     return (
-        <nav ref={navbarRef} className={`navbar ${scroll ? 'float-dock' : ''}`} style={{ height: navbarHeight }}>
-            <div className="navbar-container">
+        <nav ref={navbarRef} className={`navbar navbar-animation ${scroll ? 'float-dock' : ''}`} style={{ height: navbarHeight }}>
+            <div className="navbar-container navbar-animation">
                 <div className="brand">
                     <span className="brand-text">Gathrean</span>
                 </div>

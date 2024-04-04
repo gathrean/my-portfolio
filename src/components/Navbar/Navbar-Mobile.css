@@ -10,8 +10,6 @@
         margin-left: 0%;
         margin-right: 0%;
         margin-top: 20px;
-
-        transition: background-color 0.3s ease, width 0.3s ease, margin 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease, padding 0.3s ease, height 0.3s ease;
     }
 
     .navbar.scrolled {
@@ -26,7 +24,6 @@
         margin-left: 10%;
         margin-right: 10%;
 
-        transition: background-color 0.3s ease, width 0.3s ease, margin 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease, padding 0.3s ease, height 0.3s ease;
         backdrop-filter: blur(3px);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
@@ -44,7 +41,6 @@
         margin-left: 10%;
         margin-right: 10%;
 
-        transition: background-color 0.3s ease, width 0.3s ease, margin 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease, padding 0.3s ease, height 0.3s ease;
         backdrop-filter: blur(3px);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
