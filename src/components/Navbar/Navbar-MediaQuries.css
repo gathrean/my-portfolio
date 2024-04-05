@@ -1,7 +1,9 @@
-/* iPad Pro */
-/* Surface Pro 7 */
-/* Nest Hub */
-@media only screen and (min-width: 854px) and (max-width: 1050px) {
+/* For-Big-Desktop-up      (Min-width: 1800px) */
+
+/* For-Desktop-up          (Min-width: 1200px) */
+
+/* For-Tablet-Landscape-up (Min-width: 900px) */
+@media only screen and (min-width: 900px) {
     .navbar.scrolled {
         width: 60%;
         padding-left: 5%;
@@ -19,10 +21,8 @@
     }
 }
 
-/* iPad Mini */
-/* iPad Air */
-/* Asus Zenbook Fold */
-@media only screen and (min-width: 760px) and (max-width: 853px) {
+/* For-Tablet-Portrait-up  (Min-width: 600px) */
+@media only screen and (min-width: 600px) {
     .navbar.scrolled {
         width: 80%;
         padding-left: 10%;
@@ -40,16 +40,8 @@
     }
 }
 
-/* iPhone SE */
-/* iPhone XR */
-/* iPhone 12 Pro */
-/* iPhone 14 Pro Max */
-/* Pixel 7 */
-/* Samsung Galaxy S8+ */
-/* Samsung Galaxy S20 Ultra */
-/* Surface Duo */
-/* Samsung Galaxy A51/71 */
-@media only screen and (max-width: 759px) {
+/* For-Phones (Max-width: 599px) */
+@media only screen and (max-width: 599px) {
     .navbar {
         background-color: white;
         overflow: hidden;
