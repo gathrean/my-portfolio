@@ -33,7 +33,7 @@ export function useNavbarFunctions() {
     // Scroll to the top of the page
     const scrollToTop = () => {
         window.scrollTo({
-            top: 0,
+            top: 0.99,
             behavior: "smooth"
         });
     };
