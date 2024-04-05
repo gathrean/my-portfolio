@@ -28,7 +28,7 @@
 /* For-Tablet-Portrait-up  (Min-width: 750px) */
 @media only screen and (min-width: 750px) and (max-width: 900px) {
     .navbar {
-        background-color: white;
+        /* background-color: white; */
         overflow: hidden;
 
         height: 56px;
@@ -60,7 +60,7 @@
 /* My main focus */
 @media only screen and (max-width: 749px) {
     .navbar {
-        background-color: white;
+        /* background-color: white; */
         overflow: hidden;
 
         height: 56px;
