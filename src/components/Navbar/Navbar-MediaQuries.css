@@ -3,21 +3,21 @@
 /* For-Desktop-up          (Min-width: 1200px) */
 
 /* For-Tablet-Landscape-up (Min-width: 900px) */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
     .navbar.scrolled {
-        width: 80%;
-        padding-left: 10%;
-        padding-right: 10%;
-        margin-left: 10%;
-        margin-right: 10%;
+        width: 60%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 20%;
+        margin-right: 20%;
     }
 
     .navbar.float-dock {
-        width: 80%;
-        padding-left: 10%;
-        padding-right: 10%;
-        margin-left: 10%;
-        margin-right: 10%;
+        width: 60%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 20%;
+        margin-right: 20%;
     }
 
     .desktop-view {
@@ -26,7 +26,7 @@
 }
 
 /* For-Tablet-Portrait-up  (Min-width: 750px) */
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 750px) and (max-width: 900px) {
     .navbar {
         background-color: white;
         overflow: hidden;
@@ -69,7 +69,6 @@
         padding-right: 17%;
         margin-left: 0%;
         margin-right: 0%;
-        margin-top: 20px;
     }
 
     .navbar.scrolled {
