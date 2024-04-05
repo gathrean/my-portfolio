@@ -10,36 +10,10 @@ import './Navbar-Navlink.css';
 import hamburgerImage from './hamburger.png';
 
 export function Navbar() {
-
-    // Functions from NavbarFunctions.jsx
-    const {
-        scroll,
-        floatDock,
-        collapsed,
-        navbarHeight,
-        navbarRef,
-        scrollToTop,
-        toggleNavbar,
-        location
-    } = useNavbarFunctions();
-
-    // Inside <nav> tag
-    const navbarStyle = {
-        height: navbarHeight
-    };
-
-    const navbarClasses = `
-        navbar navbar-animation 
-        ${scroll ? 'float-dock' : ''} 
-        ${collapsed ? 'collapsed' : 'expanded'}
-        `;
+    const { scroll, floatDock, collapsed, navbarHeight, navbarRef, scrollToTop, toggleNavbar, location } = useNavbarFunctions();
 
     return (
-        <nav
-            ref={navbarRef}
-            style={navbarStyle}
-            className={navbarClasses}
-        >
+        <nav ref={navbarRef} className={`navbar navbar-animation ${scroll ? 'float-dock' : ''}`} style={{ height: navbarHeight }}>
             <div className="navbar-container navbar-animation">
                 <div className="brand">
                     <span className="brand-text">Gathrean</span>
