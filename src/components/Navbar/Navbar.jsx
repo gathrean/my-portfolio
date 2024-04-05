@@ -7,10 +7,17 @@ import './Navbar-MediaQuries.css';
 import './Navbar-Logo.css';
 import './Navbar-Navlink.css';
 
-import hamburgerImage from './hamburger.png';
+import hamburgerImage from './hamburger.png'; // Assuming this is your original hamburger image
 
 export function Navbar() {
-    const { scroll, floatDock, collapsed, navbarHeight, navbarRef, scrollToTop, toggleNavbar, location } = useNavbarFunctions();
+    const { scroll, floatDock, navbarHeight, navbarRef, scrollToTop, toggleNavbar, location } = useNavbarFunctions();
+
+    // Apply CSS filter to invert the color if floatDock is true
+    const hamburgerStyle = {
+        width: '20px',
+        height: '20px',
+        filter: scroll ? 'invert(0%)' : 'invert(100%)'
+    };
 
     return (
         <nav ref={navbarRef} className={`navbar navbar-animation ${scroll ? 'float-dock' : ''}`} style={{ height: navbarHeight }}>
@@ -22,13 +29,13 @@ export function Navbar() {
                     <img
                         src={hamburgerImage}
                         alt="Hamburger Menu"
-                        className={`hamburger ${collapsed ? '' : 'open'}`}
-                        style={{ width: '20px', height: '20px' }}
+                        className={`hamburger ${floatDock ? '' : 'open'}`}
+                        style={hamburgerStyle}
                     />
                 </div>
             </div>
             <div className="navlink-wrapper">
-                <ul className={`navbar-nav ${collapsed ? 'collapsed' : 'closed'}`}>
+                <ul className={`navbar-nav ${floatDock ? 'collapsed' : 'closed'}`}>
                     <li>
                         <Link className={`nav-item ${location.pathname === '/' ? 'highlight' : ''}`} to="/" onClick={scrollToTop}>Home</Link>
                     </li>

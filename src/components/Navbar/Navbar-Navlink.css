@@ -17,9 +17,17 @@ ul li:last-child {
 
 ul li a {
   text-decoration: none;
-  color: #181818;
+  color: #ffffff;
   font-size: 20px;
   position: relative;
+}
+
+.navbar.float-dock ul li a {
+  color: #181818;
+}
+
+.navbar.scrolled ul li a {
+  color: #181818;
 }
 
 ul li a:hover {
