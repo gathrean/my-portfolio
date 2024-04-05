@@ -40,13 +40,13 @@ export function Home() {
                     <img src={process.env.PUBLIC_URL + images[currentImage]} alt="Landing Page" className="landing-image" />
                 </div>
                 <div className="overlay-container" style={{ marginTop: calculateOverlayHeight() }}>
-                    <div ref={overlayRef} className="overlay-text">
+                    {/* <div ref={overlayRef} className="overlay-text">
                         <h2>Hey, my name is Gathrean Dela Cruz</h2>
                         <p>I am a software developer from Vancouver, BC. <br />
                            Let's connect on LinkedIn! (button) <br />
                         Check out my GitHub! (button) <br />
                         </p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
