@@ -1,0 +1,191 @@
+/* For-Big-Desktop-up      (Min-width: 1800px) */
+
+/* For-Desktop-up          (Min-width: 1200px) */
+
+/* For-Tablet-Landscape-up (Min-width: 900px) */
+@media only screen and (min-width: 900px) {
+    .navbar.scrolled {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .navbar.float-dock {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .desktop-view {
+        display: flex;
+    }
+}
+
+/* For-Tablet-Portrait-up  (Min-width: 750px) */
+@media only screen and (min-width: 750px) {
+    .navbar {
+        background-color: white;
+        overflow: hidden;
+
+        height: 56px;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 17%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 20px;
+    }
+
+    .navbar.scrolled {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .navbar.float-dock {
+        width: 80%;
+        padding: 0 40px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+/* For-Phones (Max-width: 749) */
+/* My main focus */
+@media only screen and (max-width: 749px) {
+    .navbar {
+        background-color: white;
+        overflow: hidden;
+
+        height: 56px;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 17%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 20px;
+    }
+
+    .navbar.scrolled {
+        background-color: rgba(222, 222, 222, 0.9);
+
+        display: flex;
+        flex-direction: column;
+
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        backdrop-filter: blur(3px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+        border-radius: 1.75em;
+    }
+
+    .navbar.float-dock {
+        background-color: rgba(222, 222, 222, 0.9);
+
+        display: flex;
+        flex-direction: column;
+
+        width: 80%;
+        padding: 0 40px;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        backdrop-filter: blur(3px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+        border-radius: 1.75em;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .desktop-view {
+        display: none;
+    }
+
+    .mobile-view {
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-view img {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .navbar-nav {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    /* Navbar is closed */
+    .navbar-nav.closed {
+        height: auto;
+        overflow: hidden;
+    }
+
+    /* Navbar is open */
+    .navbar-nav.collapsed {
+        height: auto;
+        overflow-y: visible;
+    }
+
+    ul li {
+        height: auto;
+        display: block;
+    }
+
+    ul li a {
+        font-size: 30px;
+    }
+
+    .navlink-wrapper {
+        width: 100%;
+        display: flex;
+    }
+}
+
+/* For foldable phones */
+@media only screen and (max-width: 280px) {
+    .navbar.scrolled {
+        width: 80%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .navbar.navbar.float-dock {
+        width: 80%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .brand-text {
+        color: #181818;
+        font-size: 24px !important;
+        font-weight: 600;
+    }
+}

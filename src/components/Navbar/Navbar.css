@@ -1,8 +1,10 @@
+.navbar-animation {
+    transition: background-color 0.3s ease, width 0.3s ease, margin 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease, padding 0.3s ease, height 0.3s ease;
+}
+
 .navbar {
     background-color: #fefefe;
     overflow: hidden;
-    height: 64px;
-    line-height: 64px;
 
     display: flex;
     align-items: center;
@@ -14,51 +16,51 @@
     right: 0;
     z-index: 1000;
 
-    padding: 0 140px;
-
+    height: 56px;
+    line-height: 56px;
     width: 100%;
+    padding: 0 140px;
     margin-left: 0%;
     margin-right: 0%;
     margin-top: 10px;
 
-    transition: width 0.3s ease, margin 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease, padding 0.3s ease;
-
     backdrop-filter: blur(10px);
-
-    border-radius: 0px;
 }
 
 .navbar.scrolled {
+    background-color: rgba(222, 222, 222, 0.9);
+
     padding: 0 40px;
 
-    width: 30%;
-    margin-left: 35%;
-    margin-right: 35%;
+    height: 56px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
 
-    transition: width 0.3s ease, margin 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease, padding 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    border-radius: 50px;
+}
+
+.navbar.float-dock {
+    background-color: rgba(222, 222, 222, 0.9);
+
+    padding: 0 40px;
+
+    height: 56px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
 
     backdrop-filter: blur(3px);
-
-    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
     border-radius: 25px;
 }
 
-.nav-item.highlight {
-    position: relative;
-}
-
-.nav-item.highlight::after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    height: 2px;
-    background-color: #0000dc;
-    border-radius: 25px;
+.navbar.collapsed {
+    height: 0;
+    transition: height 0.3s ease;
 }
 
 .navbar-nav {
@@ -66,45 +68,7 @@
     margin: 0;
     padding: 0;
     text-align: center;
-}
-
-ul {
-    height: 64px;
-    line-height: 64px;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-ul li:last-child {
-    margin-right: 0;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #181818;
-    font-size: 16px;
-    position: relative;
-}
-
-ul li a:hover {
-    color: #0000dc;
-}
-
-ul li.non-highlight a:hover::after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -5px;
-    height: 2px;
-    background-color: #4f82c5;
+    transition: height 0.3s ease;
 }
 
 .mobile-view {
