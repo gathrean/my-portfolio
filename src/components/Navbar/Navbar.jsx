@@ -23,7 +23,7 @@ export function Navbar() {
                         src={hamburgerImage}
                         alt="Hamburger Menu"
                         className={`hamburger ${collapsed ? '' : 'open'}`}
-                        style={{ width: '25px', height: '25px' }}
+                        style={{ width: '20px', height: '20px' }}
                     />
                 </div>
             </div>
