@@ -57,6 +57,7 @@
 }
 
 /* For-Phones (Max-width: 749) */
+/* My main focus */
 @media only screen and (max-width: 749px) {
     .navbar {
         background-color: white;
