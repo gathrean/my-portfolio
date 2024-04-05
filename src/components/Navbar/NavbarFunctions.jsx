@@ -33,7 +33,7 @@ export function useNavbarFunctions() {
     // Scroll to the top of the page
     const scrollToTop = () => {
         window.scrollTo({
-            top: 0.9,
+            top: 0,
             behavior: "smooth"
         });
     };
@@ -41,11 +41,7 @@ export function useNavbarFunctions() {
     // Update the floating state of the navbar depending on the scroll position
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 0) {
-                setScroll(true);
-            } else {
-                setScroll(false);
-            }
+            setScroll(window.scrollY > 0);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -60,7 +56,7 @@ export function useNavbarFunctions() {
         setCollapsed(!collapsed);
 
         // If the navbar is opened
-        if (collapsed) {
+        if (!collapsed) {
             // If the navbar is opened:
             setFloatDock(true);
         } else { // If the navbar is closed
@@ -69,8 +65,7 @@ export function useNavbarFunctions() {
                 setFloatDock(true);
             } else {
                 // If the user has scrolled to the top:
-                setFloatDock(true);
-                setScroll(false);
+                setFloatDock(false);
             }
         }
     };
