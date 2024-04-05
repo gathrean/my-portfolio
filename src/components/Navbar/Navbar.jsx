@@ -23,17 +23,17 @@ export function Navbar() {
                         src={hamburgerImage}
                         alt="Hamburger Menu"
                         className={`hamburger ${collapsed ? '' : 'open'}`}
-                        style={{ width: '25px', height: '25px' }}
+                        style={{ width: '20px', height: '20px' }}
                     />
                 </div>
             </div>
             <div className="navlink-wrapper">
                 <ul className={`navbar-nav ${collapsed ? 'collapsed' : 'closed'}`}>
                     <li>
-                        <Link className={`nav-item ${location.pathname === '/' ? 'highlight' : ''}`} to="/" onClick={scrollToTop}>Home</Link>
+                        <Link className={`nav-item ${location.pathname === '/' ? 'highlight' : ''}`} to="/" onClick={scrollToTop}>Landing</Link>
                     </li>
                     <li>
-                        <Link className={`nav-item ${location.pathname === '/about' ? 'highlight' : ''}`} to="/about" onClick={scrollToTop}>About</Link>
+                        <Link className={`nav-item ${location.pathname === '/about' ? 'highlight' : ''}`} to="/about" onClick={scrollToTop}>About Me</Link>
                     </li>
                     <li>
                         <Link className={`nav-item ${location.pathname === '/projects' ? 'highlight' : ''}`} to="/projects" onClick={scrollToTop}>Projects</Link>
