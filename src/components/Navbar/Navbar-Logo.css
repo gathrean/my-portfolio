@@ -1,20 +1,20 @@
 .brand {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .brand-text {
-    color: #ffffff;
-    font-size: 27px;
-    font-weight: 600;
+  color: #181818;
+  font-size: 27px;
+  font-weight: 600;
 }
 
 .navbar.float-dock .brand-text {
-    color: #181818;
-  }
-  
-  .navbar.scrolled .brand-text {
-    color: #181818;
-  }
+  color: #181818;
+}
+
+.navbar.scrolled .brand-text {
+  color: #eaeaea;
+}
