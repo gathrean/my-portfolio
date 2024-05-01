@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { WORK } from './Sections/WORK/WORK';
+import { TECH } from './Sections/TECH/TECH';
+import { CONTACT } from './Sections/CONTACT/CONTACT';
 
 // CSS //
 import './LandingPage.css';
@@ -33,6 +36,18 @@ export function LandingPage() {
         return 0;
     };
 
+    // Add state to manage the active section for highlighting navbar links
+    const [activeSection, setActiveSection] = useState('HOME');
+
+    // Function to handle scrolling to the clicked section
+    const scrollToSection = (section) => {
+        const element = document.getElementById(section);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+            setActiveSection(section);
+        }
+    };
+
     return (
         <section id="section1 home">
             <div className="carousel-content">
@@ -47,6 +62,18 @@ export function LandingPage() {
                         Check out my GitHub! (button) <br />
                         </p>
                     </div> */}
+                    <section id="HOME" className="HOME">
+                        {/* Your HOME section content here */}
+                    </section>
+                    <section id="WORK" className="WORK">
+                        <WORK />
+                    </section>
+                    <section id="TECH" className="TECH">
+                        <TECH />
+                    </section>
+                    <section id="CONTACT" className="CONTACT">
+                        <CONTACT />
+                    </section>
                 </div>
             </div>
         </section>
