@@ -4,33 +4,12 @@ import { useLocation } from 'react-router-dom';
 export function useNavbarFunctions() {
     const [scroll, setScroll] = useState(false);
     const [floatDock, setFloatDock] = useState(false);
-    const [collapsed, setCollapsed] = useState(true);
-    const [navbarHeight, setNavbarHeight] = useState(56); // Initial height
+    const [opened, setOpened] = useState(true);
+    const [navbarHeight, setNavbarHeight] = useState(56);
+    
     const location = useLocation();
     const navbarRef = useRef(null);
 
-    // Update the height of the navbar when it is collapsed
-    useEffect(() => {
-        const newHeight = collapsed ? 56 : 'auto';
-        setNavbarHeight(newHeight);
-    }, [collapsed]);
-
-    // Close the navbar when clicking outside of it
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (navbarRef.current && !navbarRef.current.contains(event.target)) {
-                setCollapsed(true);
-            }
-        };
-
-        document.addEventListener('mousedown', handleClickOutside);
-
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, []);
-
-    // Scroll to the top of the page
     const scrollToTop = () => {
         window.scrollTo({
             top: 0.99,
@@ -38,37 +17,45 @@ export function useNavbarFunctions() {
         });
     };
 
-    // Update the floating state of the navbar depending on the scroll position
+    useEffect(() => {
+        const newHeight = opened ? 56 : 'auto';
+        setNavbarHeight(newHeight);
+    }, [opened]);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+                setOpened(true);
+            }
+        };
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
     useEffect(() => {
         const handleScroll = () => {
             setScroll(window.scrollY > 0);
         };
-
         window.addEventListener('scroll', handleScroll);
-
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
-    // Toggle the collapsed state of the navbar
     const toggleNavbar = () => {
-        setCollapsed(!collapsed);
-
-        // If the navbar is opened
-        if (!collapsed) {
-            // If the navbar is opened:
+        setOpened(!opened);
+        if (!opened) {
             setFloatDock(true);
-        } else { // If the navbar is closed
-            // If the user has scrolled down:
+        } else {
             if (window.scrollY > 0) {
                 setFloatDock(true);
             } else {
-                // If the user has scrolled to the top:
                 setFloatDock(false);
             }
         }
     };
 
-    return { scroll, floatDock, collapsed, navbarHeight, navbarRef, scrollToTop, toggleNavbar, location };
+    return { scroll, floatDock, opened, navbarHeight, navbarRef, scrollToTop, toggleNavbar, location };
 }
