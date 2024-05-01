@@ -15,14 +15,6 @@
 
 /* For-Tablet-Portrait-up  (Min-width: 750px) */
 @media only screen and (min-width: 750px) and (max-width: 900px) {
-    .navbar {
-        overflow: hidden;
-        height: 56px;
-        width: 100%;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
     .navbar.float-dock {
         width: 80%;
         margin-left: 10%;
@@ -32,14 +24,6 @@
 
 /* For-Phones (Max-width: 749) */
 @media only screen and (max-width: 749px) {
-    .navbar {
-        overflow: hidden;
-        height: 56px;
-        width: 100%;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
     .navbar.float-dock {
         display: flex;
         flex-direction: column;
@@ -76,7 +60,7 @@
         justify-content: center;
         flex-direction: column;
     }
-    
+
     .navbar-container {
         display: flex;
         justify-content: space-between;
