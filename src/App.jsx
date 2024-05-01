@@ -6,10 +6,16 @@ import { Navbar } from './components/Navbar/Navbar';
 import { Footer } from './components/Footer/Footer';
 
 // Pages // 
-import { Home } from './pages/LandingPage/LandingPage';
-import { About } from './pages/AboutPage/AboutPage';
-import { Projects } from './pages/ProjectsPage/ProjectsPage';
-import { Contact } from './pages/ContactPage/ContactPage';
+import { LandingPage } from './pages/LandingPage/LandingPage';
+import { AboutPage } from './pages/AboutPage/AboutPage';
+import { ProjectsPage } from './pages/ProjectsPage/ProjectsPage';
+import { ContactPage } from './pages/ContactPage/ContactPage';
+
+// Sections //
+import { HOME } from './pages/LandingPage/Sections/HOME/HOME';
+import { WORK } from './pages/LandingPage/Sections/WORK/WORK';
+import { TECHSTACK } from './pages/LandingPage/Sections/TECHSTACK/TECHSTACK';
+import { CONTACT } from './pages/LandingPage/Sections/CONTACT/CONTACT';
 
 // CSS //
 import './App.css';
@@ -24,10 +30,10 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
 
         <Footer />
