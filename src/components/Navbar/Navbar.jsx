@@ -1,23 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
 import { useNavbarFunctions } from './NavbarFunctions';
 import './Navbar.css';
 import './Navbar-MediaQuries.css';
 import './Navbar-Logo.css';
 import './Navbar-Navlink.css';
-
 import hamburgerImage from './hamburger.png';
 
 export function Navbar() {
     const { scroll, floatDock, navbarHeight, navbarRef, scrollToTop, toggleNavbar } = useNavbarFunctions();
     const [activeSection, setActiveSection] = useState('HOME');
-
-    // Apply CSS filter to invert the color if floatDock is true
-    const hamburgerStyle = {
-        width: '20px',
-        height: '20px'
-    };
+    const [collapsed, setCollapsed] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -31,6 +24,11 @@ export function Navbar() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    useEffect(() => {
+        // Toggle collapsed state based on floatDock
+        setCollapsed(floatDock);
+    }, [floatDock]);
 
     const scrollToSection = (sectionClassName) => {
         if (activeSection !== sectionClassName) {
@@ -71,13 +69,13 @@ export function Navbar() {
                     <img
                         src={hamburgerImage}
                         alt="Hamburger Menu"
-                        className={`hamburger ${floatDock ? '' : 'open'}`}
-                        style={hamburgerStyle}
+                        className={`hamburger ${collapsed ? 'collapsed' : 'open'}`}
+                        style={{ width: '20px', height: '20px' }}
                     />
                 </div>
             </div>
             <div className="navlink-wrapper">
-                <ul className={`navbar-nav ${floatDock ? 'collapsed' : 'closed'}`}>
+                <ul className={`navbar-nav ${collapsed ? 'collapsed' : 'closed'}`}>
                     <li>
                         <Link className={`nav-item ${activeSection === 'HOME' ? 'highlight' : ''}`} onClick={() => scrollToSection('HOME')}>HOME</Link>
                     </li>
