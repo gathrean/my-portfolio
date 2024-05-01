@@ -26,21 +26,6 @@
     /* backdrop-filter: blur(10px); */
 }
 
-.navbar.scrolled {
-    background-color: rgba(222, 222, 222, 0.9);
-
-    padding: 0 40px;
-
-    height: 56px;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
-    border-radius: 50px;
-}
-
 .navbar.float-dock {
     background-color: rgba(222, 222, 222, 0.9);
 
