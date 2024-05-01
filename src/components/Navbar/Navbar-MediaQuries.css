@@ -25,6 +25,30 @@
     }
 }
 
+@media only screen and (min-width: 750px) {
+    .navbar {
+        padding: 0 10%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .navbar {
+        padding: 0 20%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .navbar {
+        padding: 0 30%;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .navbar {
+        padding: 0 40%;
+    }
+}
+
 /* For-Tablet-Portrait-up  (Min-width: 750px) */
 @media only screen and (min-width: 750px) and (max-width: 900px) {
     .navbar {
@@ -33,23 +57,23 @@
 
         height: 56px;
         width: 100%;
-        padding-left: 10%;
-        padding-right: 17%;
+        /* padding-left: 10%;
+        padding-right: 17%; */
         margin-left: 0%;
         margin-right: 0%;
     }
 
     .navbar.scrolled {
         width: 80%;
-        padding-left: 10%;
-        padding-right: 10%;
+        /* padding-left: 10%;
+        padding-right: 10%; */
         margin-left: 10%;
         margin-right: 10%;
     }
 
     .navbar.float-dock {
         width: 80%;
-        padding: 0 40px;
+        /* padding: 0 40px; */
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -64,8 +88,8 @@
 
         height: 56px;
         width: 100%;
-        padding-left: 10%;
-        padding-right: 17%;
+        /* padding-left: 10%;
+        padding-right: 17%; */
         margin-left: 0%;
         margin-right: 0%;
     }
@@ -75,8 +99,8 @@
         flex-direction: column;
 
         width: 80%;
-        padding-left: 10%;
-        padding-right: 10%;
+        /* padding-left: 10%;
+        padding-right: 10%; */
         margin-left: 10%;
         margin-right: 10%;
 
@@ -91,7 +115,7 @@
         flex-direction: column;
 
         width: 80%;
-        padding: 0 40px;
+        /* padding: 0 40px; */
         margin-left: 10%;
         margin-right: 10%;
 
