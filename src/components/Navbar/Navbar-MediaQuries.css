@@ -72,8 +72,6 @@
     }
 
     .navbar.scrolled {
-        background-color: rgba(222, 222, 222, 0.9);
-
         display: flex;
         flex-direction: column;
 
@@ -90,8 +88,6 @@
     }
 
     .navbar.float-dock {
-        background-color: rgba(222, 222, 222, 0.9);
-
         display: flex;
         flex-direction: column;
 

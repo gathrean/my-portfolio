@@ -7,7 +7,7 @@ import './Navbar-MediaQuries.css';
 import './Navbar-Logo.css';
 import './Navbar-Navlink.css';
 
-import hamburgerImage from './hamburger.png'; // Assuming this is your original hamburger image
+import hamburgerImage from './hamburger.png';
 
 export function Navbar() {
     const { scroll, floatDock, navbarHeight, navbarRef, scrollToTop, toggleNavbar, location } = useNavbarFunctions();
@@ -15,8 +15,7 @@ export function Navbar() {
     // Apply CSS filter to invert the color if floatDock is true
     const hamburgerStyle = {
         width: '20px',
-        height: '20px',
-        filter: scroll ? 'invert(0%)' : 'invert(100%)'
+        height: '20px'
     };
 
     return (
