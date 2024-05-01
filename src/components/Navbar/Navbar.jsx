@@ -70,23 +70,23 @@ export function Navbar() {
                         src={hamburgerImage}
                         alt="Hamburger Menu"
                         className={`hamburger ${collapsed ? 'collapsed' : 'open'}`}
-                        style={{ width: '20px', height: '20px' }}
+                        style={{ width: '15px', height: '15px' }}
                     />
                 </div>
             </div>
             <div className="navlink-wrapper">
                 <ul className={`navbar-nav ${collapsed ? 'collapsed' : 'closed'}`}>
-                    <li>
+                    {/* <li>
                         <Link className={`nav-item ${activeSection === 'HOME' ? 'highlight' : ''}`} onClick={() => scrollToSection('HOME')}>HOME</Link>
+                    </li> */}
+                    <li>
+                        <Link className={`nav-item ${activeSection === 'WORK' ? 'highlight' : ''}`} onClick={() => scrollToSection('WORK')}>Work</Link>
                     </li>
                     <li>
-                        <Link className={`nav-item ${activeSection === 'WORK' ? 'highlight' : ''}`} onClick={() => scrollToSection('WORK')}>WORK</Link>
+                        <Link className={`nav-item ${activeSection === 'TECH' ? 'highlight' : ''}`} onClick={() => scrollToSection('TECH')}>Tech</Link>
                     </li>
                     <li>
-                        <Link className={`nav-item ${activeSection === 'TECH' ? 'highlight' : ''}`} onClick={() => scrollToSection('TECH')}>TECH</Link>
-                    </li>
-                    <li>
-                        <Link className={`nav-item ${activeSection === 'CONTACT' ? 'highlight' : ''}`} onClick={() => scrollToSection('CONTACT')}>CONTACT</Link>
+                        <Link className={`nav-item ${activeSection === 'CONTACT' ? 'highlight' : ''}`} onClick={() => scrollToSection('CONTACT')}>Contact</Link>
                     </li>
                 </ul>
             </div>
