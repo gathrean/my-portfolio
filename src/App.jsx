@@ -9,9 +9,8 @@ import { Footer } from './components/Footer/Footer';
 import { LandingPage } from './pages/LandingPage/LandingPage';
 
 // Sections //
-import { HOME } from './pages/LandingPage/Sections/HOME/HOME';
 import { WORK } from './pages/LandingPage/Sections/WORK/WORK';
-import { TECHSTACK } from './pages/LandingPage/Sections/TECHSTACK/TECHSTACK';
+import { TECH } from './pages/LandingPage/Sections/TECH/TECH';
 import { CONTACT } from './pages/LandingPage/Sections/CONTACT/CONTACT';
 
 // CSS //
