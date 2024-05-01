@@ -1,7 +1,3 @@
-/* For-Big-Desktop-up      (Min-width: 1800px) */
-
-/* For-Desktop-up          (Min-width: 1200px) */
-
 /* For-Tablet-Landscape-up (Min-width: 900px) */
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
     .navbar.float-dock {
@@ -20,32 +16,24 @@
 /* For-Tablet-Portrait-up  (Min-width: 750px) */
 @media only screen and (min-width: 750px) and (max-width: 900px) {
     .navbar {
-        /* background-color: white; */
         overflow: hidden;
-
         height: 56px;
         width: 100%;
-        /* padding-left: 10%;
-        padding-right: 17%; */
         margin-left: 0%;
         margin-right: 0%;
     }
 
     .navbar.float-dock {
         width: 80%;
-        /* padding: 0 40px; */
         margin-left: 10%;
         margin-right: 10%;
     }
 }
 
 /* For-Phones (Max-width: 749) */
-/* My main focus */
 @media only screen and (max-width: 749px) {
     .navbar {
-        /* background-color: white; */
         overflow: hidden;
-
         height: 56px;
         width: 100%;
         margin-left: 0%;
@@ -55,18 +43,16 @@
     .navbar.float-dock {
         display: flex;
         flex-direction: column;
-
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
-
         backdrop-filter: blur(3px);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
         border-radius: 1.75em;
     }
 
-    .navbar {
+    .navbar,
+    .desktop-view {
         flex-direction: column;
     }
 
@@ -90,23 +76,17 @@
         justify-content: center;
         flex-direction: column;
     }
-
+    
     .navbar-container {
         display: flex;
         justify-content: space-between;
         width: 100%;
     }
 
-    /* Navbar is closed */
-    .navbar-nav.closed {
-        height: auto;
-        overflow: hidden;
-    }
-
-    /* Navbar is open */
+    .navbar-nav.closed,
     .navbar-nav.collapsed {
         height: auto;
-        overflow-y: visible;
+        overflow: hidden;
     }
 
     ul li {
