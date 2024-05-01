@@ -7,9 +7,6 @@ import { Footer } from './components/Footer/Footer';
 
 // Pages // 
 import { LandingPage } from './pages/LandingPage/LandingPage';
-import { AboutPage } from './pages/AboutPage/AboutPage';
-import { ProjectsPage } from './pages/ProjectsPage/ProjectsPage';
-import { ContactPage } from './pages/ContactPage/ContactPage';
 
 // Sections //
 import { HOME } from './pages/LandingPage/Sections/HOME/HOME';
@@ -31,9 +28,6 @@ function App() {
 
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/contact" element={<ContactPage />} />
         </Routes>
 
         <Footer />
