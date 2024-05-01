@@ -2,7 +2,7 @@ import React from 'react';
 
 import './ProjectsPage.css';
 
-export function Projects() {
+export function ProjectsPage() {
     return (
         <section id="section3 projects">
             <div className="content">

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './AboutPage.css';
 
-export function About() {
+export function AboutPage() {
     return (
         <section id="section2 about">
             <div className="content">

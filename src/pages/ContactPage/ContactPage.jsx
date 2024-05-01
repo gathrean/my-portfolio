@@ -2,7 +2,7 @@ import React from 'react';
 
 import './ContactPage.css';
 
-export function Contact() {
+export function ContactPage() {
     return (
         <section id="section4 contact">
             <div className="content">

@@ -8,7 +8,7 @@ import '../../App.css';
 // Fonts //
 import '../../assets/fonts/Fonts.css';
 
-export function Home() {
+export function LandingPage() {
     const [currentImage, setCurrentImage] = useState(0);
     const images = [
         '/images/DSC04733.jpg'
