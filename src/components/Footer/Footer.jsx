@@ -2,17 +2,17 @@ import React, { useEffect, useState } from 'react';
 import './Footer.css';
 
 export function Footer() {
-    const [fontSize, setFontSize] = useState(100); // Initial font size
+    const [fontSize, setFontSize] = useState(100); 
 
     useEffect(() => {
         const updateFontSize = () => {
             const containerWidth = document.querySelector('.footer-title').offsetWidth;
-            const desiredFontSize = containerWidth * 0.1; // You can adjust the scaling factor as needed
-            setFontSize(Math.min(desiredFontSize, 75)); // Limiting the font size to be at most 100px
+            const desiredFontSize = containerWidth * 0.1; 
+            setFontSize(Math.min(desiredFontSize, 75));
         };
 
         window.addEventListener('resize', updateFontSize);
-        updateFontSize(); // Initial font size calculation
+        updateFontSize();
 
         return () => {
             window.removeEventListener('resize', updateFontSize);

@@ -11,14 +11,12 @@ import DownloadIcon from './icons/download.png';
 
 const HERO = ({ images }) => {
   const [currentImage, setCurrentImage] = useState(0);
-
-  // Ref for overlay text element
   const overlayRef = useRef(null);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 5000); // Change image every 5 seconds (5000 milliseconds)
+    }, 5000);
 
     return () => clearInterval(intervalId);
   }, [images]);
@@ -26,7 +24,6 @@ const HERO = ({ images }) => {
   function handleClick(buttonType) {
     switch (buttonType) {
       case 'Resume':
-        // placeholder for now
         window.open('resumeURL', '_blank');
         break;
       case 'LinkedIn':
