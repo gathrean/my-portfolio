@@ -41,3 +41,23 @@
 .montserrat-bold {
     font-family: 'Montserrat Bold', sans-serif;
 }
+
+/* Tahome Font */
+
+@font-face {
+    font-family: 'Tahoma Regular';
+    src: url('Tahoma.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Tahoma Bold';
+    src: url('Tahoma Bold.ttf') format('truetype');
+}
+
+.tahoma-regular {
+    font-family: 'Tahoma Regular', sans-serif;
+}
+
+.tahoma-bold {
+    font-family: 'Tahoma Bold', sans-serif;
+}
