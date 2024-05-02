@@ -16,7 +16,7 @@ import '../../assets/fonts/Fonts.css';
 
 export function LandingPage() {
     const images = [
-        '/images/DSC04733v2.jpg'
+        '/images/DSC04733v3.jpg'
     ];
 
     return (
