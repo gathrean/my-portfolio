@@ -18,7 +18,7 @@ export function useNavbarFunctions() {
     };
 
     useEffect(() => {
-        const newHeight = opened ? 56 : 250;
+        const newHeight = opened ? 56 : 'auto';
         setNavbarHeight(newHeight);
     }, [opened]);
 
