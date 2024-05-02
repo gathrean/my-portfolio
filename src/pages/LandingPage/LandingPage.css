@@ -1,7 +1,13 @@
 .landing-image {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 88px);
     object-fit: cover;
+}
+
+.image-container {
+    position: relative;
+    padding: 0rem;
+    background-color: #EBF2FA;
 }
 
 .sticky {
@@ -9,7 +15,6 @@
     top: 0;
     left: 0;
     z-index: 1;
-    /* To send it behind the text */
 }
 
 .carousel-content {
@@ -21,10 +26,4 @@
     top: 20vh;
     will-change: transform;
     transform: scale(2.2);
-}
-
-.image-container {
-    position: relative;
-    padding: 0rem;
-    background-color: #EBF2FA;
 }
