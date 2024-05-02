@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavbarFunctions } from './NavbarFunctions';
+
 import './Navbar.css';
 import './Navbar-MediaQuries.css';
 import './Navbar-Logo.css';
 import './Navbar-Navlink.css';
+
 import hamburgerImage from './hamburger.png';
 
 export function Navbar() {
@@ -70,7 +72,7 @@ export function Navbar() {
                         src={hamburgerImage}
                         alt="Hamburger Menu"
                         className={`hamburger ${collapsed ? 'collapsed' : 'open'}`}
-                        style={{ width: '15px', height: '15px' }}
+                        style={{ width: '15px', height: '20px' }}
                     />
                 </div>
             </div>
