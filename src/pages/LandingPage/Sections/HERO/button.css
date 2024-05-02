@@ -1,6 +1,6 @@
 .hero-button {
   font-size: 2rem;
-  
+
   background-color: rgba(235, 242, 250, 0.9);
   backdrop-filter: blur(3px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -41,5 +41,22 @@
 
   100% {
     transform: scale(1);
+  }
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-buttons-container {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .bottom-buttons-container {
+    flex-direction: column;
   }
 }

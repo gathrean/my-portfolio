@@ -29,7 +29,7 @@ const HERO = ({ images }) => {
       </div>
 
       <div className="overlay-container hero-animation">
-        
+
         <div className="text-container">
           <div ref={overlayRef} className="overlay-text">
             <h2>Hey, I am</h2>
@@ -39,10 +39,10 @@ const HERO = ({ images }) => {
         </div>
 
         <div className="buttons-container">
-          <div>
-            <div className="hero-button" onClick={handleClick}>
-              Resume
-            </div>
+          <div className="hero-button" onClick={handleClick}>
+            Resume
+          </div>
+          <div className="bottom-buttons-container">
             <div className="hero-button" onClick={handleClick}>
               LinkedIn
             </div>
