@@ -1,5 +1,21 @@
+@media only screen and (min-width: 1400px) {
+    .navbar.float-dock {
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .navbar.float-dock {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}
+
 /* For-Tablet-Landscape-up (Min-width: 900px) */
-@media only screen and (min-width: 900px) and (max-width: 1200px) {
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
     .navbar.float-dock {
         width: 60%;
         margin-left: 20%;
