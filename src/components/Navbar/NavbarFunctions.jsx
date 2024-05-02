@@ -6,7 +6,7 @@ export function useNavbarFunctions() {
     const [floatDock, setFloatDock] = useState(false);
     const [opened, setOpened] = useState(true);
     const [navbarHeight, setNavbarHeight] = useState(56);
-    
+
     const location = useLocation();
     const navbarRef = useRef(null);
 
@@ -18,7 +18,7 @@ export function useNavbarFunctions() {
     };
 
     useEffect(() => {
-        const newHeight = opened ? 56 : 'auto';
+        const newHeight = opened ? 56 : 250;
         setNavbarHeight(newHeight);
     }, [opened]);
 

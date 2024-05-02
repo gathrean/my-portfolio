@@ -8,7 +8,7 @@ import './Navbar-Navlink.css';
 import hamburgerImage from './hamburger.png';
 
 export function Navbar() {
-    const { scroll, floatDock, navbarHeight, navbarRef, scrollToTop, toggleNavbar } = useNavbarFunctions();
+    const { scroll, floatDock, navbarHeight, navbarRef, scrollToTop, toggleNavbar, navbarClass } = useNavbarFunctions();
     const [activeSection, setActiveSection] = useState('HOME');
     const [collapsed, setCollapsed] = useState(false);
 
@@ -26,7 +26,6 @@ export function Navbar() {
     }, []);
 
     useEffect(() => {
-        // Toggle collapsed state based on floatDock
         setCollapsed(floatDock);
     }, [floatDock]);
 
