@@ -62,7 +62,12 @@ export function Navbar() {
     };
 
     return (
-        <nav ref={navbarRef} className={`navbar navbar-animation ${scroll ? 'float-dock' : ''}`} style={{ height: navbarHeight }}>
+        <nav
+            ref={navbarRef}
+            className={`navbar navbar-animation float-dock`} // Add float-dock class based on floatDock state
+            style={{ height: navbarHeight }}
+        >
+
             <div className="navbar-container navbar-animation">
                 <div className="brand">
                     <span className="brand-text">Gathrean</span>

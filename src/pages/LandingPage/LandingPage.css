@@ -1,6 +1,7 @@
 .landing-image {
     width: 100%;
-    height: calc(100vh - 88px);
+    /* height: calc(100vh - 88px); */
+    height: 100vh;
     object-fit: cover;
 }
 

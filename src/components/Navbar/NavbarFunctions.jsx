@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 export function useNavbarFunctions() {
     const [scroll, setScroll] = useState(false);
-    const [floatDock, setFloatDock] = useState(false);
+    const [floatDock, setFloatDock] = useState(true); // Change false to true
     const [opened, setOpened] = useState(true);
     const [navbarHeight, setNavbarHeight] = useState(56);
 
