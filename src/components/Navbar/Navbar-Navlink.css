@@ -57,7 +57,10 @@ ul li.non-highlight a:hover::after {
   font-size: 40px;
 }
 
-.navbar.float-dock ul li a,
-.navbar.scrolled ul li a {
+.navbar.float-dock ul li a {
   color: #5E5E5E;
+}
+
+.navbar.float-dock ul li a:hover {
+  color: #0000dc;
 }

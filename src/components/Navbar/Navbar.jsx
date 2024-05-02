@@ -87,13 +87,13 @@ export function Navbar() {
                         <Link className={`nav-item ${activeSection === 'HOME' ? 'highlight' : ''}`} onClick={() => scrollToSection('HOME')}>HOME</Link>
                     </li> */}
                     <li>
-                        <Link className={`nav-item ${activeSection === 'WORK' ? 'highlight' : ''}`} onClick={() => scrollToSection('WORK')}>Work</Link>
+                        <Link className={`nav-item nav-link ${activeSection === 'WORK' ? 'highlight' : ''}`} onClick={() => scrollToSection('WORK')}>Work</Link>
                     </li>
                     <li>
-                        <Link className={`nav-item ${activeSection === 'TECH' ? 'highlight' : ''}`} onClick={() => scrollToSection('TECH')}>Tech</Link>
+                        <Link className={`nav-item nav-link ${activeSection === 'TECH' ? 'highlight' : ''}`} onClick={() => scrollToSection('TECH')}>Tech</Link>
                     </li>
                     <li>
-                        <Link className={`nav-item ${activeSection === 'CONTACT' ? 'highlight' : ''}`} onClick={() => scrollToSection('CONTACT')}>Contact</Link>
+                        <Link className={`nav-item nav-link ${activeSection === 'CONTACT' ? 'highlight' : ''}`} onClick={() => scrollToSection('CONTACT')}>Contact</Link>
                     </li>
                 </ul>
             </div>
