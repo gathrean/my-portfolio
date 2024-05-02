@@ -31,6 +31,12 @@ const HERO = ({ images }) => {
           <h3>Software & Web Developer.</h3>
         </div>
 
+        <div className="buttons-container">
+          <button className="resume-button">Resume</button>
+          <button className="linkedin-button">LinkedIn</button>
+          <button className="github-button">GitHub</button>
+        </div>
+
       </div>
     </div>
   );
