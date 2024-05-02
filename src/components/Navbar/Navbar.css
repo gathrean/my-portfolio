@@ -3,7 +3,7 @@
 }
 
 .navbar {
-    background-color: #fefefe;
+    background-color: #EBF2FA;
     overflow: hidden;
     color: white;
 
@@ -27,7 +27,7 @@
 }
 
 .navbar.float-dock {
-    background-color: rgba(222, 222, 222, 0.9);
+    background-color: rgba(235, 242, 250, 0.9);
 
     padding: 0 20px;
 
