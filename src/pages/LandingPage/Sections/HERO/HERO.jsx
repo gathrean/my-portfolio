@@ -32,7 +32,7 @@ const HERO = ({ images }) => {
 
         <div className="text-container">
           <div ref={overlayRef} className="overlay-text">
-            <h2>Hey, I am</h2>
+            <h2>Hello, I am</h2>
             <h1>Gathrean Dela Cruz</h1>
             <h3>Software & Web Developer.</h3>
           </div>
