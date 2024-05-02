@@ -1,6 +1,10 @@
+.hero-animation {
+  transition: top 0.3s ease, left 0.3s ease;
+}
+
 .overlay-container {
   position: absolute;
-  top: 0;
+  top: 7%;
   left: 0;
   width: 100%;
   height: 100%;
