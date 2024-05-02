@@ -42,13 +42,11 @@ const HERO = ({ images }) => {
 
   return (
     <div className="carousel-content">
-
       <div className="image-container">
         <img src={process.env.PUBLIC_URL + images[currentImage]} alt="Landing Page" className="landing-image" />
       </div>
 
       <div className="overlay-container hero-animation">
-
         <div className="text-container">
           <div ref={overlayRef} className="overlay-text">
             <h2>Hello! I am</h2>
@@ -56,42 +54,41 @@ const HERO = ({ images }) => {
             <h3>Software & Web Developer.</h3>
           </div>
         </div>
+      </div>
 
-        <div className="buttons-container">
-          <div className="hero-button" onClick={() => handleClick('Resume')}>
+      <div className="buttons-container">
+        <div className="hero-button" onClick={() => handleClick('Resume')}>
+          <img
+            src={DownloadIcon}
+            alt="Download Icon"
+            width="22px"
+            height="22px"
+            style={{ marginRight: '10px' }}
+          />
+          Resume
+        </div>
+        <div className="bottom-buttons-container">
+          <div className="hero-button" onClick={() => handleClick('LinkedIn')}>
             <img
-              src={DownloadIcon}
-              alt="Download Icon"
+              src={LinkedInIcon}
+              alt="LinkedIn Icon"
               width="22px"
               height="22px"
               style={{ marginRight: '10px' }}
             />
-            Resume
+            LinkedIn
           </div>
-          <div className="bottom-buttons-container">
-            <div className="hero-button" onClick={() => handleClick('LinkedIn')}>
-              <img
-                src={LinkedInIcon}
-                alt="LinkedIn Icon"
-                width="22px"
-                height="22px"
-                style={{ marginRight: '10px' }}
-              />
-              LinkedIn
-            </div>
-            <div className="hero-button" onClick={() => handleClick('GitHub')}>
-              <img
-                src={GitHubIcon}
-                alt="GitHub Icon"
-                width="22px"
-                height="22px"
-                style={{ marginRight: '10px' }}
-              />
-              GitHub
-            </div>
+          <div className="hero-button" onClick={() => handleClick('GitHub')}>
+            <img
+              src={GitHubIcon}
+              alt="GitHub Icon"
+              width="22px"
+              height="22px"
+              style={{ marginRight: '10px' }}
+            />
+            GitHub
           </div>
         </div>
-
       </div>
     </div>
   );
