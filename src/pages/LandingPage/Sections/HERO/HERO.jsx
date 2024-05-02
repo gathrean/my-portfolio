@@ -17,8 +17,21 @@ const HERO = ({ images }) => {
     return () => clearInterval(intervalId);
   }, [images]);
 
-  function handleClick() {
-    console.log('Button clicked!');
+  function handleClick(buttonType) {
+    switch (buttonType) {
+      case 'Resume':
+        // placeholder for now
+        window.open('resumeURL', '_blank');
+        break;
+      case 'LinkedIn':
+        window.open('https://www.linkedin.com/in/gathrean/', '_blank');
+        break;
+      case 'GitHub':
+        window.open('https://github.com/gathrean', '_blank');
+        break;
+      default:
+        break;
+    }
   }
 
   return (
@@ -39,14 +52,14 @@ const HERO = ({ images }) => {
         </div>
 
         <div className="buttons-container">
-          <div className="hero-button" onClick={handleClick}>
+          <div className="hero-button" onClick={() => handleClick('Resume')}>
             Resume
           </div>
           <div className="bottom-buttons-container">
-            <div className="hero-button" onClick={handleClick}>
+            <div className="hero-button" onClick={() => handleClick('LinkedIn')}>
               LinkedIn
             </div>
-            <div className="hero-button" onClick={handleClick}>
+            <div className="hero-button" onClick={() => handleClick('GitHub')}>
               GitHub
             </div>
           </div>
