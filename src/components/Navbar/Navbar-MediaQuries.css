@@ -2,8 +2,6 @@
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
     .navbar.float-dock {
         width: 60%;
-        padding-left: 5%;
-        padding-right: 5%;
         margin-left: 20%;
         margin-right: 20%;
     }
@@ -16,9 +14,9 @@
 /* For-Tablet-Portrait-up  (Min-width: 750px) */
 @media only screen and (min-width: 750px) and (max-width: 900px) {
     .navbar.float-dock {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
     }
 }
 
@@ -27,9 +25,11 @@
     .navbar.float-dock {
         display: flex;
         flex-direction: column;
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+
         backdrop-filter: blur(3px);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         border-radius: 1.75em;
@@ -89,11 +89,9 @@
 }
 
 /* For foldable phones */
-@media only screen and (max-width: 280px) {
+@media only screen and (max-width: 344px) {
     .navbar.navbar.float-dock {
         width: 80%;
-        padding-left: 5%;
-        padding-right: 5%;
         margin-left: 10%;
         margin-right: 10%;
     }
