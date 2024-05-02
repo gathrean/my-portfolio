@@ -7,17 +7,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 .overlay-text {
   text-align: start;
-  margin-bottom: 550px;
+  margin-bottom: 450px;
 }
 
 .overlay-text h1 {
   font-weight: 400;
   font-size: 3rem;
   color: #fff;
+  background-color: #0000dc;
+  display: inline-block;
 }
 
 .overlay-text h2 {
