@@ -28,24 +28,3 @@
     padding: 0rem;
     background-color: #0000dc;
 }
-
-.overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    padding: 0 20px;
-    border-radius: 10px;
-    width: 80%;
-}
-
-.overlay-text h2 {
-    font-size: 2rem;
-    color: #fff;
-}
-
-.overlay-text p {
-    font-size: 2rem;
-    color: #fff;
-}
