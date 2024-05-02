@@ -1,0 +1,45 @@
+.hero-button {
+  font-size: 2rem;
+  
+  background-color: rgba(235, 242, 250, 0.9);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  display: inline-block;
+  border-radius: 30px;
+  margin: 10px;
+  padding: 10px 30px;
+  /* border: 1px solid #000000; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* Smooth transition for hover effect */
+}
+
+.hero-button:hover {
+  background-color: #0000dc;
+  /* border: 1px solid #0000dc; */
+  color: #fff;
+  animation: stretchJiggle 0.5s;
+}
+
+@keyframes stretchJiggle {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scaleY(1.1) scaleX(1);
+  }
+
+  50% {
+    transform: scaleY(0.9) scaleX(1.05);
+  }
+
+  75% {
+    transform: scaleY(1.1) scaleX(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

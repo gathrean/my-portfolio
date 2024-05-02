@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
+import './button.css';
 import './HERO.css'
 
 const HERO = ({ images }) => {
@@ -15,6 +16,10 @@ const HERO = ({ images }) => {
 
     return () => clearInterval(intervalId);
   }, [images]);
+
+  function handleClick() {
+    console.log('Button clicked!');
+  }
 
   return (
     <div className="carousel-content">
@@ -32,9 +37,17 @@ const HERO = ({ images }) => {
         </div>
 
         <div className="buttons-container">
-          <button className="resume-button">Resume</button>
-          <button className="linkedin-button">LinkedIn</button>
-          <button className="github-button">GitHub</button>
+          <div>
+            <div className="hero-button" onClick={handleClick}>
+              Resume
+            </div>
+            <div className="hero-button" onClick={handleClick}>
+              LinkedIn
+            </div>
+            <div className="hero-button" onClick={handleClick}>
+              GitHub
+            </div>
+          </div>
         </div>
 
       </div>
