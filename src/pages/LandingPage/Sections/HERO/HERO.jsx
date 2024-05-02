@@ -28,12 +28,14 @@ const HERO = ({ images }) => {
         <img src={process.env.PUBLIC_URL + images[currentImage]} alt="Landing Page" className="landing-image" />
       </div>
 
-      <div className="overlay-container">
-
-        <div ref={overlayRef} className="overlay-text">
-          <h2>Hey, I am</h2>
-          <h1>Gathrean Dela Cruz</h1>
-          <h3>Software & Web Developer.</h3>
+      <div className="overlay-container hero-animation">
+        
+        <div className="text-container">
+          <div ref={overlayRef} className="overlay-text">
+            <h2>Hey, I am</h2>
+            <h1>Gathrean Dela Cruz</h1>
+            <h3>Software & Web Developer.</h3>
+          </div>
         </div>
 
         <div className="buttons-container">
