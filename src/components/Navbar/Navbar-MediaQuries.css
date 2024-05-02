@@ -89,7 +89,7 @@
 }
 
 /* For foldable phones */
-@media only screen and (max-width: 344px) {
+@media only screen and (max-width: 280px) {
     .navbar.navbar.float-dock {
         width: 80%;
         margin-left: 10%;
