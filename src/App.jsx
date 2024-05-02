@@ -6,10 +6,12 @@ import { Navbar } from './components/Navbar/Navbar';
 import { Footer } from './components/Footer/Footer';
 
 // Pages // 
-import { Home } from './pages/LandingPage/LandingPage';
-import { About } from './pages/AboutPage/AboutPage';
-import { Projects } from './pages/ProjectsPage/ProjectsPage';
-import { Contact } from './pages/ContactPage/ContactPage';
+import { LandingPage } from './pages/LandingPage/LandingPage';
+
+// Sections //
+import { WORK } from './pages/LandingPage/Sections/WORK/WORK';
+import { TECH } from './pages/LandingPage/Sections/TECH/TECH';
+import { CONTACT } from './pages/LandingPage/Sections/CONTACT/CONTACT';
 
 // CSS //
 import './App.css';
@@ -24,10 +26,7 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<LandingPage />} />
         </Routes>
 
         <Footer />

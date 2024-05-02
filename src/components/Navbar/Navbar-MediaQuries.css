@@ -1,21 +1,23 @@
-/* For-Big-Desktop-up      (Min-width: 1800px) */
+@media only screen and (min-width: 1400px) {
+    .navbar.float-dock {
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+}
 
-/* For-Desktop-up          (Min-width: 1200px) */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .navbar.float-dock {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}
 
 /* For-Tablet-Landscape-up (Min-width: 900px) */
-@media only screen and (min-width: 900px) and (max-width: 1200px) {
-    .navbar.scrolled {
-        width: 60%;
-        padding-left: 5%;
-        padding-right: 5%;
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
     .navbar.float-dock {
         width: 60%;
-        padding-left: 5%;
-        padding-right: 5%;
         margin-left: 20%;
         margin-right: 20%;
     }
@@ -27,81 +29,30 @@
 
 /* For-Tablet-Portrait-up  (Min-width: 750px) */
 @media only screen and (min-width: 750px) and (max-width: 900px) {
-    .navbar {
-        /* background-color: white; */
-        overflow: hidden;
-
-        height: 56px;
-        width: 100%;
-        padding-left: 10%;
-        padding-right: 17%;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .navbar.scrolled {
-        width: 80%;
-        padding-left: 10%;
-        padding-right: 10%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
     .navbar.float-dock {
-        width: 80%;
-        padding: 0 40px;
-        margin-left: 10%;
-        margin-right: 10%;
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
     }
 }
 
 /* For-Phones (Max-width: 749) */
-/* My main focus */
 @media only screen and (max-width: 749px) {
-    .navbar {
-        /* background-color: white; */
-        overflow: hidden;
-
-        height: 56px;
-        width: 100%;
-        padding-left: 10%;
-        padding-right: 17%;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .navbar.scrolled {
-        display: flex;
-        flex-direction: column;
-
-        width: 80%;
-        padding-left: 10%;
-        padding-right: 10%;
-        margin-left: 10%;
-        margin-right: 10%;
-
-        backdrop-filter: blur(3px);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
-        border-radius: 1.75em;
-    }
-
     .navbar.float-dock {
         display: flex;
         flex-direction: column;
 
-        width: 80%;
-        padding: 0 40px;
-        margin-left: 10%;
-        margin-right: 10%;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
 
         backdrop-filter: blur(3px);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
         border-radius: 1.75em;
     }
 
-    .navbar {
+    .navbar,
+    .desktop-view {
         flex-direction: column;
     }
 
@@ -132,16 +83,10 @@
         width: 100%;
     }
 
-    /* Navbar is closed */
-    .navbar-nav.closed {
-        height: auto;
-        overflow: hidden;
-    }
-
-    /* Navbar is open */
+    .navbar-nav.closed,
     .navbar-nav.collapsed {
         height: auto;
-        overflow-y: visible;
+        overflow: hidden;
     }
 
     ul li {
@@ -161,18 +106,8 @@
 
 /* For foldable phones */
 @media only screen and (max-width: 280px) {
-    .navbar.scrolled {
-        width: 80%;
-        padding-left: 5%;
-        padding-right: 5%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
     .navbar.navbar.float-dock {
         width: 80%;
-        padding-left: 5%;
-        padding-right: 5%;
         margin-left: 10%;
         margin-right: 10%;
     }

@@ -7,8 +7,11 @@ ul {
 }
 
 ul li {
+  position: relative;
   display: inline;
   margin-right: 20px;
+  color: #181818;
+  font-size: 20px;
 }
 
 ul li:last-child {
@@ -17,17 +20,6 @@ ul li:last-child {
 
 ul li a {
   text-decoration: none;
-  color: #181818;
-  font-size: 20px;
-  position: relative;
-}
-
-.navbar.float-dock ul li a {
-  color: #181818;
-}
-
-.navbar.scrolled ul li a {
-  color: #181818;
 }
 
 ul li a:hover {
@@ -59,4 +51,13 @@ ul li.non-highlight a:hover::after {
   height: 2px;
   background-color: #0000dc;
   border-radius: 25px;
+}
+
+.nav-item.highlight ul li a {
+  font-size: 40px;
+}
+
+.navbar.float-dock ul li a,
+.navbar.scrolled ul li a {
+  color: #5E5E5E;
 }
