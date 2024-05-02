@@ -3,6 +3,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import './button.css';
 import './HERO.css'
 
+// import { LinkedInIcon, GitHubIcon } from '../../../assets/icons';
+
+import LinkedInIcon from './icons/linkedin.png';
+import GitHubIcon from './icons/github.png';
+import DownloadIcon from './icons/download.png';
+
 const HERO = ({ images }) => {
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -53,13 +59,34 @@ const HERO = ({ images }) => {
 
         <div className="buttons-container">
           <div className="hero-button" onClick={() => handleClick('Resume')}>
+            <img
+              src={DownloadIcon}
+              alt="Download Icon"
+              width="22px"
+              height="22px"
+              style={{ marginRight: '10px' }}
+            />
             Resume
           </div>
           <div className="bottom-buttons-container">
             <div className="hero-button" onClick={() => handleClick('LinkedIn')}>
+              <img
+                src={LinkedInIcon}
+                alt="LinkedIn Icon"
+                width="22px"
+                height="22px"
+                style={{ marginRight: '10px' }}
+              />
               LinkedIn
             </div>
             <div className="hero-button" onClick={() => handleClick('GitHub')}>
+              <img
+                src={GitHubIcon}
+                alt="GitHub Icon"
+                width="22px"
+                height="22px"
+                style={{ marginRight: '10px' }}
+              />
               GitHub
             </div>
           </div>

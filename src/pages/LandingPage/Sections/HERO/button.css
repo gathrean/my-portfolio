@@ -5,14 +5,16 @@
   backdrop-filter: blur(3px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
   border-radius: 30px;
   margin: 10px;
   padding: 10px 30px;
   /* border: 1px solid #000000; */
   cursor: pointer;
   transition: all 0.3s ease;
-  /* Smooth transition for hover effect */
 }
 
 .hero-button:hover {
@@ -20,6 +22,15 @@
   /* border: 1px solid #0000dc; */
   color: #fff;
   animation: stretchJiggle 0.5s;
+}
+
+.hero-button img {
+  vertical-align: middle;
+}
+
+.hero-button:hover img {
+  filter: invert(100%);
+  transition: all 0.3s ease;
 }
 
 @keyframes stretchJiggle {
