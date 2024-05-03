@@ -29,12 +29,10 @@ export function Navbar() {
     }, []);
 
     useEffect(() => {
-        // Toggle collapsed state based on floatDock
         setCollapsed(floatDock);
     }, [floatDock]);
 
     useEffect(() => {
-        // Set timeout to show navbar after 1 second
         const timeout = setTimeout(() => {
             setShowNavbar(true);
         }, 1000);
@@ -53,12 +51,11 @@ export function Navbar() {
                 setActiveSection(sectionClassName);
             }
         }
-        toggleNavbar(); // Close the navbar after scrolling
+        toggleNavbar(); 
     };
 
     const getActiveSection = () => {
         const sections = ['HOME', 'WORK', 'TECHSTACK', 'CONTACT'];
-
         for (let i = sections.length - 1; i >= 0; i--) {
             const sectionClassName = sections[i];
             const section = document.querySelector(`.${sectionClassName}`);
@@ -66,8 +63,6 @@ export function Navbar() {
                 return sectionClassName;
             }
         }
-
-        // If no section is in view, return the first section
         return sections[0];
     };
 
@@ -80,7 +75,6 @@ export function Navbar() {
             <div className="navbar-container navbar-animation">
                 <div className="brand">
                     <span className="brand-text">Gathrean</span>
-                    <span className="brand-text-full">Gathrean Dela Cruz</span>
                 </div>
                 <div className="mobile-view" onClick={toggleNavbar}>
                     <img
