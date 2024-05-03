@@ -15,7 +15,6 @@
   .brand-text {
     font-size: 28px;
   }
-
 }
 
 .navbar.float-dock .brand-text {
@@ -24,4 +23,24 @@
 
 .navbar.scrolled .brand-text {
   color: #eaeaea;
+}
+
+@media screen and (max-width: 750px) {
+  .brand-text {
+    display: none;
+  }
+
+  .brand-text-full {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 751px) {
+  .brand-text {
+    display: block;
+  }
+
+  .brand-text-full {
+    display: none;
+  }
 }

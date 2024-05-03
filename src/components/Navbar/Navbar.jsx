@@ -29,13 +29,15 @@ export function Navbar() {
     }, []);
 
     useEffect(() => {
+        // Toggle collapsed state based on floatDock
         setCollapsed(floatDock);
     }, [floatDock]);
 
     useEffect(() => {
+        // Set timeout to show navbar after 1 second
         const timeout = setTimeout(() => {
             setShowNavbar(true);
-        }, 5000);
+        }, 1000);
 
         return () => clearTimeout(timeout);
     }, []);
@@ -78,6 +80,7 @@ export function Navbar() {
             <div className="navbar-container navbar-animation">
                 <div className="brand">
                     <span className="brand-text">Gathrean</span>
+                    <span className="brand-text-full">Gathrean Dela Cruz</span>
                 </div>
                 <div className="mobile-view" onClick={toggleNavbar}>
                     <img
