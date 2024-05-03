@@ -1,10 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-
 import './button.css';
 import './HERO.css'
-
-// import { LinkedInIcon, GitHubIcon } from '../../../assets/icons';
-
 import LinkedInIcon from './icons/linkedin.png';
 import GitHubIcon from './icons/github.png';
 import DownloadIcon from './icons/download.png';
@@ -43,13 +39,11 @@ const HERO = ({ images }) => {
         <img src={process.env.PUBLIC_URL + images[currentImage]} alt="Landing Page" className="landing-image" />
       </div>
 
-      <div className="overlay-container hero-animation">
-        <div className="text-container">
-          <div ref={overlayRef} className="overlay-text">
-            <h2>Hello! I am</h2>
-            <h1>Gathrean Dela Cruz</h1>
-            <h3>Software Developer.</h3>
-          </div>
+      <div className="text-container hero-animation">
+        <div ref={overlayRef} className="overlay-text">
+          <h2>Hello! I am</h2>
+          <h1>Gathrean Dela Cruz</h1>
+          <h3>Software Developer.</h3>
         </div>
       </div>
 
