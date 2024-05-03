@@ -13,6 +13,7 @@ export function Navbar() {
     const { scroll, floatDock, navbarHeight, navbarRef, scrollToTop, toggleNavbar } = useNavbarFunctions();
     const [activeSection, setActiveSection] = useState('HOME');
     const [collapsed, setCollapsed] = useState(false);
+    const [showNavbar, setShowNavbar] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -28,9 +29,16 @@ export function Navbar() {
     }, []);
 
     useEffect(() => {
-        // Toggle collapsed state based on floatDock
         setCollapsed(floatDock);
     }, [floatDock]);
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setShowNavbar(true);
+        }, 5000);
+
+        return () => clearTimeout(timeout);
+    }, []);
 
     const scrollToSection = (sectionClassName) => {
         if (activeSection !== sectionClassName) {
@@ -64,10 +72,9 @@ export function Navbar() {
     return (
         <nav
             ref={navbarRef}
-            className={`navbar navbar-animation float-dock`} // Add float-dock class based on floatDock state
+            className={`navbar navbar-animation float-dock ${showNavbar ? 'slide-down' : ''}`}
             style={{ height: navbarHeight }}
         >
-
             <div className="navbar-container navbar-animation">
                 <div className="brand">
                     <span className="brand-text">Gathrean</span>
@@ -83,9 +90,6 @@ export function Navbar() {
             </div>
             <div className="navlink-wrapper">
                 <ul className={`navbar-nav ${collapsed ? 'collapsed' : 'closed'}`}>
-                    {/* <li>
-                        <Link className={`nav-item ${activeSection === 'HOME' ? 'highlight' : ''}`} onClick={() => scrollToSection('HOME')}>HOME</Link>
-                    </li> */}
                     <li>
                         <Link className={`nav-item nav-link ${activeSection === 'WORK' ? 'highlight' : ''}`} onClick={() => scrollToSection('WORK')}>Work</Link>
                     </li>

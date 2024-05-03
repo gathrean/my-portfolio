@@ -2,6 +2,20 @@
     transition: background-color 0.3s ease, width 0.3s ease, margin 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease, padding 0.3s ease, height 0.3s ease, color 0.3s ease;
 }
 
+.slide-down {
+    animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .navbar {
     background-color: #EBF2FA;
     overflow: hidden;
