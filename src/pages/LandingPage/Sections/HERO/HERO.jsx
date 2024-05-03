@@ -48,7 +48,7 @@ const HERO = ({ images }) => {
           <div ref={overlayRef} className="overlay-text">
             <h2>Hello! I am</h2>
             <h1>Gathrean Dela Cruz</h1>
-            <h3>Software & Web Developer.</h3>
+            <h3>Software Developer.</h3>
           </div>
         </div>
       </div>
@@ -62,7 +62,7 @@ const HERO = ({ images }) => {
             height="22px"
             style={{ marginRight: '10px' }}
           />
-          Resume
+          Resumé
         </div>
         <div className="bottom-buttons-container">
           <div className="hero-button" onClick={() => handleClick('LinkedIn')}>
