@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Perfect DOS VGA 437';
+  src: url('../../assets/fonts/Perfect DOS VGA 437.ttf') format('truetype');
+}
+
+.error-container {
+  font-family: 'Perfect DOS VGA 437', sans-serif;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10% 20%;
+}
+
+.error-container h1 {
+  font-size: 50px;
+  color: #fff;
+}
+
+.error-message {
+  color: #fff;
+  font-size: 25px;
+}
+
+.home-button {
+  font-size: 25px;
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background-color: #0000dc;
+  color: white;
+  animation: stretchJiggle 0.5s;
+}
+
+@keyframes stretchJiggle {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scaleY(1.1) scaleX(1);
+  }
+
+  50% {
+    transform: scaleY(0.9) scaleX(1.05);
+  }
+
+  75% {
+    transform: scaleY(1.1) scaleX(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.ascii {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-family: monospace;
+  max-width: 100%;
+}
+
+@media screen and (max-height: 700px) {
+  .ascii {
+    display: none;
+  }
+}
+
+/* Define font sizes for different screen sizes */
+@media screen and (max-width: 768px) {
+  .ascii {
+    font-size: 12px;
+    padding: 10px 5vw;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .ascii {
+    font-size: 18px;
+    padding: 10px 20vw;
+  }
+}
+
+@media screen and (min-width: 1994px) {
+  .ascii {
+    font-size: 24px;
+    padding: 10px 20vw;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .ascii {
+    font-size: 30px;
+    padding: 10px 20vw;
+  }
+}
+
+@media screen and (min-width: 3500px) {
+  .ascii {
+    font-size: 50px;
+    padding: 10px 20vw;
+  }
+}

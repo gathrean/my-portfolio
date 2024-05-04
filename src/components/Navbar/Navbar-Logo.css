@@ -6,7 +6,7 @@
 }
 
 .brand-text {
-  color: #181818;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 600;
 }
@@ -15,12 +15,4 @@
   .brand-text {
     font-size: 28px;
   }
-}
-
-.navbar.float-dock .brand-text {
-  color: #181818;
-}
-
-.navbar.scrolled .brand-text {
-  color: #eaeaea;
 }

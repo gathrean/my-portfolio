@@ -7,11 +7,7 @@ import { Footer } from './components/Footer/Footer';
 
 // Pages // 
 import { LandingPage } from './pages/LandingPage/LandingPage';
-
-// Sections //
-import { WORK } from './pages/LandingPage/Sections/WORK/WORK';
-import { TECH } from './pages/LandingPage/Sections/TECH/TECH';
-import { CONTACT } from './pages/LandingPage/Sections/CONTACT/CONTACT';
+import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
 
 // CSS //
 import './App.css';
@@ -19,18 +15,25 @@ import './App.css';
 // Fonts //
 import './assets/fonts/Fonts.css';
 
+// Custom Layout component for pages with Navbar and Footer
+const Layout = ({ children }) => (
+  <div className="App">
+    <Navbar />
+    {children}
+    <Footer />
+  </div>
+);
+
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Navbar />
+      <Routes>
+        {/* LandingPage route with Navbar and Footer */}
+        <Route path="/" element={<Layout><LandingPage /></Layout>} />
 
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-        </Routes>
-
-        <Footer />
-      </div>
+        {/* NotFoundPage route without Navbar and Footer */}
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
     </Router>
   );
 }

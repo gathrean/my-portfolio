@@ -7,10 +7,10 @@ import './Navbar-MediaQuries.css';
 import './Navbar-Logo.css';
 import './Navbar-Navlink.css';
 
-import hamburgerImage from './hamburger.png';
+import hamburgerImage from './hamburger-white.png';
 
 export function Navbar() {
-    const { scroll, floatDock, navbarHeight, navbarRef, scrollToTop, toggleNavbar } = useNavbarFunctions();
+    const { floatDock, navbarHeight, navbarRef, toggleNavbar } = useNavbarFunctions();
     const [activeSection, setActiveSection] = useState('HOME');
     const [collapsed, setCollapsed] = useState(false);
     const [showNavbar, setShowNavbar] = useState(false);
@@ -40,22 +40,39 @@ export function Navbar() {
         return () => clearTimeout(timeout);
     }, []);
 
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setShowNavbar(true);
+        }, 1000);
+
+        return () => clearTimeout(timeout);
+    }, []);
+
     const scrollToSection = (sectionClassName) => {
         if (activeSection !== sectionClassName) {
             const section = document.querySelector(`.${sectionClassName}`);
             if (section) {
+                const offsetTop = section.getBoundingClientRect().top + window.scrollY;
                 window.scrollTo({
-                    top: section.offsetTop - navbarHeight,
+                    top: offsetTop - navbarHeight,
                     behavior: "smooth"
                 });
                 setActiveSection(sectionClassName);
             }
         }
+<<<<<<< HEAD
         toggleNavbar(); 
     };
 
     const getActiveSection = () => {
         const sections = ['HOME', 'WORK', 'TECHSTACK', 'CONTACT'];
+=======
+        toggleNavbar();
+    };
+
+    const getActiveSection = () => {
+        const sections = ['HOME', 'WORK', 'TECH', 'CONTACT'];
+>>>>>>> features/LandingPageSections
         for (let i = sections.length - 1; i >= 0; i--) {
             const sectionClassName = sections[i];
             const section = document.querySelector(`.${sectionClassName}`);
@@ -69,6 +86,7 @@ export function Navbar() {
     return (
         <nav
             ref={navbarRef}
+            className={`navbar navbar-animation float-dock ${showNavbar ? 'slide-down' : ''}`}
             className={`navbar navbar-animation float-dock ${showNavbar ? 'slide-down' : ''}`}
             style={{ height: navbarHeight }}
         >
