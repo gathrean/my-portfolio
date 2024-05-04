@@ -90,6 +90,11 @@
   margin-bottom: 10px;
 }
 
+.project-card h3.keywords {
+  font-style: italic;
+  color: #CD4631;
+}
+
 .project-card p {
   color: #616161;
   margin-top: 5px;
