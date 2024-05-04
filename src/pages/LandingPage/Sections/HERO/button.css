@@ -1,7 +1,7 @@
 .hero-button {
   font-size: 2rem;
 
-  background-color: rgba(235, 242, 250, 0.9);
+  background-color: #E2E2E2;
   backdrop-filter: blur(3px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
