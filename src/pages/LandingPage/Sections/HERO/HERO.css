@@ -99,6 +99,7 @@
 
   .hero-button {
     font-size: 1.5rem;
+    margin: 5px;
     padding: 10px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -133,6 +134,7 @@
 
   .hero-button {
     font-size: 1.5rem;
+    margin: 5px;
     padding: 10px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
