@@ -1,8 +1,8 @@
-.work-section-container {
-  padding: 50px 32px;
+.projects-section-container {
+  padding: 50px 10vw;
 }
 
-.work-section-container h1 {
+.projects-section-container h1 {
   font-size: 3rem;
   font-weight: 400;
   margin-bottom: 20px;
