@@ -16,7 +16,7 @@
 }
 
 .project-card {
-  /* border: 1px solid #ccc; */
+  border: 1px solid #ccc;
   border-radius: 30px;
   padding: 20px;
 }
@@ -32,6 +32,7 @@
 
 .header-image:hover {
   background-color: #0000dc;
+  animation: stretchJiggle 0.5s;
 }
 
 .header-image:hover .marquee .readme-text {
@@ -62,7 +63,6 @@
   color: #fff !important;
   font-size: 3rem;
   visibility: hidden;
-  /* Initially hide the readme-text */
 }
 
 @keyframes marquee {
@@ -72,6 +72,29 @@
 
   100% {
     transform: translate3d(-50%, 0, 0);
+  }
+}
+
+
+@keyframes stretchJiggle {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scaleY(1.1) scaleX(1);
+  }
+
+  50% {
+    transform: scaleY(0.9) scaleX(1.05);
+  }
+
+  75% {
+    transform: scaleY(1.1) scaleX(1);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
 
@@ -91,7 +114,6 @@
 }
 
 .project-card h3.keywords {
-  /* font-style: italic; */
   color: #CD4631;
 }
 
