@@ -9,7 +9,7 @@ export function PROJECTS() {
       <hr />
       <h1>Featured Projects</h1>
 
-      <p>This is where you can showcase your work experience. You can list your previous jobs, projects you've worked on, and any other relevant experience.</p>
+      <p>These are some of the programming projects I've worked on. From social media, to RPG game, to AI. Click on each card to learn more.</p>
 
       <div className="projects-grid">
         <ProjectCard
