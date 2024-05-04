@@ -12,7 +12,9 @@ export function PROJECTS() {
       <div className="projects-grid">
 
         <div className="project-card">
-          <div className="header-image"></div>
+          <a href="#placeholder" className="header-image-link">
+            <div className="header-image"></div>
+          </a>
           <h1>Project</h1>
           <h3>2024</h3>
           <p>Description of project 1 goes here.</p>
@@ -20,7 +22,9 @@ export function PROJECTS() {
         </div>
 
         <div className="project-card">
-          <div className="header-image"></div>
+          <a href="#placeholder" className="header-image-link">
+            <div className="header-image"></div>
+          </a>
           <h1>Project</h1>
           <h3>2024</h3>
           <p>Description of project 2 goes here.</p>
@@ -28,7 +32,9 @@ export function PROJECTS() {
         </div>
 
         <div className="project-card">
-          <div className="header-image"></div>
+          <a href="#placeholder" className="header-image-link">
+            <div className="header-image"></div>
+          </a>
           <h1>Project</h1>
           <h3>2023</h3>
           <p>Description of project 3 goes here.</p>
@@ -36,7 +42,9 @@ export function PROJECTS() {
         </div>
 
         <div className="project-card">
-          <div className="header-image"></div>
+          <a href="#placeholder" className="header-image-link">
+            <div className="header-image"></div>
+          </a>
           <h1>Project</h1>
           <h3>2023</h3>
           <p>Description of project 4 goes here.</p>
@@ -44,7 +52,9 @@ export function PROJECTS() {
         </div>
 
         <div className="project-card">
-          <div className="header-image"></div>
+          <a href="#placeholder" className="header-image-link">
+            <div className="header-image"></div>
+          </a>
           <h1>Project</h1>
           <h3>2023</h3>
           <p>Description of project 5 goes here.</p>
@@ -52,7 +62,9 @@ export function PROJECTS() {
         </div>
 
         <div className="project-card">
-          <div className="header-image"></div>
+          <a href="#placeholder" className="header-image-link">
+            <div className="header-image"></div>
+          </a>
           <h1>Project</h1>
           <h3>2022</h3>
           <p>Description of project 5 goes here.</p>
