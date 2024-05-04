@@ -10,7 +10,7 @@ import './Navbar-Navlink.css';
 import hamburgerImage from './hamburger.png';
 
 export function Navbar() {
-    const { scroll, floatDock, navbarHeight, navbarRef, scrollToTop, toggleNavbar } = useNavbarFunctions();
+    const { floatDock, navbarHeight, navbarRef, toggleNavbar } = useNavbarFunctions();
     const [activeSection, setActiveSection] = useState('HOME');
     const [collapsed, setCollapsed] = useState(false);
     const [showNavbar, setShowNavbar] = useState(false);
@@ -44,18 +44,19 @@ export function Navbar() {
         if (activeSection !== sectionClassName) {
             const section = document.querySelector(`.${sectionClassName}`);
             if (section) {
+                const offsetTop = section.getBoundingClientRect().top + window.scrollY;
                 window.scrollTo({
-                    top: section.offsetTop - navbarHeight,
+                    top: offsetTop - navbarHeight,
                     behavior: "smooth"
                 });
                 setActiveSection(sectionClassName);
             }
         }
-        toggleNavbar(); 
+        toggleNavbar();
     };
 
     const getActiveSection = () => {
-        const sections = ['HOME', 'WORK', 'TECHSTACK', 'CONTACT'];
+        const sections = ['HOME', 'WORK', 'TECH', 'CONTACT'];
         for (let i = sections.length - 1; i >= 0; i--) {
             const sectionClassName = sections[i];
             const section = document.querySelector(`.${sectionClassName}`);
