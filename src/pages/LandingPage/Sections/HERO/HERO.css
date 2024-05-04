@@ -92,6 +92,17 @@
   .overlay-text h3 {
     font-size: 1.5rem;
   }
+
+  .hero-container {
+    margin-bottom: 150px;
+  }
+
+  .hero-button {
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -114,5 +125,16 @@
 
   .overlay-text h3 {
     font-size: 1.25rem;
+  }
+
+  .hero-container {
+    margin-bottom: 200px;
+  }
+
+  .hero-button {
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
 }
