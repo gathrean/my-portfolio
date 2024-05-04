@@ -27,6 +27,40 @@
   border-radius: 30px;
 }
 
+.header-image:hover {
+  background-color: #0000dc;
+}
+
+.header-image-link {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee p {
+  display: inline-block;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
 .project-card h1 {
   font-size: 1.5rem;
   font-weight: 900;

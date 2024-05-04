@@ -13,7 +13,15 @@ export function PROJECTS() {
 
         <div className="project-card">
           <a href="#placeholder" className="header-image-link">
-            <div className="header-image"></div>
+            <div className="header-image">
+              <div class="wrapper">
+                <div class="marquee">
+                  <p>
+                    READ ME READ ME READ ME READ ME READ ME READ ME READ ME READ ME
+                  </p>
+                </div>
+              </div>
+            </div>
           </a>
           <h1>Project</h1>
           <h3>2024</h3>
