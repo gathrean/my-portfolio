@@ -14,9 +14,9 @@ export function PROJECTS() {
         <div className="project-card">
           <a href="#placeholder" className="header-image-link">
             <div className="header-image">
-              <div class="wrapper">
-                <div class="marquee">
-                  <p>
+              <div className="wrapper">
+                <div className="marquee">
+                  <p className="readme-text">
                     READ ME READ ME READ ME READ ME READ ME READ ME READ ME READ ME
                   </p>
                 </div>

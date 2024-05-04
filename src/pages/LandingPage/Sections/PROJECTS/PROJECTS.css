@@ -25,6 +25,9 @@
   aspect-ratio: 4/3;
   background-color: #909090;
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header-image:hover {
@@ -59,6 +62,11 @@
   100% {
     transform: translate3d(-50%, 0, 0);
   }
+}
+
+.readme-text {
+  color: #fff !important;
+  font-size: 3rem;
 }
 
 .project-card h1 {
