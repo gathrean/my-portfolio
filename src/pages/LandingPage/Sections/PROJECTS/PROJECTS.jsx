@@ -12,38 +12,39 @@ export function PROJECTS() {
 
       <div className="projects-grid">
         <ProjectCard
-          projectName="Nebula"
-          keywords=""
+          projectName="Nebula Neural Network"
+          keywords="HTML/CSS, JS, Python, TensorFlow, PyTorch"
           date="2024"
           description="Description of project 1 goes here."
         />
         <ProjectCard
           projectName="OrcaSwipe"
-          keywords=""
+          keywords="EJS, HTML/CSS, JS, Bootstrap 5.3, Node.JS, Express.JS, Leaflet API, MongoDB, Firebase, ChatGPT API"
           date="2024"
           description="Description of project 2 goes here."
         />
         <ProjectCard
-          projectName="CareLink"
-          keywords=""
-          date="2023"
-          description="Description of project 3 goes here."
-        />
-        <ProjectCard
-          projectName="DungeonQuad"
-          keywords=""
+          projectName="DungeonQuad RPG"
+          keywords="Java, IntelliJ, Processing, Sprite Design"
           date="2023"
           description="Description of project 4 goes here."
         />
         <ProjectCard
+          projectName="CareLink"
+          keywords="JS, React, NodeJS, Express, Supabase, ChatGPT API"
+          date="2023"
+          description="Description of project 3 goes here."
+        />
+        <ProjectCard
           projectName="YapPad"
-          keywords=""
+          keywords="HTML/CSS/JS, React/Vite, MongoDB, Nodejs, Express"
           date="2023"
           description="Description of project 5 goes here."
         />
+
         <ProjectCard
-          projectName="PokemonTeamGenerator"
-          keywords="Kotlin"
+          projectName="Pokemon Team Generator"
+          keywords="Kotlin, Android Studiom, PokeAPI"
           date="2022"
           description="Description of project 6 goes here."
         />
