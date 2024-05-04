@@ -16,18 +16,20 @@
 }
 
 .project-card {
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-radius: 30px;
   padding: 20px;
 }
 
 .header-image-placeholder {
-  height: 200px;
+  aspect-ratio: 4/3;
   background-color: #909090;
   border-radius: 30px;
 }
 
-.project-card h2 {
+.project-card h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
   margin-top: 10px;
 }
 
