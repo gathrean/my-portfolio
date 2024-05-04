@@ -19,9 +19,9 @@
   color: #fff;
 }
 
-.error-container p {
-  font-size: 25px;
+.error-message {
   color: #fff;
+  font-size: 25px;
 }
 
 .home-button {
@@ -40,4 +40,34 @@
 .home-button:hover {
   background-color: #000000;
   color: white;
+}
+
+.ascii {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-family: monospace;
+  max-width: 100%;
+}
+
+/* Define font sizes for different screen sizes */
+@media screen and (max-width: 768px) {
+  .ascii {
+    font-size: 12px;
+    padding: 0 5vw;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .ascii {
+    font-size: 18px;
+    padding: 0 20vw;
+  }
+}
+
+@media screen and (min-width: 1994px) {
+  .ascii {
+    font-size: 24px;
+    padding: 0 25vw;
+  }
 }
