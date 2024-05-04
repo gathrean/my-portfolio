@@ -34,6 +34,14 @@
   margin-bottom: 10px;
 }
 
+.project-card h3 {
+  color: #4b4b4b;
+  font-size: 0.9rem;
+  font-weight: 900;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .project-card p {
   color: #616161;
   margin-top: 5px;

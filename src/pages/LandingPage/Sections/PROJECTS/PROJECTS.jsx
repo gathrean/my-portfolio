@@ -14,6 +14,7 @@ export function PROJECTS() {
         <div className="project-card">
           <div className="header-image"></div>
           <h1>Project</h1>
+          <h3>2024</h3>
           <p>Description of project 1 goes here.</p>
           <a href="#" className="read-more-link">Read more</a>
         </div>
@@ -21,6 +22,7 @@ export function PROJECTS() {
         <div className="project-card">
           <div className="header-image"></div>
           <h1>Project</h1>
+          <h3>2024</h3>
           <p>Description of project 2 goes here.</p>
           <a href="#" className="read-more-link">Read more</a>
         </div>
@@ -28,6 +30,7 @@ export function PROJECTS() {
         <div className="project-card">
           <div className="header-image"></div>
           <h1>Project</h1>
+          <h3>2023</h3>
           <p>Description of project 3 goes here.</p>
           <a href="#" className="read-more-link">Read more</a>
         </div>
@@ -35,6 +38,7 @@ export function PROJECTS() {
         <div className="project-card">
           <div className="header-image"></div>
           <h1>Project</h1>
+          <h3>2023</h3>
           <p>Description of project 4 goes here.</p>
           <a href="#" className="read-more-link">Read more</a>
         </div>
@@ -42,6 +46,7 @@ export function PROJECTS() {
         <div className="project-card">
           <div className="header-image"></div>
           <h1>Project</h1>
+          <h3>2023</h3>
           <p>Description of project 5 goes here.</p>
           <a href="#" className="read-more-link">Read more</a>
         </div>
@@ -49,6 +54,7 @@ export function PROJECTS() {
         <div className="project-card">
           <div className="header-image"></div>
           <h1>Project</h1>
+          <h3>2022</h3>
           <p>Description of project 5 goes here.</p>
           <a href="#" className="read-more-link">Read more</a>
         </div>
