@@ -1,21 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
+
+// Styles
 import './button.css';
 import './HERO.css'
+
+// Icons
 import LinkedInIcon from './icons/linkedin.png';
 import GitHubIcon from './icons/github.png';
 import DownloadIcon from './icons/download.png';
 
-const HERO = ({ images }) => {
-  const [currentImage, setCurrentImage] = useState(0);
+const HERO = () => {
   const overlayRef = useRef(null);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 5000);
-
-    return () => clearInterval(intervalId);
-  }, [images]);
 
   function handleClick(buttonType) {
     switch (buttonType) {
@@ -34,11 +29,7 @@ const HERO = ({ images }) => {
   }
 
   return (
-    <div className="carousel-content">
-      <div className="image-container">
-        <img src={process.env.PUBLIC_URL + images[currentImage]} alt="Landing Page" className="landing-image" />
-      </div>
-
+    <div className="hero-container">
       <div className="text-container hero-animation">
         <div ref={overlayRef} className="overlay-text">
           <h2>Hello! I am</h2>
