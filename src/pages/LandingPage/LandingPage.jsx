@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 // Sections
 import HERO from './Sections/HERO/HERO';
