@@ -98,6 +98,20 @@
 @media screen and (min-width: 1994px) {
   .ascii {
     font-size: 24px;
-    padding: 10px 25vw;
+    padding: 10px 20vw;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .ascii {
+    font-size: 30px;
+    padding: 10px 20vw;
+  }
+}
+
+@media screen and (min-width: 3500px) {
+  .ascii {
+    font-size: 50px;
+    padding: 10px 20vw;
   }
 }
