@@ -6,8 +6,10 @@ import './NotFoundPage.css';
 export function NotFoundPage() {
   return (
     <div className="error-container">
-      <h1>404 - Not Found</h1>
+      <h1>404</h1>
+      <h1>Page Not Found</h1>
       <p className="error-message">The page you are looking for does not exist, or still not yet implemented.</p>
+      <Link to="/" className="home-button">Go Home</Link>
       <p className="ascii">
         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠖⠚⠉⠁⠀⠀⠉⠙⠒⢄⠀⠀⠀⠀⠀⠀
@@ -32,7 +34,6 @@ export function NotFoundPage() {
         ⠀⠀⠈⠐⠢⠤⠤⠔⠚⠁⠘⣆⠀⠀⢠⠋⢧⣀⣀⡼⠀⠀⠀⠀⠀⠀⠀⠀
         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠈⠁⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
       </p>
-      <Link to="/" className="home-button">Go Home</Link>
     </div>
   );
 };
