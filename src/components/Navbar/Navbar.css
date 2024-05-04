@@ -19,7 +19,6 @@
 .navbar {
     background-color: #EBF2FA;
     overflow: hidden;
-    color: white;
 
     display: flex;
     align-items: center;
@@ -39,7 +38,9 @@
 }
 
 .navbar.float-dock {
-    background-color: rgba(235, 242, 250, 0.9);
+    background-color: rgba(17, 17, 17, 0.97);
+    border: 1px solid #343434;
+    color: #FFFFFF;
 
     padding: 0 20px;
 
@@ -48,10 +49,10 @@
     margin-left: 25%;
     margin-right: 25%;
 
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 .navbar.collapsed {

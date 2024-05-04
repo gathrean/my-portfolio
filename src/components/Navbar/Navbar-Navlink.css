@@ -26,17 +26,6 @@ ul li a:hover {
   color: #0000dc;
 }
 
-ul li.non-highlight a:hover::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -5px;
-  height: 2px;
-  background-color: #4f82c5;
-}
-
 .nav-item.highlight {
   position: relative;
 }
@@ -58,9 +47,9 @@ ul li.non-highlight a:hover::after {
 }
 
 .navbar.float-dock ul li a {
-  color: #5E5E5E;
+  color: hsl(0, 0%, 57%);
 }
 
 .navbar.float-dock ul li a:hover {
-  color: #0000dc;
+  color: hsl(0, 0%, 100%);
 }
