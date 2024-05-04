@@ -22,9 +22,9 @@ export function Footer() {
     return (
         <footer>
             <div className="footer-content footer-body">
-                <p className="white-text">Website developed and designed by Gathrean Dela Cruz.</p>
+                <p className="credit-text">Website developed and designed entirely by Gathrean Dela Cruz.</p>
                 <div className="footer-title" style={{ fontSize: `${fontSize}px` }}>
-                    <h1 className="white-text">Gathrean Dela Cruz</h1>
+                    <h1 className="">Gathrean</h1>
                 </div>
             </div>
         </footer>
