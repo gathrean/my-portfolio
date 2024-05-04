@@ -31,8 +31,18 @@
   font-size: 1.5rem;
   font-weight: 900;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .project-card p {
+  color: #616161;
   margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.read-more-link{
+  display: block;
+  color: #0000dc;
+  font-weight: 450;
+  text-decoration: none;
 }

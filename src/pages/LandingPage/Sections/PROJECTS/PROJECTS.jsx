@@ -15,36 +15,42 @@ export function PROJECTS() {
           <div className="header-image-placeholder"></div>
           <h1>Project</h1>
           <p>Description of project 1 goes here.</p>
+          <a href="#" className="read-more-link">Read more</a>
         </div>
 
         <div className="project-card">
           <div className="header-image-placeholder"></div>
           <h1>Project</h1>
           <p>Description of project 2 goes here.</p>
+          <a href="#" className="read-more-link">Read more</a>
         </div>
 
         <div className="project-card">
           <div className="header-image-placeholder"></div>
           <h1>Project</h1>
           <p>Description of project 3 goes here.</p>
+          <a href="#" className="read-more-link">Read more</a>
         </div>
 
         <div className="project-card">
           <div className="header-image-placeholder"></div>
           <h1>Project</h1>
           <p>Description of project 4 goes here.</p>
+          <a href="#" className="read-more-link">Read more</a>
         </div>
 
         <div className="project-card">
           <div className="header-image-placeholder"></div>
           <h1>Project</h1>
           <p>Description of project 5 goes here.</p>
+          <a href="#" className="read-more-link">Read more</a>
         </div>
 
         <div className="project-card">
           <div className="header-image-placeholder"></div>
           <h1>Project</h1>
           <p>Description of project 5 goes here.</p>
+          <a href="#" className="read-more-link">Read more</a>
         </div>
       </div>
     </div>
