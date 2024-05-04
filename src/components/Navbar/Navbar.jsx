@@ -60,19 +60,11 @@ export function Navbar() {
                 setActiveSection(sectionClassName);
             }
         }
-<<<<<<< HEAD
-        toggleNavbar(); 
-    };
-
-    const getActiveSection = () => {
-        const sections = ['HOME', 'WORK', 'TECHSTACK', 'CONTACT'];
-=======
         toggleNavbar();
     };
 
     const getActiveSection = () => {
         const sections = ['HOME', 'WORK', 'TECH', 'CONTACT'];
->>>>>>> features/LandingPageSections
         for (let i = sections.length - 1; i >= 0; i--) {
             const sectionClassName = sections[i];
             const section = document.querySelector(`.${sectionClassName}`);
@@ -86,7 +78,6 @@ export function Navbar() {
     return (
         <nav
             ref={navbarRef}
-            className={`navbar navbar-animation float-dock ${showNavbar ? 'slide-down' : ''}`}
             className={`navbar navbar-animation float-dock ${showNavbar ? 'slide-down' : ''}`}
             style={{ height: navbarHeight }}
         >
