@@ -40,9 +40,14 @@
   margin-bottom: 5px;
 }
 
-.read-more-link{
+.read-more-link {
   display: block;
   color: #0000dc;
   font-weight: 450;
   text-decoration: none;
+}
+
+.read-more-link:hover {
+  color: #222222;
+  text-decoration: underline;
 }
