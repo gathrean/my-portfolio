@@ -6,48 +6,48 @@ export function PROJECTS() {
     <div className="projects-section-container">
       <hr />
       <h1>Featured Projects</h1>
-      
+
       <p>This is where you can showcase your work experience. You can list your previous jobs, projects you've worked on, and any other relevant experience.</p>
 
       <div className="projects-grid">
 
         <div className="project-card">
-          <div className="header-image-placeholder"></div>
+          <div className="header-image"></div>
           <h1>Project</h1>
           <p>Description of project 1 goes here.</p>
           <a href="#" className="read-more-link">Read more</a>
         </div>
 
         <div className="project-card">
-          <div className="header-image-placeholder"></div>
+          <div className="header-image"></div>
           <h1>Project</h1>
           <p>Description of project 2 goes here.</p>
           <a href="#" className="read-more-link">Read more</a>
         </div>
 
         <div className="project-card">
-          <div className="header-image-placeholder"></div>
+          <div className="header-image"></div>
           <h1>Project</h1>
           <p>Description of project 3 goes here.</p>
           <a href="#" className="read-more-link">Read more</a>
         </div>
 
         <div className="project-card">
-          <div className="header-image-placeholder"></div>
+          <div className="header-image"></div>
           <h1>Project</h1>
           <p>Description of project 4 goes here.</p>
           <a href="#" className="read-more-link">Read more</a>
         </div>
 
         <div className="project-card">
-          <div className="header-image-placeholder"></div>
+          <div className="header-image"></div>
           <h1>Project</h1>
           <p>Description of project 5 goes here.</p>
           <a href="#" className="read-more-link">Read more</a>
         </div>
 
         <div className="project-card">
-          <div className="header-image-placeholder"></div>
+          <div className="header-image"></div>
           <h1>Project</h1>
           <p>Description of project 5 goes here.</p>
           <a href="#" className="read-more-link">Read more</a>
