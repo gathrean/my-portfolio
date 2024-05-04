@@ -10,7 +10,7 @@ function ProjectCard({ projectName, keywords, date, description }) {
           <div className="wrapper">
             <div className="marquee">
               <p className="readme-text">
-                READ ME READ ME READ ME READ ME READ ME READ ME READ ME READ ME
+                READ MORE READ MORE READ MORE READ MORE READ MORE READ MORE READ MORE READ MORE
               </p>
             </div>
           </div>
