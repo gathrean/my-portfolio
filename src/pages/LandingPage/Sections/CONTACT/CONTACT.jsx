@@ -4,9 +4,11 @@ import './CONTACT.css';
 
 export function CONTACT() {
   return (
-    <div className="work-section-container">
-      <h2>Contact Me</h2>
-      <p>This is where you can provide contact information for your users. You can include your email address, phone number, social media links, or a contact form.</p>
+    <div className="contact-section-container">
+      <hr />
+      <h1>Contact Me</h1>
+      <p>This is where I'm going to add my contact information. I'll be including my email address, LinkedIn, GitHub, (maybe contact form idk), and a download of my resume.
+        Almost a repeat of the HERO section at the top, but this is my call for action lol.</p>
     </div>
   );
 }

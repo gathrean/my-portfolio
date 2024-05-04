@@ -1,0 +1,135 @@
+.projects-section-container {
+  padding: 50px 10vw;
+}
+
+.projects-section-container h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.projects-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.header-image {
+  aspect-ratio: 4/3;
+  background-color: #909090;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-image:hover {
+  background-color: #0000dc;
+  animation: stretchJiggle 0.5s;
+}
+
+.header-image:hover .marquee .readme-text {
+  visibility: visible;
+}
+
+.header-image-link {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee p {
+  display: inline-block;
+}
+
+.readme-text {
+  color: #fff !important;
+  font-size: 3rem;
+  visibility: hidden;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes stretchJiggle {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scaleY(1.1) scaleX(1);
+  }
+
+  50% {
+    transform: scaleY(0.9) scaleX(1.05);
+  }
+
+  75% {
+    transform: scaleY(1.1) scaleX(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.project-card h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.project-card h3 {
+  color: #4b4b4b;
+  font-size: 0.9rem;
+  font-weight: 900;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.project-card h3.keywords {
+  color: #CD4631;
+}
+
+.project-card p {
+  color: #616161;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.read-more-link {
+  display: block;
+  color: #0000dc;
+  font-weight: 450;
+  text-decoration: none;
+}
+
+.read-more-link:hover {
+  color: #222222;
+  text-decoration: underline;
+}

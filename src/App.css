@@ -1,5 +1,4 @@
 * {
-  color: #000000;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -36,4 +35,10 @@ body {
 ::selection {
   background-color: #000;
   color: #fff;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #000000;
+  margin: 20px 0;
 }

@@ -1,6 +1,6 @@
 .footer-body {
     background-color: #0000dc;
-    color: #ffffff;
+    color: #ffffff !important;
     height: 100vh;
     padding-top: 64px;
     display: flex;
@@ -12,7 +12,6 @@
 .footer-content {
     padding: 100px 2rem 2rem 2rem;
     display: flex;
-
 }
 
 .footer-title {
@@ -23,17 +22,11 @@
     justify-content: flex-end;
     width: 100%;
     text-align: center;
-}
-
-.white-text {
     color: #ffffff;
 }
 
-.baybayin-text {
-    font-size: xx-large;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
+.credit-text {
+    color: #ffffff;
 }
 
 .blue-background {
