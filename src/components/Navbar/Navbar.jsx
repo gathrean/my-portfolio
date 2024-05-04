@@ -56,7 +56,7 @@ export function Navbar() {
     };
 
     const getActiveSection = () => {
-        const sections = ['HOME', 'WORK', 'TECH', 'CONTACT'];
+        const sections = ['HOME', 'PROJECTS', 'TECH', 'CONTACT'];
         for (let i = sections.length - 1; i >= 0; i--) {
             const sectionClassName = sections[i];
             const section = document.querySelector(`.${sectionClassName}`);
@@ -89,7 +89,7 @@ export function Navbar() {
             <div className="navlink-wrapper">
                 <ul className={`navbar-nav ${collapsed ? 'collapsed' : 'closed'}`}>
                     <li>
-                        <Link className={`nav-item nav-link ${activeSection === 'WORK' ? 'highlight' : ''}`} onClick={() => scrollToSection('WORK')}>Work</Link>
+                        <Link className={`nav-item nav-link ${activeSection === 'PROJECTS' ? 'highlight' : ''}`} onClick={() => scrollToSection('PROJECTS')}>Projects</Link>
                     </li>
                     <li>
                         <Link className={`nav-item nav-link ${activeSection === 'TECH' ? 'highlight' : ''}`} onClick={() => scrollToSection('TECH')}>Tech</Link>

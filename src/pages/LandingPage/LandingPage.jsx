@@ -2,7 +2,7 @@ import React from 'react';
 
 // Sections
 import HERO from './Sections/HERO/HERO';
-import { WORK } from './Sections/WORK/WORK';
+import { PROJECTS } from './Sections/PROJECTS/PROJECTS';
 import { TECH } from './Sections/TECH/TECH';
 import { CONTACT } from './Sections/CONTACT/CONTACT';
 
@@ -24,8 +24,8 @@ export function LandingPage() {
             <section id="HOME" className="HOME">
                 {/* Your HOME section content here */}
             </section>
-            <section id="WORK" className="WORK">
-                <WORK />
+            <section id="PROJECTS" className="PROJECTS">
+                <PROJECTS />
             </section>
             <section id="TECH" className="TECH">
                 <TECH />
