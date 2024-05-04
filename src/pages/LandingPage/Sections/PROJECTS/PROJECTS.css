@@ -116,6 +116,16 @@
   color: #CD4631;
 }
 
+.keyword {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 2px;
+  background-color: #CD4631;
+  border: 1px solid #7b2a1d;
+  border-radius: 20px;
+  color: white
+}
+
 .project-card p {
   color: #616161;
   margin-top: 5px;
