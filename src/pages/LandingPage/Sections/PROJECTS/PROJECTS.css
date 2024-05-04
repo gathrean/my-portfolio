@@ -7,3 +7,30 @@
   font-weight: 400;
   margin-bottom: 20px;
 }
+
+.projects-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.header-image-placeholder {
+  height: 200px;
+  background-color: #909090;
+  border-radius: 30px;
+}
+
+.project-card h2 {
+  margin-top: 10px;
+}
+
+.project-card p {
+  margin-top: 5px;
+}
