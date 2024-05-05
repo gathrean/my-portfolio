@@ -8,43 +8,31 @@ function ProjectCard({ projectName, imageURL, keywords, date, description }) {
   const keywordArray = keywords.split(',').map(keyword => keyword.trim());
 
   const keywordColors = {
-    "HTML": "#DA4E25",
-    "CSS": "#244DDF",
-    "JavaScript": "#E8D44D",
-    "Python": "#4B8BBE",
-    "TensorFlow": "#FF6F00",
-    "PyTorch": "#EE4C2C",
-    "EJS": "#8A5DA0",
-    "Bootstrap": "#7952B3",
-    "Node.js": "#68A063",
-    "Express.js": "#000000",
-    "Leaflet API": "#199900",
-    "MongoDB": "#4DB33D",
-    "Firebase": "#FFCA28",
-    "Java": "#896157",
-    "Kotlin": "#0095D5",
-    "AndroidStudio": "#3DDC84",
-    "PokeAPI": "#F44336",
-    "Vite": "#646CFF",
-    "Supabase": "#3EC8AC",
-    "IntelliJ": "#0777F1",
-    "Java Processing": "#006699",
-    "Gradle": "#02303A",
-    "ChatGPT API": "#75A99B",
-    "React": "#61DAFB",
-    "default": "#E2E2E2"
-  };
-
-  // Function to determine text color based on background color luminance
-  // (Black text for light backgrounds, white text for dark backgrounds)
-  const getTextColor = (color) => {
-    const rgb = parseInt(color.slice(1), 16);
-    const r = (rgb >> 16) & 0xff;
-    const g = (rgb >> 8) & 0xff;
-    const b = (rgb >> 0) & 0xff;
-
-    const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
-    return luminance > 0.5 ? "#000000" : "#FFFFFF";
+    "HTML": { background: "#DA4E25", text: "#fff" },
+    "CSS": { background: "#244DDF", text: "#fff" },
+    "JavaScript": { background: "#E8D44D", text: "#000" },
+    "Python": { background: "#4B8BBE", text: "#fff" },
+    "TensorFlow": { background: "#FF6F00", text: "#fff" },
+    "PyTorch": { background: "#EE4C2C", text: "#fff" },
+    "EJS": { background: "#8A5DA0", text: "#fff" },
+    "Bootstrap": { background: "#7952B3", text: "#fff" },
+    "Node.js": { background: "#68A063", text: "#fff" },
+    "Express.js": { background: "#F2C621", text: "#000" },
+    "Leaflet API": { background: "#199900", text: "#fff" },
+    "MongoDB": { background: "#4DB33D", text: "#fff" },
+    "Firebase": { background: "#FFCA28", text: "#000" },
+    "Java": { background: "#896157", text: "#fff" },
+    "Kotlin": { background: "#C220D8", text: "#FFFFFF" },
+    "AndroidStudio": { background: "#A8C840", text: "#000" },
+    "PokeAPI": { background: "#F44336", text: "#fff" },
+    "Vite": { background: "#646CFF", text: "#fff" },
+    "Supabase": { background: "#3EC8AC", text: "#fff" },
+    "IntelliJ": { background: "#0777F1", text: "#fff" },
+    "Java Processing": { background: "#006699", text: "#fff" },
+    "Gradle": { background: "#02303A", text: "#fff" },
+    "ChatGPT API": { background: "#75A99B", text: "#fff" },
+    "React": { background: "#61DAFB", text: "#000" },
+    "default": { background: "#E2E2E2", text: "#000" }
   };
 
   return (
@@ -66,7 +54,7 @@ function ProjectCard({ projectName, imageURL, keywords, date, description }) {
       <h1>{projectName}</h1>
       <h3>{date}</h3>
       <p>{description}</p>
-      
+
       <a href="#" className="read-more-button">Read more</a>
 
       <hr style={{ height: '0.5px', border: 'none', backgroundColor: '#00000040' }} />
@@ -74,13 +62,12 @@ function ProjectCard({ projectName, imageURL, keywords, date, description }) {
       <p>Keywords:</p>
       <div className="keywords">
         {keywordArray.map((keyword, index) => {
-          const backgroundColor = keywordColors[keyword] || keywordColors['default'];
-          const textColor = getTextColor(backgroundColor);
+          const { background, text } = keywordColors[keyword] || keywordColors['default'];
           return (
             <span
               key={index}
               className="keyword"
-              style={{ backgroundColor: backgroundColor, color: textColor }}
+              style={{ backgroundColor: background, color: text }}
             >
               {keyword}
             </span>

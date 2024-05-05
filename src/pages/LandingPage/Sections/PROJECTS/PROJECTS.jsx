@@ -37,14 +37,14 @@ export function PROJECTS() {
         <ProjectCard
           projectName="DungeonQuad RPG"
           imageURL={DungeonQuad}
-          keywords="Java, IntelliJ, Java Processing, OOP Design, Sprite Design, MongoDB, UML Diagram, Gradle"
+          keywords="Java, IntelliJ, Java Processing, Gradle, MongoDB, OOP Design, Sprite Design, UML Diagram"
           date="January 2023 - April 2023"
           description="Description of project 4 goes here."
         />
         <ProjectCard
           projectName="CareLink"
           imageURL={CareLink}
-          keywords="JavaScript, React, Node.js, Express.js, Supabase, ChatGPT API"
+          keywords="JavaScript, React, Node.js, Express.js, Supabase, ChatGPT API, Hackathon"
           date="March 8 - 10, 2024 (Hackathon)"
           description="Description of project 3 goes here."
         />
