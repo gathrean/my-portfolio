@@ -1,5 +1,7 @@
 import React from 'react';
+
 import './PROJECTS.css';
+import './Cards.css';
 
 function ProjectCard({ projectName, imageURL, keywords, date, description }) {
 
@@ -66,8 +68,8 @@ function ProjectCard({ projectName, imageURL, keywords, date, description }) {
       <a href="#" className="read-more-link">Read more</a>
 
       <hr style={{ height: '0.5px', border: 'none', backgroundColor: '#00000040' }} />
-      <p>Tags:</p>
 
+      <p>Keywords:</p>
       <div className="keywords">
         {keywordArray.map((keyword, index) => {
           const backgroundColor = keywordColors[keyword] || keywordColors['default'];
