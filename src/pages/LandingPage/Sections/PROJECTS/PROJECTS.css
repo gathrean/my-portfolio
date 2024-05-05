@@ -95,6 +95,12 @@
   margin-bottom: 10px;
 }
 
+.project-card p {
+  color: #616161;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .keyword {
   display: inline-block;
   padding: 5px 10px;
@@ -102,15 +108,9 @@
   /* background-color: #CD4631; */
   background-color: #373737;
   /* border: 1px solid #7b2a1d; */
-  font-size: 0.8rem;;
+  font-size: 0.8rem;
   border-radius: 20px;
   color: white
-}
-
-.project-card p {
-  color: #616161;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 .read-more-link {
