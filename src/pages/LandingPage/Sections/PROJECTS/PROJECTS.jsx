@@ -1,7 +1,8 @@
 import React from 'react';
-import ProjectCard from './ProjectCard';
+import ProjectCard from './Cards';
 
 import './PROJECTS.css';
+import './keywords.css'
 
 import Nebula from './Banners/Nebula.jpg';
 import OrcaSwipe from './Banners/OrcaSwipe.jpg';

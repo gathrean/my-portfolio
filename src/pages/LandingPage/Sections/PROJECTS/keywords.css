@@ -1,0 +1,8 @@
+.keyword {
+  display: inline-block;
+  padding: 2px 10px;
+  margin: 2px;
+  border: 1px solid #00000040;
+  font-size: 0.8rem;
+  color: white
+}
