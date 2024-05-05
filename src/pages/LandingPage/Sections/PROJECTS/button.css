@@ -1,4 +1,4 @@
-.read-more-link {
+.read-more-button {
   text-decoration: none;
 
   font-size: 1rem;
@@ -20,7 +20,7 @@
   transition: all 0.3s ease;
 }
 
-.read-more-link:hover {
+.read-more-button:hover {
   background-color: #0000dc;
   color: #fff;
   animation: stretchJiggle 0.5s;
