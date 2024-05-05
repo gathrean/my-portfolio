@@ -2,7 +2,7 @@ import React from 'react';
 import './PROJECTS.css';
 
 function ProjectCard({ projectName, imageURL, keywords, date, description }) {
-  
+
   const keywordArray = keywords.split(',').map(keyword => keyword.trim());
 
   const keywordColors = {
@@ -25,12 +25,24 @@ function ProjectCard({ projectName, imageURL, keywords, date, description }) {
     "PokeAPI": "#F44336",
     "Vite": "#646CFF",
     "Supabase": "#3EC8AC",
-    "IntelliJ": "#000000",
+    "IntelliJ": "#0777F1",
     "Java Processing": "#006699",
     "Gradle": "#02303A",
     "ChatGPT API": "#75A99B",
     "React": "#61DAFB",
-    "default": "#373737"
+    "default": "#E2E2E2"
+  };
+
+  // Function to determine text color based on background color luminance
+  // (Black text for light backgrounds, white text for dark backgrounds)
+  const getTextColor = (color) => {
+    const rgb = parseInt(color.slice(1), 16);
+    const r = (rgb >> 16) & 0xff;
+    const g = (rgb >> 8) & 0xff;
+    const b = (rgb >> 0) & 0xff;
+
+    const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+    return luminance > 0.5 ? "#000000" : "#FFFFFF";
   };
 
   return (
@@ -50,21 +62,27 @@ function ProjectCard({ projectName, imageURL, keywords, date, description }) {
 
       <h1>{projectName}</h1>
       <h3>{date}</h3>
-
-      <div className="keywords">
-        {keywordArray.map((keyword, index) => (
-          <span
-            key={index}
-            className="keyword"
-            style={{ backgroundColor: keywordColors[keyword] || keywordColors['default'] }}
-          >
-            {keyword}
-          </span>
-        ))}
-      </div>
-
       <p>{description}</p>
       <a href="#" className="read-more-link">Read more</a>
+
+      <hr style={{ height: '0.5px', border: 'none', backgroundColor: '#00000040' }} />
+      <p>Tags:</p>
+
+      <div className="keywords">
+        {keywordArray.map((keyword, index) => {
+          const backgroundColor = keywordColors[keyword] || keywordColors['default'];
+          const textColor = getTextColor(backgroundColor);
+          return (
+            <span
+              key={index}
+              className="keyword"
+              style={{ backgroundColor: backgroundColor, color: textColor }}
+            >
+              {keyword}
+            </span>
+          );
+        })}
+      </div>
     </div>
   );
 }
