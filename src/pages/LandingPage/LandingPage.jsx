@@ -14,25 +14,26 @@ import '../../App.css';
 import '../../assets/fonts/Fonts.css';
 
 export function LandingPage() {
-    const images = [
-        '/images/DSC04733v3BW_cropped.jpg'
-    ];
 
     return (
         <section id="section1 home">
-            <HERO images={images} />
-            <section id="HOME" className="HOME">
-                {/* Your HOME section content here */}
+
+            <section id="HERO" className="HERO">
+                <HERO />
             </section>
+
             <section id="PROJECTS" className="PROJECTS">
                 <PROJECTS />
             </section>
+
             <section id="TECH" className="TECH">
                 <TECH />
             </section>
+
             <section id="CONTACT" className="CONTACT">
                 <CONTACT />
             </section>
+            
         </section>
     );
 }
