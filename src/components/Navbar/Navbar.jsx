@@ -6,13 +6,24 @@ import './Navbar.css';
 import './Navbar-Logo.css';
 import './Navbar-Navlink.css';
 
-import hamburgerImage from './Icons/hamburger-white.png';
+const HamburgerIcon = ({ open }) => (
+    <svg
+        viewBox="0 0 100 80"
+        width="30"
+        height="30"
+        className={open ? "open" : ""}
+    >
+        <rect y="0" width="100" height="10" rx="8"></rect>
+        <rect y="30" width="100" height="10" rx="8"></rect>
+        <rect y="60" width="100" height="10" rx="8"></rect>
+    </svg>
+);
 
 export function Navbar() {
     const { navbarHeight, navbarRef, toggleHamburger } = useNavbarFunctions();
 
     const [activeSection, setActiveSection] = useState('HOME');
-    const [collapsed] = useState(false);
+    const [collapsed, setCollapsed] = useState(false);
 
     const scrollToSection = (sectionClassName) => {
         if (activeSection !== sectionClassName) {
@@ -55,7 +66,7 @@ export function Navbar() {
     }, []);
 
     return (
-        <nav ref={navbarRef} className="navbar navbar-animation" style={{ height: navbarHeight }}>
+        <nav ref={navbarRef} className={`navbar navbar-animation ${collapsed ? 'collapsed' : ''}`} style={{ height: navbarHeight }}>
 
             <div className="navbar-container">
 
@@ -63,13 +74,8 @@ export function Navbar() {
                     <span className="brand-text">Gathrean</span>
                 </div>
 
-                <div className="mobile-view" onClick={toggleHamburger}>
-                    <img
-                        src={hamburgerImage}
-                        className={`hamburger ${collapsed ? 'collapsed' : 'open'}`}
-                        style={{ width: '30px', height: '30px' }}
-                        alt="Hamburger Menu"
-                    />
+                <div className="mobile-view" onClick={() => { toggleHamburger(); setCollapsed(!collapsed); }}>
+                    <HamburgerIcon open={collapsed} />
                 </div>
 
             </div>

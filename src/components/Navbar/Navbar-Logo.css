@@ -10,3 +10,25 @@
   font-size: 28px;
   font-weight: 600;
 }
+
+.mobile-view svg rect {
+  fill: #919191;
+  transition: transform 0.3s ease;
+}
+
+/* svg hover */
+.mobile-view svg:hover rect {
+  fill: #fff;
+}
+
+.mobile-view svg.open rect:nth-child(1) {
+  transform: translate(20px, -3.25px) rotate(45deg);
+}
+
+.mobile-view svg.open rect:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-view svg.open rect:nth-child(3) {
+  transform: translate(-30px, 25px) rotate(-45deg);
+}
