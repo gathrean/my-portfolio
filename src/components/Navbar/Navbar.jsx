@@ -10,7 +10,7 @@ import './Navbar-Navlink.css';
 import hamburgerImage from './Icons/hamburger-white.png';
 
 export function Navbar() {
-    const { navbarHeight, navbarRef, toggleNavbar } = useNavbarFunctions();
+    const { navbarHeight, navbarRef, toggleHamburger } = useNavbarFunctions();
     const [activeSection, setActiveSection] = useState('HOME');
     const [collapsed, setCollapsed] = useState(false);
     const [showNavbar, setShowNavbar] = useState(false);
@@ -56,7 +56,6 @@ export function Navbar() {
                 setActiveSection(sectionClassName);
             }
         }
-        toggleNavbar();
     };
 
     const getActiveSection = () => {
@@ -81,7 +80,7 @@ export function Navbar() {
                 <div className="brand">
                     <span className="brand-text">Gathrean</span>
                 </div>
-                <div className="mobile-view" onClick={toggleNavbar}>
+                <div className="mobile-view" onClick={toggleHamburger}>
                     <img
                         src={hamburgerImage}
                         alt="Hamburger Menu"

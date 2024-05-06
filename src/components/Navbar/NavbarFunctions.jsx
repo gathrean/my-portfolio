@@ -49,9 +49,9 @@ export function useNavbarFunctions() {
         };
     }, []);
 
-    const toggleNavbar = () => {
+    const toggleHamburger = () => {
         setOpened(!opened);
     };
 
-    return { scroll, opened, navbarHeight, navbarRef, scrollToTop, toggleNavbar, location };
+    return { scroll, opened, navbarHeight, navbarRef, scrollToTop, toggleHamburger, location };
 }
