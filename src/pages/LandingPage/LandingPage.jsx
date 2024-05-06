@@ -22,18 +22,35 @@ export function LandingPage() {
                 <HERO />
             </section>
 
+            <section id="ABOUT" className="ABOUT">
+                {/* make the height 100vh */}
+                <div className="about-section-container" style={{ height: '100vh' }}>
+                    <hr />
+                    <h1>About Me</h1>
+                    <p>About me goes here. I can put my work experience here. I can also put my work experience in the Work Experience section.</p>
+                </div>
+            </section>
+
             <section id="PROJECTS" className="PROJECTS">
                 <PROJECTS />
+            </section>
+
+            <section id="WORK" className="WORK">
+                <div className="work-section-container" style={{ height: '100vh' }}>
+                    <hr />
+                    <h1>Work Experience</h1>
+                    <p>Work experience goes here. I can put my work experience here. I can also put my work experience in the About Me section.</p>
+                </div>
+            </section>
+
+            <section id="CONTACT" className="CONTACT">
+                <CONTACT />
             </section>
 
             <section id="TECH" className="TECH">
                 <TECH />
             </section>
 
-            <section id="CONTACT" className="CONTACT">
-                <CONTACT />
-            </section>
-            
         </section>
     );
 }
