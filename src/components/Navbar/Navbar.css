@@ -33,7 +33,7 @@
     border-radius: 20px;
 }
 
-.navbar.collapsed {
+.navbar.minimized {
     height: 0;
 }
 

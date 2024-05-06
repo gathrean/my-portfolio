@@ -16,7 +16,7 @@
 }
 
 .navlink-ul.closed,
-.navlink-ul.collapsed {
+.navlink-ul.minimized {
     height: auto;
     overflow: hidden;
 }

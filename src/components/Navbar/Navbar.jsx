@@ -22,7 +22,7 @@ const HamburgerIcon = ({ open }) => (
 export function Navbar() {
     const { navbarHeight, navbarRef, toggleHamburger } = useNavbarFunctions();
     const [activeSection, setActiveSection] = useState('HOME');
-    const [collapsed, setCollapsed] = useState(false);
+    const [minimized, setMinimized] = useState(false);
 
     useScrollHandler(setActiveSection, navbarHeight);
 
@@ -41,7 +41,7 @@ export function Navbar() {
     };
 
     return (
-        <nav ref={navbarRef} className={`navbar navbar-animation ${collapsed ? 'collapsed' : ''}`} style={{ height: navbarHeight }}>
+        <nav ref={navbarRef} className={`navbar navbar-animation ${minimized ? 'minimized' : ''}`} style={{ height: navbarHeight }}>
 
             <div className="navbar-container">
 
@@ -49,14 +49,14 @@ export function Navbar() {
                     <span className="brand-text">Gathrean</span>
                 </div>
 
-                <div className="mobile-view" onClick={() => { toggleHamburger(); setCollapsed(!collapsed); }}>
-                    <HamburgerIcon open={collapsed} />
+                <div className="mobile-view" onClick={() => { toggleHamburger(); setMinimized(!minimized); }}>
+                    <HamburgerIcon open={minimized} />
                 </div>
 
             </div>
 
             <div className="navlink-container">
-                <ul className={`navlink-ul ${collapsed ? 'collapsed' : 'closed'}`}>
+                <ul className={`navlink-ul ${minimized ? 'minimized' : 'closed'}`}>
                     <li>
                         <Link onClick={() => scrollToSection('ABOUT')} className={activeSection === 'ABOUT' ? 'active' : ''}>About</Link>
                     </li>
