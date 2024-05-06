@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavbarFunctions, useScrollHandler } from './NavbarFunctions';
 
@@ -23,8 +23,23 @@ export function Navbar() {
     const { navbarHeight, navbarRef, toggleHamburger } = useNavbarFunctions();
     const [activeSection, setActiveSection] = useState('HOME');
     const [expanded, setExpanded] = useState(false);
+    const mobileViewRef = useRef(null);
 
     useScrollHandler(setActiveSection, navbarHeight);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (expanded && !mobileViewRef.current.contains(event.target)) {
+                setExpanded(false);
+            }
+        };
+
+        document.addEventListener('click', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, [expanded]);
 
     const scrollToSection = (sectionClassName) => {
         if (activeSection !== sectionClassName) {
@@ -49,7 +64,7 @@ export function Navbar() {
                     <span className="brand-text">Gathrean</span>
                 </div>
 
-                <div className="mobile-view" onClick={() => { toggleHamburger(); setExpanded(!expanded); }}>
+                <div ref={mobileViewRef} className="mobile-view" onClick={() => { toggleHamburger(); setExpanded(!expanded); }}>
                     <HamburgerIcon open={expanded} />
                 </div>
 
