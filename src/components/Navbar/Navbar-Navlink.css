@@ -1,3 +1,27 @@
+.navlink-container {
+  width: 100%;
+  display: flex;
+}
+
+.navlink-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navlink-ul.closed,
+.navlink-ul.collapsed {
+  height: auto;
+  overflow: hidden;
+}
+
+/* "ul" specifically edits the entire list */
 ul {
   height: 56px;
   line-height: 56px;
@@ -11,9 +35,11 @@ ul {
   display: inline;
 }
 
+/* "ul li a" specifically edits the String inside the >< brackets*/
 ul li a {
   color: #919191;
   text-decoration: none;
+  font-size: 50px;
 }
 
 ul li a:hover {

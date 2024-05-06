@@ -94,22 +94,22 @@ export function Navbar() {
                     />
                 </div>
             </div>
-            <div className="navlink-wrapper">
-                <ul className={`navbar-nav ${collapsed ? 'collapsed' : 'closed'}`}>
+            <div className="navlink-container">
+                <ul className={`navlink-ul ${collapsed ? 'collapsed' : 'closed'}`}>
                     <li>
-                        <Link className={`nav-item nav-link`}>About Me</Link>
+                        <Link>About Me</Link>
                     </li>
                     <li>
-                        <Link className={`nav-item nav-link ${activeSection === 'PROJECTS' ? 'highlight' : ''}`} onClick={() => scrollToSection('PROJECTS')}>Projects</Link>
+                        <Link className={`${activeSection === 'PROJECTS' ? 'highlight' : ''}`} onClick={() => scrollToSection('PROJECTS')}>Projects</Link>
                     </li>
                     <li>
-                        <Link className={`nav-item nav-link`}>Work</Link>
+                        <Link>Work</Link>
                     </li>
                     <li>
-                        <Link className={`nav-item nav-link`}>Education</Link>
+                        <Link>Education</Link>
                     </li>
                     <li>
-                        <Link className={`nav-item nav-link ${activeSection === 'CONTACT' ? 'highlight' : ''}`} onClick={() => scrollToSection('CONTACT')}>Contact Me</Link>
+                        <Link className={`${activeSection === 'CONTACT' ? 'highlight' : ''}`} onClick={() => scrollToSection('CONTACT')}>Contact Me</Link>
                     </li>
                 </ul>
             </div>
