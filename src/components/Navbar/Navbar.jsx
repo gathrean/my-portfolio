@@ -7,7 +7,7 @@ import './Navbar-MediaQuries.css';
 import './Navbar-Logo.css';
 import './Navbar-Navlink.css';
 
-import hamburgerImage from './hamburger-white.png';
+import hamburgerImage from './Icons/hamburger-white.png';
 
 export function Navbar() {
     const { floatDock, navbarHeight, navbarRef, toggleNavbar } = useNavbarFunctions();
