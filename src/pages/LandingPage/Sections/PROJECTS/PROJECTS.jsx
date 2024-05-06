@@ -25,7 +25,13 @@ export function PROJECTS() {
           imageURL={Nebula}
           keywords="HTML, CSS, JavaScript, Python, TensorFlow, PyTorch"
           date="January 2024 - Present"
-          description="Description of project 1 goes here."
+          description={
+            <>
+              Description of project 1 goes here.
+              <br /> <br />
+              This is the second line of the description.
+            </>
+          }
         />
         <ProjectCard
           projectName="OrcaSwipe"
