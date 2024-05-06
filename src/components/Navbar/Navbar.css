@@ -70,3 +70,23 @@
     justify-content: space-between;
     width: 100%;
 }
+
+/* MEDIA QUERIES */
+
+/* For tablets */
+@media only screen and (min-width: 300px) and (max-width: 499px) {
+    .navbar {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+/* For foldable phones */
+@media only screen and (max-width: 299px) {
+    .navbar {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
