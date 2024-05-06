@@ -3,7 +3,6 @@ import { useLocation } from 'react-router-dom';
 
 export function useNavbarFunctions() {
     const [scroll, setScroll] = useState(false);
-    const [floatDock, setFloatDock] = useState(true); // Change false to true
     const [opened, setOpened] = useState(true);
     const [navbarHeight, setNavbarHeight] = useState(56);
 
@@ -52,16 +51,7 @@ export function useNavbarFunctions() {
 
     const toggleNavbar = () => {
         setOpened(!opened);
-        if (!opened) {
-            setFloatDock(true);
-        } else {
-            if (window.scrollY > 0) {
-                setFloatDock(true);
-            } else {
-                setFloatDock(false);
-            }
-        }
     };
 
-    return { scroll, floatDock, opened, navbarHeight, navbarRef, scrollToTop, toggleNavbar, location };
+    return { scroll, opened, navbarHeight, navbarRef, scrollToTop, toggleNavbar, location };
 }

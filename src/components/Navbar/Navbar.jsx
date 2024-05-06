@@ -10,7 +10,7 @@ import './Navbar-Navlink.css';
 import hamburgerImage from './Icons/hamburger-white.png';
 
 export function Navbar() {
-    const { floatDock, navbarHeight, navbarRef, toggleNavbar } = useNavbarFunctions();
+    const { navbarHeight, navbarRef, toggleNavbar } = useNavbarFunctions();
     const [activeSection, setActiveSection] = useState('HOME');
     const [collapsed, setCollapsed] = useState(false);
     const [showNavbar, setShowNavbar] = useState(false);
@@ -27,10 +27,6 @@ export function Navbar() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
-    useEffect(() => {
-        setCollapsed(floatDock);
-    }, [floatDock]);
 
     useEffect(() => {
         const timeout = setTimeout(() => {
@@ -78,7 +74,7 @@ export function Navbar() {
     return (
         <nav
             ref={navbarRef}
-            className={`navbar navbar-animation float-dock ${showNavbar ? 'slide-down' : ''}`}
+            className={`navbar navbar-animation ${showNavbar ? 'slide-down' : ''}`}
             style={{ height: navbarHeight }}
         >
             <div className="navbar-container navbar-animation">
@@ -90,7 +86,7 @@ export function Navbar() {
                         src={hamburgerImage}
                         alt="Hamburger Menu"
                         className={`hamburger ${collapsed ? 'collapsed' : 'open'}`}
-                        style={{ width: '15px', height: '20px' }}
+                        style={{ width: '30px', height: '30px' }}
                     />
                 </div>
             </div>
