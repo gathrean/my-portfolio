@@ -18,9 +18,25 @@ export function useNavbarFunctions() {
     };
 
     useEffect(() => {
-        const newHeight = opened ? 56 : 250;
-        setNavbarHeight(newHeight);
+        const handleResize = () => {
+            const newHeight = opened ? 56 : getWindowHeight();
+            setNavbarHeight(newHeight);
+        };
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
     }, [opened]);
+
+    const getWindowHeight = () => {
+        const windowWidth = window.innerWidth;
+        if (windowWidth <= 499) { // For Tablets
+            return opened ? 56 : 250;
+        } else if (windowWidth <= 299) { // For foladable phones
+            return opened ? 56 : 20;
+        } else { // For Desktops and everything else
+            return opened ? 56 : 390;
+        }
+    };
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -31,16 +47,6 @@ export function useNavbarFunctions() {
         document.addEventListener('mousedown', handleClickOutside);
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, []);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setScroll(window.scrollY > 0);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 

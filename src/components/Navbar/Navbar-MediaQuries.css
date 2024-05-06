@@ -14,6 +14,14 @@
         display: flex;
         align-items: center;
     }
+
+    ul li a {
+        font-size: 30px;
+    }
+
+    .navbar-nav {
+        line-height: 40px;
+    }
 }
 
 /* For foldable phones */
@@ -22,5 +30,13 @@
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
+    }
+
+    ul li a {
+        font-size: 25px;
+    }
+
+    .navbar-nav {
+        line-height: 35px;
     }
 }

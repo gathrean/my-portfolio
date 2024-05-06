@@ -11,7 +11,6 @@ ul li {
   display: inline;
   margin-right: 20px;
   color: #181818;
-  font-size: 20px;
 }
 
 ul li:last-child {
@@ -40,10 +39,6 @@ ul li a:hover {
   height: 2px;
   background-color: #0000dc;
   border-radius: 25px;
-}
-
-.nav-item.highlight ul li a {
-  font-size: 40px;
 }
 
 .navbar.float-dock ul li a {
