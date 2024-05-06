@@ -17,7 +17,6 @@
     }
 }
 
-
 /* EVERYTHING ELSE NAVBAR */
 .navbar {
     background-color: rgba(17, 17, 17, 0.9);
@@ -42,7 +41,7 @@
     width: 300px;
 
     padding: 0 20px;
-    margin: 16px auto 0 auto;
+    margin: 8px auto 0 auto;
 
     line-height: 56px;
 
@@ -64,15 +63,6 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-}
-
-.navbar,
-.desktop-view {
-    flex-direction: column;
-}
-
-.desktop-view {
-    display: none;
 }
 
 .mobile-view {
