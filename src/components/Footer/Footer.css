@@ -1,8 +1,8 @@
 .footer-body {
     background-color: #0000dc;
     color: #ffffff !important;
-    height: 100vh;
-    padding-top: 64px;
+    height: auto;
+    /* padding-top: 64px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -10,7 +10,7 @@
 }
 
 .footer-content {
-    padding: 100px 2rem 2rem 2rem;
+    padding: 20px 2rem;
     display: flex;
 }
 
