@@ -50,7 +50,7 @@ export function Navbar() {
             <div className="navlink-container">
                 <ul className={`navlink-ul ${collapsed ? 'collapsed' : 'closed'}`}>
                     <li>
-                        <Link>About Me</Link>
+                        <Link>About</Link>
                     </li>
                     <li>
                         <Link onClick={() => scrollToSection('PROJECTS')}>Projects</Link>
@@ -59,7 +59,7 @@ export function Navbar() {
                         <Link>Work</Link>
                     </li>
                     <li>
-                        <Link onClick={() => scrollToSection('CONTACT')}>Contact Me</Link>
+                        <Link onClick={() => scrollToSection('CONTACT')}>Contact</Link>
                     </li>
                 </ul>
             </div>
