@@ -12,7 +12,7 @@ import hamburgerImage from './Icons/hamburger-white.png';
 export function Navbar() {
     const { navbarHeight, navbarRef, toggleHamburger } = useNavbarFunctions();
     const [activeSection, setActiveSection] = useState('HOME');
-    const [collapsed, setCollapsed] = useState(false);
+    const [collapsed] = useState(false);
     const [showNavbar, setShowNavbar] = useState(false);
 
     useEffect(() => {

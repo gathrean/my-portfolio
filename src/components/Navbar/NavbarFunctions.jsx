@@ -1,21 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
-import { useLocation } from 'react-router-dom';
 
 export function useNavbarFunctions() {
-    const [scroll, setScroll] = useState(false);
+    const [scroll] = useState(false);
     const [opened, setOpened] = useState(true);
     const [navbarHeight, setNavbarHeight] = useState(56);
 
-    const location = useLocation();
-    const navbarRef = useRef(null);
+    const navbarRef = useRef(null); // Reference to the navbar element (DOM)
 
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0.99,
-            behavior: "smooth"
-        });
-    };
-
+    // For setting the height of the navbar based on the window sizeß
     useEffect(() => {
         const handleResize = () => {
             const newHeight = opened ? 56 : getWindowHeight();
@@ -26,6 +18,7 @@ export function useNavbarFunctions() {
         return () => window.removeEventListener('resize', handleResize);
     }, [opened]);
 
+    // Helper function for handleResize
     const getWindowHeight = () => {
         const windowWidth = window.innerWidth;
         if (windowWidth <= 499) { // For Tablets
@@ -37,21 +30,23 @@ export function useNavbarFunctions() {
         }
     };
 
+    // For closing the hamburger menu when clicked outside
     useEffect(() => {
-        const handleClickOutside = (event) => {
+        const handleClickOutsideNavbar = (event) => {
             if (navbarRef.current && !navbarRef.current.contains(event.target)) {
                 setOpened(true);
             }
         };
-        document.addEventListener('mousedown', handleClickOutside);
+        document.addEventListener('mouse-outside', handleClickOutsideNavbar);
         return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
+            document.removeEventListener('mouse-outside', handleClickOutsideNavbar);
         };
     }, []);
 
+    // For opening and closing the hamburger menu
     const toggleHamburger = () => {
         setOpened(!opened);
     };
 
-    return { scroll, opened, navbarHeight, navbarRef, scrollToTop, toggleHamburger, location };
+    return { scroll, opened, navbarHeight, navbarRef, toggleHamburger };
 }
