@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavbarFunctions, useScrollHandler } from './NavbarFunctions';
 
@@ -20,24 +20,11 @@ const HamburgerIcon = ({ open }) => (
 );
 
 export function Navbar() {
+    const { navbarHeight, navbarRef, toggleHamburger } = useNavbarFunctions();
     const [activeSection, setActiveSection] = useState('HOME');
     const [expanded, setExpanded] = useState(false);
 
-    const navbarRef = useRef(null);
-
-    useEffect(() => {
-        const handleClickOutsideNavbar = (event) => {
-            if (navbarRef.current && !navbarRef.current.contains(event.target)) {
-                setExpanded(false); // Close the navbar when clicked outside
-            }
-        };
-
-        document.addEventListener('mousedown', handleClickOutsideNavbar);
-
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutsideNavbar);
-        };
-    }, [navbarRef]);
+    useScrollHandler(setActiveSection, navbarHeight);
 
     const scrollToSection = (sectionClassName) => {
         if (activeSection !== sectionClassName) {
@@ -45,7 +32,7 @@ export function Navbar() {
             if (section) {
                 const offsetTop = section.getBoundingClientRect().top + window.scrollY;
                 window.scrollTo({
-                    top: offsetTop - navbarRef.current.offsetHeight,
+                    top: offsetTop - navbarHeight,
                     behavior: "smooth"
                 });
                 setActiveSection(sectionClassName);
@@ -53,12 +40,8 @@ export function Navbar() {
         }
     };
 
-    const toggleHamburger = () => {
-        setExpanded(!expanded);
-    };
-
     return (
-        <nav ref={navbarRef} className={`navbar navbar-animation`} style={{ height: expanded ? 'auto' : '56px' }}>
+        <nav ref={navbarRef} className={`navbar navbar-animation`} style={{ height: navbarHeight }}>
 
             <div className="navbar-container">
 
@@ -66,14 +49,14 @@ export function Navbar() {
                     <span className="brand-text">Gathrean</span>
                 </div>
 
-                <div className="mobile-view" onClick={toggleHamburger}>
+                <div className="mobile-view" onClick={() => { toggleHamburger(); setExpanded(!expanded); }}>
                     <HamburgerIcon open={expanded} />
                 </div>
 
             </div>
 
             <div className="navlink-container">
-                <ul className={`navlink-ul prevent-overflow ${expanded ? 'expanded' : ''}`}>
+                <ul className={`navlink-ul prevent-overflow`}>
                     <li>
                         <Link onClick={() => scrollToSection('ABOUT')} className={activeSection === 'ABOUT' ? 'active' : ''}>About</Link>
                     </li>
