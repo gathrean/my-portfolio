@@ -15,7 +15,7 @@
     flex-direction: column;
 }
 
-.navlink-ul.minimized {
+.navlink-ul.prevent-overflow {
     height: auto;
     overflow: hidden;
 }
