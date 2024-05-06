@@ -44,6 +44,18 @@ export function Navbar() {
             const sections = ['HOME', 'ABOUT', 'PROJECTS', 'WORK', 'CONTACT'];
             const scrollPosition = window.scrollY;
 
+            // Check if scroll position is within HERO section
+            const heroSection = document.querySelector('.HERO');
+            if (heroSection) {
+                const heroTop = heroSection.offsetTop;
+                const heroHeight = heroSection.offsetHeight;
+                if (scrollPosition >= heroTop && scrollPosition < heroTop + heroHeight) {
+                    setActiveSection('');
+                    return;
+                }
+            }
+
+            // If not within HERO section, determine active section
             for (const section of sections) {
                 const element = document.querySelector(`.${section}`);
                 if (element) {
