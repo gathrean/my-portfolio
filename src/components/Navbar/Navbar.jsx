@@ -22,7 +22,7 @@ const HamburgerIcon = ({ open }) => (
 export function Navbar() {
     const { navbarHeight, navbarRef, toggleHamburger } = useNavbarFunctions();
     const [activeSection, setActiveSection] = useState('HOME');
-    const [minimized, setMinimized] = useState(false);
+    const [expanded, setExpanded] = useState(false);
 
     useScrollHandler(setActiveSection, navbarHeight);
 
@@ -41,7 +41,7 @@ export function Navbar() {
     };
 
     return (
-        <nav ref={navbarRef} className={`navbar navbar-animation ${minimized ? 'minimized' : ''}`} style={{ height: navbarHeight }}>
+        <nav ref={navbarRef} className={`navbar navbar-animation`} style={{ height: navbarHeight }}>
 
             <div className="navbar-container">
 
@@ -49,8 +49,8 @@ export function Navbar() {
                     <span className="brand-text">Gathrean</span>
                 </div>
 
-                <div className="mobile-view" onClick={() => { toggleHamburger(); setMinimized(!minimized); }}>
-                    <HamburgerIcon open={minimized} />
+                <div className="mobile-view" onClick={() => { toggleHamburger(); setExpanded(!expanded); }}>
+                    <HamburgerIcon open={expanded} />
                 </div>
 
             </div>
