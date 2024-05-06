@@ -1,7 +1,9 @@
 import React from 'react';
-import ProjectCard from './ProjectCard';
+import ProjectCard from './Cards';
 
 import './PROJECTS.css';
+import './keywords.css';
+import './button.css'
 
 import Nebula from './Banners/Nebula.jpg';
 import OrcaSwipe from './Banners/OrcaSwipe.jpg';
@@ -21,42 +23,48 @@ export function PROJECTS() {
         <ProjectCard
           projectName="Nebula Neural Network"
           imageURL={Nebula}
-          keywords="HTML/CSS, JS, Python, TensorFlow, PyTorch"
+          keywords="HTML, CSS, JavaScript, Python, TensorFlow, PyTorch"
           date="January 2024 - Present"
-          description="Description of project 1 goes here."
+          description={
+            <>
+              Description of project 1 goes here.
+              <br /> <br />
+              This is the second line of the description.
+            </>
+          }
         />
         <ProjectCard
           projectName="OrcaSwipe"
           imageURL={OrcaSwipe}
-          keywords="EJS, HTML/CSS, JS, Bootstrap 5.3, Node.JS, Express.JS, Leaflet API, MongoDB, Firebase, ChatGPT API"
+          keywords="EJS, HTML, CSS, JavaScript, Bootstrap, Node.js, Express.js, Leaflet API, MongoDB, Firebase, ChatGPT API"
           date="May 2023"
           description="Description of project 2 goes here."
         />
         <ProjectCard
           projectName="DungeonQuad RPG"
           imageURL={DungeonQuad}
-          keywords="Java, IntelliJ, Java Processing, OOP Design, Sprite Design, MongoDB, UML Diagram, Gradle"
+          keywords="Java, IntelliJ, Java Processing, Gradle, MongoDB, OOP Design, Sprite Design, UML Diagram"
           date="January 2023 - April 2023"
           description="Description of project 4 goes here."
         />
         <ProjectCard
           projectName="CareLink"
           imageURL={CareLink}
-          keywords="JS, React, NodeJS, Express, Supabase, ChatGPT API"
+          keywords="JavaScript, React, Node.js, Express.js, Supabase, ChatGPT API, Hackathon"
           date="March 8 - 10, 2024 (Hackathon)"
           description="Description of project 3 goes here."
         />
         <ProjectCard
           projectName="YapPad"
           imageURL={YapPad}
-          keywords="HTML/CSS/JS, React/Vite, MongoDB, Nodejs, Express"
+          keywords="HTML, CSS, JavaScript, React, Vite, MongoDB, Node.js, Express.js"
           date="April 2024"
           description="Description of project 5 goes here."
         />
 
         <ProjectCard
           projectName="Pokemon Team Generator"
-          keywords="Kotlin, Android Studiom, PokeAPI"
+          keywords="Kotlin, AndroidStudio, PokeAPI"
           date="April 2023"
           description="Description of project 6 goes here."
         />
