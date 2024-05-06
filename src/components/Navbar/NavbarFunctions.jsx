@@ -35,9 +35,9 @@ export function useNavbarFunctions() {
                 setOpened(true);
             }
         };
-        document.addEventListener('mouse-outside', handleClickOutsideNavbar);
+        document.addEventListener('mousedown', handleClickOutsideNavbar);
         return () => {
-            document.removeEventListener('mouse-outside', handleClickOutsideNavbar);
+            document.removeEventListener('mousedown', handleClickOutsideNavbar);
         };
     }, [navbarRef]);
 
