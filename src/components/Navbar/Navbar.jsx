@@ -10,9 +10,10 @@ import hamburgerImage from './Icons/hamburger-white.png';
 
 export function Navbar() {
     const { navbarHeight, navbarRef, toggleHamburger } = useNavbarFunctions();
+    
     const [activeSection, setActiveSection] = useState('HOME');
     const [collapsed] = useState(false);
-    const [showNavbar, setShowNavbar] = useState(false);
+    const [showNavbar] = useState(false);
 
     const scrollToSection = (sectionClassName) => {
         if (activeSection !== sectionClassName) {
@@ -26,18 +27,6 @@ export function Navbar() {
                 setActiveSection(sectionClassName);
             }
         }
-    };
-
-    const getActiveSection = () => {
-        const sections = ['AboutMe', 'Projects', 'Work', 'ContactMe'];
-        for (let i = sections.length - 1; i >= 0; i--) {
-            const sectionClassName = sections[i];
-            const section = document.querySelector(`.${sectionClassName}`);
-            if (section && section.getBoundingClientRect().top <= navbarHeight) {
-                return sectionClassName;
-            }
-        }
-        return sections[0];
     };
 
     return (
