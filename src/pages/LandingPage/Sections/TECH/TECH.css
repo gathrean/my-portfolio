@@ -3,7 +3,26 @@
 }
 
 .tech-section-container h1 {
+  color: #fff;
   font-size: 3rem;
   font-weight: 400;
   margin-bottom: 20px;
+}
+
+.tech-section-container h2 {
+  color: #ccc;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.tech-section-container h3 {
+  color: #aaa;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.tech-section-container p {
+  color: #E5E5E5;
 }

@@ -1,4 +1,5 @@
 .project-card {
+  background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 30px;
   padding: 20px;
@@ -32,6 +33,7 @@
 }
 
 .project-card h1 {
+  color: #000;
   font-size: 1.5rem;
   font-weight: 900;
   margin-top: 10px;
