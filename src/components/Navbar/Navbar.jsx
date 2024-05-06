@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavbarFunctions, useScrollHandler } from './NavbarFunctions';
 
@@ -20,46 +20,11 @@ const HamburgerIcon = ({ open }) => (
 );
 
 export function Navbar() {
+    const { navbarHeight, navbarRef, toggleHamburger } = useNavbarFunctions();
     const [activeSection, setActiveSection] = useState('HOME');
-    const [expanded, setExpanded] = useState(true);
-    const [navbarHeight, setNavbarHeight] = useState(56);
+    const [expanded, setExpanded] = useState(false);
 
-    const navbarRef = useRef(null);
-
-    useEffect(() => {
-        const handleResize = () => {
-            const newHeight = expanded ? 56 : getWindowHeight();
-            setNavbarHeight(newHeight);
-        };
-        handleResize();
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, [expanded]);
-
-    useEffect(() => {
-        const handleClickOutsideNavbar = (event) => {
-            if (navbarRef.current && !navbarRef.current.contains(event.target)) {
-                toggleHamburger(); // Close hamburger menu
-            }
-        };
-        document.addEventListener('mousedown', handleClickOutsideNavbar);
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutsideNavbar);
-        };
-    }, [navbarRef]);
-
-    const getWindowHeight = () => {
-        const windowWidth = window.innerWidth;
-        if (windowWidth <= 499) {
-            return expanded ? 56 : 300;
-        } else {
-            return expanded ? 56 : 325;
-        }
-    };
-
-    const toggleHamburger = () => {
-        setExpanded(!expanded);
-    };
+    useScrollHandler(setActiveSection, navbarHeight);
 
     const scrollToSection = (sectionClassName) => {
         if (activeSection !== sectionClassName) {
@@ -85,7 +50,7 @@ export function Navbar() {
                 </div>
 
                 <div className="mobile-view" onClick={() => { toggleHamburger(); setExpanded(!expanded); }}>
-                    <HamburgerIcon open={!expanded} />
+                    <HamburgerIcon open={expanded} />
                 </div>
 
             </div>
