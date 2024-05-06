@@ -56,7 +56,7 @@ export function Navbar() {
             </div>
 
             <div className="navlink-container">
-                <ul className={`navlink-ul ${minimized ? 'minimized' : 'closed'}`}>
+                <ul className={`navlink-ul minimized`}>
                     <li>
                         <Link onClick={() => scrollToSection('ABOUT')} className={activeSection === 'ABOUT' ? 'active' : ''}>About</Link>
                     </li>
