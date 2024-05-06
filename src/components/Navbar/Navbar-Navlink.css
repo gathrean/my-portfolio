@@ -35,6 +35,10 @@ ul {
     display: inline;
 }
 
+ul li .active {
+    color: #eeeeee;
+}
+
 /* "ul li a" specifically edits the String inside the >< brackets*/
 ul li a {
     color: #919191;

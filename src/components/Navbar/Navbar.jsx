@@ -28,6 +28,32 @@ export function Navbar() {
         }
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = ['HOME', 'ABOUT', 'PROJECTS', 'WORK', 'CONTACT'];
+            const scrollPosition = window.scrollY;
+
+            for (const section of sections) {
+                const element = document.querySelector(`.${section}`);
+                if (element) {
+                    const top = element.offsetTop;
+                    const height = element.offsetHeight;
+
+                    if (scrollPosition >= top && scrollPosition < top + height) {
+                        setActiveSection(section);
+                        break;
+                    }
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <nav ref={navbarRef} className="navbar navbar-animation" style={{ height: navbarHeight }}>
 
@@ -42,6 +68,7 @@ export function Navbar() {
                         src={hamburgerImage}
                         className={`hamburger ${collapsed ? 'collapsed' : 'open'}`}
                         style={{ width: '30px', height: '30px' }}
+                        alt="Hamburger Menu"
                     />
                 </div>
 
@@ -50,16 +77,16 @@ export function Navbar() {
             <div className="navlink-container">
                 <ul className={`navlink-ul ${collapsed ? 'collapsed' : 'closed'}`}>
                     <li>
-                        <Link>About</Link>
+                        <Link onClick={() => scrollToSection('ABOUT')} className={activeSection === 'ABOUT' ? 'active' : ''}>About</Link>
                     </li>
                     <li>
-                        <Link onClick={() => scrollToSection('PROJECTS')}>Projects</Link>
+                        <Link onClick={() => scrollToSection('PROJECTS')} className={activeSection === 'PROJECTS' ? 'active' : ''}>Projects</Link>
                     </li>
                     <li>
-                        <Link>Work</Link>
+                        <Link onClick={() => scrollToSection('WORK')} className={activeSection === 'WORK' ? 'active' : ''}>Work</Link>
                     </li>
                     <li>
-                        <Link onClick={() => scrollToSection('CONTACT')}>Contact</Link>
+                        <Link onClick={() => scrollToSection('CONTACT')} className={activeSection === 'CONTACT' ? 'active' : ''}>Contact</Link>
                     </li>
                 </ul>
             </div>
