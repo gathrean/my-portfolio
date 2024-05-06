@@ -7,7 +7,7 @@ export function useNavbarFunctions() {
 
     const navbarRef = useRef(null); // Reference to the navbar element (DOM)
 
-    // For setting the height of the navbar based on the window sizeß
+    // For setting the height of the navbar based on the window size
     useEffect(() => {
         const handleResize = () => {
             const newHeight = opened ? 56 : getWindowHeight();
@@ -39,7 +39,7 @@ export function useNavbarFunctions() {
         return () => {
             document.removeEventListener('mouse-outside', handleClickOutsideNavbar);
         };
-    }, []);
+    }, [navbarRef]);
 
     // For opening and closing the hamburger menu
     const toggleHamburger = () => {
