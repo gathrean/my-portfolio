@@ -6,15 +6,6 @@
         margin-right: 15%;
     }
 
-    .desktop-view {
-        display: none;
-    }
-
-    .mobile-view {
-        display: flex;
-        align-items: center;
-    }
-
     ul li a {
         font-size: 30px;
     }
