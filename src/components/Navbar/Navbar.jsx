@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useNavbarFunctions } from './NavbarFunctions';
+import { useNavbarFunctions, useScrollHandler } from './NavbarFunctions';
 
 import './Navbar.css';
 import './Navbar-Logo.css';
@@ -21,9 +21,10 @@ const HamburgerIcon = ({ open }) => (
 
 export function Navbar() {
     const { navbarHeight, navbarRef, toggleHamburger } = useNavbarFunctions();
-
     const [activeSection, setActiveSection] = useState('HOME');
     const [collapsed, setCollapsed] = useState(false);
+
+    useScrollHandler(setActiveSection, navbarHeight);
 
     const scrollToSection = (sectionClassName) => {
         if (activeSection !== sectionClassName) {
@@ -38,44 +39,6 @@ export function Navbar() {
             }
         }
     };
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const sections = ['HOME', 'ABOUT', 'PROJECTS', 'WORK', 'CONTACT'];
-            const scrollPosition = window.scrollY;
-
-            // Check if scroll position is within HERO section
-            const heroSection = document.querySelector('.HERO');
-            if (heroSection) {
-                const heroTop = heroSection.offsetTop;
-                const heroHeight = heroSection.offsetHeight;
-                if (scrollPosition >= heroTop && scrollPosition < heroTop + heroHeight) {
-                    setActiveSection('');
-                    return;
-                }
-            }
-
-            // If not within HERO section, determine active section
-            for (const section of sections) {
-                const element = document.querySelector(`.${section}`);
-                if (element) {
-                    const top = element.offsetTop;
-                    const height = element.offsetHeight;
-
-                    if (scrollPosition >= top && scrollPosition < top + height) {
-                        setActiveSection(section);
-                        break;
-                    }
-                }
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
     return (
         <nav ref={navbarRef} className={`navbar navbar-animation ${collapsed ? 'collapsed' : ''}`} style={{ height: navbarHeight }}>

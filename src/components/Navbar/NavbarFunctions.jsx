@@ -1,5 +1,45 @@
 import { useState, useEffect, useRef } from 'react';
 
+export function useScrollHandler(activeSectionSetter, navbarHeight) {
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = ['HOME', 'ABOUT', 'PROJECTS', 'WORK', 'CONTACT'];
+            const scrollPosition = window.scrollY;
+
+            // Check if scroll position is within HERO section
+            const heroSection = document.querySelector('.HERO');
+            if (heroSection) {
+                const heroTop = heroSection.offsetTop;
+                const heroHeight = heroSection.offsetHeight;
+                if (scrollPosition >= heroTop && scrollPosition < heroTop + heroHeight) {
+                    activeSectionSetter('');
+                    return;
+                }
+            }
+
+            // If not within HERO section, determine active section
+            for (const section of sections) {
+                const element = document.querySelector(`.${section}`);
+                if (element) {
+                    const top = element.offsetTop;
+                    const height = element.offsetHeight;
+
+                    if (scrollPosition >= top && scrollPosition < top + height) {
+                        activeSectionSetter(section);
+                        break;
+                    }
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [activeSectionSetter, navbarHeight]);
+}
+
 export function useNavbarFunctions() {
     const [scroll] = useState(false);
     const [opened, setOpened] = useState(true);
