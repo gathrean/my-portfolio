@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { useNavbarFunctions } from './NavbarFunctions';
 
 import './Navbar.css';
-import './Navbar-MediaQuries.css';
 import './Navbar-Logo.css';
 import './Navbar-Navlink.css';
 
@@ -14,35 +13,6 @@ export function Navbar() {
     const [activeSection, setActiveSection] = useState('HOME');
     const [collapsed] = useState(false);
     const [showNavbar, setShowNavbar] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const section = getActiveSection();
-            setActiveSection(section);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            setShowNavbar(true);
-        }, 1000);
-
-        return () => clearTimeout(timeout);
-    }, []);
-
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            setShowNavbar(true);
-        }, 1000);
-
-        return () => clearTimeout(timeout);
-    }, []);
 
     const scrollToSection = (sectionClassName) => {
         if (activeSection !== sectionClassName) {
@@ -59,7 +29,7 @@ export function Navbar() {
     };
 
     const getActiveSection = () => {
-        const sections = ['HOME', 'PROJECTS', 'TECH', 'CONTACT'];
+        const sections = ['AboutMe', 'Projects', 'Work', 'ContactMe'];
         for (let i = sections.length - 1; i >= 0; i--) {
             const sectionClassName = sections[i];
             const section = document.querySelector(`.${sectionClassName}`);
@@ -99,9 +69,6 @@ export function Navbar() {
                     </li>
                     <li>
                         <Link>Work</Link>
-                    </li>
-                    <li>
-                        <Link>Education</Link>
                     </li>
                     <li>
                         <Link className={`${activeSection === 'CONTACT' ? 'highlight' : ''}`} onClick={() => scrollToSection('CONTACT')}>Contact Me</Link>

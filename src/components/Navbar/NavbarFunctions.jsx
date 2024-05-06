@@ -21,12 +21,10 @@ export function useNavbarFunctions() {
     // Helper function for handleResize
     const getWindowHeight = () => {
         const windowWidth = window.innerWidth;
-        if (windowWidth <= 499) { // For Tablets
-            return opened ? 56 : 250;
-        } else if (windowWidth <= 299) { // For foladable phones
-            return opened ? 56 : 20;
+        if (windowWidth <= 499) { // For small devices
+            return opened ? 56 : 300;
         } else { // For Desktops and everything else
-            return opened ? 56 : 390;
+            return opened ? 56 : 325;
         }
     };
 
