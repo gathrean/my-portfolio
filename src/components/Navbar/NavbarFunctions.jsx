@@ -50,23 +50,13 @@ export function useNavbarFunctions() {
     // For setting the height of the navbar based on the window size
     useEffect(() => {
         const handleResize = () => {
-            const newHeight = opened ? 56 : getWindowHeight();
+            const newHeight = opened ? 56 : 315;
             setNavbarHeight(newHeight);
         };
         handleResize();
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, [opened]);
-
-    // Helper function for handleResize
-    const getWindowHeight = () => {
-        const windowWidth = window.innerWidth;
-        if (windowWidth <= 499) { // For small devices
-            return opened ? 56 : 300;
-        } else { // For Desktops and everything else
-            return opened ? 56 : 325;
-        }
-    };
 
     // For closing the hamburger menu when clicked outside
     useEffect(() => {

@@ -49,14 +49,14 @@ ul li a:hover {
     color: #ffffff;
 }
 
-/* For tablets */
+/* For iPads and iPhones*/
 @media only screen and (min-width: 300px) and (max-width: 499px) {
     .navbar-ul {
         line-height: 40px;
     }
 
     ul li a {
-        font-size: 30px;
+        font-size: 40px;
     }
 }
 
