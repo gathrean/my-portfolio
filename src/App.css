@@ -8,6 +8,7 @@
 
   /* COLORS */
   --colorwhite: #eeeeee;
+  --colorwhiteinactive: #eeeeee95;
   --colorblue: #0000dc;
   --colordarkgrey: #282828;
   --colorlightgrey: #4b4b4b;
@@ -52,6 +53,23 @@ h4 {
 
 p {
   font: 400 16px/1.5 var(--ff);
+}
+
+svg {
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+
+  transform: scale(1.05);
+  fill: var(--colorwhiteinactive);
+  width: 2em;
+  margin: 0.5em 1em;
+}
+
+svg:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  fill: var(--colorwhite);
 }
 
 html,

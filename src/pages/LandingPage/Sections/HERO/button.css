@@ -18,12 +18,9 @@
 
 .hero-button:hover {
   scale: 1.025;
-  /* color: var(--colorgreen); */
-  /* animation: stretchJiggle 0.5s; */
 }
 
 .hero-button img {
-  /* stroke: var(--colorgreen); */
   vertical-align: middle;
   transition: all 0.3s ease;
   transform: translateX(-5px);
@@ -66,10 +63,4 @@
 .bottom-buttons-container {
   display: flex;
   align-items: center;
-}
-
-@media screen and (max-width: 500px) {
-  .bottom-buttons-container {
-    flex-direction: column;
-  }
 }
