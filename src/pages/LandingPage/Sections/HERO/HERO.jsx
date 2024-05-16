@@ -32,11 +32,10 @@ const HERO = () => {
     <div className="overlay-container">
       <div className="text-container hero-animation">
         <div ref={overlayRef} className="overlay-text">
-          <h2>Hello! I am</h2>
           <h1>
             <span>Gathrean Dela Cruz</span>
           </h1>
-          <h3>Software Developer.</h3>
+          <h3>Software Developer</h3>
         </div>
       </div>
 

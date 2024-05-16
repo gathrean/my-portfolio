@@ -61,7 +61,7 @@ export function Navbar() {
             <div className="navbar-container">
 
                 <div className="brand">
-                    <span className="brand-text">Gathrean</span>
+                    <span className="brand-text">GDC</span>
                 </div>
 
                 <div ref={mobileViewRef} className="mobile-view" onClick={() => { toggleHamburger(); setExpanded(!expanded); }}>
