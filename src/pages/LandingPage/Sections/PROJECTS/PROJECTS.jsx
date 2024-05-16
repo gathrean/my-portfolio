@@ -2,7 +2,6 @@ import React from 'react';
 import ProjectCard from './Cards';
 
 import './PROJECTS.css';
-import './keywords.css';
 import './button.css'
 
 import Nebula from './Banners/Nebula.jpg';
@@ -32,42 +31,77 @@ export function PROJECTS() {
               This is the second line of the description.
             </>
           }
-          projectDetailsURL="https://www.google.com"
+          projectDetailsURL="#"
         />
         <ProjectCard
           projectName="OrcaSwipe"
           imageURL={OrcaSwipe}
           keywords="EJS, HTML, CSS, JavaScript, Bootstrap, Node.js, Express.js, Leaflet API, MongoDB, Firebase, ChatGPT API"
           date="May 2023"
-          description="Description of project 2 goes here."
+          description={
+            <>
+              Description of project goes here.
+              <br /> <br />
+              This is the second line of the description.
+            </>
+          }
+          projectDetailsURL="#"
         />
         <ProjectCard
           projectName="DungeonQuad"
           imageURL={DungeonQuad}
           keywords="Java, IntelliJ, Java Processing, Gradle, MongoDB, OOP Design, Sprite Design, UML Diagram"
           date="January 2023 - April 2023"
-          description="Description of project 4 goes here."
+          description={
+            <>
+              Description of project 1 goes here.
+              <br /> <br />
+              This is the second line of the description.
+            </>
+          }
+          projectDetailsURL="#"
         />
         <ProjectCard
           projectName="CareLink"
           imageURL={CareLink}
           keywords="JavaScript, React, Node.js, Express.js, Supabase, ChatGPT API, Hackathon"
           date="March 8 - 10, 2024 (Hackathon)"
-          description="Description of project 3 goes here."
+          description={
+            <>
+              Description of project 1 goes here.
+              <br /> <br />
+              This is the second line of the description.
+            </>
+          }
+          projectDetailsURL="#"
         />
         <ProjectCard
           projectName="YapPad"
           imageURL={YapPad}
           keywords="HTML, CSS, JavaScript, React, Vite, MongoDB, Node.js, Express.js"
           date="April 2024"
-          description="Description of project 5 goes here."
+          description={
+            <>
+              Description of project 1 goes here.
+              <br /> <br />
+              This is the second line of the description.
+            </>
+          }
+          projectDetailsURL="#"
         />
 
         <ProjectCard
           projectName="PokéTeams"
           keywords="Kotlin, AndroidStudio, PokeAPI"
           date="April 2023"
-          description="Description of project 6 goes here."
+          description={
+            <>
+              Description of project 1 goes here.
+              <br /> <br />
+              This is the second line of the description.
+            </>
+          }
+          projectDetailsURL="#"
         />
       </div>
     </div>

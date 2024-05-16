@@ -97,8 +97,9 @@ svg:hover {
 /* EXTERNAL LINK (with arrow) STYLES */
 /* ========================================== */
 
-a {
-  text-decoration: none;
+a:visited {
+  text-decoration: overline;
+  color: var(--colorlightgrey);
 }
 
 .external-link {
@@ -173,7 +174,7 @@ hr {
 .section-container h2,
 .section-container h3,
 .section-container h4 {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .section-container p {
