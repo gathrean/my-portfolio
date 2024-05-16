@@ -1,7 +1,6 @@
 import React from 'react';
 
 import './PROJECTS.css';
-import './Cards.css';
 
 import ArrowUpRight from '../../../../assets/icons/arrow-up-right.svg';
 
