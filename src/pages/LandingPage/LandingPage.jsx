@@ -18,11 +18,11 @@ export function LandingPage() {
     return (
         <section id="section1 home">
 
-            <section id="HERO" className="HERO">
+            <section id="HERO" className="section HERO">
                 <HERO />
             </section>
 
-            <section id="ABOUT" className="ABOUT">
+            <section id="ABOUT" className="section ABOUT">
                 {/* make the height 100vh */}
                 <div className="section-container" style={{ height: '100vh' }}>
                     <hr />
@@ -31,11 +31,11 @@ export function LandingPage() {
                 </div>
             </section>
 
-            <section id="PROJECTS" className="PROJECTS">
+            <section id="PROJECTS" className="section PROJECTS">
                 <PROJECTS />
             </section>
 
-            <section id="WORK" className="WORK">
+            <section id="WORK" className="section WORK">
                 <div className="section-container" style={{ height: '100vh' }}>
                     <hr />
                     <h1>Work Experience</h1>
@@ -43,11 +43,11 @@ export function LandingPage() {
                 </div>
             </section>
 
-            <section id="CONTACT" className="CONTACT">
+            <section id="CONTACT" className="section CONTACT">
                 <CONTACT />
             </section>
 
-            <section id="TECH" className="TECH">
+            <section id="TECH" className="section TECH">
                 <TECH />
             </section>
 

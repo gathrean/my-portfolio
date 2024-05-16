@@ -27,7 +27,7 @@ const HERO = () => {
   }
 
   return (
-    <div className="overlay-container">
+    <div className="hero-container">
       <div className="text-container hero-animation">
         <div ref={overlayRef} className="overlay-text">
           <h1>
