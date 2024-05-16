@@ -8,6 +8,12 @@
   flex-wrap: nowrap;
 }
 
+@media screen and (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+  }
+}
+
 .project-card-description {
   display: flex;
   flex-direction: column;
@@ -32,7 +38,6 @@
 
 .project-card h1 {
   color: #000;
-  /* font-size: 1.5rem; */
   font-weight: 900;
 }
 

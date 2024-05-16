@@ -4,3 +4,9 @@
   grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
   gap: 30px;
 }
+
+@media screen and (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
