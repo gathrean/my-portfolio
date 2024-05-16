@@ -53,7 +53,7 @@ const HERO = () => {
           {/* LinkedIn Button */}
           <div onClick={() => handleClick('LinkedIn')}>
             <svg viewBox="0 0 20 20" version="1.1">
-              <g id="Page-1" stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+              <g id="Page-1" stroke="none" strokeWidth="1" fill="" fillRule="evenodd">
                 <g id="Dribbble-Light-Preview" transform="translate(-180.000000, -7479.000000)">
                   <g id="icons" transform="translate(56.000000, 160.000000)">
                     <path
@@ -69,7 +69,7 @@ const HERO = () => {
           {/* GitHub Button */}
           <div onClick={() => handleClick('GitHub')}>
             <svg viewBox="0 0 20 20" version="1.1">
-              <g id="github-page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+              <g id="github-page-1" stroke="none" strokeWidth="1" fillRule="evenodd">
                 <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)">
                   <g id="icons" transform="translate(56.000000, 160.000000)">
                     <path

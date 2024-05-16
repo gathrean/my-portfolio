@@ -63,6 +63,7 @@ h4 {
 
 p {
   font: 400 16px/1.5 var(--ff);
+  margin: 1em 0;
 }
 
 /* UTILITY CLASSES */
