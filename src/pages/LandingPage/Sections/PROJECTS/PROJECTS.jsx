@@ -13,7 +13,7 @@ import YapPad from './Banners/YapPad.jpg';
 
 export function PROJECTS() {
   return (
-    <div className="projects-section-container">
+    <div className="section-container">
       <hr />
       <h1>Featured Projects</h1>
 

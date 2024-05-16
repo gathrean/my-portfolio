@@ -1,3 +1,11 @@
+/* CUSTOM CSS */
+:root {
+  --ff: 'Inter Regular', sans-serif;
+  --ffh1: 'Inter Bold', sans-serif;
+  --ffh2: 'Inter SemiBold', sans-serif;
+  --ffh3: 'Inter Medium', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,14 +13,37 @@
 }
 
 body {
-  background-color: #1C1C1C;
+  background-color: #eeeeee;
   overflow-x: hidden;
   width: 100%;
   height: 100%;
 }
 
 body {
-  font-family: work-sans, sans-serif;
+  font: 400 16px/1.5 var(--ff);
+}
+
+h1 {
+  font: bold 3.375rem/3.375rem var(--ffh1);
+  letter-spacing: -2px;
+}
+
+h2 {
+  font: bold 3rem/3rem var(--ffh2);
+  letter-spacing: -1px;
+}
+
+h3 {
+  font: bold 2.625rem/2.625rem var(--ffh3);
+}
+
+h4 {
+  font: bold 2.25rem/2.25rem var(--ffh3);
+}
+
+
+p {
+  font: 400 16px/1.5 var(--ff);
 }
 
 html,
@@ -33,7 +64,7 @@ body {
 }
 
 ::selection {
-  background-color: #000;
+  background-color: #0000dc;
   color: #fff;
 }
 
@@ -41,4 +72,23 @@ hr {
   border: none;
   border-top: 2px solid #000000;
   margin: 20px 0;
+}
+
+/* For all sections */
+
+.section-container {
+  padding: 50px 10vw;
+  min-height: 100vh;
+}
+
+.section-container h1,
+h2,
+h3,
+h4 {
+  color: #282828;
+  margin-bottom: 20px;
+}
+
+.section-container p {
+  color: #4B4B4B;
 }

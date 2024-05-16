@@ -1,32 +1,3 @@
-.projects-section-container {
-  padding: 50px 10vw;
-}
-
-.projects-section-container h1 {
-  color: #fff;
-  font-size: 3rem;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.projects-section-container h2 {
-  color: #ccc;
-  font-size: 2rem;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.projects-section-container h3 {
-  color: #aaa;
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.projects-section-container p {
-  color: #E5E5E5;
-}
-
 .projects-grid {
   margin-top: 50px;
   display: grid;
