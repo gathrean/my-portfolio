@@ -55,6 +55,12 @@ p {
   font: 400 16px/1.5 var(--ff);
 }
 
+.baybayin {
+  margin-top: 2vw;
+  font: bold 5vw/1em var(--ffh1);
+  font-family: 'Baybayin Deko', sans-serif;
+}
+
 svg {
   position: relative;
   display: inline-block;
