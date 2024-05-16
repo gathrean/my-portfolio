@@ -8,7 +8,7 @@
   width: 100%;
   height: 100vh;
 
-  background-image: url('../../../../../public/images/DSC04733v3BW_cropped.jpg');
+  background-image: url('../../../../../public/images/DSC04733_cropped.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -41,6 +41,7 @@
 
 .overlay-text {
   text-align: start;
+  color: #fff !important; 
 }
 
 .overlay-text h1 {
