@@ -16,6 +16,7 @@
   --colorlightgrey: #4b4b4b;
   --colorblack: #000000;
   --colorgreen: #439775;
+  --shadow: 0 0 10px 0 #00000010;
 }
 
 /* RESET */

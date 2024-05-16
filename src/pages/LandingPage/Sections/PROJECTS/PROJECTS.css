@@ -35,6 +35,7 @@
   border: 1px solid #ccc;
   border-radius: 30px;
   padding: 20px;
+  box-shadow: var(--shadow);
 }
 
 .project-card-description {
