@@ -41,7 +41,7 @@
 
 .overlay-text {
   text-align: start;
-  color: #fff !important; 
+  color: #fff !important;
 }
 
 .overlay-text h1 {
@@ -61,6 +61,17 @@
   font-weight: 400;
   font-size: 2.5rem;
   color: #fff;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-buttons-container {
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {

@@ -1,4 +1,5 @@
 /* GLOBAL CSS */
+/* ========================================== */
 :root {
   /* FONTS */
   --ff: 'Inter Regular', sans-serif;
@@ -17,12 +18,16 @@
   --colorgreen: #439775;
 }
 
+/* RESET */
+/* ========================================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BASE STYLES */
+/* ========================================== */
 html {
   scroll-snap-type: y mandatory;
   width: 100%;
@@ -59,21 +64,23 @@ p {
   font: 400 16px/1.5 var(--ff);
 }
 
+/* UTILITY CLASSES */
+/* ========================================== */
 .baybayin {
   margin-top: 2vw;
   font: bold 5vw/1em var(--ffh1);
   font-family: 'Baybayin Deko', sans-serif;
 }
 
+/* SVG STYLES */
+/* ========================================== */
 svg {
   position: relative;
   display: inline-block;
   transition: all 0.3s ease;
-
   transform: scale(1.05);
   fill: var(--colorwhiteinactive);
   width: 2em;
-
   margin: 0.5em 1em;
 }
 
@@ -87,6 +94,41 @@ svg:hover {
   fill: var(--colorwhite);
 }
 
+/* EXTERNAL LINK (with arrow) STYLES */
+/* ========================================== */
+
+.external-link {
+  color: var(--colorwhite);
+  font-size: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin: 10px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.external-link:hover {
+  scale: 1.025;
+}
+
+.external-link img {
+  vertical-align: middle;
+  transition: all 0.3s ease;
+  transform: translateX(-5px);
+}
+
+.external-link:hover img {
+  transform: translateX(5px);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+/* LAYOUT STYLES */
+/* ========================================== */
 .container {
   display: flex;
   flex-direction: column;
@@ -98,36 +140,65 @@ svg:hover {
   padding: 2rem;
 }
 
+/* SELECTION STYLES */
+/* ========================================== */
 ::selection {
   background-color: var(--colordarkgrey);
   color: var(--colorwhite);
 }
 
+/* CLICKABLE ELEMENTS */
+/* ========================================== */
 .clickable {
   cursor: pointer;
 }
 
+/* HR STYLES */
+/* ========================================== */
 hr {
   border: none;
   border-top: 2px solid var(--colordarkgrey);
   margin: 20px 0;
 }
 
-/* For all sections */
-
+/* SECTION STYLES */
+/* ========================================== */
 .section-container {
   padding: 50px 10vw;
   min-height: 100vh;
 }
 
 .section-container h1,
-h2,
-h3,
-h4 {
-  /* color: var(--colordarkgrey); */
+.section-container h2,
+.section-container h3,
+.section-container h4 {
   margin-bottom: 20px;
 }
 
 .section-container p {
   color: var(--colorlightgrey);
+}
+
+/* ANIMATIONS */
+/* ========================================== */
+@keyframes stretchJiggle {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scaleY(1.1) scaleX(1);
+  }
+
+  50% {
+    transform: scaleY(0.9) scaleX(1.05);
+  }
+
+  75% {
+    transform: scaleY(1.1) scaleX(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

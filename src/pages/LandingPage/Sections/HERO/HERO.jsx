@@ -40,7 +40,7 @@ const HERO = () => {
       <div className="buttons-container">
 
         {/* Resume Button */}
-        <div className="hero-button animation" onClick={() => handleClick('Resume')}>
+        <div className="external-link animation" onClick={() => handleClick('Resume')}>
           View Resumé
           <img
             src={ArrowUpRight}
