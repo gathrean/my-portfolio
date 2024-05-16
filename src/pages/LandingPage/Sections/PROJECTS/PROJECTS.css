@@ -42,13 +42,19 @@
   aspect-ratio: 4/3;
   background-color: #909090;
   border-radius: 30px;
-  width: 100%; /* Example percentage value */
-  max-width: 400px; /* Example percentage value */
-  min-height: auto;
+  width: 400px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+}
+
+@media screen and (max-width: 880px) {
+  .header-image img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .project-card h1 {

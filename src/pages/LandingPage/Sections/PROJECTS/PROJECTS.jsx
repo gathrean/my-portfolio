@@ -25,8 +25,7 @@ export function PROJECTS() {
           date="January 2024 - Present"
           description={
             <>
-              Description of project 1 goes here.
-              <br /> <br />
+              Description of project 1 goes here. Description of project 1 goes here. Description of project 1 goes here. Description of project 1 goes here. Description of project 1 goes here. 
               This is the second line of the description.
             </>
           }
