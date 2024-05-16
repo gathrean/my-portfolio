@@ -68,6 +68,7 @@ p {
 /* UTILITY CLASSES */
 /* ========================================== */
 .baybayin {
+  user-select: none;
   margin-top: 2vw;
   font: bold 5vw/1em var(--ffh1);
   font-family: 'Baybayin Deko', sans-serif;
