@@ -96,7 +96,7 @@ body {
 }
 
 ::selection {
-  background-color: var(--colorblue);
+  background-color: var(--colordarkgrey);
   color: var(--colorwhite);
 }
 
