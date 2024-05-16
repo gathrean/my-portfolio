@@ -17,7 +17,7 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1538px) {
+@media screen and (max-width: 1538px) {
   .projects-grid {
     grid-template-columns: repeat(auto-fit, minmax(330px, 2fr));
   }
@@ -75,13 +75,4 @@
 
 .project-card p {
   color: #616161;
-}
-
-.keyword {
-  display: inline-block;
-  padding: 2px 10px;
-  margin: 2px;
-  border: 1px solid #00000040;
-  font-size: 0.8rem;
-  color: white;
 }
