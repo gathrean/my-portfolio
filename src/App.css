@@ -10,6 +10,7 @@
   --colorwhite: #eeeeee;
   --colorwhiteinactive: #eeeeee95;
   --colorblue: #0000dc;
+  --colorbluelight: #9999FF;
   --colordarkgrey: #282828;
   --colorlightgrey: #4b4b4b;
   --colorblack: #000000;
@@ -81,10 +82,6 @@ svg:hover {
   fill: var(--colorwhite);
 }
 
-.section {
-  scroll-snap-align: start;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -122,7 +119,7 @@ hr {
 h2,
 h3,
 h4 {
-  color: var(--colordarkgrey);
+  /* color: var(--colordarkgrey); */
   margin-bottom: 20px;
 }
 
