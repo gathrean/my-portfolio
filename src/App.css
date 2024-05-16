@@ -2,8 +2,8 @@
 :root {
   --ff: 'Inter Regular', sans-serif;
   --ffh1: 'Inter Bold', sans-serif;
-  --ffh2: 'Inter SemiBold', sans-serif;
-  --ffh3: 'Inter Medium', sans-serif;
+  --ffh2: 'Inter Medium', sans-serif;
+  --ffh3: 'Inter Light', sans-serif;
 }
 
 * {
@@ -29,18 +29,17 @@ h1 {
 }
 
 h2 {
-  font: bold 3rem/3rem var(--ffh2);
+  font: bold 3rem/2.375rem var(--ffh2);
   letter-spacing: -1px;
 }
 
 h3 {
-  font: bold 2.625rem/2.625rem var(--ffh3);
+  font: bold 2rem/2.375rem var(--ffh3);
 }
 
 h4 {
-  font: bold 2.25rem/2.25rem var(--ffh3);
+  font: bold 1.75rem/2rem var(--ffh3);
 }
-
 
 p {
   font: 400 16px/1.5 var(--ff);
