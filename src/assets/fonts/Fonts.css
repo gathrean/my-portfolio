@@ -1,63 +1,45 @@
-/* SECRET FONT */
-
+/* Inter Font */
 @font-face {
-    font-family: 'SecretFont Regular';
-    src: url('SecretFont Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'SecretFont Bold';
-    src: url('SecretFont Bold.ttf') format('truetype');
-}
-
-.sf-regular {
-    font-family: 'SecretFont Regular', sans-serif;
-}
-
-.sf-bold {
-    font-family: 'SecretFont Bold', sans-serif;
-}
-
-/* MONTSERRAT FONT */
-
-@font-face {
-    font-family: 'Montserrat Regular';
-    src: url('Montserrat-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Inter Black';
+    src: url('Inter/Inter-Black.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Montserrat Bold';
-    src: url('Montserrat-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: bold;
-}
-
-.montserrat-regular {
-    font-family: 'Montserrat Regular', sans-serif;
-}
-
-.montserrat-bold {
-    font-family: 'Montserrat Bold', sans-serif;
-}
-
-/* Tahome Font */
-
-@font-face {
-    font-family: 'Tahoma Regular';
-    src: url('Tahoma.ttf') format('truetype');
+    font-family: 'Inter Bold';
+    src: url('Inter/Inter-Bold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Tahoma Bold';
-    src: url('Tahoma Bold.ttf') format('truetype');
+    font-family: 'Inter ExtraBold';
+    src: url('Inter/Inter-ExtraBold.ttf') format('truetype');
 }
 
-.tahoma-regular {
-    font-family: 'Tahoma Regular', sans-serif;
+@font-face {
+    font-family: 'Inter ExtraLight';
+    src: url('Inter/Inter-ExtraLight.ttf') format('truetype');
 }
 
-.tahoma-bold {
-    font-family: 'Tahoma Bold', sans-serif;
+@font-face {
+    font-family: 'Inter Light';
+    src: url('Inter/Inter-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter Medium';
+    src: url('Inter/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter Regular';
+    src: url('Inter/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter SemiBold';
+    src: url('Inter/Inter-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter Thin';
+    src: url('Inter/Inter-Thin.ttf') format('truetype');
 }
