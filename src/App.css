@@ -22,15 +22,17 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: var(--colorwhite);
-  overflow-x: hidden;
+html {
   width: 100%;
   height: 100%;
 }
 
 body {
   font: 400 16px/1.5 var(--ff);
+  background-color: var(--colorwhite);
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
@@ -76,12 +78,6 @@ svg:hover {
   cursor: pointer;
   transform: scale(1.1);
   fill: var(--colorwhite);
-}
-
-html,
-body {
-  width: 100%;
-  height: 100%;
 }
 
 .container {
