@@ -64,7 +64,7 @@ export function Navbar() {
                     <span className="brand-text">Gathrean Dela Cruz</span>
                 </div>
 
-                <div ref={mobileViewRef} className="mobile-view" onClick={() => { toggleHamburger(); setExpanded(!expanded); }}>
+                <div ref={mobileViewRef} className="mobile-view clickable" onClick={() => { toggleHamburger(); setExpanded(!expanded); }}>
                     <HamburgerIcon open={expanded} />
                 </div>
 

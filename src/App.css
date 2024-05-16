@@ -75,6 +75,10 @@ body {
   color: var(--colorwhite);
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 hr {
   border: none;
   border-top: 2px solid var(--colordarkgrey);
