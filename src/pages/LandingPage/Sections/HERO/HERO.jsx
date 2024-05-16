@@ -5,9 +5,10 @@ import './button.css';
 import './HERO.css'
 
 // Icons
-import LinkedInIcon from './icons/linkedin.png';
-import GitHubIcon from './icons/github.png';
-import DownloadIcon from './icons/download.png';
+import LinkedInIcon from '../../../../assets/icons/linkedin.png';
+import GitHubIcon from '../../../../assets/icons/github.png';
+import DownloadIcon from '../../../../assets/icons/download.png';
+import ArrowUpRight from '../../../../assets/icons/arrow-up-right.svg';
 
 const HERO = () => {
   const overlayRef = useRef(null);
@@ -40,18 +41,12 @@ const HERO = () => {
       </div>
 
       <div className="buttons-container">
-        <div className="hero-button" onClick={() => handleClick('Resume')}>
-          <img
-            src={DownloadIcon}
-            alt="Download Icon"
-            width="22px"
-            height="22px"
-            style={{ marginRight: '10px' }}
-          />
+        <div className="hero-button animation" onClick={() => handleClick('Resume')}>
           Resumé
+          <img src={ArrowUpRight} alt="Arrow Up Right" style={{ width: '1em', height: '1em', marginLeft: '10px' }} />
         </div>
         <div className="bottom-buttons-container">
-          <div className="hero-button" onClick={() => handleClick('LinkedIn')}>
+          <div className="icon-button" onClick={() => handleClick('LinkedIn')}>
             <img
               src={LinkedInIcon}
               alt="LinkedIn Icon"
@@ -59,9 +54,8 @@ const HERO = () => {
               height="22px"
               style={{ marginRight: '10px' }}
             />
-            LinkedIn
           </div>
-          <div className="hero-button" onClick={() => handleClick('GitHub')}>
+          <div className="icon-button" onClick={() => handleClick('GitHub')}>
             <img
               src={GitHubIcon}
               alt="GitHub Icon"
@@ -69,7 +63,6 @@ const HERO = () => {
               height="22px"
               style={{ marginRight: '10px' }}
             />
-            GitHub
           </div>
         </div>
       </div>
