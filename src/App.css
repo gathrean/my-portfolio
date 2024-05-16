@@ -97,33 +97,34 @@ svg:hover {
 /* EXTERNAL LINK (with arrow) STYLES */
 /* ========================================== */
 
+a {
+  text-decoration: none;
+}
+
 .external-link {
   color: var(--colorwhite);
   font-size: 2rem;
 
   display: flex;
   flex-direction: row;
-  align-items: center;
 
-  margin: 10px;
-  padding: 10px 30px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.external-link:hover {
+.external-link:hover a {
+  transition: all 0.3s ease;
   scale: 1.025;
 }
 
 .external-link img {
   vertical-align: middle;
   transition: all 0.3s ease;
-  transform: translateX(-5px);
+  transform: translateX(-10px) translateY(10px);
 }
 
 .external-link:hover img {
-  transform: translateX(5px);
-  transform: translateY(-5px);
+  transform: translateX(-5px) translateY(5px);
   transition: all 0.3s ease;
 }
 

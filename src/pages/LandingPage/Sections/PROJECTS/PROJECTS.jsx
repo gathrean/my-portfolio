@@ -21,7 +21,7 @@ export function PROJECTS() {
 
       <div className="projects-grid">
         <ProjectCard
-          projectName="Nebula Neural Network"
+          projectName="Nebula"
           imageURL={Nebula}
           keywords="HTML, CSS, JavaScript, Python, TensorFlow, PyTorch"
           date="January 2024 - Present"
@@ -32,6 +32,7 @@ export function PROJECTS() {
               This is the second line of the description.
             </>
           }
+          projectDetailsURL="https://www.google.com"
         />
         <ProjectCard
           projectName="OrcaSwipe"
@@ -41,7 +42,7 @@ export function PROJECTS() {
           description="Description of project 2 goes here."
         />
         <ProjectCard
-          projectName="DungeonQuad RPG"
+          projectName="DungeonQuad"
           imageURL={DungeonQuad}
           keywords="Java, IntelliJ, Java Processing, Gradle, MongoDB, OOP Design, Sprite Design, UML Diagram"
           date="January 2023 - April 2023"
@@ -63,7 +64,7 @@ export function PROJECTS() {
         />
 
         <ProjectCard
-          projectName="Pokemon Team Generator"
+          projectName="PokéTeams"
           keywords="Kotlin, AndroidStudio, PokeAPI"
           date="April 2023"
           description="Description of project 6 goes here."

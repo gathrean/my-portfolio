@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 
 // Styles
-import './button.css';
 import './HERO.css'
 
 // Icons
@@ -41,7 +40,7 @@ const HERO = () => {
 
         {/* Resume Button */}
         <div className="external-link animation" onClick={() => handleClick('Resume')}>
-          View Resumé
+          <a>View Resumé</a>
           <img
             src={ArrowUpRight}
             alt="Arrow Up Right"

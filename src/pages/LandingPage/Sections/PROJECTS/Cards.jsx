@@ -3,7 +3,9 @@ import React from 'react';
 import './PROJECTS.css';
 import './Cards.css';
 
-function ProjectCard({ projectName, imageURL, keywords, date, description }) {
+import ArrowUpRight from '../../../../assets/icons/arrow-up-right.svg';
+
+function ProjectCard({ projectName, imageURL, keywords, date, description, projectDetailsURL }) {
 
   const keywordArray = keywords.split(',').map(keyword => keyword.trim());
 
@@ -54,11 +56,17 @@ function ProjectCard({ projectName, imageURL, keywords, date, description }) {
         </div>
       </a>
 
-      <h1>{projectName}</h1>
+      <h1 className="external-link">
+        <a href={projectDetailsURL}>{projectName}</a>
+        <img
+          src={ArrowUpRight}
+          alt="Arrow Up Right"
+          style={{ filter: 'invert(100%)', width: '0.8em', height: '0.8em', marginLeft: '10px' }}
+        />
+      </h1>
+
       <h3>{date}</h3>
       <p>{description}</p>
-
-      <a href="#" className="read-more-button">Read more</a>
 
       <hr style={{ height: '0.5px', border: 'none', backgroundColor: '#00000040' }} />
 
