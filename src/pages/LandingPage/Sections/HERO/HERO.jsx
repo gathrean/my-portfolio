@@ -11,9 +11,6 @@ const HERO = () => {
 
   function handleClick(buttonType) {
     switch (buttonType) {
-      case 'Resume':
-        window.open('resumeURL', '_blank');
-        break;
       case 'LinkedIn':
         window.open('https://www.linkedin.com/in/gathrean/', '_blank');
         break;
@@ -32,18 +29,17 @@ const HERO = () => {
           <h1>
             <span>Gathrean Dela Cruz</span>
           </h1>
-          <h4>Software & Web Developer</h4>
+          <h4>Frontend Software Developer</h4>
         </div>
       </div>
 
       <div className="buttons-container">
 
         {/* Resume Button */}
-        <div className="external-link animation" onClick={() => handleClick('Resume')}>
-          <a>View Resumé</a>
+        <div className="external-link">
+          <a href="resumeURL" style={{ cursor: 'pointer', color: 'white' }} >View Resumé</a>
           <img
-            src={ArrowUpRight}
-            alt="Arrow Up Right"
+            src={ArrowUpRight} alt="Arrow Up Right"
             style={{ width: '0.8em', height: '0.8em', marginLeft: '10px' }}
           />
         </div>

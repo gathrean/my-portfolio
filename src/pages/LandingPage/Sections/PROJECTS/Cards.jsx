@@ -10,8 +10,8 @@ function ProjectCard({
 
   return (
     <div className="project-card-container">
+      <div className="header-image"><img alt="Project Screenshots" /></div>
       <div className="project-card">
-
         <div className="project-card-description">
           <div className="link-and-icon-container">
             <img className="project-small-icon" src={iconURL} />
@@ -27,13 +27,10 @@ function ProjectCard({
               />
             </h1>
           </div>
-
           <h3>{date}</h3>
           <p>{description}</p>
-
         </div>
       </div>
-      <div className="header-image"><img alt="Project Screenshots" /></div>
     </div>
   );
 }
