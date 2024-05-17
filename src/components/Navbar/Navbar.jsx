@@ -61,7 +61,7 @@ export function Navbar() {
             <div className="navbar-container">
 
                 <div className="brand">
-                    <span className="brand-text">Gathrean DC</span>
+                    <span className="brand-text">gathrean.com</span>
                 </div>
 
                 <div ref={mobileViewRef} className="hamburger mobile-view clickable" onClick={() => { toggleHamburger(); setExpanded(!expanded); }}>
@@ -77,9 +77,6 @@ export function Navbar() {
                     </li>
                     <li>
                         <Link onClick={() => scrollToSection('PROJECTS')} className={activeSection === 'PROJECTS' ? 'active' : ''}>Projects</Link>
-                    </li>
-                    <li>
-                        <Link onClick={() => scrollToSection('WORK')} className={activeSection === 'WORK' ? 'active' : ''}>Work</Link>
                     </li>
                     <li>
                         <Link onClick={() => scrollToSection('CONTACT')} className={activeSection === 'CONTACT' ? 'active' : ''}>Contact</Link>
