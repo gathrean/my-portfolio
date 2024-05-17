@@ -9,6 +9,12 @@ import DungeonQuad from './Banners/DungeonQuad.jpg';
 import CareLink from './Banners/CareLink.jpg';
 import YapPad from './Banners/YapPad.jpg';
 
+import NebulaIcon from '../../../../assets/icons/project-icons/Nebula-Icon.png';
+import OrcaSwipeIcon from '../../../../assets/icons/project-icons/OrcaSwipe-Icon.png';
+import DungeonQuadIcon from '../../../../assets/icons/project-icons/DungeonQuad-Icon.png';
+import CareLinkIcon from '../../../../assets/icons/project-icons/CareLink-Icon.png';
+import YapPadIcon from '../../../../assets/icons/project-icons/YapPad-Icon.png';
+
 export function PROJECTS() {
   return (
     <div className="section-container">
@@ -21,12 +27,18 @@ export function PROJECTS() {
         <ProjectCard
           projectName="Nebula"
           imageURL={Nebula}
-          keywords="HTML, CSS, JavaScript, Python, TensorFlow, PyTorch"
+          iconURL={NebulaIcon}
+          // keywords="HTML, CSS, JavaScript, Python, TensorFlow, PyTorch"
           date="January 2024 - Present"
           description={
             <>
-              Description of project 1 goes here. Description of project 1 goes here. Description of project 1 goes here. Description of project 1 goes here. Description of project 1 goes here. 
-              This is the second line of the description.
+              • Helped in developing an innovative method for <b>recognizing multiple musical instruments in music and audio recordings</b>.
+              <br />
+              • Used a Convolutional Neural Network (<e>CNN</e>) within an <e>Artificial Neural Network</e> framework and processed the <e>OpenMIC-2018</e> dataset as mel-spectrograms.
+              <br />
+              • Achieved an <b>F1 score of 56%, setting a new benchmark in the field</b>.
+              <br />
+              • Designed the <b>Frontend</b> of the website for the project using <e>HTML</e>, <e>CSS</e>, and <e>JavaScript</e>.
             </>
           }
           projectDetailsURL="#"
@@ -34,13 +46,18 @@ export function PROJECTS() {
         <ProjectCard
           projectName="OrcaSwipe"
           imageURL={OrcaSwipe}
-          keywords="EJS, HTML, CSS, JavaScript, Bootstrap, Node.js, Express.js, Leaflet API, MongoDB, Firebase, ChatGPT API"
+          iconURL={OrcaSwipeIcon}
+          // keywords="EJS, HTML, CSS, JavaScript, Bootstrap, Node.js, Express.js, Leaflet API, MongoDB, Firebase, ChatGPT API"
           date="May 2023"
           description={
             <>
-              Description of project goes here.
-              <br /> <br />
-              This is the second line of the description.
+              • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
+              <br />
+              • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
+              <br />
+              • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
+              <br />
+              • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
             </>
           }
           projectDetailsURL="#"
@@ -48,13 +65,18 @@ export function PROJECTS() {
         <ProjectCard
           projectName="DungeonQuad"
           imageURL={DungeonQuad}
-          keywords="Java, IntelliJ, Java Processing, Gradle, MongoDB, OOP Design, Sprite Design, UML Diagram"
+          iconURL={DungeonQuadIcon}
+          // keywords="Java, IntelliJ, Java Processing, Gradle, MongoDB, OOP Design, Sprite Design, UML Diagram"
           date="January 2023 - April 2023"
           description={
             <>
-              Description of project 1 goes here.
-              <br /> <br />
-              This is the second line of the description.
+              • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
+              <br />
+              • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
+              <br />
+              • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
+              <br />
+              • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
             </>
           }
           projectDetailsURL="#"
@@ -62,13 +84,18 @@ export function PROJECTS() {
         <ProjectCard
           projectName="CareLink"
           imageURL={CareLink}
-          keywords="JavaScript, React, Node.js, Express.js, Supabase, ChatGPT API, Hackathon"
+          iconURL={CareLinkIcon}
+          // keywords="JavaScript, React, Node.js, Express.js, Supabase, ChatGPT API, Hackathon"
           date="March 8 - 10, 2024 (Hackathon)"
           description={
             <>
-              Description of project 1 goes here.
-              <br /> <br />
-              This is the second line of the description.
+              • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
+              <br />
+              • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
+              <br />
+              • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
+              <br />
+              • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
             </>
           }
           projectDetailsURL="#"
@@ -76,20 +103,25 @@ export function PROJECTS() {
         <ProjectCard
           projectName="YapPad"
           imageURL={YapPad}
-          keywords="HTML, CSS, JavaScript, React, Vite, MongoDB, Node.js, Express.js"
+          iconURL={YapPadIcon}
+          // keywords="HTML, CSS, JavaScript, React, Vite, MongoDB, Node.js, Express.js"
           date="April 2024"
           description={
             <>
-              Description of project 1 goes here.
-              <br /> <br />
-              This is the second line of the description.
+              • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
+              <br />
+              • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
+              <br />
+              • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
+              <br />
+              • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
             </>
           }
           projectDetailsURL="#"
         />
 
-        <ProjectCard
-          projectName="PokéTeams"
+        {/* <ProjectCard
+          projectName="Pokémon Teams Generator"
           keywords="Kotlin, AndroidStudio, PokeAPI"
           date="April 2023"
           description={
@@ -100,7 +132,7 @@ export function PROJECTS() {
             </>
           }
           projectDetailsURL="#"
-        />
+        /> */}
       </div>
     </div>
   );

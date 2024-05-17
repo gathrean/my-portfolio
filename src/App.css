@@ -63,7 +63,20 @@ h4 {
 
 p {
   font: 400 16px/1.5 var(--ff);
-  margin: 1em 0;
+  margin: 0 0 1em 0;
+}
+
+b {
+  font: 900 16px/1.5 var(--ff);
+}
+
+e {
+  white-space: nowrap;
+  font: 600 16px/1.5 var(--ff);
+  color: var(--colorwhite);
+  background-color: var(--colorlightgrey);
+  padding: 0.025em 0.5em;
+  border-radius: 1em;
 }
 
 /* UTILITY CLASSES */

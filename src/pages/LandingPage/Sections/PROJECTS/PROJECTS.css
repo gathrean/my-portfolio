@@ -2,12 +2,22 @@
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 30px;
+  gap: 50px;
   justify-items: center;
 }
 
+.project-card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
 
 @media screen and (max-width: 880px) {
+  .project-card-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .project-card {
     display: flex;
     flex-direction: column;
@@ -70,4 +80,16 @@
 
 .project-card p {
   color: #616161;
+}
+
+.project-small-icon {
+  width: auto;
+  height: 40px;
+  margin-right: 0.5em;
+}
+
+.link-and-icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
