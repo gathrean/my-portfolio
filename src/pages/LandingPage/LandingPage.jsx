@@ -18,7 +18,7 @@ export function LandingPage() {
         <section id="section1 home">
             <section id="HERO" className="HERO"><HERO /></section>
             <section id="ABOUT" className="ABOUT"><ABOUT /></section>
-            <section id="PROJECTS" className="ROJECTS"><PROJECTS /></section>
+            <section id="PROJECTS" className="PROJECTS"><PROJECTS /></section>
             <section id="CONTACT" className="CONTACT"><CONTACT /></section>
         </section>
     );

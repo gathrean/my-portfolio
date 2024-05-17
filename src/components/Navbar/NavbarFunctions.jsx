@@ -50,7 +50,7 @@ export function useNavbarFunctions() {
     // For setting the height of the navbar based on the window size
     useEffect(() => {
         const handleResize = () => {
-            const newHeight = opened ? 56 : 330;
+            const newHeight = opened ? 56 : 260;
             setNavbarHeight(newHeight);
         };
         handleResize();

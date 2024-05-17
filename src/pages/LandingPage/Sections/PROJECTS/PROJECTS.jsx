@@ -25,6 +25,22 @@ export function PROJECTS() {
 
       <div className="projects-grid">
         <ProjectCard
+          projectName="Portfolio (This Website)"
+          date="April 2024 - June 2024"
+          description={
+            <>
+              • Developed a <b>responsive website</b> using <e>React</e>, <e>JavaScript</e>, <e>HTML</e>, and <e>CSS</e>.
+              <br />
+              • Implemented <b>React Router</b> for navigation and <b>React Hooks</b> for state management.
+              <br />
+              • Designed the website with <b>Material-UI</b> and <b>Bootstrap</b>.
+              <br />
+              • Deployed the website using <b>GitHub Pages</b>.
+            </>
+          }
+          projectDetailsURL="#"
+        />
+        <ProjectCard
           projectName="Nebula"
           imageURL={Nebula}
           iconURL={NebulaIcon}
