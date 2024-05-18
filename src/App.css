@@ -107,6 +107,7 @@ svg:hover {
   cursor: pointer;
   transform: scale(1.15);
   fill: var(--colorwhite);
+  animation: float 5s ease-in-out infinite;
 }
 
 /* EXTERNAL LINK (with arrow) STYLES */
@@ -131,6 +132,7 @@ a:visited {
 .external-link:hover a {
   transition: all 0.3s ease;
   scale: 1.025;
+  animation: float 5s ease-in-out infinite;
 }
 
 .external-link img {
@@ -205,6 +207,28 @@ hr {
 
 /* ANIMATIONS */
 /* ========================================== */
+@keyframes float {
+  0% {
+    transform: rotate(0deg) scale(1.025);
+  }
+
+  25% {
+    transform: rotate(2deg);
+  }
+
+  50% {
+    transform: rotate(0deg) scale(1.025);
+  }
+
+  75% {
+    transform: rotate(-2deg);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1.025);
+  }
+}
+
 @keyframes stretchJiggle {
   0% {
     transform: scale(1);
