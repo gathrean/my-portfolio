@@ -58,8 +58,7 @@
 
 .header-image img {
   aspect-ratio: 4/3;
-  background-color: #909090;
-  border-radius: 30px;
+  background-color: var(--colorlightgrey);
   width: 400px;
   height: 300px;
   display: flex;
