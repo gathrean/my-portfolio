@@ -1,0 +1,8 @@
+.about-me-container {
+  display: flex;
+  gap: 50px;
+}
+
+.about-me-images img {
+  width: 500px;
+}
