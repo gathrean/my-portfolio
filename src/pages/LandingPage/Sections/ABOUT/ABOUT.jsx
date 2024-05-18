@@ -9,6 +9,7 @@ export function ABOUT() {
     <div className="section-container">
       <hr />
       <h1>About Me</h1>
+      <p>This is my lore</p>
       <div clasName="section-container-child">
         <div className="about-me-container">
           <div className="about-me-images"><img src={GathreanIcon} alt="Gathrean" /></div>

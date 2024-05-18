@@ -1,4 +1,5 @@
 .about-me-container {
+  margin-top: 40px;
   display: flex;
   gap: 50px;
 }
