@@ -58,7 +58,7 @@ h3 {
 }
 
 h4 {
-  font: bold 1.75rem/2rem var(--ffh3);
+  font: bold 1.5rem/2rem var(--ffh3);
 }
 
 p {
@@ -183,7 +183,7 @@ hr {
 /* SECTION STYLES */
 /* ========================================== */
 .section-container {
-  padding: 50px 10vw 50px 10vw;
+  padding: 50px 10vw;
   max-height: fit-content;
 }
 
@@ -203,6 +203,17 @@ hr {
   flex-direction: column;
   justify-content: center;
   padding: 0 5vw;
+}
+
+@media screen and (max-width: 1120px) {
+  .section-container {
+    padding: 50px 8vw;
+  }
+
+  .section-container-child {
+    padding: 0 0;
+  }
+
 }
 
 /* ANIMATIONS */

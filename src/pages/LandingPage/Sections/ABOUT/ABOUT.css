@@ -4,6 +4,9 @@
   gap: 50px;
 }
 
+.about-me-text {
+  margin: 0;
+}
 
 .about-me-images img {
   max-width: 400px;

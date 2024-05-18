@@ -76,7 +76,6 @@
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .text-container {
-    padding: 88px 10px 0px 10px;
     margin-bottom: 0;
   }
 
@@ -96,6 +95,10 @@
     font-size: 1.5rem;
   }
 
+  .overlay-text h4 {
+    font-size: 1.25rem;
+  }
+
   .hero-button {
     font-size: 1.5rem;
     margin: 5px;
@@ -107,7 +110,6 @@
 
 @media screen and (max-width: 425px) {
   .text-container {
-    padding: 88px 10px 0px 10px;
     margin-bottom: 0;
   }
 
