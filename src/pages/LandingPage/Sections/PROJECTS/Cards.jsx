@@ -14,7 +14,7 @@ function ProjectCard({
       <div className="project-card">
         <div className="project-card-description">
           <div className="link-and-icon-container">
-            <img className="project-small-icon" src={iconURL} />
+            <img className="project-small-icon" alt="Project Small Icon" src={iconURL} />
             <h1 className="external-link">
               <a href={projectDetailsURL}>{projectName}</a>
               <img
