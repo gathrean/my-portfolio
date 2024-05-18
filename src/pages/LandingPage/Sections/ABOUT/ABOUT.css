@@ -4,6 +4,19 @@
   gap: 50px;
 }
 
+
 .about-me-images img {
-  width: 500px;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 1120px) {
+  .about-me-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-me-images img {
+    width: 50%;
+  }
+
 }
