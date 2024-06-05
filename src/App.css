@@ -100,6 +100,16 @@ svg {
   margin: 0.5em 1em;
 }
 
+.github-calendar svg {
+  width: 100%;
+}
+
+.github-calendar svg:hover {
+  transition: none;
+  animation: none;
+  transform: none;
+}
+
 .hamburger svg {
   margin: 0.5em 0 0.5em 1em;
 }

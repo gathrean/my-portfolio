@@ -12,6 +12,11 @@
   border-radius: 30px;
 }
 
+.github-calendar {
+  margin-top: 20px;
+  width: 844px !important;
+}
+
 @media screen and (min-width: 1120px) {
   .about-me-text p {
     padding: 20px;
