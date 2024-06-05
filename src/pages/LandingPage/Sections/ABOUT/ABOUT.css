@@ -1,6 +1,7 @@
 .about-me-container {
   margin-top: 40px;
   display: flex;
+  justify-content: center;
   gap: 50px;
 }
 
@@ -15,6 +16,10 @@
 .github-calendar-container {
   display: flex;
   padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+  background-color: var(--colorwhite);
+  border-radius: 30px;
 }
 
 .github-calendar {
