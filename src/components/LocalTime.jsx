@@ -18,7 +18,7 @@ function LocalTime() {
     };
     const localTime = time.toLocaleTimeString([], options);
 
-    return <p>{localTime}</p>;
+    return <span>{localTime}</span>;
 }
 
 export default LocalTime;
