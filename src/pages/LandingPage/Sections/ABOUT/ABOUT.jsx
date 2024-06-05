@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import GitHubCalendar from 'react-github-calendar';
 import './ABOUT.css';
 import GathreanIcon from '../../../../assets/icons/project-icons/gathrean-Icon.png';
 import LocalTime from '../../../../components/LocalTime';
 
 export function ABOUT() {
+  const [emailMessage, setEmailMessage] = useState('📧 gathrean@icloud.com');
+
+  const handleEmailClick = () => {
+    navigator.clipboard.writeText('gathrean@icloud.com')
+      .then(() => {
+        setEmailMessage('💡 Email copied to clipboard!');
+        setTimeout(() => {
+          setEmailMessage('📧 gathrean@icloud.com');
+        }, 2000);
+      })
+      .catch(err => {
+        console.error('😵 Failed to copy email: ', err);
+      });
+  };
+
   return (
     <div className="section-container">
       <hr />
@@ -22,7 +37,7 @@ export function ABOUT() {
               <p>Software Developer</p>
               <p>📍 Vancouver, BC, Canada</p>
               <p>⌚️ <LocalTime /></p>
-              <p>📧 gathrean@icloud.com </p>
+              <p onClick={handleEmailClick} style={{ cursor: 'pointer' }}>{emailMessage}</p>
             </div>
           </div>
           <div className="about-me-text">
