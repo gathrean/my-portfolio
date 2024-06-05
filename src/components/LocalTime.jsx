@@ -10,15 +10,22 @@ function LocalTime() {
         return () => clearInterval(interval);
     }, []);
 
-    const options = {
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        hour12: true
-    };
-    const localTime = time.toLocaleTimeString([], options);
+    const formatTime = (date) => {
+        const hours = date.getHours().toString().padStart(2, '0');
+        const minutes = date.getMinutes().toString().padStart(2, '0');
 
-    return <span>{localTime}</span>;
+        // Get the UTC offset in minutes
+        const offset = -date.getTimezoneOffset();
+        const offsetHours = Math.floor(offset / 60).toString().padStart(2, '0');
+        const offsetMinutes = (offset % 60).toString().padStart(2, '0');
+        const offsetSign = offset >= 0 ? '+' : '-';
+
+        return `${hours}:${minutes} (UTC ${offsetSign}${offsetHours}:${offsetMinutes})`;
+    };
+
+    const formattedTime = formatTime(time);
+
+    return <span>{formattedTime}</span>;
 }
 
 export default LocalTime;

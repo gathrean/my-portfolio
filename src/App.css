@@ -216,7 +216,7 @@ hr {
   padding: 0 5vw;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width:75px) {
   .section-container {
     padding: 50px 8vw;
   }
