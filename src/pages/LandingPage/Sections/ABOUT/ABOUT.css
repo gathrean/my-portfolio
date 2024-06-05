@@ -30,12 +30,6 @@
     width: 60%
   }
 
-  .github-calendar-container:hover {
-    color: var(--colorblack);
-    transition: all 0.3s ease;
-    scale: 1.0025;
-  }
-
   .about-me-text p {
     padding: 20px;
     color: var(--colorlightgrey2);
@@ -73,5 +67,4 @@
   .about-me-info-container {
     flex-direction: column;
   }
-
 }
