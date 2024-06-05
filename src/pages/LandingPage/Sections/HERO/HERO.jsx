@@ -29,7 +29,7 @@ const HERO = () => {
           <h1>
             <span>Gathrean Dela Cruz</span>
           </h1>
-          <h4>Frontend Software Developer</h4>
+          <h4>Software Developer</h4>
         </div>
       </div>
 

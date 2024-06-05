@@ -41,7 +41,7 @@
 
 .overlay-text {
   text-align: start;
-  color: var(--colorwhite)f !important;
+  color: var(--colorwhite) !important;
 }
 
 .overlay-text h1 {

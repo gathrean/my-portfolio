@@ -11,16 +11,20 @@ function LocalTime() {
     }, []);
 
     const formatTime = (date) => {
-        const hours = date.getHours().toString().padStart(2, '0');
+        let hours = date.getHours();
         const minutes = date.getMinutes().toString().padStart(2, '0');
+        const ampm = hours >= 12 ? 'PM' : 'AM';
 
-        // Get the UTC offset in minutes
+        hours = hours % 12;
+        hours = hours ? hours : 12;
+        hours = hours.toString().padStart(2, '0');
+
         const offset = -date.getTimezoneOffset();
-        const offsetHours = Math.floor(offset / 60).toString().padStart(2, '0');
-        const offsetMinutes = (offset % 60).toString().padStart(2, '0');
         const offsetSign = offset >= 0 ? '+' : '-';
+        const absOffsetHours = Math.abs(Math.floor(offset / 60)).toString().padStart(2, '0');
+        const absOffsetMinutes = Math.abs(offset % 60).toString().padStart(2, '0');
 
-        return `${hours}:${minutes} (UTC ${offsetSign}${offsetHours}:${offsetMinutes})`;
+        return `${hours}:${minutes} ${ampm} (UTC ${offsetSign}${absOffsetHours}:${absOffsetMinutes})`;
     };
 
     const formattedTime = formatTime(time);
