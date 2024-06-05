@@ -47,20 +47,20 @@
 .overlay-text h1 {
   font-weight: 400;
   font-size: 3.5rem;
-  color: var(--colorwhite)f;
+  color: var(--colorwhite);
   display: inline-block;
 }
 
 .overlay-text h2 {
   font-weight: 400;
   font-size: 3rem;
-  color: var(--colorwhite)f;
+  color: var(--colorwhite);
 }
 
 .overlay-text h3 {
   font-weight: 400;
   font-size: 2.5rem;
-  color: var(--colorwhite)f;
+  color: var(--colorwhite);
 }
 
 .buttons-container {
