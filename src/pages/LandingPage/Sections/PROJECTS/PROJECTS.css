@@ -37,7 +37,7 @@
 .project-card {
   display: flex;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--colorwhite)f;
   border: 1px solid #ccc;
   border-radius: 30px;
   padding: 20px;

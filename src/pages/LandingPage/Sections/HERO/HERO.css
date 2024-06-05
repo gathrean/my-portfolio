@@ -41,26 +41,26 @@
 
 .overlay-text {
   text-align: start;
-  color: #fff !important;
+  color: var(--colorwhite)f !important;
 }
 
 .overlay-text h1 {
   font-weight: 400;
   font-size: 3.5rem;
-  color: #fff;
+  color: var(--colorwhite)f;
   display: inline-block;
 }
 
 .overlay-text h2 {
   font-weight: 400;
   font-size: 3rem;
-  color: #fff;
+  color: var(--colorwhite)f;
 }
 
 .overlay-text h3 {
   font-weight: 400;
   font-size: 2.5rem;
-  color: #fff;
+  color: var(--colorwhite)f;
 }
 
 .buttons-container {

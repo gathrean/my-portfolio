@@ -8,7 +8,7 @@
   padding: 20px;
   margin-bottom: 16px;
   box-shadow: var(--shadow);
-  background-color: #fff;
+  background-color: var(--colorwhite)f;
   border-radius: 30px;
 }
 

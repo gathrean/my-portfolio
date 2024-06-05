@@ -8,7 +8,8 @@
   --ffh3: 'Inter Light', sans-serif;
 
   /* COLORS */
-  --colorwhite: #eeeeee;
+  --colorwhite: #ffffff;
+  --coloroffwhite: #eeeeee;
   --colorwhiteinactive: #eeeeee98;
   --colorblue: #0000dc;
   --colorbluelight: #9999FF;
@@ -38,7 +39,7 @@ html {
 
 body {
   font: 400 16px/1.5 var(--ff);
-  background-color: var(--colorwhite);
+  background-color: var(--coloroffwhite);
   overflow-x: hidden;
   width: 100%;
   height: 100%;
@@ -74,7 +75,7 @@ b {
 e {
   white-space: nowrap;
   font: 600 16px/1.5 var(--ff);
-  color: var(--colorwhite);
+  color: var(--coloroffwhite);
   background-color: var(--colorlightgrey);
   padding: 0.025em 0.5em;
   border-radius: 1em;
@@ -117,7 +118,7 @@ svg {
 svg:hover {
   cursor: pointer;
   transform: scale(1.15);
-  fill: var(--colorwhite);
+  fill: var(--coloroffwhite);
   animation: float 5s ease-in-out infinite;
 }
 
@@ -130,7 +131,7 @@ a:visited {
 }
 
 .external-link {
-  color: var(--colorwhite);
+  color: var(--coloroffwhite);
   font-size: 2rem;
 
   display: flex;
@@ -174,7 +175,7 @@ a:visited {
 /* ========================================== */
 ::selection {
   background-color: var(--colordarkgrey);
-  color: var(--colorwhite);
+  color: var(--coloroffwhite);
 }
 
 /* CLICKABLE ELEMENTS */
