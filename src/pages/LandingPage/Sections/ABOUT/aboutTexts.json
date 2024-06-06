@@ -20,6 +20,9 @@
         "diploma": "Computer Systems Technology, Diploma",
         "school": "British Columbia Institute of Technology",
         "location": "Burnaby, British Columbia",
-        "duration": "Fall 2022 - Winter 2024"
+        "duration": "Fall 2022 - Winter 2024",
+        "desc1": "Completed real-world industry projects and gained practical skills in software development",
+        "desc2": "Proficient in widely-used programming languages such as JavaScript, Java, C, C#, and C++.",
+        "desc3": "Built a network through cohort-based learning and an active alumni community."
     }
 }
