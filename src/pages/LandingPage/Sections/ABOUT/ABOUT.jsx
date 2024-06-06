@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import GitHubCalendar from 'react-github-calendar';
 
 // Styles
@@ -8,6 +8,9 @@ import './ABOUT.css';
 import SocialMediaIcons from '../../../../components/SocialMediaIcons/SocialMediaIcons';
 import LocalTime from '../../../../components/LocalTime';
 import GathreanIcon from '../../../../assets/icons/project-icons/gathrean-Icon.png';
+
+// Data
+import aboutTexts from './aboutTexts.json';
 
 export function ABOUT() {
   const [emailMessage, setEmailMessage] = useState('📧 gathrean@icloud.com');
@@ -24,19 +27,6 @@ export function ABOUT() {
         console.error('😵 Failed to copy email: ', err);
       });
   };
-
-  function handleClick(buttonType) {
-    switch (buttonType) {
-      case 'LinkedIn':
-        window.open('https://www.linkedin.com/in/gathrean/', '_blank');
-        break;
-      case 'GitHub':
-        window.open('https://github.com/gathrean', '_blank');
-        break;
-      default:
-        break;
-    }
-  }
 
   return (
     <div className="section-container">
@@ -62,27 +52,24 @@ export function ABOUT() {
             </div>
           </div>
           <div className="about-me-text">
+
             <h4>Personal Interests and Values</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Nam orci risus, varius nec nisi a, consectetur iaculis nibh.
-              Vivamus sollicitudin rutrum consequat. Sed ligula purus, convallis sed sagittis ut, lobortis vitae mauris.
-              In quis bibendum ante. Praesent pellentesque luctus elit a consequat. Nulla facilisi.
-            </p>
+            <p>{aboutTexts.personalInterestsAndValues}</p>
+
             <h4>Skills and Technologies</h4>
+            <p>{aboutTexts.skillsAndTechnologies}</p>
+
+            <h4>Education and Publications</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Nam orci risus, varius nec nisi a, consectetur iaculis nibh.
-              Vivamus sollicitudin rutrum consequat. Sed ligula purus, convallis sed sagittis ut, lobortis vitae mauris.
-              In quis bibendum ante. Praesent pellentesque luctus elit a consequat. Nulla facilisi.
+              {aboutTexts.educationAndCertifications}
             </p>
-            <h4>Education and Certifications</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Nam orci risus, varius nec nisi a, consectetur iaculis nibh.
-              Vivamus sollicitudin rutrum consequat. Sed ligula purus, convallis sed sagittis ut, lobortis vitae mauris.
-              In quis bibendum ante. Praesent pellentesque luctus elit a consequat. Nulla facilisi.
+              <b>{aboutTexts.education.diploma}</b><br />
+              {aboutTexts.education.school}<br />
+              {aboutTexts.education.duration}<br />
+              <a href="https://www.bcit.ca/programs/computer-systems-technology-diploma-full-time-5500dipma/">Program Details</a>
             </p>
+
             <div className="github-calendar-container">
               <div className="github-calendar">
                 <a href="https://github.com/gathrean" target="_blank" rel="noopener noreferrer">
@@ -90,6 +77,7 @@ export function ABOUT() {
                 </a>
               </div>
             </div>
+
           </div>
         </div>
       </div>

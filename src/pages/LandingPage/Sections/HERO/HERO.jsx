@@ -12,19 +12,6 @@ import ArrowUpRight from '../../../../assets/icons/arrow-up-right.svg';
 const HERO = () => {
   const overlayRef = useRef(null);
 
-  function handleClick(buttonType) {
-    switch (buttonType) {
-      case 'LinkedIn':
-        window.open('https://www.linkedin.com/in/gathrean/', '_blank');
-        break;
-      case 'GitHub':
-        window.open('https://github.com/gathrean', '_blank');
-        break;
-      default:
-        break;
-    }
-  }
-
   return (
     <div className="hero-container">
       <div className="text-container hero-animation">
@@ -37,7 +24,6 @@ const HERO = () => {
       </div>
 
       <div className="buttons-container">
-        {/* Resume Button */}
         <div className="external-link">
           <a href="resumeURL" style={{ cursor: 'pointer', color: 'white' }}>View Resumé</a>
           <img

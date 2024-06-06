@@ -1,0 +1,10 @@
+{
+    "personalInterestsAndValues": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam orci risus, varius nec nisi a, consectetur iaculis nibh. Vivamus sollicitudin rutrum consequat. Sed ligula purus, convallis sed sagittis ut, lobortis vitae mauris. In quis bibendum ante. Praesent pellentesque luctus elit a consequat. Nulla facilisi.",
+    "skillsAndTechnologies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam orci risus, varius nec nisi a, consectetur iaculis nibh. Vivamus sollicitudin rutrum consequat. Sed ligula purus, convallis sed sagittis ut, lobortis vitae mauris. In quis bibendum ante. Praesent pellentesque luctus elit a consequat. Nulla facilisi.",
+    "educationAndCertifications": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam orci risus, varius nec nisi a, consectetur iaculis nibh. Vivamus sollicitudin rutrum consequat. Sed ligula purus, convallis sed sagittis ut, lobortis vitae mauris. In quis bibendum ante. Praesent pellentesque luctus elit a consequat. Nulla facilisi.",
+    "education" : {
+        "diploma": "Computer Systems Technology, Client/Server Option",
+        "school": "British Columbia Institute of Technology",
+        "duration": "Fall 2022 - Winter 2024"
+    }
+}
