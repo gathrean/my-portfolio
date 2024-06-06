@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 
 // Components
-import SocialMediaIcons from '../../../../components/SocialMediaIcons';
+import SocialMediaIcons from '../../../../components/SocialMediaIcons/SocialMediaIcons';
 
 // Styles
 import './HERO.css';

@@ -1,5 +1,6 @@
-// SocialMediaIcons.js
 import React from 'react';
+
+import './SocialMediaIcons.css';
 
 const handleClick = (buttonType) => {
     switch (buttonType) {
@@ -16,8 +17,7 @@ const handleClick = (buttonType) => {
 
 const SocialMediaIcons = () => {
     return (
-        <div className="social-media-icons">
-            {/* LinkedIn Button */}
+        <div className="social-media-icons-container">
             <div onClick={() => handleClick('LinkedIn')}>
                 <svg viewBox="0 0 20 20" version="1.1">
                     <g id="Page-1" stroke="none" strokeWidth="1" fill="" fillRule="evenodd">
@@ -32,8 +32,6 @@ const SocialMediaIcons = () => {
                     </g>
                 </svg>
             </div>
-
-            {/* GitHub Button */}
             <div onClick={() => handleClick('GitHub')}>
                 <svg viewBox="0 0 20 20" version="1.1">
                     <g id="github-page-1" stroke="none" strokeWidth="1" fillRule="evenodd">

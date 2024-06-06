@@ -5,7 +5,7 @@ import GitHubCalendar from 'react-github-calendar';
 import './ABOUT.css';
 
 // Components
-import SocialMediaIcons from '../../../../components/SocialMediaIcons';
+import SocialMediaIcons from '../../../../components/SocialMediaIcons/SocialMediaIcons';
 import LocalTime from '../../../../components/LocalTime';
 import GathreanIcon from '../../../../assets/icons/project-icons/gathrean-Icon.png';
 

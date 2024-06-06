@@ -1,0 +1,4 @@
+.social-media-icons-container {
+    display: flex;
+    flex-direction: row;
+}
