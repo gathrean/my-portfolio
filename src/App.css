@@ -140,12 +140,30 @@ a:visited {
   color: var(--colorlightgrey);
 }
 
+.small-link {
+  font-size: 1rem !important;
+}
+
+.small-link img {
+  transform: translateX(-10px) translateY(8px) !important;
+}
+
+.small-link:hover img {
+  transform: translateX(-5px) translateY(5px) !important;
+  transition: all 0.3s ease;
+}
+
+.small-link-container {
+  display: flex;
+}
+
 .external-link {
   color: var(--coloroffwhite);
   font-size: 2rem;
 
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
 
   cursor: pointer;
   transition: all 0.3s ease;

@@ -3,6 +3,7 @@ import React from 'react';
 import './PROJECTS.css';
 
 import ArrowUpRight from '../../../../assets/icons/arrow-up-right.svg';
+import ArrowRightIcon from '../../../../components/ArrowRight/ArrowRightBlack';
 
 function ProjectCard({
   projectName, imageURL, iconURL, keywords, date, description, projectDetailsURL
@@ -17,14 +18,7 @@ function ProjectCard({
             <img className="project-small-icon" alt="Project Small Icon" src={iconURL} />
             <h1 className="external-link">
               <a href={projectDetailsURL}>{projectName}</a>
-              <img
-                src={ArrowUpRight} alt="Arrow Up Right"
-                style={{
-                  filter: 'invert(100%)',
-                  width: '0.8em', height: '0.8em',
-                  marginLeft: '10px'
-                }}
-              />
+              <ArrowRightIcon />
             </h1>
           </div>
           <h3>{date}</h3>

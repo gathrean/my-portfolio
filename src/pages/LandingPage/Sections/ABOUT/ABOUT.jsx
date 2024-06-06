@@ -8,6 +8,7 @@ import './ABOUT.css';
 import SocialMediaIcons from '../../../../components/SocialMediaIcons/SocialMediaIcons';
 import LocalTime from '../../../../components/LocalTime';
 import GathreanIcon from '../../../../assets/icons/project-icons/gathrean-Icon.png';
+import ArrowRightIcon from '../../../../components/ArrowRight/ArrowRightBlack';
 
 // Data
 import aboutTexts from './aboutTexts.json';
@@ -54,21 +55,30 @@ export function ABOUT() {
           <div className="about-me-text">
 
             <h4>Personal Interests and Values</h4>
-            <p>{aboutTexts.personalInterestsAndValues}</p>
+            <div className="about-text">{aboutTexts.personalInterestsAndValues}</div>
 
             <h4>Skills and Technologies</h4>
-            <p>{aboutTexts.skillsAndTechnologies}</p>
+            <div className="about-text">{aboutTexts.skillsAndTechnologies}</div>
 
             <h4>Education and Publications</h4>
-            <p>
+            <div className="about-text">
               {aboutTexts.educationAndCertifications}
-            </p>
-            <p>
+            </div>
+            <div className="about-text education-details">
               <b>{aboutTexts.education.diploma}</b><br />
               {aboutTexts.education.school}<br />
               {aboutTexts.education.duration}<br />
-              <a href="https://www.bcit.ca/programs/computer-systems-technology-diploma-full-time-5500dipma/">Program Details</a>
-            </p>
+              <div className="small-link-container">
+                <a
+                  className="external-link small-link"
+                  href="https://www.bcit.ca/programs/computer-systems-technology-diploma-full-time-5500dipma/"
+                >
+                  Program Details
+                  <ArrowRightIcon />
+                </a>
+              </div>
+
+            </div>
 
             <div className="github-calendar-container">
               <div className="github-calendar">

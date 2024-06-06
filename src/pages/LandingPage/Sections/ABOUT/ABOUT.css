@@ -5,6 +5,14 @@
   gap: 50px;
 }
 
+.about-me-text .about-text {
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+  background-color: var(--colorwhite);
+  border-radius: 30px;
+}
+
 .about-me-text p {
   padding: 20px;
   margin-bottom: 16px;
