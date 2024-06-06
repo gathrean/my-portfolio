@@ -4,7 +4,6 @@ import React from 'react';
 import './ABOUT.css';
 
 // Components
-import MyProfile from '../../MyProfile/MyProfile';
 import ArrowRightIcon from '../../../../components/ArrowRight/ArrowRightBlack';
 
 // Data
@@ -18,7 +17,6 @@ export function ABOUT() {
       <p>Here's a bit about me: a passionate software developer committed to continuous learning and innovation.</p>
       <div className="section-container-child">
         <div className="about-me-container">
-          <MyProfile />
           <div>
             <h4>Personal Interests and Values</h4>
             <div className="about-cards">

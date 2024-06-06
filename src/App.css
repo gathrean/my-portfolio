@@ -254,7 +254,7 @@ hr {
 /* SECTION STYLES */
 /* ========================================== */
 .section-container {
-  padding: 50px 10vw;
+  /* padding: 50px 10vw; */
   max-height: fit-content;
 }
 
@@ -284,7 +284,6 @@ hr {
   .section-container-child {
     padding: 0 0;
   }
-
 }
 
 @media screen and (max-width:75px) {
@@ -321,4 +320,45 @@ hr {
   100% {
     transform: scale(1);
   }
+}
+
+/* LAYOUT STYLES */
+.landing-page-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+  overflow-y: hidden; /* Remove scroll from landing-page-container */
+}
+
+.profile-container {
+  width: fit-content;
+  height: fit-content;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 5em 0 0 6em;
+  pointer-events: none; /* Prevent profile-container from capturing scroll events */
+}
+
+.sections-container {
+  width: 100%;
+  padding-left: 20%; 
+  padding: 1% 15% 1% 25%;
+  overflow-y: scroll; /* Allow scrolling */
+  height: 100vh;
+}
+
+.section-container {
+  /* padding: 20px 2vw; */
+  max-height: fit-content;
+}
+
+/* Ensure the body takes up the full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }

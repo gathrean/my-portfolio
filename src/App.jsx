@@ -18,9 +18,9 @@ import './assets/fonts/Fonts.css';
 // Custom Layout component for pages with Navbar and Footer
 const Layout = ({ children }) => (
   <div className="App">
-    <Navbar />
+    {/* <Navbar /> */}
     {children}
-    <Footer />
+    {/* <Footer /> */}
   </div>
 );
 
