@@ -1,25 +1,3 @@
-/* Customize GitHub Calendar colors */
-.react-github-calendar .color-scale-0 {
-  fill: #ebedf0; /* No contribution */
-}
-
-.react-github-calendar .color-scale-1 {
-  fill: #ccd9ff; /* Low contribution */
-}
-
-.react-github-calendar .color-scale-2 {
-  fill: #99b3ff; /* Medium contribution */
-}
-
-.react-github-calendar .color-scale-3 {
-  fill: #668cff; /* High contribution */
-}
-
-.react-github-calendar .color-scale-4 {
-  fill: #3366ff; /* Very high contribution */
-}
-
-
 .about-me-container {
   margin-top: 40px;
   display: flex;
@@ -41,6 +19,7 @@
 }
 
 .github-calendar {
+  margin-top: 40px;
   width: 100%;
 }
 
@@ -60,6 +39,10 @@
 /* For Desktop only stuff */
 /* ========================================== */
 @media screen and (min-width: 1175px) {
+  .section-container-child {
+    padding: 0 10vw !important;
+  }
+
   .about-me-text {
     width: 60%
   }
@@ -78,6 +61,10 @@
 /* For mobile only */
 /* ========================================== */
 @media screen and (max-width: 1175px) {
+  .github-calendar-container {
+    display: none;
+  }
+
   .about-me-text {
     width: 100%
   }

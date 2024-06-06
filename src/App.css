@@ -70,7 +70,6 @@ h5 {
   white-space: pre-line;
 }
 
-
 p {
   font: 400 16px/1.5 var(--ff);
   margin: 0 0 0.25em 0;
@@ -80,25 +79,24 @@ b {
   font: 900 16px/1.5 var(--ff);
 }
 
-ul {
+.section-container ul {
   list-style-type: none;
   padding-left: 0;
   text-align: left;
 }
 
-li {
+.section-container li {
   font: 400 16px/1.5 var(--ff);
   margin: 0 0 0.25em 0;
   margin-left: 1.5em;
   position: relative;
 }
 
-li:before {
+.section-container li:before {
   content: "•";
   display: inline-block;
   width: 1.5em;
 }
-
 
 e {
   white-space: nowrap;
@@ -275,7 +273,18 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 5vw;
+  /* padding: 0 5vw; */
+}
+
+@media screen and (max-width: 1175px) {
+  .section-container {
+    padding: 50px 5vw;
+  }
+
+  .section-container-child {
+    padding: 0 0;
+  }
+
 }
 
 @media screen and (max-width:75px) {
