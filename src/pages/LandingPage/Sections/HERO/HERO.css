@@ -74,6 +74,14 @@
   align-items: center;
 }
 
+.bottom-buttons-container svg {
+  fill: var(--colorwhiteinactive) !important;
+}
+
+.bottom-buttons-container svg:hover {
+  fill: var(--colorwhite) !important;
+}
+
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .text-container {
     margin-bottom: 0;
@@ -130,7 +138,6 @@
   }
 
   .hero-button {
-    /* font-size: 1.5rem; */
     margin: 5px;
     padding: 10px 25px;
     cursor: pointer;
