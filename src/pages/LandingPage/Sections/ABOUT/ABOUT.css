@@ -11,6 +11,7 @@
   box-shadow: var(--shadow);
   background-color: var(--colorwhite);
   border-radius: 30px;
+  width: fit-content;
 }
 
 .github-calendar-container {
