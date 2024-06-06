@@ -101,8 +101,19 @@ svg {
   margin: 0.5em 1em;
 }
 
+.about-me-container svg {
+  fill: var(--colorlightgrey);
+  width: 1.75em;
+  margin: 0.2em 0.5em;
+}
+
+.about-me-container svg:hover {
+  fill: var(--colorblack);
+}
+
 .github-calendar svg {
   width: 100%;
+  margin: 0em;
 }
 
 .github-calendar svg:hover {
@@ -119,7 +130,7 @@ svg:hover {
   cursor: pointer;
   transform: scale(1.15);
   fill: var(--coloroffwhite);
-  animation: float 5s ease-in-out infinite;
+  /* animation: float 5s ease-in-out infinite; */
 }
 
 /* EXTERNAL LINK (with arrow) STYLES */
@@ -230,27 +241,6 @@ hr {
 
 /* ANIMATIONS */
 /* ========================================== */
-@keyframes float {
-  0% {
-    transform: rotate(0deg) scale(1.025);
-  }
-
-  25% {
-    transform: rotate(2deg);
-  }
-
-  50% {
-    transform: rotate(0deg) scale(1.025);
-  }
-
-  75% {
-    transform: rotate(-2deg);
-  }
-
-  100% {
-    transform: rotate(0deg) scale(1.025);
-  }
-}
 
 @keyframes stretchJiggle {
   0% {

@@ -29,6 +29,11 @@
   max-width: 300px;
 }
 
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+}
+
 /* For Desktop only stuff */
 /* ========================================== */
 @media screen and (min-width: 1175px) {
