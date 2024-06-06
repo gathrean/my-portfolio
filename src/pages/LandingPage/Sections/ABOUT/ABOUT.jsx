@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import GitHubCalendar from 'react-github-calendar';
 
 // Styles
 import './ABOUT.css';
@@ -124,15 +123,6 @@ export function ABOUT() {
                 </a>
               </div>
             </div>
-
-            <div className="github-calendar-container">
-              <div className="github-calendar">
-                <a href="https://github.com/gathrean" target="_blank" rel="noopener noreferrer">
-                  <GitHubCalendar username="gathrean" blockSize={16} blockMargin={4} className="react-github-calendar" />
-                </a>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
