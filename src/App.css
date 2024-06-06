@@ -104,7 +104,7 @@ svg {
 .about-me-container svg {
   fill: var(--colorlightgrey);
   width: 1.75em;
-  margin: 0.2em 0.5em;
+  margin: 0.2em 1em 0.2em 0em;
 }
 
 .about-me-container svg:hover {
