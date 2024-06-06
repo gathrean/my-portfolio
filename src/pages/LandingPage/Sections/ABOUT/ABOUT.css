@@ -1,3 +1,13 @@
+.my-profile {
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+  background-color: var(--colorwhite);
+  border-radius: 30px;
+  width: fit-content;
+  height: fit-content;
+}
+
 .about-me-container {
   margin-top: 40px;
   display: flex;
@@ -79,7 +89,7 @@
     margin-right: 80px;
   }
 
-  .about-me-info-container {
+  .my-profile {
     display: flex;
     flex-direction: row;
   }
@@ -94,7 +104,7 @@
 /* For even smaller mobile */
 /* ========================================== */
 @media screen and (max-width: 700px) {
-  .about-me-info-container {
+  .my-profile {
     flex-direction: column;
   }
 }

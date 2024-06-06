@@ -37,7 +37,7 @@ export function ABOUT() {
       <div className="section-container-child">
         <div className="about-me-container">
 
-          <div className="about-me-info-container">
+          <div className="my-profile">
             <div className="about-me-images">
               <img src={GathreanIcon} alt="Gathrean" />
             </div>
