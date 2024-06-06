@@ -73,7 +73,10 @@ export function Navbar() {
             <div className="navlink-container">
                 <ul className={`navlink-ul prevent-overflow`}>
                     <li>
-                        <Link onClick={() => scrollToSection('ABOUT')} className={activeSection === 'ABOUT' ? 'active' : ''}>About</Link>
+                        <Link onClick={() => scrollToSection('ABOUT')} className={activeSection === 'ABOUT' ? 'active' : ''}>About Me</Link>
+                    </li>
+                    <li>
+                        <Link onClick={() => scrollToSection('EXPERIENCE')} className={activeSection === 'SKILLS' ? 'active' : ''}>Experience</Link>
                     </li>
                     <li>
                         <Link onClick={() => scrollToSection('PROJECTS')} className={activeSection === 'PROJECTS' ? 'active' : ''}>Projects</Link>

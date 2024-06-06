@@ -42,7 +42,7 @@ ul li .active {
 ul li a {
     color: #919191;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 45px;
 }
 
 ul li a:hover {
@@ -52,11 +52,11 @@ ul li a:hover {
 /* For iPads and iPhones*/
 @media only screen and (min-width: 300px) and (max-width: 499px) {
     .navbar-ul {
-        line-height: 40px;
+        line-height: 35px;
     }
 
     ul li a {
-        font-size: 40px;
+        font-size: 35px;
     }
 }
 
@@ -67,6 +67,6 @@ ul li a:hover {
     }
 
     ul li a {
-        font-size: 25px;
+        font-size: 35px;
     }
 }
