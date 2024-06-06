@@ -1,3 +1,25 @@
+/* Customize GitHub Calendar colors */
+.react-github-calendar .color-scale-0 {
+  fill: #ebedf0; /* No contribution */
+}
+
+.react-github-calendar .color-scale-1 {
+  fill: #ccd9ff; /* Low contribution */
+}
+
+.react-github-calendar .color-scale-2 {
+  fill: #99b3ff; /* Medium contribution */
+}
+
+.react-github-calendar .color-scale-3 {
+  fill: #668cff; /* High contribution */
+}
+
+.react-github-calendar .color-scale-4 {
+  fill: #3366ff; /* Very high contribution */
+}
+
+
 .about-me-container {
   margin-top: 40px;
   display: flex;

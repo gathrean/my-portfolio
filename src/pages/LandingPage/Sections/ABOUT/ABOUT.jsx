@@ -36,6 +36,7 @@ export function ABOUT() {
       <p>This is my lore</p>
       <div className="section-container-child">
         <div className="about-me-container">
+
           <div className="about-me-info-container">
             <div className="about-me-images">
               <img src={GathreanIcon} alt="Gathrean" />
@@ -52,8 +53,8 @@ export function ABOUT() {
               </div>
             </div>
           </div>
-          <div>
 
+          <div>
             <h4>Personal Interests and Values</h4>
             <div className="about-cards">{aboutTexts.personalInterestsAndValues}</div>
 
@@ -61,29 +62,55 @@ export function ABOUT() {
             <div className="about-cards">{aboutTexts.skillsAndTechnologies}</div>
 
             <h4>Education and Publications</h4>
+
             <div className="about-cards">
-              {aboutTexts.educationAndCertifications}
-            </div>
-            <div className="about-cards">
-              <b>{aboutTexts.education.diploma}</b><br />
-              {aboutTexts.education.school}<br />
-              {aboutTexts.education.duration}<br />
+              <h5>{aboutTexts.bcit.diploma}</h5>
+              <p>{aboutTexts.bcit.location}</p>
+              <p>{aboutTexts.bcit.school}</p>
+              <p>{aboutTexts.bcit.duration}</p>
               <div className="small-link-container">
-                <a
-                  className="external-link small-link"
-                  href="https://www.bcit.ca/programs/computer-systems-technology-diploma-full-time-5500dipma/"
-                >
-                  Program Details
+                <a className="external-link small-link" href="https://www.bcit.ca/programs/computer-systems-technology-diploma-full-time-5500dipma/">
+                  More info about BCIT CST Diploma
                   <ArrowRightIcon />
                 </a>
               </div>
+            </div>
 
+            <div className="about-cards">
+              <h5>{aboutTexts.aim.name}</h5>
+              <p>{aboutTexts.aim.location}</p>
+              <p>{aboutTexts.aim.date} </p>
+              <ul>
+                <li>{aboutTexts.aim.type}</li>
+                <li>{aboutTexts.aim.description}</li>
+              </ul>
+              <div className="small-link-container">
+                <a className="external-link small-link" href="https://artificialintelligence-conference.com/">
+                  More info about AIM Conference
+                  <ArrowRightIcon />
+                </a>
+              </div>
+            </div>
+
+            <div className="about-cards">
+              <h5>{aboutTexts.wsai.name}</h5>
+              <p>{aboutTexts.wsai.location}</p>
+              <p>{aboutTexts.wsai.date} </p>
+              <ul>
+                <li>{aboutTexts.wsai.type}</li>
+                <li>{aboutTexts.wsai.description}</li>
+              </ul>
+              <div className="small-link-container">
+                <a className="external-link small-link" href="https://wsai.org/">
+                  More info about WSAI Conference<ArrowRightIcon />
+                </a>
+              </div>
             </div>
 
             <div className="github-calendar-container">
               <div className="github-calendar">
                 <a href="https://github.com/gathrean" target="_blank" rel="noopener noreferrer">
-                  <GitHubCalendar username="gathrean" blockSize={16} blockMargin={4} />
+                  <GitHubCalendar username="gathrean" blockSize={16} blockMargin={4} className="react-github-calendar" />
                 </a>
               </div>
             </div>

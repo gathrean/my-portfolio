@@ -63,14 +63,42 @@ h4 {
   font: bold 1.5rem/2rem var(--ffh3);
 }
 
+h5 {
+  font: bold 1.25rem var(--ffh2);
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  white-space: pre-line;
+}
+
+
 p {
   font: 400 16px/1.5 var(--ff);
-  margin: 0 0 1em 0;
+  margin: 0 0 0.25em 0;
 }
 
 b {
   font: 900 16px/1.5 var(--ff);
 }
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+li {
+  font: 400 16px/1.5 var(--ff);
+  margin: 0 0 0.25em 0;
+  margin-left: 1.5em;
+  position: relative;
+}
+
+li:before {
+  content: "•";
+  display: inline-block;
+  width: 1.5em;
+}
+
 
 e {
   white-space: nowrap;
@@ -141,7 +169,13 @@ a:visited {
 }
 
 .small-link {
+  color: var(--colorblue) !important;
+  text-decoration: none !important;
   font-size: 1rem !important;
+}
+
+.small-link:hover {
+  scale: 1.025 !important;
 }
 
 .small-link img {

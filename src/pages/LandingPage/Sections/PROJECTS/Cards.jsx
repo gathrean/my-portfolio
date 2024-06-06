@@ -2,7 +2,6 @@ import React from 'react';
 
 import './PROJECTS.css';
 
-import ArrowUpRight from '../../../../assets/icons/arrow-up-right.svg';
 import ArrowRightIcon from '../../../../components/ArrowRight/ArrowRightBlack';
 
 function ProjectCard({
