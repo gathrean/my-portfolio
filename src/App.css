@@ -132,15 +132,6 @@ svg:hover {
   fill: var(--coloroffwhite);
 }
 
-@media screen and (max-width: 1175px) {
-  .about-me-container svg {
-    fill: var(--colorlightgrey);
-    width: 2.5em;
-    margin: 0.2em 1em 0.2em 0em;
-  }
-  
-}
-
 /* EXTERNAL LINK (with arrow) STYLES */
 /* ========================================== */
 
@@ -163,7 +154,6 @@ a:visited {
 .external-link:hover a {
   transition: all 0.3s ease;
   scale: 1.025;
-  animation: float 5s ease-in-out infinite;
 }
 
 .external-link img {
