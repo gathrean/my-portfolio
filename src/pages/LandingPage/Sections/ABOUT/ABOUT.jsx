@@ -52,19 +52,19 @@ export function ABOUT() {
               </div>
             </div>
           </div>
-          <div className="about-me-text">
+          <div>
 
             <h4>Personal Interests and Values</h4>
-            <div className="about-text">{aboutTexts.personalInterestsAndValues}</div>
+            <div className="about-cards">{aboutTexts.personalInterestsAndValues}</div>
 
             <h4>Skills and Technologies</h4>
-            <div className="about-text">{aboutTexts.skillsAndTechnologies}</div>
+            <div className="about-cards">{aboutTexts.skillsAndTechnologies}</div>
 
             <h4>Education and Publications</h4>
-            <div className="about-text">
+            <div className="about-cards">
               {aboutTexts.educationAndCertifications}
             </div>
-            <div className="about-text education-details">
+            <div className="about-cards">
               <b>{aboutTexts.education.diploma}</b><br />
               {aboutTexts.education.school}<br />
               {aboutTexts.education.duration}<br />
