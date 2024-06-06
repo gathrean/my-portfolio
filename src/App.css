@@ -130,7 +130,15 @@ svg:hover {
   cursor: pointer;
   transform: scale(1.15);
   fill: var(--coloroffwhite);
-  /* animation: float 5s ease-in-out infinite; */
+}
+
+@media screen and (max-width: 1175px) {
+  .about-me-container svg {
+    fill: var(--colorlightgrey);
+    width: 2.5em;
+    margin: 0.2em 1em 0.2em 0em;
+  }
+  
 }
 
 /* EXTERNAL LINK (with arrow) STYLES */
