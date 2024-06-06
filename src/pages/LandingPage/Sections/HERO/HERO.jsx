@@ -2,12 +2,10 @@ import React, { useRef } from 'react';
 
 // Components
 import SocialMediaIcons from '../../../../components/SocialMediaIcons/SocialMediaIcons';
+import ArrowRightIcon from '../../../../components/ArrowRight/ArrowRight';
 
 // Styles
 import './HERO.css';
-
-// Icons
-import ArrowUpRight from '../../../../assets/icons/arrow-up-right.svg';
 
 const HERO = () => {
   const overlayRef = useRef(null);
@@ -26,10 +24,7 @@ const HERO = () => {
       <div className="buttons-container">
         <div className="external-link">
           <a href="resumeURL" style={{ cursor: 'pointer', color: 'white' }}>View Resumé</a>
-          <img
-            src={ArrowUpRight} alt="Arrow Up Right"
-            style={{ width: '0.8em', height: '0.8em', marginLeft: '10px' }}
-          />
+          <ArrowRightIcon />
         </div>
 
         <div className="bottom-buttons-container">
