@@ -12,10 +12,6 @@ export function Footer() {
 
                     All text is in the <b>Work-Sans</b> typeface.
                 </p>
-
-                <p className="baybayin">
-                    gadriyan dela krus
-                </p>
             </div>
         </footer>
 
