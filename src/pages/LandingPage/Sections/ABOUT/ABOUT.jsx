@@ -6,10 +6,9 @@ import './ABOUT.css';
 
 // Components
 import ArrowRightIcon from '../../../../components/ArrowRight/ArrowRightBlack';
-import MyProfile from '../../../../components/MyProfile/MyProfile';
 
 // Data
-import aboutTexts from './aboutTexts.json';
+import aboutTexts from '../../Texts.json';
 
 export function ABOUT() {
   return (
