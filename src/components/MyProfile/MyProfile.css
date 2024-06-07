@@ -33,7 +33,6 @@
 /* ========================================== */
 @media screen and (max-width: 1400px) {
     .about-me-images img {
-        max-width: 30vw;
         margin-right: 80px;
     }
 

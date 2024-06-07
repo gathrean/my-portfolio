@@ -32,7 +32,7 @@
 /* ============================= */
 .LP-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 1.5fr;
     grid-template-rows: 1fr;
     grid-template-areas:
         "LP-my-profile-container LP-sections-container";
@@ -56,6 +56,12 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+}
+
+@media screen and (max-width: 1600px) {
+    .LP-container {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 1400px) {
