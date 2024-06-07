@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+// ABOUT.js
+import React from 'react';
 import GitHubCalendar from 'react-github-calendar';
 
 // Styles
@@ -7,28 +8,13 @@ import './ABOUT.css';
 // Components
 import SocialMediaIcons from '../../../../components/SocialMediaIcons/SocialMediaIcons';
 import LocalTime from '../../../../components/LocalTime';
-import GathreanIcon from '../../../../assets/icons/project-icons/gathrean-Icon.png';
 import ArrowRightIcon from '../../../../components/ArrowRight/ArrowRightBlack';
+import MyProfile from './MyProfile/MyProfile';
 
 // Data
 import aboutTexts from './aboutTexts.json';
 
 export function ABOUT() {
-  const [emailMessage, setEmailMessage] = useState('📧 gathrean@icloud.com');
-
-  const handleEmailClick = () => {
-    navigator.clipboard.writeText('gathrean@icloud.com')
-      .then(() => {
-        setEmailMessage('💡 Email copied to clipboard!');
-        setTimeout(() => {
-          setEmailMessage('📧 gathrean@icloud.com');
-        }, 2000);
-      })
-      .catch(err => {
-        console.error('😵 Failed to copy email: ', err);
-      });
-  };
-
   return (
     <div className="section-container">
       <hr />
@@ -37,30 +23,17 @@ export function ABOUT() {
       <div className="section-container-child">
         <div className="about-me-container">
 
-          <div className="my-profile">
-            <div className="about-me-images">
-              <img src={GathreanIcon} alt="Gathrean" />
-            </div>
-            <br />
-            <div className="about-me-info">
-              <h3>Gathrean Dela Cruz</h3>
-              <p><b>Software Developer</b></p>
-              <p>🎂 23 years old</p>
-              <p>🇨🇦 Vancouver, BC, Canada</p>
-              <p>⌚️ <LocalTime /></p>
-              <p onClick={handleEmailClick} style={{ cursor: 'pointer' }}>{emailMessage}</p>
-              <div className="social-media-icons">
-                <SocialMediaIcons />
-              </div>
-            </div>
+          <div className="my-profile-container">
+            <MyProfile />
           </div>
 
-          <div>
+          <div className="about-cards-container">
+            
             <h4>Personal Interests and Values</h4>
             <div className="about-cards">
               I remember being a kid in 2008 and always wondered how websites and games were created. Fast forward to 2024, I've gone through a 2-year program in BCIT and I've understood the process of OOP and Web Dev. I've gone on and created my own games with my peers and designing websites for a variety of projects.
               <br /> <br />
-              The most important thing I've learned during my time in academia is that there is truly strength in numbers and that the project succeeds when everyone is on the same page as well as using their best strengths and skills in their right positons in the team.
+              The most important thing I've learned during my time in academia is that there is truly strength in numbers and that the project succeeds when everyone is on the same page as well as using their best strengths and skills in their right positions in the team.
               <br /> <br />
               Back in 2015 I've also found interest in music production and graphic design. When I got my first MacBook Pro back in 2017, I went ham and progressed a lot in those two. I believe those skills have enhanced my creativity in coding and development
               <br /> <br />
