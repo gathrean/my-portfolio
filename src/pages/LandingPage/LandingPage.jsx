@@ -36,10 +36,9 @@ export function LandingPage() {
             if (profile && container) {
                 const containerRect = container.getBoundingClientRect();
                 const profileRect = profile.getBoundingClientRect();
-                const margin = 4 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+                const margin = 6 * parseFloat(getComputedStyle(document.documentElement).fontSize);
 
                 if (window.innerWidth > 768 && window.innerWidth > 1100) {
-                    // Check if the profile should be sticky
                     if (containerRect.top < margin && containerRect.bottom > profileRect.height + margin) {
                         profile.style.position = 'fixed';
                         profile.style.top = `${margin}px`;
