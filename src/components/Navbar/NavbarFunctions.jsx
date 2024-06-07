@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 export function useScrollHandler(activeSectionSetter, navbarHeight) {
     useEffect(() => {
         const handleScroll = () => {
-            const sections = ['HOME', 'ABOUT', 'PROJECTS', 'WORK', 'CONTACT'];
+            const sections = ['HOME', 'ABOUT', 'PROJECTS', 'ACADEMIA', 'CONTACT'];
             const scrollPosition = window.scrollY;
 
             // Check if scroll position is within HERO section
@@ -50,7 +50,7 @@ export function useNavbarFunctions() {
     // For setting the height of the navbar based on the window size
     useEffect(() => {
         const handleResize = () => {
-            const newHeight = opened ? 56 : 319;
+            const newHeight = opened ? 56 : 255;
             setNavbarHeight(newHeight);
         };
         handleResize();

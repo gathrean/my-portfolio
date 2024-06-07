@@ -81,9 +81,6 @@ export function Navbar() {
                     <li>
                         <Link onClick={() => scrollToSection('PROJECTS')} className={activeSection === 'PROJECTS' ? 'active' : ''}>Projects</Link>
                     </li>
-                    <li>
-                        <Link onClick={() => scrollToSection('CONTACT')} className={activeSection === 'CONTACT' ? 'active' : ''}>Contact</Link>
-                    </li>
                 </ul>
             </div>
 

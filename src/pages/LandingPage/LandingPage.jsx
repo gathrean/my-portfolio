@@ -78,7 +78,6 @@ export function LandingPage() {
                     <section id="ABOUT" className="ABOUT"><ABOUT /></section>
                     <section id="ACADEMIA" className="ACADEMIA"><ACADEMIA /></section>
                     <section id="PROJECTS" className="PROJECTS"><PROJECTS /></section>
-                    <section id="CONTACT" className="CONTACT"><CONTACT /></section>
                 </div>
             </div>
         </section>
