@@ -11,6 +11,10 @@
   font-weight: 600;
 }
 
+.mobile-view svg:hover {
+  transform: scale(1) !important; 
+}
+
 .mobile-view svg rect {
   fill: #919191;
   transition: transform 0.3s ease;
