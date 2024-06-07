@@ -10,11 +10,11 @@
     transition: top 0.3s ease, position 0.3s ease;
 }
 
-.about-me-images {
+.profile-picture {
     transition: all 0.3s ease;
 }
 
-.about-me-images img {
+.profile-picture img {
     transition: all 0.3s ease;
     max-width: 100px;
 }
@@ -38,12 +38,12 @@
 /* For mobile only */
 /* ========================================== */
 @media screen and (max-width: 1100px) {
-    .about-me-images {
+    .profile-picture {
         display: flex;
         justify-content: center;
     }
 
-    .about-me-images img {
+    .profile-picture img {
         max-width: 150px;
         width: 100%;
         margin-right: 0px;
@@ -75,7 +75,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .about-me-images img {
+    .profile-picture img {
         max-width: 100px;
     }
 }
@@ -83,7 +83,7 @@
 /* Media queries for heights */
 /* ========================================== */
 @media screen and (max-height: 800px) and (min-width: 1100px) {
-    .about-me-images img {
+    .profile-picture img {
         display: none;
     }
 }

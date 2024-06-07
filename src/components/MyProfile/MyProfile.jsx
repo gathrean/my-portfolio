@@ -31,7 +31,7 @@ const MyProfile = () => {
 
     return (
         <div className="my-profile">
-            <div className="about-me-images">
+            <div className="profile-picture">
                 <img src={GathreanIcon} alt="Gathrean" />
             </div>
             <br />
