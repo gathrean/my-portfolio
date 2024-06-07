@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 // Sections
 import HERO from './Sections/HERO/HERO';
@@ -18,18 +18,27 @@ import '../../App.css';
 import '../../assets/fonts/Fonts.css';
 
 export function LandingPage() {
+    const [containerClass, setContainerClass] = useState('LP-my-profile-container');
 
     useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth <= 1400) {
+                setContainerClass('section-container');
+            } else {
+                setContainerClass('LP-my-profile-container');
+            }
+        };
+
         const handleScroll = () => {
             const profile = document.querySelector('.my-profile');
-            const container = document.querySelector('.LP-my-profile-container');
+            const container = document.querySelector(`.${containerClass}`);
 
             if (profile && container) {
                 const containerRect = container.getBoundingClientRect();
                 const profileRect = profile.getBoundingClientRect();
                 const margin = 4 * parseFloat(getComputedStyle(document.documentElement).fontSize);
 
-                if (window.innerWidth > 768) {
+                if (window.innerWidth > 768 && window.innerWidth > 1400) {
                     // Check if the profile should be sticky
                     if (containerRect.top < margin && containerRect.bottom > profileRect.height + margin) {
                         profile.style.position = 'fixed';
@@ -48,19 +57,22 @@ export function LandingPage() {
             }
         };
 
+        handleResize();
+        window.addEventListener('resize', handleResize);
         window.addEventListener('scroll', handleScroll);
 
         return () => {
+            window.removeEventListener('resize', handleResize);
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [containerClass]);
 
     return (
         <section id="section1 home">
             <section id="HERO" className="HERO"><HERO /></section>
 
             <div className="LP-container">
-                <div className="LP-my-profile-container">
+                <div className={containerClass}>
                     <MyProfile />
                 </div>
                 <div className="LP-sections-container">
