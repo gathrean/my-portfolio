@@ -254,7 +254,7 @@ hr {
 /* SECTION STYLES */
 /* ========================================== */
 .section-container {
-  padding: 50px 10vw 50px 5vw;
+  padding: 0px 10vw 50px 5vw;
   max-height: fit-content;
 }
 
@@ -276,26 +276,24 @@ hr {
   /* padding: 0 5vw; */
 }
 
-@media screen and (max-width: 1175px) {
+@media screen and (max-width: 1400px) {
   .section-container {
-    padding: 50px 5vw;
+    padding: 0px 20vw 50px 5vw;
   }
 
   .section-container-child {
     padding: 0 0;
   }
-
 }
 
-@media screen and (max-width:75px) {
+@media screen and (max-width: 1175px) {
   .section-container {
-    padding: 50px 8vw;
+    padding: 20px 5vw 20px 5vw;
   }
 
   .section-container-child {
     padding: 0 0;
   }
-
 }
 
 /* ANIMATIONS */
