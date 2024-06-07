@@ -1,13 +1,10 @@
 // ABOUT.js
 import React from 'react';
-import GitHubCalendar from 'react-github-calendar';
 
 // Styles
 import './ABOUT.css';
 
 // Components
-import SocialMediaIcons from '../../../../components/SocialMediaIcons/SocialMediaIcons';
-import LocalTime from '../../../../components/LocalTime';
 import ArrowRightIcon from '../../../../components/ArrowRight/ArrowRightBlack';
 import MyProfile from './MyProfile/MyProfile';
 
@@ -28,7 +25,7 @@ export function ABOUT() {
           </div>
 
           <div className="about-cards-container">
-            
+
             <h4>Personal Interests and Values</h4>
             <div className="about-cards">
               I remember being a kid in 2008 and always wondered how websites and games were created. Fast forward to 2024, I've gone through a 2-year program in BCIT and I've understood the process of OOP and Web Dev. I've gone on and created my own games with my peers and designing websites for a variety of projects.
@@ -94,14 +91,6 @@ export function ABOUT() {
               <div className="small-link-container">
                 <a className="external-link small-link" href="https://wsai.org/">
                   More info about WSAI Conference<ArrowRightIcon />
-                </a>
-              </div>
-            </div>
-
-            <div className="github-calendar-container">
-              <div className="github-calendar">
-                <a href="https://github.com/gathrean" target="_blank" rel="noopener noreferrer">
-                  <GitHubCalendar username="gathrean" blockSize={16} blockMargin={4} className="react-github-calendar" />
                 </a>
               </div>
             </div>

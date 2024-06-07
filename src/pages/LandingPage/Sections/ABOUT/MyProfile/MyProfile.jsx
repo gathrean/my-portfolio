@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import './MyProfile.css';
+
 // Components
 import LocalTime from '../../../../../components/LocalTime';
 import SocialMediaIcons from '../../../../../components/SocialMediaIcons/SocialMediaIcons';

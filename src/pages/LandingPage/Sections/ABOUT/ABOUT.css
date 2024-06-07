@@ -1,12 +1,10 @@
-.my-profile {
-  padding: 20px;
-  margin-bottom: 16px;
-  box-shadow: var(--shadow);
-  background-color: var(--colorwhite);
-  border-radius: 30px;
-  width: fit-content;
-  height: fit-content;
+/* .my-profile-container {
+  display: flex;
 }
+
+.about-cards-container {
+  display: flex;
+} */
 
 .about-me-container {
   margin-top: 40px;
@@ -31,19 +29,6 @@
 .github-calendar {
   margin-top: 40px;
   width: 100%;
-}
-
-.about-me-images {
-  transition: all 0.3s ease;
-}
-
-.about-me-images img {
-  max-width: 300px;
-}
-
-.social-media-icons {
-  display: flex;
-  flex-direction: row;
 }
 
 /* For Desktop only stuff */
@@ -82,29 +67,5 @@
   .about-me-container {
     flex-direction: column;
     gap: 20px;
-  }
-
-  .about-me-images img {
-    width: 30vw;
-    margin-right: 80px;
-  }
-
-  .my-profile {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .social-media-icons svg {
-    fill: var(--colorlightgrey);
-    width: 2.5em;
-    margin: 0.2em 1em 0.2em 0em;
-  }
-}
-
-/* For even smaller mobile */
-/* ========================================== */
-@media screen and (max-width: 700px) {
-  .my-profile {
-    flex-direction: column;
   }
 }
