@@ -36,35 +36,44 @@
 
 /* For mobile only */
 /* ========================================== */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
+    .about-me-images {
+        display: flex;
+        justify-content: center;
+    }
+
     .about-me-images img {
-        max-width: 300px;
-        margin-right: 80px;
+        max-width: 300px !important;
+        width: 100%;
+        margin-right: 0px;
     }
 
     .my-profile {
         display: flex;
         flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
     }
-}
 
-@media screen and (max-width: 1175px) {
-    .about-me-images img {
-        max-width: 200px;
-        margin-right: 40px;
+    .about-me-info {
+        margin-left: 40px;
     }
 }
 
 /* For even smaller mobile */
 /* ========================================== */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .about-me-images img {
         max-width: 350px;
-        margin-right: 0px;
     }
 
     .my-profile {
         flex-direction: column;
+    }
+
+    .about-me-info {
+        margin-left: 0px;
     }
 }
 
