@@ -10,8 +10,8 @@ function ProjectCard({
 
   return (
     <div className="project-card-container">
-      <div className="header-image"><img alt="Project Screenshots" /></div>
-      <div className="project-card">
+      {/* <div className="header-image"><img alt="Project Screenshots" /></div> */}
+      <div className="card">
         <div className="project-card-description">
           <div className="link-and-icon-container">
             <img className="project-small-icon" alt="Project Small Icon" src={iconURL} />

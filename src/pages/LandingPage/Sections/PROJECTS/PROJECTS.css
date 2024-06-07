@@ -22,25 +22,10 @@
     flex-direction: column;
   }
 
-  .project-card {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
   .header-image img {
     width: 100%;
     height: auto;
   }
-}
-
-.project-card {
-  display: flex;
-  width: 100%;
-  background-color: var(--colorwhite);
-  border-radius: 30px;
-  padding: 20px;
-  box-shadow: var(--shadow);
 }
 
 .project-card-description {
@@ -64,21 +49,6 @@
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-}
-
-.project-card h1 {
-  color: #000;
-  font-weight: 900;
-}
-
-.project-card h3 {
-  color: #4b4b4b;
-  font-size: 0.9rem;
-  font-weight: 900;
-}
-
-.project-card p {
-  color: #616161;
 }
 
 .project-small-icon {

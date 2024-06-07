@@ -296,6 +296,17 @@ hr {
   }
 }
 
+/* CARDS */
+/* ========================================== */
+.card {
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+  background-color: var(--colorwhite);
+  border-radius: 30px;
+  width: fit-content;
+}
+
 /* ANIMATIONS */
 /* ========================================== */
 

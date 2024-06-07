@@ -19,10 +19,10 @@ export function ABOUT() {
       <div className="section-container-child">
         <div className="about-me-container">
 
-          <div className="about-cards-container">
+          <div className="card-container">
 
             <h4>Personal Interests and Values</h4>
-            <div className="about-cards">
+            <div className="card">
               I remember being a kid in 2008 and always wondered how websites and games were created. Fast forward to 2024, I've gone through a 2-year program in BCIT and I've understood the process of OOP and Web Dev. I've gone on and created my own games with my peers and designing websites for a variety of projects.
               <br /> <br />
               The most important thing I've learned during my time in academia is that there is truly strength in numbers and that the project succeeds when everyone is on the same page as well as using their best strengths and skills in their right positions in the team.
@@ -36,7 +36,7 @@ export function ABOUT() {
 
             <br />
             <h4>Skills and Technologies</h4>
-            <div className="about-cards">{Texts.skillsAndTechnologies}</div>
+            <div className="card">{Texts.skillsAndTechnologies}</div>
 
             <br />
 
