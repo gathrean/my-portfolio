@@ -7,6 +7,12 @@ import LocalTime from '../LocalTime';
 import SocialMediaIcons from '../SocialMediaIcons/SocialMediaIcons';
 import GathreanIcon from '../../assets/icons/project-icons/gathrean-Icon.png';
 
+// Images
+import img_closeup from './PFPs/closeup.jpg';
+import img_hike from './PFPs/hike.jpeg';
+import img_lake from './PFPs/lake.jpeg';
+import img_river from './PFPs/river.jpeg';
+
 const MyProfile = () => {
     const [emailMessage, setEmailMessage] = useState('📧 gathrean@icloud.com');
 
