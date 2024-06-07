@@ -1,12 +1,12 @@
 import React from 'react';
 
-import './EXPERIENCE.css';
+import './ACADEMIA.css';
 
-export function EXPERIENCE() {
+export function ACADEMIA() {
     return (
         <div className="section-container">
             <hr />
-            <h1>Experience</h1>
+            <h1>Academia & Research</h1>
             <p>My experience as a software developer, which includes my education and publications.</p>
         </div>
     );
