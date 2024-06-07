@@ -8,7 +8,7 @@ import './ABOUT.css';
 import ArrowRightIcon from '../../../../components/ArrowRight/ArrowRightBlack';
 
 // Data
-import aboutTexts from '../../Texts.json';
+import Texts from '../../Texts.json';
 
 export function ABOUT() {
   return (
@@ -36,59 +36,9 @@ export function ABOUT() {
 
             <br />
             <h4>Skills and Technologies</h4>
-            <div className="about-cards">{aboutTexts.skillsAndTechnologies}</div>
+            <div className="about-cards">{Texts.skillsAndTechnologies}</div>
 
             <br />
-            <h4>Education and Publications</h4>
-
-            <div className="about-cards">
-              <h5>{aboutTexts.bcit.diploma}</h5>
-              <p>{aboutTexts.bcit.location}</p>
-              <p>{aboutTexts.bcit.school}</p>
-              <p>{aboutTexts.bcit.duration}</p>
-              <ul>
-                <li>{aboutTexts.bcit.desc1}</li>
-                <li>{aboutTexts.bcit.desc2}</li>
-                <li>{aboutTexts.bcit.desc3}</li>
-              </ul>
-              <div className="small-link-container">
-                <a className="external-link small-link" href="https://www.bcit.ca/programs/computer-systems-technology-diploma-full-time-5500dipma/">
-                  More info about BCIT CST Diploma
-                  <ArrowRightIcon />
-                </a>
-              </div>
-            </div>
-
-            <div className="about-cards">
-              <h5>{aboutTexts.aim.name}</h5>
-              <p>{aboutTexts.aim.location}</p>
-              <p>{aboutTexts.aim.date} </p>
-              <ul>
-                <li>{aboutTexts.aim.type}</li>
-                <li>{aboutTexts.aim.description}</li>
-              </ul>
-              <div className="small-link-container">
-                <a className="external-link small-link" href="https://artificialintelligence-conference.com/">
-                  More info about AIM Conference
-                  <ArrowRightIcon />
-                </a>
-              </div>
-            </div>
-
-            <div className="about-cards">
-              <h5>{aboutTexts.wsai.name}</h5>
-              <p>{aboutTexts.wsai.location}</p>
-              <p>{aboutTexts.wsai.date} </p>
-              <ul>
-                <li>{aboutTexts.wsai.type}</li>
-                <li>{aboutTexts.wsai.description}</li>
-              </ul>
-              <div className="small-link-container">
-                <a className="external-link small-link" href="https://wsai.org/">
-                  More info about WSAI Conference<ArrowRightIcon />
-                </a>
-              </div>
-            </div>
 
           </div>
         </div>

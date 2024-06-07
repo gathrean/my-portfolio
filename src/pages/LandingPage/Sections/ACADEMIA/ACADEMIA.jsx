@@ -1,13 +1,83 @@
 import React from 'react';
 
+// Styles
 import './ACADEMIA.css';
+import '../ABOUT/ABOUT.css';
+
+// Components
+import ArrowRightIcon from '../../../../components/ArrowRight/ArrowRightBlack';
+
+// Data
+import Texts from '../../Texts.json';
 
 export function ACADEMIA() {
     return (
         <div className="section-container">
+
             <hr />
             <h1>Academia & Research</h1>
             <p>My experience as a software developer, which includes my education and publications.</p>
+            <div className="section-container-child">
+
+                <div className="about-me-container">
+
+                    <div className="about-cards-container">
+
+                        <h4>Education</h4>
+
+                        <div className="about-cards">
+                            <h5>{Texts.bcit.diploma}</h5>
+                            <p>{Texts.bcit.location}</p>
+                            <p>{Texts.bcit.school}</p>
+                            <p>{Texts.bcit.duration}</p>
+                            <ul>
+                                <li>{Texts.bcit.desc1}</li>
+                                <li>{Texts.bcit.desc2}</li>
+                                <li>{Texts.bcit.desc3}</li>
+                            </ul>
+                            <div className="small-link-container">
+                                <a className="external-link small-link" href="https://www.bcit.ca/programs/computer-systems-technology-diploma-full-time-5500dipma/">
+                                    More info about BCIT CST Diploma
+                                    <ArrowRightIcon />
+                                </a>
+                            </div>
+                        </div>
+
+                        <h4>Publications</h4>
+
+                        <div className="about-cards">
+                            <h5>{Texts.aim.name}</h5>
+                            <p>{Texts.aim.location}</p>
+                            <p>{Texts.aim.date} </p>
+                            <ul>
+                                <li>{Texts.aim.type}</li>
+                                <li>{Texts.aim.description}</li>
+                            </ul>
+                            <div className="small-link-container">
+                                <a className="external-link small-link" href="https://artificialintelligence-conference.com/">
+                                    More info about AIM Conference
+                                    <ArrowRightIcon />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="about-cards">
+                            <h5>{Texts.wsai.name}</h5>
+                            <p>{Texts.wsai.location}</p>
+                            <p>{Texts.wsai.date} </p>
+                            <ul>
+                                <li>{Texts.wsai.type}</li>
+                                <li>{Texts.wsai.description}</li>
+                            </ul>
+                            <div className="small-link-container">
+                                <a className="external-link small-link" href="https://wsai.org/">
+                                    More info about WSAI Conference<ArrowRightIcon />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
