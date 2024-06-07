@@ -22,24 +22,24 @@
     flex-direction: row;
 }
 
+.social-media-icons svg {
+    fill: var(--colorlightgrey);
+    width: 2.5em;
+    margin: 0.2em 1em 0.2em 0em;
+}
+
 
 /* For mobile only */
 /* ========================================== */
-@media screen and (max-width: 1175px) {
+@media screen and (max-width: 1400px) {
     .about-me-images img {
-        width: 30vw;
+        max-width: 30vw;
         margin-right: 80px;
     }
 
     .my-profile {
         display: flex;
         flex-direction: row;
-    }
-
-    .social-media-icons svg {
-        fill: var(--colorlightgrey);
-        width: 2.5em;
-        margin: 0.2em 1em 0.2em 0em;
     }
 }
 

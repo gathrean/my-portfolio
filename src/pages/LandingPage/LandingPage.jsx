@@ -29,16 +29,21 @@ export function LandingPage() {
                 const profileRect = profile.getBoundingClientRect();
                 const margin = 4 * parseFloat(getComputedStyle(document.documentElement).fontSize);
 
-                // Check if the profile should be sticky
-                if (containerRect.top < margin && containerRect.bottom > profileRect.height + margin) {
-                    profile.style.position = 'fixed';
-                    profile.style.top = `${margin}px`;
-                } else if (containerRect.top >= margin) {
+                if (window.innerWidth > 768) {
+                    // Check if the profile should be sticky
+                    if (containerRect.top < margin && containerRect.bottom > profileRect.height + margin) {
+                        profile.style.position = 'fixed';
+                        profile.style.top = `${margin}px`;
+                    } else if (containerRect.top >= margin) {
+                        profile.style.position = 'relative';
+                        profile.style.top = '0';
+                    } else if (containerRect.bottom <= profileRect.height + margin) {
+                        profile.style.position = 'absolute';
+                        profile.style.top = `${containerRect.height - profileRect.height}px`;
+                    }
+                } else {
                     profile.style.position = 'relative';
                     profile.style.top = '0';
-                } else if (containerRect.bottom <= profileRect.height + margin) {
-                    profile.style.position = 'absolute';
-                    profile.style.top = `${containerRect.height - profileRect.height}px`;
                 }
             }
         };
