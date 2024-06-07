@@ -6,11 +6,15 @@ export function Footer() {
         <footer>
             <div className="footer-content footer-body">
                 <p className="credit-text">
-                    This website's designed and coded in <b>Visual Studio Code</b> by <b>Gathrean Dela Cruz</b>.
+                    This website's designed and coded in Visual Studio Codeby Gathrean Dela Cruz.
 
-                    Built with <b>React.js</b> and <b>Vanila HTML/CSS</b>, deployed by <b>Vercel</b>.
+                    Built with React.js and Vanila HTML/CSS, deployed by Vercel.
 
-                    All text is in the <b>Work-Sans</b> typeface.
+                    All text is in the Work-Sans typeface.
+
+                    Project icons are designed by me. 
+
+                    I used Chat-GPT to speed up the process of designing this website.
                 </p>
             </div>
         </footer>
