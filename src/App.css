@@ -254,7 +254,7 @@ hr {
 /* SECTION STYLES */
 /* ========================================== */
 .section-container {
-  padding: 50px 10vw;
+  padding: 50px 10vw 50px 5vw;
   max-height: fit-content;
 }
 

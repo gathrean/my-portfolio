@@ -6,6 +6,7 @@
     border-radius: 30px;
     width: fit-content;
     height: fit-content;
+    transition: top 0.3s ease, position 0.3s ease;
 }
 
 .about-me-images {

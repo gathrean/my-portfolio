@@ -20,10 +20,6 @@ export function ABOUT() {
       <div className="section-container-child">
         <div className="about-me-container">
 
-          <div className="my-profile-container">
-            <MyProfile />
-          </div>
-
           <div className="about-cards-container">
 
             <h4>Personal Interests and Values</h4>
