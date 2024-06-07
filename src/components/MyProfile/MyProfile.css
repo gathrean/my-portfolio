@@ -4,6 +4,7 @@
     box-shadow: var(--shadow);
     background-color: var(--colorwhite);
     border-radius: 30px;
+    border: 0.5px solid var(--colorlightgrey);
     width: fit-content;
     height: fit-content;
     transition: top 0.3s ease, position 0.3s ease;
@@ -15,7 +16,7 @@
 
 .about-me-images img {
     transition: all 0.3s ease;
-    max-width: 300px;
+    max-width: 100px;
 }
 
 .about-me-info p {
@@ -43,7 +44,7 @@
     }
 
     .about-me-images img {
-        max-width: 300px !important;
+        max-width: 150px;
         width: 100%;
         margin-right: 0px;
     }
@@ -64,10 +65,6 @@
 /* For even smaller mobile */
 /* ========================================== */
 @media screen and (max-width: 650px) {
-    .about-me-images img {
-        max-width: 350px;
-    }
-
     .my-profile {
         flex-direction: column;
     }
@@ -79,6 +76,14 @@
 
 @media screen and (max-width: 480px) {
     .about-me-images img {
-        max-width: 220px;
+        max-width: 100px;
+    }
+}
+
+/* Media queries for heights */
+/* ========================================== */
+@media screen and (max-height: 800px) and (min-width: 1100px) {
+    .about-me-images img {
+        display: none;
     }
 }
