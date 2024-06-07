@@ -17,6 +17,16 @@
 .profile-picture img {
     transition: all 0.3s ease;
     max-width: 100px;
+    border-radius: 50%;
+    border: 0.8px solid var(--colorlightgrey);
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
 }
 
 .about-me-info p {

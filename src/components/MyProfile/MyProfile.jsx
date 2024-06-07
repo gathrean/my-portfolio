@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import './MyProfile.css';
 
 // Components
 import LocalTime from '../LocalTime';
 import SocialMediaIcons from '../SocialMediaIcons/SocialMediaIcons';
-import GathreanIcon from '../../assets/icons/project-icons/gathrean-Icon.png';
 
 // Images
 import img_closeup from './PFPs/closeup.jpg';
@@ -13,8 +12,12 @@ import img_hike from './PFPs/hike.jpeg';
 import img_lake from './PFPs/lake.jpeg';
 import img_river from './PFPs/river.jpeg';
 
+const images = [img_closeup, img_hike, img_lake, img_river];
+
 const MyProfile = () => {
     const [emailMessage, setEmailMessage] = useState('📧 gathrean@icloud.com');
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [fade, setFade] = useState(true);
 
     const handleEmailClick = () => {
         navigator.clipboard.writeText('gathrean@icloud.com')
@@ -29,10 +32,22 @@ const MyProfile = () => {
             });
     };
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setFade(false);
+            setTimeout(() => {
+                setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+                setFade(true);
+            }, 500);
+        }, 12000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <div className="my-profile">
-            <div className="profile-picture">
-                <img src={GathreanIcon} alt="Gathrean" />
+            <div className={`profile-picture ${fade ? 'fade-in' : 'fade-out'}`}>
+                <img src={images[currentImageIndex]} alt="Profile" />
             </div>
             <br />
             <div className="about-me-info">
