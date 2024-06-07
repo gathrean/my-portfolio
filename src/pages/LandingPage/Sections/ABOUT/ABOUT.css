@@ -34,10 +34,6 @@
 /* For Desktop only stuff */
 /* ========================================== */
 @media screen and (min-width: 1175px) {
-  .section-container-child {
-    padding: 0 10vw !important;
-  }
-
   .about-me-text {
     width: 60%
   }
