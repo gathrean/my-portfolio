@@ -6,7 +6,7 @@ import './ABOUT.css';
 
 // Components
 import ArrowRightIcon from '../../../../components/ArrowRight/ArrowRightBlack';
-import MyProfile from './MyProfile/MyProfile';
+import MyProfile from '../../../../components/MyProfile/MyProfile';
 
 // Data
 import aboutTexts from './aboutTexts.json';

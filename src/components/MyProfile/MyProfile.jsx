@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import './MyProfile.css';
 
 // Components
-import LocalTime from '../../../../../components/LocalTime';
-import SocialMediaIcons from '../../../../../components/SocialMediaIcons/SocialMediaIcons';
-import GathreanIcon from '../../../../../assets/icons/project-icons/gathrean-Icon.png';
+import LocalTime from '../LocalTime';
+import SocialMediaIcons from '../SocialMediaIcons/SocialMediaIcons';
+import GathreanIcon from '../../assets/icons/project-icons/gathrean-Icon.png';
 
 const MyProfile = () => {
     const [emailMessage, setEmailMessage] = useState('📧 gathrean@icloud.com');
