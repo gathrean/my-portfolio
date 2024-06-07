@@ -10,7 +10,6 @@ function ProjectCard({
 
   return (
     <div className="project-card-container">
-      {/* <div className="header-image"><img alt="Project Screenshots" /></div> */}
       <div className="card">
         <div className="project-card-description">
           <div className="link-and-icon-container">
@@ -20,7 +19,7 @@ function ProjectCard({
               <ArrowRightIcon />
             </h1>
           </div>
-          <h3>{date}</h3>
+          <h4>{date}</h4>
           <p>{description}</p>
         </div>
       </div>
