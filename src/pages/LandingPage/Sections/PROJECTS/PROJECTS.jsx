@@ -17,6 +17,7 @@ export function PROJECTS() {
       <hr />
       <h1>Featured Projects</h1>
       <p>These are some of the programming projects I've worked on. From social media, to RPG game, to AI. Click on each card to learn more.</p>
+      <br />
       <div className="section-container-child">
         <div className="projects-grid">
           <ProjectCard

@@ -60,11 +60,11 @@
 
 @media screen and (max-width: 1600px) {
     .LP-container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 0.8fr 1.2fr;
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
     .LP-container {
         display: block;
     }

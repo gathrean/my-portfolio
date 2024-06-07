@@ -22,7 +22,7 @@ export function LandingPage() {
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth <= 1400) {
+            if (window.innerWidth <= 1200) {
                 setContainerClass('section-container');
             } else {
                 setContainerClass('LP-my-profile-container');
@@ -38,7 +38,7 @@ export function LandingPage() {
                 const profileRect = profile.getBoundingClientRect();
                 const margin = 4 * parseFloat(getComputedStyle(document.documentElement).fontSize);
 
-                if (window.innerWidth > 768 && window.innerWidth > 1400) {
+                if (window.innerWidth > 768 && window.innerWidth > 1200) {
                     // Check if the profile should be sticky
                     if (containerRect.top < margin && containerRect.bottom > profileRect.height + margin) {
                         profile.style.position = 'fixed';

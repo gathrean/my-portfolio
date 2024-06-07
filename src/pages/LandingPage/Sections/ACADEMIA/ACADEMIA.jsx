@@ -17,11 +17,12 @@ export function ACADEMIA() {
             <hr />
             <h1>Academia & Research</h1>
             <p>My experience as a software developer, which includes my education and publications.</p>
+            <br />
             <div className="section-container-child">
 
                 <div className="card-container">
 
-                    <h4>Education</h4>
+                    <h3>Academia</h3>
 
                     <div className="card">
                         <h5>{Texts.bcit.diploma}</h5>
@@ -41,7 +42,7 @@ export function ACADEMIA() {
                         </div>
                     </div>
 
-                    <h4>Publications</h4>
+                    <h3>Research</h3>
 
                     <div className="card">
                         <h5>{Texts.aim.name}</h5>
