@@ -20,7 +20,7 @@ const Layout = ({ children }) => (
   <div className="App">
     <Navbar />
     {children}
-    <Footer />
+    {/* <Footer /> */}
   </div>
 );
 

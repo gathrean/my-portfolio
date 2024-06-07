@@ -5,7 +5,7 @@ import HERO from './Sections/HERO/HERO';
 import { ABOUT } from './Sections/ABOUT/ABOUT';
 import { ACADEMIA } from './Sections/ACADEMIA/ACADEMIA';
 import { PROJECTS } from './Sections/PROJECTS/PROJECTS';
-import { CONTACT } from './Sections/CONTACT/CONTACT';
+import { Footer2 } from '../../components/Footer/Footer2';
 
 // Components 
 import MyProfile from '../../components/MyProfile/MyProfile';
@@ -78,6 +78,10 @@ export function LandingPage() {
                     <section id="ABOUT" className="ABOUT"><ABOUT /></section>
                     <section id="ACADEMIA" className="ACADEMIA"><ACADEMIA /></section>
                     <section id="PROJECTS" className="PROJECTS"><PROJECTS /></section>
+                    {/* footer */}
+                    <div>
+                        <Footer2 />
+                    </div>
                 </div>
             </div>
         </section>
