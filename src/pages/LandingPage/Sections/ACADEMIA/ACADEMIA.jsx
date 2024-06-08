@@ -10,6 +10,11 @@ import ArrowRightIcon from '../../../../components/ArrowRight/ArrowRightBlack';
 // Data
 import Texts from '../../Texts.json';
 
+// Logos
+import BCITLogo from './Logos/bcit-logo.png';
+import AIMLogo from './Logos/aim-logo.gif';
+import WSAILogo from './Logos/wsai-logo.png';
+
 export function ACADEMIA() {
     return (
         <div className="section-container">
@@ -25,7 +30,10 @@ export function ACADEMIA() {
                     <h3>Academia</h3>
 
                     <div className="card">
-                        <h5>{Texts.bcit.diploma}</h5>
+                        <div className="link-and-icon-container">
+                            <img className="academia-logo" src={BCITLogo} alt="BCIT Logo" />
+                            <h5>{Texts.bcit.diploma}</h5>
+                        </div>
                         <p>{Texts.bcit.location}</p>
                         <p>{Texts.bcit.school}</p>
                         <p>{Texts.bcit.duration}</p>
@@ -45,6 +53,7 @@ export function ACADEMIA() {
                     <h3>Research</h3>
 
                     <div className="card">
+                        <img className="academia-logo" src={AIMLogo} alt="AIM Logo" /> <br />
                         <h5>{Texts.aim.name}</h5>
                         <p>{Texts.aim.location}</p>
                         <p>{Texts.aim.date} </p>
@@ -61,7 +70,10 @@ export function ACADEMIA() {
                     </div>
 
                     <div className="card">
-                        <h5>{Texts.wsai.name}</h5>
+                        <div className="link-and-icon-container">
+                            <img className="academia-logo" src={WSAILogo} alt="WSAI Logo" />
+                            <h5>{Texts.aim.name}</h5>
+                        </div>
                         <p>{Texts.wsai.location}</p>
                         <p>{Texts.wsai.date} </p>
                         <ul>
