@@ -19,6 +19,7 @@
   --colorblack: #000000;
   --colorgreen: #439775;
   --shadow: 0 0 10px 0 #00000010;
+  --shadowhover: 0 0 10px 0 #00000020;
 }
 
 /* RESET */
@@ -255,7 +256,7 @@ hr {
 /* SECTION STYLES */
 /* ========================================== */
 .section-container {
-  padding: 0px 10vw 50px 5vw;
+  padding: 0px 20vw 50px 5vw;
   max-height: fit-content;
 }
 
@@ -267,7 +268,7 @@ hr {
 }
 
 .section-container h3 {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .section-container p {
@@ -310,6 +311,11 @@ hr {
   background-color: var(--colorwhite);
   border-radius: 30px;
   width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadowhover);
 }
 
 /* ANIMATIONS */
