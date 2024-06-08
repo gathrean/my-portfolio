@@ -55,7 +55,7 @@ export function PROJECTS() {
                         </ul>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://github.com/gathrean/Nebula">
-                                Visit the GitHub Repo
+                                GitHub Repo
                                 <ArrowRightIcon />
                             </a>
                         </div>
@@ -75,14 +75,14 @@ export function PROJECTS() {
                         </ul>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://github.com/xinyang417/YapPad">
-                                Visit the GitHub Repo
+                                GitHub Repo
                                 <ArrowRightIcon />
                             </a>
                             <p>(Has demo videos)</p>
                         </div>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://yappad.vercel.app">
-                                Visit the hosted website
+                                Website
                                 <ArrowRightIcon />
                             </a>
                             <p>(Our AI is currently shut off, but the website is still up)</p>
@@ -105,15 +105,16 @@ export function PROJECTS() {
                         </ul>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://github.com/BardiaTiM/CareLink">
-                                Visit the GitHub Repo
+                                GitHub Repo
                                 <ArrowRightIcon />
                             </a>
                         </div>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://youtu.be/4zMcxRqRwdw">
-                                Watch our Presentation Video (YouTube)
+                                Watch Presentation
                                 <ArrowRightIcon />
                             </a>
+                            <p>(YouTube Video)</p>
                         </div>
                     </div>
 
@@ -133,13 +134,13 @@ export function PROJECTS() {
                         </ul>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://github.com/gathrean/OrcaSwipe">
-                                Visit the GitHub Repo
+                                GitHub Repo
                                 <ArrowRightIcon />
                             </a>
                         </div>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://orcaswipe.vercel.app/">
-                                Visit the Website
+                                Website
                                 <ArrowRightIcon />
                             </a>
                         </div>
@@ -159,13 +160,13 @@ export function PROJECTS() {
                         </ul>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://github.com/BardiaTiM/DungeonQuad">
-                                Visit the GitHub Repo
+                                GitHub Repo
                                 <ArrowRightIcon />
                             </a>
                         </div>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://github.com/BardiaTiM/DungeonQuad/releases/tag/game">
-                                Download and play the Game!
+                                Download Game
                                 <ArrowRightIcon />
                             </a>
                         </div>
