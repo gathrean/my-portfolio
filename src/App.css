@@ -310,6 +310,12 @@ hr {
   }
 }
 
+
+@media screen and (max-width: 800px) {
+  .section-container {
+    padding: 50px 5vw 20px 5vw;
+  }
+}
 /* CARDS */
 /* ========================================== */
 .card {
