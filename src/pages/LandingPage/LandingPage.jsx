@@ -70,8 +70,8 @@ export function LandingPage() {
                 }
             });
         }, {
-            rootMargin: '-100px 0px',  // Adjust this value to control when the animation triggers
-            threshold: 0.1 // Adjust this value to control the sensitivity
+            rootMargin: '-10px 0px',
+            threshold: 0.05
         });
 
         cards.forEach(card => {
