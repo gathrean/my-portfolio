@@ -19,7 +19,7 @@
   --colorblack: #000000;
   --colorgreen: #439775;
   --shadow: 0 0 10px 0 #00000010;
-  --shadowhover: 0 0 10px 0 #00000020;
+  --shadowhover: 0 0 30px 0 #00000025;
 }
 
 /* RESET */
@@ -96,7 +96,7 @@ b {
 .section-container li:before {
   content: "•";
   display: inline-block;
-  width: 1em; 
+  width: 1em;
   margin-left: -1em;
 }
 
@@ -172,6 +172,7 @@ a:visited {
   color: var(--colorblue) !important;
   text-decoration: none !important;
   font-size: 1rem !important;
+  margin-right: 1rem;
 }
 
 .small-link:hover {
@@ -264,7 +265,8 @@ hr {
 .section-container h1,
 .section-container h2,
 .section-container h3,
-.section-container h4 {
+.section-container h4,
+.section-container h5 {
   margin-bottom: 8px;
 }
 
@@ -324,6 +326,10 @@ hr {
 .card.visible {
   opacity: 1;
   transform: translateX(0);
+}
+
+.card p {
+  margin-bottom: 8px;
 }
 
 /* ANIMATIONS */

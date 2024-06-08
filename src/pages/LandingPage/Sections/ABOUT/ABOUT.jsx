@@ -19,29 +19,37 @@ export function ABOUT() {
       <br />
       <div className="section-container-child">
 
-          <div className="card-container">
+        <div className="card-container">
 
-            <h3>Personal Interests and Values</h3>
-            <div className="card">
-              I remember being a kid in 2008 and always wondered how websites and games were created. Fast forward to 2024, I've gone through a 2-year program in BCIT and I've understood the process of OOP and Web Dev. I've gone on and created my own games with my peers and designing websites for a variety of projects.
-              <br /> <br />
-              The most important thing I've learned during my time in academia is that there is truly strength in numbers and that the project succeeds when everyone is on the same page as well as using their best strengths and skills in their right positions in the team.
-              <br /> <br />
-              Back in 2015 I've also found interest in music production and graphic design. When I got my first MacBook Pro back in 2017, I went ham and progressed a lot in those two. I believe those skills have enhanced my creativity in coding and development
-              <br /> <br />
-              in my free time I love to spend time with my family and friends, enjoy nature in hikes, and of course music production, graphic design, and learning more things in coding
-              <br /> <br />
-              the thing i love about coding is that there is always something to learn.
-            </div>
-
-            <br />
-            <h3>Skills and Technologies</h3>
-            <div className="card">{Texts.skillsAndTechnologies}</div>
-
-            <br />
-
+          <h3>Personal Interests and Values</h3>
+          <div className="card">
+            I remember being a kid in 2008 and always wondered how websites and games were created. Fast forward to 2024, I've gone through a 2-year program in BCIT and I've understood the process of OOP and Web Dev. I've gone on and created my own games with my peers and designing websites for a variety of projects.
+            <br /> <br />
+            The most important thing I've learned during my time in academia is that there is truly strength in numbers and that the project succeeds when everyone is on the same page as well as using their best strengths and skills in their right positions in the team.
+            <br /> <br />
+            Back in 2015 I've also found interest in music production and graphic design. When I got my first MacBook Pro back in 2017, I went ham and progressed a lot in those two. I believe those skills have enhanced my creativity in coding and development
+            <br /> <br />
+            in my free time I love to spend time with my family and friends, enjoy nature in hikes, and of course music production, graphic design, and learning more things in coding
+            <br /> <br />
+            the thing i love about coding is that there is always something to learn.
           </div>
+
+          <br />
+          <h3>Skills and Technologies</h3>
+          <div className="card">
+            <ul>
+              <li>Programming Languages: Proficient in JavaScript, Java, C, C#, and C++.</li>
+              <li>Web Development: Experienced in creating and maintaining websites, with a strong understanding of front-end and back-end technologies.</li>
+              <li>Software Development: Hands-on experience in developing games and software applications, with a focus on OOP principles.</li>
+              <li>Creative Skills: Enhanced my coding projects with skills in music production and graphic design.</li>
+              <li>Team Collaboration: Strong team player with a proven ability to contribute effectively to group projects and communicate ideas clearly.</li>
+            </ul>
+          </div>
+
+          <br />
+
         </div>
       </div>
+    </div>
   );
 }

@@ -23,8 +23,8 @@ const HERO = () => {
 
       <div className="buttons-container">
         <div className="external-link">
-          <a href="resumeURL" style={{ cursor: 'pointer', color: 'white' }}>View Resumé</a>
           <ArrowRightIcon />
+          <a href="resumeURL" style={{ cursor: 'pointer', color: 'white' }}>View Resumé</a>
         </div>
 
         <div className="bottom-buttons-container">

@@ -55,8 +55,8 @@ export function PROJECTS() {
                         </ul>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://github.com/gathrean/Nebula">
-                                GitHub Repo
                                 <ArrowRightIcon />
+                                GitHub Repo
                             </a>
                         </div>
                     </div>
@@ -75,15 +75,15 @@ export function PROJECTS() {
                         </ul>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://github.com/xinyang417/YapPad">
-                                GitHub Repo
                                 <ArrowRightIcon />
+                                GitHub Repo
                             </a>
                             <p>(Has demo videos)</p>
                         </div>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://yappad.vercel.app">
-                                Website
                                 <ArrowRightIcon />
+                                Website
                             </a>
                             <p>(Our AI is currently shut off, but the website is still up)</p>
                         </div>
@@ -105,14 +105,26 @@ export function PROJECTS() {
                         </ul>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://github.com/BardiaTiM/CareLink">
-                                GitHub Repo
                                 <ArrowRightIcon />
+                                GitHub Repo
+                            </a>
+                        </div>
+                        <div className="small-link-container">
+                            <a className="external-link small-link" href="https://www.linkedin.com/posts/gathrean_qdshacks2024-hackathon-cst-activity-7174553510577942528-i26X?utm_source=share&utm_medium=member_desktop">
+                                <ArrowRightIcon />
+                                LinkedIn Post
+                            </a>
+                        </div>
+                        <div className="small-link-container">
+                            <a className="external-link small-link" href="https://devpost.com/software/carelink-6j8op7">
+                                <ArrowRightIcon />
+                                DevPost
                             </a>
                         </div>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://youtu.be/4zMcxRqRwdw">
-                                Watch Presentation
                                 <ArrowRightIcon />
+                                Watch Presentation
                             </a>
                             <p>(YouTube Video)</p>
                         </div>
@@ -125,7 +137,8 @@ export function PROJECTS() {
                             <img className="project-small-icon" alt="Project Small Icon" src={OrcaSwipeIcon} />
                             <h5>OrcaSwipe</h5>
                         </div>
-                        <p>Small description</p>
+                        <p>"Discover, Host, and Link Up"</p>
+                        <p>"Uncover hidden gems in your city and grow lasting communities with the swipe of a finger."</p>
                         <ul>
                             <li>Point 1</li>
                             <li>Point 2</li>
@@ -134,14 +147,14 @@ export function PROJECTS() {
                         </ul>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://github.com/gathrean/OrcaSwipe">
-                                GitHub Repo
                                 <ArrowRightIcon />
+                                GitHub Repo
                             </a>
                         </div>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://orcaswipe.vercel.app/">
-                                Website
                                 <ArrowRightIcon />
+                                Website
                             </a>
                         </div>
                     </div>
@@ -160,14 +173,20 @@ export function PROJECTS() {
                         </ul>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://github.com/BardiaTiM/DungeonQuad">
-                                GitHub Repo
                                 <ArrowRightIcon />
+                                GitHub Repo
                             </a>
                         </div>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://github.com/BardiaTiM/DungeonQuad/releases/tag/game">
-                                Download Game
                                 <ArrowRightIcon />
+                                Download Game
+                            </a>
+                        </div>
+                        <div className="small-link-container">
+                            <a className="external-link small-link" href="https://www.linkedin.com/posts/gathrean_java-gamedevelopment-indiegames-activity-7150249723457622016-NyLK?utm_source=share&utm_medium=member_desktop">
+                                <ArrowRightIcon />
+                                LinkedIn Post
                             </a>
                         </div>
                     </div>

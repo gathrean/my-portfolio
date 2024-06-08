@@ -36,8 +36,8 @@ export function ACADEMIA() {
                         </ul>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://www.bcit.ca/programs/computer-systems-technology-diploma-full-time-5500dipma/">
-                                More info about BCIT CST Diploma
                                 <ArrowRightIcon />
+                                More info about BCIT CST Diploma
                             </a>
                         </div>
                     </div>
@@ -54,8 +54,8 @@ export function ACADEMIA() {
                         </ul>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://artificialintelligence-conference.com/">
-                                More info about AIM Conference
                                 <ArrowRightIcon />
+                                More info about AIM Conference
                             </a>
                         </div>
                     </div>
@@ -70,7 +70,8 @@ export function ACADEMIA() {
                         </ul>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://wsai.org/">
-                                More info about WSAI Conference<ArrowRightIcon />
+                                <ArrowRightIcon />
+                                More info about WSAI Conference
                             </a>
                         </div>
                     </div>
