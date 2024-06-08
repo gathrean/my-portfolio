@@ -53,7 +53,6 @@ const MyProfile = () => {
             <div className="about-me-info">
                 <h3>Gathrean Dela Cruz</h3>
                 <p><b>Software Developer</b></p>
-                <p>🎂 23 years old</p>
                 <p>🇨🇦 Vancouver, BC, Canada</p>
                 <p>⌚️ <LocalTime /></p>
                 <p onClick={handleEmailClick} style={{ cursor: 'pointer' }}>{emailMessage}</p>
