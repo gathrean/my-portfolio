@@ -78,12 +78,14 @@ export function PROJECTS() {
                                 Visit the GitHub Repo
                                 <ArrowRightIcon />
                             </a>
+                            <p>(Has demo videos)</p>
                         </div>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://yappad.vercel.app">
-                                Visit the hosted website (The AI is down for maintenance, but the website is still up!)
+                                Visit the hosted website
                                 <ArrowRightIcon />
                             </a>
+                            <p>(Our AI is currently shut off, but the website is still up)</p>
                         </div>
                     </div>
 
