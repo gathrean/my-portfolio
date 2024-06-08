@@ -36,8 +36,8 @@ export function PROJECTS() {
                         <ul>
                             <li>Developed a responsive website using React, JavaScript, HTML, and CSS.</li>
                             <li>Implemented React Router for navigation and React Hooks for state management.</li>
-                            <li>Designed the website with Material-UI and Bootstrap.</li>
-                            <li>Deployed the website using GitHub Pages.</li>
+                            <li>Deployed the website using Vercel.</li>
+                            <li>Designed and developed solely by myself, with the help of Chat-GPT (for speeding up development).</li>
                         </ul>
                     </div>
 
@@ -66,7 +66,7 @@ export function PROJECTS() {
                             <img className="project-small-icon" alt="Project Small Icon" src={YapPadIcon} />
                             <h5>YapPad</h5>
                         </div>
-                        <p>Small description</p>
+                        <p>Web-Based Interactive Story Generator, with the help of AI.</p>
                         <ul>
                             <li>Point 1</li>
                             <li>Point 2</li>
@@ -96,7 +96,7 @@ export function PROJECTS() {
                             <img className="project-small-icon" alt="Project Small Icon" src={CareLinkIcon} />
                             <h5>CareLink</h5>
                         </div>
-                        <p>Small description</p>
+                        <p>An online platform for BCIT students to make it easier for them to find the right counselor to talk to.</p>
                         <ul>
                             <li>Point 1</li>
                             <li>Point 2</li>
@@ -120,6 +120,7 @@ export function PROJECTS() {
                                 <ArrowRightIcon />
                                 DevPost
                             </a>
+                            <p>(Hackathon Page Post)</p>
                         </div>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://youtu.be/4zMcxRqRwdw">
@@ -137,6 +138,7 @@ export function PROJECTS() {
                             <img className="project-small-icon" alt="Project Small Icon" src={OrcaSwipeIcon} />
                             <h5>OrcaSwipe</h5>
                         </div>
+                        <p>Tinder-style social media app for finding group events nearby</p>
                         <p>"Discover, Host, and Link Up"</p>
                         <p>"Uncover hidden gems in your city and grow lasting communities with the swipe of a finger."</p>
                         <ul>
@@ -164,7 +166,8 @@ export function PROJECTS() {
                             <img className="project-small-icon" alt="Project Small Icon" src={DungeonQuadIcon} />
                             <h5>DungeonQuad</h5>
                         </div>
-                        <p>Small description</p>
+                        <p>Java Video Game</p>
+                        <p>Survive waves of enemies in an endless dungeon, navigating through bullet-hell challenges with occasional flight aids.</p>
                         <ul>
                             <li>Point 1</li>
                             <li>Point 2</li>
