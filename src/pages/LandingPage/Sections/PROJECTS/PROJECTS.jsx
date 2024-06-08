@@ -1,5 +1,4 @@
 import React from 'react';
-import ProjectCard from './Cards';
 
 import './PROJECTS.css';
 
@@ -11,124 +10,167 @@ import DungeonQuadIcon from '../../../../assets/icons/project-icons/DungeonQuad-
 import CareLinkIcon from '../../../../assets/icons/project-icons/CareLink-Icon.png';
 import YapPadIcon from '../../../../assets/icons/project-icons/YapPad-Icon.png';
 
+// Components
+import ArrowRightIcon from '../../../../components/ArrowRight/ArrowRightBlack';
+
 export function PROJECTS() {
-  return (
-    <div className="section-container">
-      <hr />
-      <h1>Featured Projects</h1>
-      <p>These are some of the programming projects I've worked on. From social media, to RPG game, to AI. Click on each card to learn more.</p>
-      <br />
-      <div className="section-container-child">
-        <div className="projects-grid">
-          <ProjectCard
-            projectName="gathrean.com"
-            iconURL={GathreanIcon}
-            date="April 2024 - June 2024"
-            description={
-              <>
-                • Developed a <b>responsive website</b> using <e>React</e>, <e>JavaScript</e>, <e>HTML</e>, and <e>CSS</e>.
-                <br />
-                • Implemented <b>React Router</b> for navigation and <b>React Hooks</b> for state management.
-                <br />
-                • Designed the website with <b>Material-UI</b> and <b>Bootstrap</b>.
-                <br />
-                • Deployed the website using <b>GitHub Pages</b>.
-              </>
-            }
-            projectDetailsURL="#"
-          />
-          <ProjectCard
-            projectName="Nebula"
-            iconURL={NebulaIcon}
-            // keywords="HTML, CSS, JavaScript, Python, TensorFlow, PyTorch"
-            date="January 2024 - Present"
-            description={
-              <>
-                • Helped in developing an innovative method for <b>recognizing multiple musical instruments in music and audio recordings</b>.
-                <br />
-                • Used a Convolutional Neural Network (<e>CNN</e>) within an <e>Artificial Neural Network</e> framework and processed the <e>OpenMIC-2018</e> dataset as mel-spectrograms.
-                <br />
-                • Achieved an <b>F1 score of 56%, setting a new benchmark in the field</b>.
-                <br />
-                • Designed the <b>Frontend</b> of the website for the project using <e>HTML</e>, <e>CSS</e>, and <e>JavaScript</e>.
-              </>
-            }
-            projectDetailsURL="#"
-          />
-          <ProjectCard
-            projectName="OrcaSwipe"
-            iconURL={OrcaSwipeIcon}
-            // keywords="EJS, HTML, CSS, JavaScript, Bootstrap, Node.js, Express.js, Leaflet API, MongoDB, Firebase, ChatGPT API"
-            date="May 2023"
-            description={
-              <>
-                • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
-                <br />
-                • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
-                <br />
-                • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
-                <br />
-                • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
-              </>
-            }
-            projectDetailsURL="#"
-          />
-          <ProjectCard
-            projectName="DungeonQuad"
-            iconURL={DungeonQuadIcon}
-            // keywords="Java, IntelliJ, Java Processing, Gradle, MongoDB, OOP Design, Sprite Design, UML Diagram"
-            date="January 2023 - April 2023"
-            description={
-              <>
-                • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
-                <br />
-                • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
-                <br />
-                • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
-                <br />
-                • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
-              </>
-            }
-            projectDetailsURL="#"
-          />
-          <ProjectCard
-            projectName="CareLink"
-            iconURL={CareLinkIcon}
-            // keywords="JavaScript, React, Node.js, Express.js, Supabase, ChatGPT API, Hackathon"
-            date="March 8 - 10, 2024 (Hackathon)"
-            description={
-              <>
-                • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
-                <br />
-                • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
-                <br />
-                • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
-                <br />
-                • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
-              </>
-            }
-            projectDetailsURL="#"
-          />
-          <ProjectCard
-            projectName="YapPad"
-            iconURL={YapPadIcon}
-            // keywords="HTML, CSS, JavaScript, React, Vite, MongoDB, Node.js, Express.js"
-            date="April 2024"
-            description={
-              <>
-                • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
-                <br />
-                • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
-                <br />
-                • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
-                <br />
-                • Bullet point bullet point bullet point bullet point bullet point bullet point bullet point bullet point
-              </>
-            }
-            projectDetailsURL="#"
-          />
+    return (
+        <div className="section-container">
+
+            <hr />
+            <h1>Featured Projects</h1>
+            <p>These are some of the programming projects I've worked on. From social media, to RPG game, to AI. Click on each card to learn more.</p>
+            <br />
+            <div className="section-container-child">
+
+                <div className="card-container">
+
+                    <h3>2024 Projects</h3>
+
+                    <div className="card">
+                        <div className="link-and-icon-container">
+                            <img className="project-small-icon" alt="Project Small Icon" src={GathreanIcon} />
+                            <h5>gathrean.com</h5>
+                        </div>
+                        <p>This website!</p>
+                        <ul>
+                            <li>Developed a responsive website using React, JavaScript, HTML, and CSS.</li>
+                            <li>Implemented React Router for navigation and React Hooks for state management.</li>
+                            <li>Designed the website with Material-UI and Bootstrap.</li>
+                            <li>Deployed the website using GitHub Pages.</li>
+                        </ul>
+                    </div>
+
+                    <div className="card">
+                        <div className="link-and-icon-container">
+                            <img className="project-small-icon" alt="Project Small Icon" src={NebulaIcon} />
+                            <h5>Nebula</h5>
+                        </div>
+                        <p>Recognizing multiple musical instruments in music and audio recordings.</p>
+                        <ul>
+                            <li>Helped in developing an innovative method for recognizing multiple musical instruments in music and audio recordings.</li>
+                            <li>Used a Convolutional Neural Network (CNN) within an Artificial Neural Network framework and processed the OpenMIC-2018 dataset as mel-spectrograms.</li>
+                            <li>Achieved an F1 score of 56%, setting a new benchmark in the field.</li>
+                            <li>Designed the Frontend of the website for the project using HTML, CSS, and JavaScript.</li>
+                        </ul>
+                        <div className="small-link-container">
+                            <a className="external-link small-link" href="https://github.com/gathrean/Nebula">
+                                Visit the GitHub Repo
+                                <ArrowRightIcon />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className="card">
+                        <div className="link-and-icon-container">
+                            <img className="project-small-icon" alt="Project Small Icon" src={YapPadIcon} />
+                            <h5>YapPad</h5>
+                        </div>
+                        <p>Small description</p>
+                        <ul>
+                            <li>Point 1</li>
+                            <li>Point 2</li>
+                            <li>Point 3</li>
+                            <li>Point 4</li>
+                        </ul>
+                        <div className="small-link-container">
+                            <a className="external-link small-link" href="https://github.com/xinyang417/YapPad">
+                                Visit the GitHub Repo
+                                <ArrowRightIcon />
+                            </a>
+                        </div>
+                        <div className="small-link-container">
+                            <a className="external-link small-link" href="https://yappad.vercel.app">
+                                Visit the hosted website (The AI is down for maintenance, but the website is still up!)
+                                <ArrowRightIcon />
+                            </a>
+                        </div>
+                    </div>
+
+                    <h3>2024 Hackathon Project</h3>
+
+                    <div className="card">
+                        <div className="link-and-icon-container">
+                            <img className="project-small-icon" alt="Project Small Icon" src={CareLinkIcon} />
+                            <h5>CareLink</h5>
+                        </div>
+                        <p>Small description</p>
+                        <ul>
+                            <li>Point 1</li>
+                            <li>Point 2</li>
+                            <li>Point 3</li>
+                            <li>Point 4</li>
+                        </ul>
+                        <div className="small-link-container">
+                            <a className="external-link small-link" href="https://github.com/BardiaTiM/CareLink">
+                                Visit the GitHub Repo
+                                <ArrowRightIcon />
+                            </a>
+                        </div>
+                        <div className="small-link-container">
+                            <a className="external-link small-link" href="https://youtu.be/4zMcxRqRwdw">
+                                Watch our Presentation Video (YouTube)
+                                <ArrowRightIcon />
+                            </a>
+                        </div>
+                    </div>
+
+                    <h3>2023 Projects</h3>
+
+                    <div className="card">
+                        <div className="link-and-icon-container">
+                            <img className="project-small-icon" alt="Project Small Icon" src={OrcaSwipeIcon} />
+                            <h5>OrcaSwipe</h5>
+                        </div>
+                        <p>Small description</p>
+                        <ul>
+                            <li>Point 1</li>
+                            <li>Point 2</li>
+                            <li>Point 3</li>
+                            <li>Point 4</li>
+                        </ul>
+                        <div className="small-link-container">
+                            <a className="external-link small-link" href="https://github.com/gathrean/OrcaSwipe">
+                                Visit the GitHub Repo
+                                <ArrowRightIcon />
+                            </a>
+                        </div>
+                        <div className="small-link-container">
+                            <a className="external-link small-link" href="https://orcaswipe.vercel.app/">
+                                Visit the Website
+                                <ArrowRightIcon />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className="card">
+                        <div className="link-and-icon-container">
+                            <img className="project-small-icon" alt="Project Small Icon" src={DungeonQuadIcon} />
+                            <h5>DungeonQuad</h5>
+                        </div>
+                        <p>Small description</p>
+                        <ul>
+                            <li>Point 1</li>
+                            <li>Point 2</li>
+                            <li>Point 3</li>
+                            <li>Point 4</li>
+                        </ul>
+                        <div className="small-link-container">
+                            <a className="external-link small-link" href="https://github.com/BardiaTiM/DungeonQuad">
+                                Visit the GitHub Repo
+                                <ArrowRightIcon />
+                            </a>
+                        </div>
+                        <div className="small-link-container">
+                            <a className="external-link small-link" href="https://github.com/BardiaTiM/DungeonQuad/releases/tag/game">
+                                Download and play the Game!
+                                <ArrowRightIcon />
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 }

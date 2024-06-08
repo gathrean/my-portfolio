@@ -186,6 +186,7 @@ a:visited {
 }
 
 .small-link-container {
+  margin-top: 1rem;
   display: flex;
 }
 
@@ -263,6 +264,10 @@ hr {
 .section-container h3,
 .section-container h4 {
   margin-bottom: 8px;
+}
+
+.section-container h3 {
+  margin-top: 1rem;
 }
 
 .section-container p {
