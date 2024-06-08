@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Components //
 import { Navbar } from './components/Navbar/Navbar';
-import { Footer } from './components/Footer/Footer';
 
 // Pages // 
 import { LandingPage } from './pages/LandingPage/LandingPage';
@@ -20,7 +19,6 @@ const Layout = ({ children }) => (
   <div className="App">
     <Navbar />
     {children}
-    {/* <Footer /> */}
   </div>
 );
 

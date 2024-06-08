@@ -4,12 +4,6 @@ import React from 'react';
 // Styles
 import './ABOUT.css';
 
-// Components
-import ArrowRightIcon from '../../../../components/ArrowRight/ArrowRightBlack';
-
-// Data
-import Texts from '../../Texts.json';
-
 export function ABOUT() {
   return (
     <div className="section-container">
