@@ -72,7 +72,7 @@
     .LP-my-profile-container {
         display: flex;
         padding: 2rem 4rem 0rem 4rem;
-        justify-content: start;
+        justify-content: flex-start;
     }
 
     .LP-sections-container {
