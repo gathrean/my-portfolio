@@ -96,7 +96,8 @@ b {
 .section-container li:before {
   content: "•";
   display: inline-block;
-  width: 1.5em;
+  width: 1em; 
+  margin-left: -1em;
 }
 
 e {
