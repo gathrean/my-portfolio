@@ -50,7 +50,7 @@ export function ACADEMIA() {
                         </div>
                     </div>
 
-                    <h3>Research</h3>
+                    <h3>Research Papers & Conferences</h3>
 
                     <div className="card">
                         <img className="academia-logo" src={AIMLogo} alt="AIM Logo" /> <br />
