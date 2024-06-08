@@ -60,9 +60,28 @@ export function LandingPage() {
         window.addEventListener('resize', handleResize);
         window.addEventListener('scroll', handleScroll);
 
+        const cards = document.querySelectorAll('.card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        }, {
+            rootMargin: '-100px 0px',  // Adjust this value to control when the animation triggers
+            threshold: 0.1 // Adjust this value to control the sensitivity
+        });
+
+        cards.forEach(card => {
+            observer.observe(card);
+        });
+
         return () => {
             window.removeEventListener('resize', handleResize);
             window.removeEventListener('scroll', handleScroll);
+            observer.disconnect();
         };
     }, [containerClass]);
 

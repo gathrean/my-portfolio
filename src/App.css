@@ -312,10 +312,17 @@ hr {
   border-radius: 30px;
   width: fit-content;
   transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateX(20px);
 }
 
 .card:hover {
   box-shadow: var(--shadowhover);
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* ANIMATIONS */
