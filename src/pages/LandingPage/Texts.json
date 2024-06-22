@@ -4,14 +4,14 @@
     "educationAndCertifications": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam orci risus, varius nec nisi a, consectetur iaculis nibh. Vivamus sollicitudin rutrum consequat. Sed ligula purus, convallis sed sagittis ut, lobortis vitae mauris. In quis bibendum ante. Praesent pellentesque luctus elit a consequat. Nulla facilisi.",
     "aim" : {
         "name": "AIM 2024: Artificial Intelligence Conference",
-        "location": "San Francisco, California",
+        "location": "🇺🇸 San Francisco, California, United States of America",
         "type": "In-person Conference",
         "date": "June 9-11, 2024",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam orci risus, varius nec nisi a, consectetur iaculis nibh."
     },
     "wsai" : {
         "name": "WSAI 2024 @ 人工智能专题讨论会",
-        "location": "Guangzhou, China",
+        "location": "🇨🇳 Guangzhou, Guandong, China",
         "type": "Virtual Conference",
         "date": "June 7-9, 2024",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam orci risus, varius nec nisi a, consectetur iaculis nibh."
@@ -19,7 +19,7 @@
     "bcit" : {
         "diploma": "Computer Systems Technology, Diploma",
         "school": "British Columbia Institute of Technology",
-        "location": "Burnaby, British Columbia",
+        "location": "🇨🇦 Burnaby, British Columbia, Canada",
         "duration": "Fall 2022 - Winter 2024",
         "desc1": "Completed real-world industry projects and gained practical skills in software development",
         "desc2": "Proficient in widely-used programming languages such as JavaScript, Java, C, C#, and C++.",

@@ -32,7 +32,7 @@ export function PROJECTS() {
                             <img className="project-small-icon" alt="Project Small Icon" src={GathreanIcon} />
                             <h5>gathrean.com</h5>
                         </div>
-                        <p>This website!</p>
+                        <p>⭐️ This website!</p>
                         <ul>
                             <li>Developed a responsive website using React, JavaScript, HTML, and CSS.</li>
                             <li>Implemented React Router for navigation and React Hooks for state management.</li>
@@ -46,6 +46,7 @@ export function PROJECTS() {
                             <img className="project-small-icon" alt="Project Small Icon" src={NebulaIcon} />
                             <h5>Nebula</h5>
                         </div>
+                        <p>🤖 🎵 Convolutional Neural Network</p>
                         <p>Recognizing multiple musical instruments in music and audio recordings.</p>
                         <ul>
                             <li>Helped in developing an innovative method for recognizing multiple musical instruments in music and audio recordings.</li>
@@ -66,7 +67,7 @@ export function PROJECTS() {
                             <img className="project-small-icon" alt="Project Small Icon" src={YapPadIcon} />
                             <h5>YapPad</h5>
                         </div>
-                        <p>Web-Based Interactive Story Generator, with the help of AI.</p>
+                        <p>🤖 💬 Web-Based Interactive Story Generator, with the help of AI.</p>
                         <ul>
                             <li>Point 1</li>
                             <li>Point 2</li>
@@ -96,6 +97,7 @@ export function PROJECTS() {
                             <img className="project-small-icon" alt="Project Small Icon" src={CareLinkIcon} />
                             <h5>CareLink</h5>
                         </div>
+                        <p>🤖 💬 Match-making AI and messaging app</p>
                         <p>An online platform for BCIT students to make it easier for them to find the right counselor to talk to.</p>
                         <ul>
                             <li>Point 1</li>
@@ -138,7 +140,7 @@ export function PROJECTS() {
                             <img className="project-small-icon" alt="Project Small Icon" src={OrcaSwipeIcon} />
                             <h5>OrcaSwipe</h5>
                         </div>
-                        <p>Tinder-style social media app for finding group events nearby</p>
+                        <p>📲 📍 Tinder-style social media app for finding nearby group events</p>
                         <p>"Discover, Host, and Link Up"</p>
                         <p>"Uncover hidden gems in your city and grow lasting communities with the swipe of a finger."</p>
                         <ul>
@@ -174,7 +176,7 @@ export function PROJECTS() {
                             <img className="project-small-icon" alt="Project Small Icon" src={DungeonQuadIcon} />
                             <h5>DungeonQuad</h5>
                         </div>
-                        <p>Java Video Game</p>
+                        <p>☕️ 🎮 Java Video Game</p>
                         <p>Survive waves of enemies in an endless dungeon, navigating through bullet-hell challenges with occasional flight aids.</p>
                         <ul>
                             <li>Point 1</li>
