@@ -18,7 +18,7 @@ export function PROJECTS() {
         <div className="section-container">
 
             <hr />
-            <h1>Featured Projects</h1>
+            <h1>Projects Timeline</h1>
             <p>These are some of the programming projects I've worked on. From social media, to RPG game, to AI. Click on each card to learn more.</p>
             <br />
             <div className="section-container-child">
@@ -158,6 +158,14 @@ export function PROJECTS() {
                                 <ArrowRightIcon />
                                 Website
                             </a>
+                        </div>
+                        
+                        <div className="small-link-container">
+                            <a className="external-link small-link" href="https://commons.bcit.ca/news/2023/06/impactful-intelligence-computing-students-use-ai-to-power-web-applications/">
+                                <ArrowRightIcon />
+                                Best Teamwork and UI/UX
+                            </a>
+                            <p>(BCIT News  Article)</p>
                         </div>
                     </div>
 
