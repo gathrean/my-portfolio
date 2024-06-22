@@ -275,10 +275,6 @@ hr {
   margin-bottom: 8px;
 }
 
-.section-container h3 {
-  margin-top: 2rem;
-}
-
 .section-container p {
   color: var(--colorlightgrey);
 }
@@ -292,7 +288,7 @@ hr {
 
 @media screen and (max-width: 1400px) {
   .section-container {
-    padding: 0px 20vw 50px 5vw;
+    padding: 0px 10vw 50px 5vw;
   }
 
   .section-container-child {
@@ -302,7 +298,7 @@ hr {
 
 @media screen and (max-width: 1100px) {
   .section-container {
-    padding: 50px 14vw 20px 14vw;
+    padding: 10px 10vw 10px 10vw;
   }
 
   .section-container-child {
