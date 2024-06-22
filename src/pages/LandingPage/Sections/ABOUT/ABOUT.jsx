@@ -15,18 +15,43 @@ export function ABOUT() {
 
         <div className="card-container">
 
-          <h3>Personal Interests and Values</h3>
+          <h3>Personal Life & Interests</h3>
           <div className="card">
-            I remember being a kid in 2008 and always wondered how websites and games were created. Fast forward to 2024, I've gone through a 2-year program in BCIT and I've understood the process of OOP and Web Dev. I've gone on and created my own games with my peers and designing websites for a variety of projects.
-            Prior to immersing myself in computer systems, I pursued studies in Mechanical Engineering and Electrical Engineering, enriching my analytical skills and broadening my understanding of the demands inherent in becoming a future software engineer.
-            <br /> <br />
-            The most important thing I've learned during my time in academia is that there is truly strength in numbers and that the project succeeds when everyone is on the same page as well as using their best strengths and skills in their right positions in the team.
-            <br /> <br />
-            Back in 2015 I've also found interest in music production and graphic design. When I got my first MacBook Pro back in 2017, I went ham and progressed a lot in those two. I believe those skills have enhanced my creativity in coding and development
-            <br /> <br />
-            in my free time I love to spend time with my family and friends, enjoy nature in hikes, and of course music production, graphic design, and learning more things in coding
-            <br /> <br />
-            the thing i love about coding is that there is always something to learn.
+            <h4>💻 🎓🕹️</h4>
+            <p>
+              I remember being a kid in 2008 and always wondered how websites and games were created. Fast forward to 2024, I've completed a 2-year program at BCIT, where I've developed proficiency in OOP and web development, creating games and designing websites for various projects.
+            </p>
+            <br />
+            <h4>⚙️ 📊 🧮</h4>
+            <p>
+              Before studying programming and software development, I studied Mechanical and Electrical Engineering, enhancing my analytical skills and broadening my technical knowledge.
+            </p>
+          </div>
+          <div className="card">
+            <h4>🎧 🎨 🧠</h4>
+            <p>
+              Beyond coding, I enjoy music production and graphic design- which are hobbies that have helped my creativity and innovation grow in software development.
+            </p>
+            <br />
+            <h4>🧑‍🧑‍🧒‍🧒 🏔️ 🌇</h4>
+            <p>
+              In my free time, I love spending time with family and friends, exploring the city and hiking, and continually learning new things in coding.
+            </p>
+          </div>
+
+          <br />
+          <h3>Personal Values</h3>
+          <div className="card">
+            <h4>🌟 🤝 🚀</h4>
+            <p>
+              Collaboration is a cornerstone of my approach to projects; I've learned that teamwork is vital to success, with each member contributing their strengths. I believe in the power of collective effort and clear communication.
+            </p>
+          </div>
+          <div className="card">
+            <h4>📚 🧠 🌱</h4>
+            <p>
+              My journey has taught me that there's always something new to learn in coding, which keeps me motivated and excited about my career in software development.
+            </p>
           </div>
 
           <br />
