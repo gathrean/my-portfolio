@@ -5,13 +5,11 @@
   gap: 50px;
 }
 
-.github-calendar-container {
-  display: flex;
-}
-
-.github-calendar {
-  margin-top: 40px;
-  width: 100%;
+.tech-logo-icon {
+  width: 60px;
+  height: auto;
+  padding: 2px;
+  margin: 0px 10px;
 }
 
 /* For Desktop only stuff */
