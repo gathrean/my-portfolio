@@ -30,10 +30,8 @@ export function ACADEMIA() {
                     <h3>Academia</h3>
 
                     <div className="card">
-                        <div className="link-and-icon-container">
-                            <img className="academia-logo" src={BCITLogo} alt="BCIT Logo" />
-                            <h5>{Texts.bcit.diploma}</h5>
-                        </div>
+                        <img className="academia-logo" src={BCITLogo} alt="BCIT Logo" />
+                        <h5>{Texts.bcit.diploma}</h5>
                         <p>{Texts.bcit.location}</p>
                         <p>{Texts.bcit.school}</p>
                         <p>{Texts.bcit.duration}</p>
@@ -70,10 +68,8 @@ export function ACADEMIA() {
                     </div>
 
                     <div className="card">
-                        <div className="link-and-icon-container">
-                            <img className="academia-logo" src={WSAILogo} alt="WSAI Logo" />
-                            <h5>{Texts.aim.name}</h5>
-                        </div>
+                        <img className="academia-logo" src={WSAILogo} alt="WSAI Logo" />
+                        <h5>{Texts.aim.name}</h5>
                         <p>{Texts.wsai.location}</p>
                         <p>{Texts.wsai.date} </p>
                         <ul>
