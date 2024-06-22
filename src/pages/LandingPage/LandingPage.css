@@ -59,12 +59,20 @@
 }
 
 @media screen and (max-width: 1600px) {
+    .mobile-profile {
+        padding-top: 2em;
+    }
+
     .LP-container {
         grid-template-columns: 0.8fr 1.2fr;
     }
 }
 
 @media screen and (max-width: 1100px) {
+    .mobile-profile {
+        padding-top: 1rem;
+    }
+
     .LP-container {
         display: block;
     }

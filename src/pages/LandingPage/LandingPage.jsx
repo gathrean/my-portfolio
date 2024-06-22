@@ -89,7 +89,7 @@ export function LandingPage() {
         <section id="section1 home">
             <section id="HERO" className="HERO"><HERO /></section>
 
-            <div className="LP-container">
+            <div className="LP-container mobile-profile">
                 <div className={containerClass}>
                     <MyProfile />
                 </div>
