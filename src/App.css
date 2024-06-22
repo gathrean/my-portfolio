@@ -265,7 +265,6 @@ hr {
 .section-container {
   padding: 0px 20vw 50px 5vw;
   max-height: fit-content;
-  max-width: 1500px;
 }
 
 .section-container h1,
@@ -284,7 +283,6 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 600px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -334,10 +332,6 @@ hr {
 .card.visible {
   opacity: 1;
   transform: translateX(0);
-}
-
-.card p {
-  margin-bottom: 8px;
 }
 
 /* ANIMATIONS */

@@ -3,7 +3,6 @@ import React from 'react';
 
 // Styles
 import './ABOUT.css';
-import './InfiniteScroll.css';
 import icon_css from '../../../../components/TechStack/css.png';
 import icon_html from '../../../../components/TechStack/html.png';
 import icon_js from '../../../../components/TechStack/js.png';
@@ -61,66 +60,26 @@ export function ABOUT() {
 
           <br />
           <h3>Skills and Technologies</h3>
+          <h4>Development</h4>
           <div className="card">
-            <ul>
-              <li>Programming Languages: Proficient in JavaScript, Java, C, C#, and C++.</li>
-              <li>Web Development: Experienced in creating and maintaining websites, with a strong understanding of front-end and back-end technologies.</li>
-              <li>Software Development: Hands-on experience in developing games and software applications, with a focus on OOP principles.</li>
-              <li>Creative Skills: Enhanced my coding projects with skills in music production and graphic design.</li>
-              <li>Team Collaboration: Strong team player with a proven ability to contribute effectively to group projects and communicate ideas clearly.</li>
-            </ul>
+            <p>HTML, CSS, React.JS, Express.JS, Node.JS</p>
           </div>
 
-          <br />
-
-
-          <div className="scroll" style={{ '--time': '30s' }}>
-            <div>
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-              <span>ReactJS</span>
-              <span>Figma</span>
-              <span>Photoshop</span>
-              <span>Premiere Pro</span>
-              <span>Figma</span>
-              <span>Angular</span>
-              <span>Node JS</span>
-            </div>
-            <div>
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-              <span>ReactJS</span>
-              <span>Figma</span>
-              <span>Photoshop</span>
-              <span>Premiere Pro</span>
-              <span>Figma</span>
-              <span>Angular</span>
-              <span>Node JS</span>
-            </div>
+          <h4>Programming Languages</h4>
+          <div className="card">
+            <p>Java, Python, Kotlin, C, C++, C#, R</p>
           </div>
 
-          <div className="scroll imgBox" style={{ '--time': '25s' }}>
-            <div>
-              <img src={icon_html} alt="HTML" />
-              <img src={icon_css} alt="CSS" />
-              <img src={icon_js} alt="JavaScript" />
-              <img src={icon_react} alt="ReactJS" />
-              <img src={icon_react} alt="ReactJS" />
-              <img src={icon_react} alt="ReactJS" />
-            </div>
-            <div>
-              <img src={icon_html} alt="HTML" />
-              <img src={icon_css} alt="CSS" />
-              <img src={icon_js} alt="JavaScript" />
-              <img src={icon_react} alt="ReactJS" />
-              <img src={icon_react} alt="ReactJS" />
-              <img src={icon_react} alt="ReactJS" />
-            </div>
+          <h4>Tools and IDEs</h4>
+          <div className="card">
+            <p>VS Code, IntelliJ IDEA, CLion, Android Studio, Git</p>
           </div>
 
-
+          <h4>Database and Hosting</h4>
+          <div className="card">
+            <p>MongoDB, MySQL, Netlify, Firebase</p>
+          </div>
+          
         </div>
       </div>
     </div>
