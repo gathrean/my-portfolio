@@ -4,6 +4,10 @@ import React from 'react';
 // Styles
 import './ABOUT.css';
 import './InfiniteScroll.css';
+import icon_css from '../../../../components/TechStack/css.png';
+import icon_html from '../../../../components/TechStack/html.png';
+import icon_js from '../../../../components/TechStack/js.png';
+import icon_react from '../../../../components/TechStack/React.png';
 
 export function ABOUT() {
   return (
@@ -69,7 +73,7 @@ export function ABOUT() {
 
           <br />
 
-          
+
           <div className="scroll" style={{ '--time': '30s' }}>
             <div>
               <span>HTML</span>
@@ -96,6 +100,26 @@ export function ABOUT() {
               <span>Node JS</span>
             </div>
           </div>
+
+          <div className="scroll imgBox" style={{ '--time': '25s' }}>
+            <div>
+              <img src={icon_html} alt="HTML" />
+              <img src={icon_css} alt="CSS" />
+              <img src={icon_js} alt="JavaScript" />
+              <img src={icon_react} alt="ReactJS" />
+              <img src={icon_react} alt="ReactJS" />
+              <img src={icon_react} alt="ReactJS" />
+            </div>
+            <div>
+              <img src={icon_html} alt="HTML" />
+              <img src={icon_css} alt="CSS" />
+              <img src={icon_js} alt="JavaScript" />
+              <img src={icon_react} alt="ReactJS" />
+              <img src={icon_react} alt="ReactJS" />
+              <img src={icon_react} alt="ReactJS" />
+            </div>
+          </div>
+
 
         </div>
       </div>
