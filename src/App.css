@@ -325,6 +325,10 @@ hr {
   transform: translateX(20px);
 }
 
+.card p {
+  margin-bottom: 12px;
+}
+
 .card:hover {
   box-shadow: var(--shadowhover);
 }
