@@ -15,7 +15,7 @@ export function ABOUT() {
         <div className="card-container">
           <div className="about-me card">
             <p>
-              I remember being a kid in 2008 and always wondered how websites and games were created. Fast forward to 2024, I've completed a 2-year program at BCIT, and found my passion in software development.
+              I remember being a kid in 2008 and always wondered how websites and games were created. Fast forward to 2024, I've completed "Computer Systems Technology", a 2-year program at BCIT, and found my passion in software development.
             </p>
             <h4 className="emojis">🎓  💻 🕹️</h4>
           </div>

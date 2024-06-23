@@ -338,6 +338,11 @@ hr {
   transform: translateX(0);
 }
 
+.tagline {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
 /* ANIMATIONS */
 /* ========================================== */
 

@@ -32,7 +32,7 @@ export function ACADEMIA() {
                     <div className="card">
                         <img className="academia-logo" src={BCITLogo} alt="BCIT Logo" />
                         <h5>{Texts.bcit.diploma}</h5>
-                        <p>{Texts.bcit.location}</p>
+                        <p className="tagline">{Texts.bcit.location}</p>
                         <p>{Texts.bcit.school}</p>
                         <p>{Texts.bcit.duration}</p>
                         <ul>
@@ -53,7 +53,7 @@ export function ACADEMIA() {
                     <div className="card">
                         <img className="academia-logo" src={AIMLogo} alt="AIM Logo" /> <br />
                         <h5>{Texts.aim.name}</h5>
-                        <p>{Texts.aim.location}</p>
+                        <p className="tagline">{Texts.aim.location}</p>
                         <p>{Texts.aim.date} </p>
                         <ul>
                             <li>{Texts.aim.type}</li>
@@ -70,7 +70,7 @@ export function ACADEMIA() {
                     <div className="card">
                         <img className="academia-logo" src={WSAILogo} alt="WSAI Logo" />
                         <h5>{Texts.aim.name}</h5>
-                        <p>{Texts.wsai.location}</p>
+                        <p className="tagline">{Texts.wsai.location}</p>
                         <p>{Texts.wsai.date} </p>
                         <ul>
                             <li>{Texts.wsai.type}</li>

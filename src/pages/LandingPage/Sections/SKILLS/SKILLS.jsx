@@ -54,15 +54,15 @@ export function SKILLS() {
                     <img className="tech-logo-icon" src={icon_js} alt="JavaScript" />
                 </div>
                 <div className="tech-logo-container">
-                    <span className="tech-logo-text">ReactJS</span>
+                    <span className="tech-logo-text">React.JS</span>
                     <img className="tech-logo-icon" src={icon_react} alt="ReactJS" />
                 </div>
                 <div className="tech-logo-container">
-                    <span className="tech-logo-text">ExpressJS</span>
+                    <span className="tech-logo-text">Express.JS</span>
                     <img className="tech-logo-icon" src={icon_express} alt="ExpressJS" />
                 </div>
                 <div className="tech-logo-container">
-                    <span className="tech-logo-text">NodeJS</span>
+                    <span className="tech-logo-text">Node.JS</span>
                     <img className="tech-logo-icon" src={icon_node} alt="NodeJS" />
                 </div>
             </div>
@@ -113,16 +113,16 @@ export function SKILLS() {
                     I've used Git for version control in all my projects.
                 </p>
                 <div className="tech-logo-container">
-                    <span className="tech-logo-text">VS Code</span>
+                    <span className="tech-logo-text">Visual Studio Code</span>
                     <img className="tech-logo-icon" src={icon_vscode} alt="VS Code" />
-                </div>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">IntelliJ IDEA</span>
-                    <img className="tech-logo-icon" src={icon_intellij} alt="IntelliJ IDEA" />
                 </div>
                 <div className="tech-logo-container">
                     <span className="tech-logo-text">CLion</span>
                     <img className="tech-logo-icon" src={icon_clion} alt="CLion" />
+                </div>
+                <div className="tech-logo-container">
+                    <span className="tech-logo-text">IntelliJ IDEA</span>
+                    <img className="tech-logo-icon" src={icon_intellij} alt="IntelliJ IDEA" />
                 </div>
                 <div className="tech-logo-container">
                     <span className="tech-logo-text">Android Studio</span>
