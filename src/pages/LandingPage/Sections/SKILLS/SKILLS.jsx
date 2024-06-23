@@ -5,7 +5,7 @@ import './SKILLS.css';
 // Icons
 import icon_html from '../../../../components/TechStack/HTML5.png';
 import icon_css from '../../../../components/TechStack/CSS3.png';
-import icon_js from '../../../../components/TechStack/JS.png';
+import icon_js from '../../../../components/TechStack/JavaScript.png';
 import icon_react from '../../../../components/TechStack/ReactJS.png';
 import icon_express from '../../../../components/TechStack/expressJS.png';
 import icon_node from '../../../../components/TechStack/nodeJS.png';
