@@ -5,6 +5,11 @@
   gap: 50px;
 }
 
+.emojis {
+  display: flex;
+  justify-content: center;
+}
+
 /* For Desktop only stuff */
 /* ========================================== */
 @media screen and (min-width: 1175px) {
