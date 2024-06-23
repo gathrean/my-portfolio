@@ -1,0 +1,103 @@
+.my-profile {
+    padding: 30px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow);
+    background-color: var(--colorwhite);
+    border-radius: 30px;
+    /* border: 0.5px solid var(--colorlightgrey); */
+    width: fit-content;
+    height: fit-content;
+    transition: all 0.3s ease;
+}
+
+.my-profile:hover {
+    box-shadow: var(--shadowhover);
+}
+
+.profile-picture {
+    transition: all 0.3s ease;
+}
+
+.profile-picture img {
+    transition: all 0.3s ease;
+    max-width: 100px;
+    border-radius: 50%;
+    border: 0.8px solid var(--colorlightgrey);
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.about-me-info p {
+    font-size: 1.1em;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-media-icons svg {
+    fill: var(--colorlightgrey);
+    width: 2.5em;
+    margin: 0.2em 1em 0.2em 0em;
+}
+
+
+/* For mobile only */
+/* ========================================== */
+@media screen and (max-width: 1100px) {
+    .profile-picture {
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile-picture img {
+        max-width: 150px;
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .my-profile {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .about-me-info {
+        margin-left: 40px;
+    }
+}
+
+/* For even smaller mobile */
+/* ========================================== */
+@media screen and (max-width: 650px) {
+    .my-profile {
+        flex-direction: column;
+    }
+
+    .about-me-info {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-picture img {
+        max-width: 100px;
+    }
+}
+
+/* Media queries for heights */
+/* ========================================== */
+@media screen and (max-height: 800px) and (min-width: 1100px) {
+    .profile-picture img {
+        display: none;
+    }
+}

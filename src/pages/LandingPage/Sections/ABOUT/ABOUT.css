@@ -1,0 +1,46 @@
+.about-me-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.emojis {
+  display: flex;
+  justify-content: center;
+}
+
+/* For Desktop only stuff */
+/* ========================================== */
+@media screen and (min-width: 1175px) {
+  .about-me-text {
+    width: 60%
+  }
+
+  .about-me-text p {
+    padding: 20px;
+    color: var(--colorlightgrey2);
+  }
+
+  .about-me-text p:hover {
+    color: var(--colorblack);
+    transition: all 0.3s ease;
+  }
+}
+
+/* For mobile only */
+/* ========================================== */
+@media screen and (max-width: 1175px) {
+  .github-calendar-container {
+    display: none;
+  }
+
+  .about-me-text {
+    width: 100%
+  }
+
+  .about-me-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -2,24 +2,16 @@
     transition: background-color 0.3s ease, width 0.3s ease, margin 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease, padding 0.3s ease, height 0.3s ease, color 0.3s ease;
 }
 
-.slide-down {
-    animation: slideDown 0.5s ease;
-}
-
-@keyframes slideDown {
-    0% {
-        transform: translateY(-100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
 .navbar {
+    background-color: rgba(17, 17, 17, 0.9);
+    color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+
     overflow: hidden;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     position: fixed;
@@ -30,41 +22,51 @@
     z-index: 1000;
 
     height: 56px;
-    line-height: 56px;
-    width: 100%;
-    padding: 0 10%;
-    margin: 16px 0;
-}
-
-.navbar.float-dock {
-    background-color: rgba(17, 17, 17, 0.9);
-    border: 1px solid #343434;
-    color: #FFFFFF;
+    width: 300px;
 
     padding: 0 20px;
+    margin: 8px auto 0 auto;
 
-    height: 56px;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    line-height: 56px;
 
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
+    border: 1px solid #343434;
     border-radius: 20px;
 }
 
-.navbar.collapsed {
-    height: 0;
-}
-
-.navbar-nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
 .mobile-view {
-    display: none;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.mobile-view img {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* MEDIA QUERIES */
+
+/* For tablets */
+@media only screen and (min-width: 300px) and (max-width: 499px) {
+    .navbar {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+/* For foldable phones */
+@media only screen and (max-width: 299px) {
+    .navbar {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }

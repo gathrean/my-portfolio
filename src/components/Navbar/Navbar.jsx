@@ -1,52 +1,45 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { useNavbarFunctions } from './NavbarFunctions';
+import { useNavbarFunctions, useScrollHandler } from './NavbarFunctions';
 
 import './Navbar.css';
-import './Navbar-MediaQuries.css';
 import './Navbar-Logo.css';
 import './Navbar-Navlink.css';
 
-import hamburgerImage from './hamburger-white.png';
+const HamburgerIcon = ({ open }) => (
+    <svg
+        viewBox="0 0 100 80"
+        width="30"
+        height="30"
+        className={open ? "open" : ""}
+    >
+        <rect y="0" width="100" height="10" rx="8"></rect>
+        <rect y="30" width="100" height="10" rx="8"></rect>
+        <rect y="60" width="100" height="10" rx="8"></rect>
+    </svg>
+);
 
 export function Navbar() {
-    const { floatDock, navbarHeight, navbarRef, toggleNavbar } = useNavbarFunctions();
+    const { navbarHeight, navbarRef, toggleHamburger } = useNavbarFunctions();
     const [activeSection, setActiveSection] = useState('HOME');
-    const [collapsed, setCollapsed] = useState(false);
-    const [showNavbar, setShowNavbar] = useState(false);
+    const [expanded, setExpanded] = useState(false);
+    const mobileViewRef = useRef(null);
+
+    useScrollHandler(setActiveSection, navbarHeight);
 
     useEffect(() => {
-        const handleScroll = () => {
-            const section = getActiveSection();
-            setActiveSection(section);
+        const handleClickOutside = (event) => {
+            if (expanded && !mobileViewRef.current.contains(event.target)) {
+                setExpanded(false);
+            }
         };
 
-        window.addEventListener('scroll', handleScroll);
+        document.addEventListener('click', handleClickOutside);
 
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            document.removeEventListener('click', handleClickOutside);
         };
-    }, []);
-
-    useEffect(() => {
-        setCollapsed(floatDock);
-    }, [floatDock]);
-
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            setShowNavbar(true);
-        }, 1000);
-
-        return () => clearTimeout(timeout);
-    }, []);
-
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            setShowNavbar(true);
-        }, 1000);
-
-        return () => clearTimeout(timeout);
-    }, []);
+    }, [expanded]);
 
     const scrollToSection = (sectionClassName) => {
         if (activeSection !== sectionClassName) {
@@ -60,53 +53,37 @@ export function Navbar() {
                 setActiveSection(sectionClassName);
             }
         }
-        toggleNavbar();
-    };
-
-    const getActiveSection = () => {
-        const sections = ['HOME', 'PROJECTS', 'TECH', 'CONTACT'];
-        for (let i = sections.length - 1; i >= 0; i--) {
-            const sectionClassName = sections[i];
-            const section = document.querySelector(`.${sectionClassName}`);
-            if (section && section.getBoundingClientRect().top <= navbarHeight) {
-                return sectionClassName;
-            }
-        }
-        return sections[0];
     };
 
     return (
-        <nav
-            ref={navbarRef}
-            className={`navbar navbar-animation float-dock ${showNavbar ? 'slide-down' : ''}`}
-            style={{ height: navbarHeight }}
-        >
-            <div className="navbar-container navbar-animation">
+        <nav ref={navbarRef} className={`navbar navbar-animation`} style={{ height: navbarHeight }}>
+
+            <div className="navbar-container">
+
                 <div className="brand">
-                    <span className="brand-text">Gathrean</span>
+                    <span className="brand-text">gathrean.com</span>
                 </div>
-                <div className="mobile-view" onClick={toggleNavbar}>
-                    <img
-                        src={hamburgerImage}
-                        alt="Hamburger Menu"
-                        className={`hamburger ${collapsed ? 'collapsed' : 'open'}`}
-                        style={{ width: '15px', height: '20px' }}
-                    />
+
+                <div ref={mobileViewRef} className="hamburger mobile-view clickable" onClick={() => { toggleHamburger(); setExpanded(!expanded); }}>
+                    <HamburgerIcon open={expanded} />
                 </div>
+
             </div>
-            <div className="navlink-wrapper">
-                <ul className={`navbar-nav ${collapsed ? 'collapsed' : 'closed'}`}>
+
+            <div className="navlink-container">
+                <ul className={`navlink-ul prevent-overflow`}>
                     <li>
-                        <Link className={`nav-item nav-link ${activeSection === 'PROJECTS' ? 'highlight' : ''}`} onClick={() => scrollToSection('PROJECTS')}>Projects</Link>
+                        <Link onClick={() => scrollToSection('ABOUT')} className={activeSection === 'ABOUT' ? 'active' : ''}>About Me</Link>
                     </li>
                     <li>
-                        <Link className={`nav-item nav-link ${activeSection === 'TECH' ? 'highlight' : ''}`} onClick={() => scrollToSection('TECH')}>Tech</Link>
+                        <Link onClick={() => scrollToSection('ACADEMIA')} className={activeSection === 'ACADEMIA' ? 'active' : ''}>Academia</Link>
                     </li>
                     <li>
-                        <Link className={`nav-item nav-link ${activeSection === 'CONTACT' ? 'highlight' : ''}`} onClick={() => scrollToSection('CONTACT')}>Contact</Link>
+                        <Link onClick={() => scrollToSection('PROJECTS')} className={activeSection === 'PROJECTS' ? 'active' : ''}>Projects</Link>
                     </li>
                 </ul>
             </div>
+
         </nav>
     );
 }

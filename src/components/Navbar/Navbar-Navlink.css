@@ -1,55 +1,72 @@
+.navlink-container {
+    width: 100%;
+    display: flex;
+}
+
+.navlink-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navlink-ul.prevent-overflow {
+    height: auto;
+    overflow: hidden;
+}
+
+/* "ul" specifically edits the entire list */
 ul {
-  height: 56px;
-  line-height: 56px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+    height: 56px;
+    line-height: 56px;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+    position: relative;
+    display: inline;
 }
 
-ul li {
-  position: relative;
-  display: inline;
-  margin-right: 20px;
-  color: #181818;
-  font-size: 20px;
+ul li .active {
+    color: #eeeeee;
 }
 
-ul li:last-child {
-  margin-right: 0;
-}
-
+/* "ul li a" specifically edits the String inside the >< brackets*/
 ul li a {
-  text-decoration: none;
+    color: #919191;
+    text-decoration: none;
+    font-size: 45px;
 }
 
 ul li a:hover {
-  color: #0000dc;
+    color: #ffffff;
 }
 
-.nav-item.highlight {
-  position: relative;
+/* For iPads and iPhones*/
+@media only screen and (min-width: 300px) and (max-width: 499px) {
+    .navbar-ul {
+        line-height: 35px;
+    }
+
+    ul li a {
+        font-size: 35px;
+    }
 }
 
-.nav-item.highlight::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  height: 2px;
-  background-color: #0000dc;
-  border-radius: 25px;
-}
+/* For foldable phones */
+@media only screen and (max-width: 299px) {
+    .navbar-ul {
+        line-height: 35px;
+    }
 
-.nav-item.highlight ul li a {
-  font-size: 40px;
-}
-
-.navbar.float-dock ul li a {
-  color: hsl(0, 0%, 57%);
-}
-
-.navbar.float-dock ul li a:hover {
-  color: hsl(0, 0%, 100%);
+    ul li a {
+        font-size: 35px;
+    }
 }

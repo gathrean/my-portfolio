@@ -1,16 +1,62 @@
-.projects-section-container {
-  padding: 50px 10vw;
-}
-
-.projects-section-container h1 {
-  font-size: 3rem;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
 .projects-grid {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+}
+
+.project-card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+@media screen and (max-width: 1120px) {
+  .projects-grid {
+    justify-items: center;
+  }
+
+  .project-card-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.project-card-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0px 20px;
+}
+
+.header-image {
+  display: flex;
+  justify-content: center;
+}
+
+.header-image img {
+  aspect-ratio: 4/3;
+  background-color: var(--colorlightgrey);
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-small-icon {
+  width: auto;
+  height: 40px;
+  margin-right: 0.5em;
+}
+
+.link-and-icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
