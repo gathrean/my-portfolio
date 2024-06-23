@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 // Sections
 import HERO from './Sections/HERO/HERO';
 import { ABOUT } from './Sections/ABOUT/ABOUT';
+import { SKILLS } from './Sections/SKILLS/SKILLS';
 import { ACADEMIA } from './Sections/ACADEMIA/ACADEMIA';
 import { PROJECTS } from './Sections/PROJECTS/PROJECTS';
 import { Footer2 } from '../../components/Footer/Footer2';
@@ -95,6 +96,7 @@ export function LandingPage() {
                 </div>
                 <div className="LP-sections-container">
                     <section id="ABOUT" className="ABOUT"><ABOUT /></section>
+                    <section id="SKILLS" className="SKILLS"><SKILLS /></section>
                     <section id="ACADEMIA" className="ACADEMIA"><ACADEMIA /></section>
                     <section id="PROJECTS" className="PROJECTS"><PROJECTS /></section>
                     {/* footer */}
