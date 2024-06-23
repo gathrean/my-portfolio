@@ -45,14 +45,14 @@ export function LandingPage() {
                         profile.style.top = `${margin}px`;
                     } else if (containerRect.top >= margin) {
                         profile.style.position = 'relative';
-                        profile.style.top = '0';
+                        profile.style.top = `0px`;
                     } else if (containerRect.bottom <= profileRect.height + margin) {
                         profile.style.position = 'absolute';
                         profile.style.top = `${containerRect.height - profileRect.height}px`;
                     }
                 } else {
                     profile.style.position = 'relative';
-                    profile.style.top = '0';
+                    profile.style.top = `0px`;
                 }
             }
         };
