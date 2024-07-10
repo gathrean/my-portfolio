@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { useNavbarFunctions, useScrollHandler } from './NavbarFunctions';
+import { useNavbarFunctions } from './NavbarFunctions';
 
 import './Navbar.css';
 import './Navbar-Logo.css';
@@ -21,11 +21,8 @@ const HamburgerIcon = ({ open }) => (
 
 export function Navbar() {
     const { navbarHeight, navbarRef, toggleHamburger } = useNavbarFunctions();
-    const [activeSection, setActiveSection] = useState('HOME');
     const [expanded, setExpanded] = useState(false);
     const mobileViewRef = useRef(null);
-
-    useScrollHandler(setActiveSection, navbarHeight);
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -41,49 +38,29 @@ export function Navbar() {
         };
     }, [expanded]);
 
-    const scrollToSection = (sectionClassName) => {
-        if (activeSection !== sectionClassName) {
-            const section = document.querySelector(`.${sectionClassName}`);
-            if (section) {
-                const offsetTop = section.getBoundingClientRect().top + window.scrollY;
-                window.scrollTo({
-                    top: offsetTop - navbarHeight,
-                    behavior: "smooth"
-                });
-                setActiveSection(sectionClassName);
-            }
-        }
-    };
-
     return (
         <nav ref={navbarRef} className={`navbar navbar-animation`} style={{ height: navbarHeight }}>
-
             <div className="navbar-container">
-
                 <div className="brand">
                     <span className="brand-text">gathrean.com</span>
                 </div>
-
                 <div ref={mobileViewRef} className="hamburger mobile-view clickable" onClick={() => { toggleHamburger(); setExpanded(!expanded); }}>
                     <HamburgerIcon open={expanded} />
                 </div>
-
             </div>
-
             <div className="navlink-container">
                 <ul className={`navlink-ul prevent-overflow`}>
                     <li>
-                        <Link onClick={() => scrollToSection('ABOUT')} className={activeSection === 'ABOUT' ? 'active' : ''}>About Me</Link>
+                        <Link to="/" className={({ isActive }) => isActive ? 'active' : ''}>About</Link>
                     </li>
                     <li>
-                        <Link onClick={() => scrollToSection('ACADEMIA')} className={activeSection === 'ACADEMIA' ? 'active' : ''}>Academia</Link>
+                        <Link to="/academia" className={({ isActive }) => isActive ? 'active' : ''}>Academia</Link>
                     </li>
                     <li>
-                        <Link onClick={() => scrollToSection('PROJECTS')} className={activeSection === 'PROJECTS' ? 'active' : ''}>Projects</Link>
+                        <Link to="/projects" className={({ isActive }) => isActive ? 'active' : ''}>Work</Link>
                     </li>
                 </ul>
             </div>
-
         </nav>
     );
 }

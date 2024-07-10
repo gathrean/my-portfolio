@@ -1,17 +1,20 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-// Components //
+// Components
 import { Navbar } from './components/Navbar/Navbar';
 
-// Pages // 
+// Pages
 import { LandingPage } from './pages/LandingPage/LandingPage';
+import AboutPage from './pages/AboutPage/AboutPage';
+import AcademiaPage from './pages/AcademiaPage/AcademiaPage';
+import ProjectsPage from './pages/ProjectsPage/ProjectsPage';
 import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
 
-// CSS //
+// CSS
 import './App.css';
 
-// Fonts //
+// Fonts
 import './assets/fonts/Fonts.css';
 
 // Custom Layout component for pages with Navbar and Footer
@@ -33,10 +36,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* LandingPage route with Navbar and Footer */}
-        <Route path="/" element={<Layout><LandingPage /></Layout>} />
-
-        {/* NotFoundPage route without Navbar and Footer */}
+        <Route path="/og" element={<Layout><LandingPage /></Layout>} />
+        <Route path="/" element={<Layout><AboutPage /></Layout>} />
+        <Route path="/academia" element={<Layout><AcademiaPage /></Layout>} />
+        <Route path="/projects" element={<Layout><ProjectsPage /></Layout>} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>

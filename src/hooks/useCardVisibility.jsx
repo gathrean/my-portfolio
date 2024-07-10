@@ -1,24 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
-// Sections
-import HERO from './Sections/HERO/HERO';
-import { ABOUT } from './Sections/ABOUT/ABOUT';
-import { SKILLS } from './Sections/SKILLS/SKILLS';
-import { ACADEMIA } from './Sections/ACADEMIA/ACADEMIA';
-import { PROJECTS } from './Sections/PROJECTS/PROJECTS';
-import { Footer2 } from '../../components/Footer/Footer2';
-
-// Components 
-import MyProfile from '../../components/MyProfile/MyProfile';
-
-// CSS //
-import './LandingPage.css';
-import '../../App.css';
-
-// Fonts //
-import '../../assets/fonts/Fonts.css';
-
-export function LandingPage() {
+const useCardVisibility = () => {
     const [containerClass, setContainerClass] = useState('LP-my-profile-container');
 
     useEffect(() => {
@@ -86,25 +68,7 @@ export function LandingPage() {
         };
     }, [containerClass]);
 
-    return (
-        <section id="section1 home">
-            {/* <section id="HERO" className="HERO"><HERO /></section> */}
+    return containerClass;
+};
 
-            <div className="LP-container mobile-profile">
-                <div className={containerClass}>
-                    <MyProfile />
-                </div>
-                <div className="LP-sections-container">
-                    <section id="ABOUT" className="ABOUT"><ABOUT /></section>
-                    <section id="SKILLS" className="SKILLS"><SKILLS /></section>
-                    <section id="ACADEMIA" className="ACADEMIA"><ACADEMIA /></section>
-                    <section id="PROJECTS" className="PROJECTS"><PROJECTS /></section>
-                    {/* footer */}
-                    <div>
-                        <Footer2 />
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
-}
+export default useCardVisibility;
