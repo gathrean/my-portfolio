@@ -9,6 +9,7 @@ import './HERO.css';
 
 const HERO = () => {
   const overlayRef = useRef(null);
+  const resumeURL = '/Gathrean_DelaCruz__Resume.pdf';
 
   return (
     <div className="hero-container">
@@ -24,7 +25,7 @@ const HERO = () => {
       <div className="buttons-container">
         <div className="external-link">
           <ArrowRightIcon />
-          <a href="resumeURL" style={{ cursor: 'pointer', color: 'white' }}>View Resumé</a>
+          <a href={resumeURL} target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer', color: 'white' }}>View Resumé</a>
         </div>
 
         <div className="bottom-buttons-container">
