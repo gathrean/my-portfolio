@@ -97,8 +97,8 @@ export function LandingPage() {
                 <div className="LP-sections-container">
                     <section id="ACADEMIA" className="ACADEMIA"><ACADEMIA /></section>
                     <section id="PROJECTS" className="PROJECTS"><PROJECTS /></section>
-                    <section id="ABOUT" className="ABOUT"><ABOUT /></section>
                     <section id="SKILLS" className="SKILLS"><SKILLS /></section>
+                    <section id="ABOUT" className="ABOUT"><ABOUT /></section>
                     {/* footer */}
                     <div>
                         <Footer2 />
