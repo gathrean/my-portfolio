@@ -7,11 +7,7 @@ export function Footer2() {
         <div className="section-container">
             <hr />
             <p>
-                This website's designed and coded in Visual Studio Code by <b>Gathrean Dela Cruz</b>.
-                Built with React.js and Vanila HTML/CSS, deployed by Vercel.
-                All text is in the Work-Sans typeface.
-                Project icons are designed by me.
-                I coded alongside Chat-GPT to speed up the process of development of this website.
+                This website is designed and coded by <b>Gathrean Dela Cruz</b>.
             </p>
         </div>
     );
