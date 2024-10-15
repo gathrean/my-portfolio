@@ -19,6 +19,8 @@ const MyProfile = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [fade, setFade] = useState(true);
 
+    const resumeURL = '/Gathrean_DelaCruz__Resume.pdf';
+
     const handleEmailClick = () => {
         navigator.clipboard.writeText('gathrean@icloud.com')
             .then(() => {
@@ -56,11 +58,14 @@ const MyProfile = () => {
                 <p>🇨🇦 Vancouver, BC, Canada</p>
                 <p>⌚️ <LocalTime /></p>
                 <p onClick={handleEmailClick} style={{ cursor: 'pointer' }}>{emailMessage}</p>
+                <div className="external-link-2">
+                    <a href={resumeURL} target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer', color: 'black' }}>View Resumé</a>
+                </div>
                 <div className="social-media-icons">
                     <SocialMediaIcons />
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

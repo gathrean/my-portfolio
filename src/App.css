@@ -198,6 +198,21 @@ a:visited {
   margin: 0 !important;
 }
 
+.external-link-2 {
+  color: var(--colorblack);
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.external-link-2:hover a {
+  transition: all 0.3s ease;
+  scale: 1.025;
+}
+
 .external-link {
   color: var(--coloroffwhite);
   font-size: 2rem;
@@ -311,6 +326,7 @@ hr {
     padding: 50px 5vw 20px 5vw;
   }
 }
+
 /* CARDS */
 /* ========================================== */
 .card {
