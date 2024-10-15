@@ -7,13 +7,8 @@ import '../ABOUT/ABOUT.css';
 // Components
 import ArrowRightIcon from '../../../../components/ArrowRight/ArrowRightBlack';
 
-// Data
-import Texts from '../../Texts.json';
-
 // Logos
 import BCITLogo from './Logos/bcit-logo.png';
-import AIMLogo from './Logos/aim-logo.gif';
-import WSAILogo from './Logos/wsai-logo.png';
 
 export function ACADEMIA() {
     return (
@@ -31,14 +26,13 @@ export function ACADEMIA() {
 
                     <div className="card">
                         <img className="academia-logo" src={BCITLogo} alt="BCIT Logo" />
-                        <h5>{Texts.bcit.diploma}</h5>
-                        <p className="tagline">{Texts.bcit.location}</p>
-                        <p>{Texts.bcit.school}</p>
-                        <p>{Texts.bcit.duration}</p>
+                        <h5>Computer Systems Technology, Diploma</h5>
+                        <p className="tagline">British Columbia Institute of Technology</p>
+                        <p>September 2022 - June 2024</p>
                         <ul>
-                            <li>{Texts.bcit.desc1}</li>
-                            <li>{Texts.bcit.desc2}</li>
-                            <li>{Texts.bcit.desc3}</li>
+                            <li>Graduated with Distinction, hands-on training in software development, networking, and systems design.</li>
+                            <li>Completed projects in full-stack development, mobile app development, and cloud computing, using languages such as Java, C, C++, and C\#.</li>
+                            <li>Developed strong collaboration and problem-solving skills through team-based and real-world technical challenges, simulating professional environments.</li>
                         </ul>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://www.bcit.ca/programs/computer-systems-technology-diploma-full-time-5500dipma/">
@@ -51,35 +45,38 @@ export function ACADEMIA() {
                     <h3>Research Papers & Conferences</h3>
 
                     <div className="card">
-                        <img className="academia-logo" src={AIMLogo} alt="AIM Logo" /> <br />
-                        <h5>{Texts.aim.name}</h5>
-                        <p className="tagline">{Texts.aim.location}</p>
-                        <p>{Texts.aim.date} </p>
+                        <h5>AIM 2024: Artificial Intelligence Conference</h5>
+                        <p className="tagline">🇺🇸 San Francisco, California, United States of America</p>
+                        <p>June 9-11, 2024</p>
                         <ul>
-                            <li>{Texts.aim.type}</li>
-                            <li>{Texts.aim.description}</li>
+                            <li>In-person conference</li>
+                            <li>Presented our research paper on Multi-Instrument Recognition Neural Networks as a poster to professors and authors from top universities, including UCLA and UC Berkeley.</li>
+                            <li>Networked with leading researchers and industry professionals.</li>
+                            <li>Research paper to be published by AIM by the end of the year.</li>
                         </ul>
                         <div className="small-link-container">
-                            <a className="external-link small-link" href="https://artificialintelligence-conference.com/">
+                            <a className="external-link small-link" href="https://artificialintelligence.unitedscientificgroup.org/2024/home">
                                 <ArrowRightIcon />
-                                More info about AIM Conference
+                                More info about AIM 2024 Conference
                             </a>
                         </div>
                     </div>
 
+
                     <div className="card">
-                        <img className="academia-logo" src={WSAILogo} alt="WSAI Logo" />
-                        <h5>{Texts.aim.name}</h5>
-                        <p className="tagline">{Texts.wsai.location}</p>
-                        <p>{Texts.wsai.date} </p>
+                        <h5>WSAI 2024 @ 人工智能专题讨论会</h5>
+                        <p className="tagline">🇨🇳 Guangzhou, Guangdong, China</p>
+                        <p>June 7-9, 2024</p>
                         <ul>
-                            <li>{Texts.wsai.type}</li>
-                            <li>{Texts.wsai.description}</li>
+                            <li>Virtual Conference</li>
+                            <li>Represented BCIT and presented our group’s research on a Multi-Instrument Recognition Neural Network.</li>
+                            <li>Awarded "Excellent Oral Presentation" for our contributions.</li>
+                            <li>Research paper to be published by WSAI by the end of the year.</li>
                         </ul>
                         <div className="small-link-container">
-                            <a className="external-link small-link" href="https://wsai.org/">
+                            <a className="external-link small-link" href="https://wsai.org/wsai24.html">
                                 <ArrowRightIcon />
-                                More info about WSAI Conference
+                                More info about WSAI 2024 Conference
                             </a>
                         </div>
                     </div>
