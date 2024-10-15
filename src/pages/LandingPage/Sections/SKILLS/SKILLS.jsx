@@ -41,29 +41,31 @@ export function SKILLS() {
                 <p>
                     React.JS is my preferred library for front-end development, and I've used Express.JS and Node.JS for back-end development.
                 </p>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">HTML5</span>
-                    <img className="tech-logo-icon" src={icon_html} alt="HTML5" />
-                </div>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">CSS3</span>
-                    <img className="tech-logo-icon" src={icon_css} alt="CSS3" />
-                </div>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">JavaScript</span>
-                    <img className="tech-logo-icon" src={icon_js} alt="JavaScript" />
-                </div>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">React.JS</span>
-                    <img className="tech-logo-icon" src={icon_react} alt="ReactJS" />
-                </div>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">Express.JS</span>
-                    <img className="tech-logo-icon" src={icon_express} alt="ExpressJS" />
-                </div>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">Node.JS</span>
-                    <img className="tech-logo-icon" src={icon_node} alt="NodeJS" />
+                <div className="in-card-container">
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">HTML5</span>
+                        <img className="tech-logo-icon" src={icon_html} alt="HTML5" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">CSS3</span>
+                        <img className="tech-logo-icon" src={icon_css} alt="CSS3" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">JavaScript</span>
+                        <img className="tech-logo-icon" src={icon_js} alt="JavaScript" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">React.JS</span>
+                        <img className="tech-logo-icon" src={icon_react} alt="ReactJS" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">Express.JS</span>
+                        <img className="tech-logo-icon" src={icon_express} alt="ExpressJS" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">Node.JS</span>
+                        <img className="tech-logo-icon" src={icon_node} alt="NodeJS" />
+                    </div>
                 </div>
             </div>
 
@@ -75,29 +77,31 @@ export function SKILLS() {
                 <p>
                     I've learned OOP through using Java, Kotlin, and C++, Procedural Programming with C, and Data Analysis with Python and R.
                 </p>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">Java</span>
-                    <img className="tech-logo-icon" src={icon_java} alt="Java" />
-                </div>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">Kotlin</span>
-                    <img className="tech-logo-icon" src={icon_kotlin} alt="Kotlin" />
-                </div>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">C++</span>
-                    <img className="tech-logo-icon" src={icon_cpp} alt="C++" />
-                </div>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">C</span>
-                    <img className="tech-logo-icon" src={icon_c} alt="C" />
-                </div>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">Python</span>
-                    <img className="tech-logo-icon" src={icon_python} alt="Python" />
-                </div>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">R</span>
-                    <img className="tech-logo-icon" src={icon_r} alt="R" />
+                <div className="in-card-container">
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">Java</span>
+                        <img className="tech-logo-icon" src={icon_java} alt="Java" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">Kotlin</span>
+                        <img className="tech-logo-icon" src={icon_kotlin} alt="Kotlin" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">C++</span>
+                        <img className="tech-logo-icon" src={icon_cpp} alt="C++" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">C</span>
+                        <img className="tech-logo-icon" src={icon_c} alt="C" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">Python</span>
+                        <img className="tech-logo-icon" src={icon_python} alt="Python" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">R</span>
+                        <img className="tech-logo-icon" src={icon_r} alt="R" />
+                    </div>
                 </div>
             </div>
 
@@ -112,25 +116,27 @@ export function SKILLS() {
                 <p>
                     I've used Git for version control in all my projects.
                 </p>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">Visual Studio Code</span>
-                    <img className="tech-logo-icon" src={icon_vscode} alt="VS Code" />
-                </div>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">CLion</span>
-                    <img className="tech-logo-icon" src={icon_clion} alt="CLion" />
-                </div>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">IntelliJ IDEA</span>
-                    <img className="tech-logo-icon" src={icon_intellij} alt="IntelliJ IDEA" />
-                </div>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">Android Studio</span>
-                    <img className="tech-logo-icon" src={icon_androidstudio} alt="Android Studio" />
-                </div>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">Git</span>
-                    <img className="tech-logo-icon" src={icon_git} alt="Git" />
+                <div className="in-card-container">
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">Visual Studio Code</span>
+                        <img className="tech-logo-icon" src={icon_vscode} alt="VS Code" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">CLion</span>
+                        <img className="tech-logo-icon" src={icon_clion} alt="CLion" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">IntelliJ IDEA</span>
+                        <img className="tech-logo-icon" src={icon_intellij} alt="IntelliJ IDEA" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">Android Studio</span>
+                        <img className="tech-logo-icon" src={icon_androidstudio} alt="Android Studio" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">Git</span>
+                        <img className="tech-logo-icon" src={icon_git} alt="Git" />
+                    </div>
                 </div>
             </div>
 
@@ -139,25 +145,27 @@ export function SKILLS() {
                 <p>
                     I've worked with MongoDB and MySQL for databases and authentication. I've hosted websites on Netlify and Vercel, and used Firebase for storage.
                 </p>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">MongoDB</span>
-                    <img className="tech-logo-icon" src={icon_mongodb} alt="MongoDB" />
-                </div>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">MySQL</span>
-                    <img className="tech-logo-icon" src={icon_mysql} alt="MySQL" />
-                </div>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">Netlify</span>
-                    <img className="tech-logo-icon" src={icon_netlify} alt="Netlify" />
-                </div>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">Vercel</span>
-                    <img className="tech-logo-icon" src={icon_vercel} alt="Vercel" />
-                </div>
-                <div className="tech-logo-container">
-                    <span className="tech-logo-text">Firebase</span>
-                    <img className="tech-logo-icon" src={icon_firebase} alt="Firebase" />
+                <div className="in-card-container">
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">MongoDB</span>
+                        <img className="tech-logo-icon" src={icon_mongodb} alt="MongoDB" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">MySQL</span>
+                        <img className="tech-logo-icon" src={icon_mysql} alt="MySQL" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">Netlify</span>
+                        <img className="tech-logo-icon" src={icon_netlify} alt="Netlify" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">Vercel</span>
+                        <img className="tech-logo-icon" src={icon_vercel} alt="Vercel" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">Firebase</span>
+                        <img className="tech-logo-icon" src={icon_firebase} alt="Firebase" />
+                    </div>
                 </div>
             </div>
         </div>

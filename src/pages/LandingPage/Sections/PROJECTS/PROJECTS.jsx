@@ -3,7 +3,6 @@ import React from 'react';
 import './PROJECTS.css';
 
 // Icons
-import GathreanIcon from '../../../../assets/icons/project-icons/gathrean-Icon.png';
 import NebulaIcon from '../../../../assets/icons/project-icons/Nebula-Icon.png';
 import OrcaSwipeIcon from '../../../../assets/icons/project-icons/OrcaSwipe-Icon.png';
 import DungeonQuadIcon from '../../../../assets/icons/project-icons/DungeonQuad-Icon.png';
