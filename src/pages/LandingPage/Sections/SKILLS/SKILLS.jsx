@@ -14,10 +14,12 @@ import icon_python from '../../../../components/TechStack/Python.png';
 import icon_kotlin from '../../../../components/TechStack/Kotlin.png';
 import icon_c from '../../../../components/TechStack/C.png';
 import icon_cpp from '../../../../components/TechStack/Cpp.png';
+import icon_cs from '../../../../components/TechStack/CSharp.png';
 import icon_r from '../../../../components/TechStack/R.png';
 import icon_vscode from '../../../../components/TechStack/VSCode.png';
 import icon_intellij from '../../../../components/TechStack/IntelliJ.png';
 import icon_clion from '../../../../components/TechStack/CLion.png';
+import icon_rider from '../../../../components/TechStack/Rider.png';
 import icon_androidstudio from '../../../../components/TechStack/AndroidStudio.png';
 import icon_git from '../../../../components/TechStack/git.png';
 import icon_mongodb from '../../../../components/TechStack/MongoDB.png';
@@ -33,6 +35,47 @@ export function SKILLS() {
             <h1>Skills & Technologies</h1>
             <p>These are the technologies I've learned and used in various projects.</p>
             <br />
+
+            <h3>Programming Languages</h3>
+            <div className="card">
+                <p>
+                    These are the programming languages I've learned and used in various projects.
+                </p>
+                <p>
+                    I've learned OOP through using Java, C++, C#, and Kotlin; Procedural Programming with C, and Data Analysis with Python and R.
+                </p>
+                <div className="in-card-container">
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">Java</span>
+                        <img className="tech-logo-icon" src={icon_java} alt="Java" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">C# and .NET</span>
+                        <img className="tech-logo-icon" src={icon_cs} alt="C#" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">C++</span>
+                        <img className="tech-logo-icon" src={icon_cpp} alt="C++" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">C</span>
+                        <img className="tech-logo-icon" src={icon_c} alt="C" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">Kotlin</span>
+                        <img className="tech-logo-icon" src={icon_kotlin} alt="Kotlin" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">Python</span>
+                        <img className="tech-logo-icon" src={icon_python} alt="Python" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">R</span>
+                        <img className="tech-logo-icon" src={icon_r} alt="R" />
+                    </div>
+                </div>
+            </div>
+
             <h3>Web Development</h3>
             <div className="card">
                 <p>
@@ -69,49 +112,13 @@ export function SKILLS() {
                 </div>
             </div>
 
-            <h3>Programming Languages</h3>
-            <div className="card">
-                <p>
-                    These are the programming languages I've learned and used in various projects.
-                </p>
-                <p>
-                    I've learned OOP through using Java, Kotlin, and C++, Procedural Programming with C, and Data Analysis with Python and R.
-                </p>
-                <div className="in-card-container">
-                    <div className="tech-logo-container">
-                        <span className="tech-logo-text">Java</span>
-                        <img className="tech-logo-icon" src={icon_java} alt="Java" />
-                    </div>
-                    <div className="tech-logo-container">
-                        <span className="tech-logo-text">Kotlin</span>
-                        <img className="tech-logo-icon" src={icon_kotlin} alt="Kotlin" />
-                    </div>
-                    <div className="tech-logo-container">
-                        <span className="tech-logo-text">C++</span>
-                        <img className="tech-logo-icon" src={icon_cpp} alt="C++" />
-                    </div>
-                    <div className="tech-logo-container">
-                        <span className="tech-logo-text">C</span>
-                        <img className="tech-logo-icon" src={icon_c} alt="C" />
-                    </div>
-                    <div className="tech-logo-container">
-                        <span className="tech-logo-text">Python</span>
-                        <img className="tech-logo-icon" src={icon_python} alt="Python" />
-                    </div>
-                    <div className="tech-logo-container">
-                        <span className="tech-logo-text">R</span>
-                        <img className="tech-logo-icon" src={icon_r} alt="R" />
-                    </div>
-                </div>
-            </div>
-
             <h3>Working Environments</h3>
             <div className="card">
                 <p>
                     My preferred IDE to use for coding is VS Code for most languages.
                 </p>
                 <p>
-                    I've also had experience with IntelliJ IDEA for Java and Kotlin, CLion for C and C++, and Android Studio for Android Development.
+                    I've also had experience with IntelliJ IDEA for Java and Kotlin, CLion for C and C++, Rider for C#/.NET and Android Studio for Android Development.
                 </p>
                 <p>
                     I've used Git for version control in all my projects.
@@ -128,6 +135,10 @@ export function SKILLS() {
                     <div className="tech-logo-container">
                         <span className="tech-logo-text">IntelliJ IDEA</span>
                         <img className="tech-logo-icon" src={icon_intellij} alt="IntelliJ IDEA" />
+                    </div>
+                    <div className="tech-logo-container">
+                        <span className="tech-logo-text">Rider</span>
+                        <img className="tech-logo-icon" src={icon_rider} alt="Rider" />
                     </div>
                     <div className="tech-logo-container">
                         <span className="tech-logo-text">Android Studio</span>
