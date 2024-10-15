@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-
+import React, { useState } from 'react';
 import './MyProfile.css';
 
 // Components
@@ -7,17 +6,10 @@ import LocalTime from '../LocalTime';
 import SocialMediaIcons from '../SocialMediaIcons/SocialMediaIcons';
 
 // Images
-import img_closeup from './PFPs/closeup.jpg';
-import img_hike from './PFPs/hike.jpeg';
-import img_lake from './PFPs/lake.jpeg';
-import img_river from './PFPs/river.jpeg';
-
-const images = [img_closeup, img_hike, img_lake, img_river];
+import img_sunset from './PFPs/sunset.jpg';
 
 const MyProfile = () => {
     const [emailMessage, setEmailMessage] = useState('📧 gathrean@icloud.com');
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    const [fade, setFade] = useState(true);
 
     const resumeURL = '/Gathrean_DelaCruz__Resume.pdf';
 
@@ -34,22 +26,10 @@ const MyProfile = () => {
             });
     };
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setFade(false);
-            setTimeout(() => {
-                setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-                setFade(true);
-            }, 500);
-        }, 12000);
-
-        return () => clearInterval(interval);
-    }, []);
-
     return (
         <div className="my-profile">
-            <div className={`profile-picture ${fade ? 'fade-in' : 'fade-out'}`}>
-                <img src={images[currentImageIndex]} alt="Profile" />
+            <div className="profile-picture">
+                <img src={img_sunset} alt="Profile" />
             </div>
             <br />
             <div className="about-me-info">
@@ -65,7 +45,7 @@ const MyProfile = () => {
                     <SocialMediaIcons />
                 </div>
             </div>
-        </div >
+        </div>
     );
 };
 
