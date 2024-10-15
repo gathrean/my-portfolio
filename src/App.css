@@ -39,7 +39,7 @@ html {
 }
 
 body {
-  font: 400 16px/1.5 var(--ff);
+  font: 400 14px/1.5 var(--ff);
   background-color: var(--coloroffwhite);
   overflow-x: hidden;
   width: 100%;
@@ -47,21 +47,21 @@ body {
 }
 
 h1 {
-  font: bold 3.375rem/3.375rem var(--ffh1);
+  font: bold 3rem/3rem var(--ffh1);
   letter-spacing: -2px;
 }
 
 h2 {
-  font: bold 3rem/2.375rem var(--ffh2);
+  font: bold 2.875rem/2.375rem var(--ffh2);
   letter-spacing: -1px;
 }
 
 h3 {
-  font: bold 2rem/3.375rem var(--ffh3);
+  font: bold 1.875rem/3.375rem var(--ffh3);
 }
 
 h4 {
-  font: bold 1.5rem/2rem var(--ffh3);
+  font: bold 1.375rem/2rem var(--ffh3);
 }
 
 h5 {
@@ -72,7 +72,7 @@ h5 {
 }
 
 p {
-  font: 400 16px/1.5 var(--ff);
+  font: 400 14px/1.5 var(--ff);
   margin: 0 0 0.25em 0;
 }
 
@@ -87,7 +87,7 @@ b {
 }
 
 .section-container li {
-  font: 400 16px/1.5 var(--ff);
+  font: 400 12px/1.5 var(--ff);
   margin: 0 0 0.25em 0;
   margin-left: 1.5em;
   position: relative;
@@ -200,7 +200,7 @@ a:visited {
 
 .external-link-2 {
   color: var(--colorblack);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
