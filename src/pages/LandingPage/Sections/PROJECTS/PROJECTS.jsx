@@ -25,9 +25,9 @@ export function PROJECTS() {
 
                 <div className="card-container">
 
-                    <h3>2024 Projects</h3>
+                    {/* <h3>2024 Projects</h3> */}
 
-                    <div className="card">
+                    {/* <div className="card">
                         <div className="link-and-icon-container">
                             <img className="project-small-icon" alt="Project Small Icon" src={GathreanIcon} />
                             <h5>gathrean.com</h5>
@@ -39,7 +39,7 @@ export function PROJECTS() {
                             <li>Deployed the website using Vercel.</li>
                             <li>Designed and developed solely by myself, with the help of Chat-GPT (for speeding up development).</li>
                         </ul>
-                    </div>
+                    </div> */}
 
                     <div className="card">
                         <div className="link-and-icon-container">
@@ -49,10 +49,8 @@ export function PROJECTS() {
                         <p className="tagline">🤖 🎵 Convolutional Neural Network</p>
                         <p>Recognizing multiple musical instruments in music and audio recordings.</p>
                         <ul>
-                            <li>Helped in developing an innovative method for recognizing multiple musical instruments in music and audio recordings.</li>
-                            <li>Used a Convolutional Neural Network (CNN) within an Artificial Neural Network framework and processed the OpenMIC-2018 dataset as mel-spectrograms.</li>
-                            <li>Achieved an F1 score of 56%, setting a new benchmark in the field.</li>
-                            <li>Designed the Frontend of the website for the project using HTML, CSS, and JavaScript.</li>
+                            <li>Achieved a 56% F1-score by developing a convolutional neural network (CNN) that processed mel-spectrograms from the OpenMIC-2018 dataset to accurately recognize and classify up to 10 musical instruments.</li>
+                            <li>Delivered two research presentations virtually at WSAI 2024 in Guangzhou, China, and as a poster presentation at AIM 2024 in San Francisco, USA by showcasing key findings from this project.</li>
                         </ul>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://github.com/gathrean/Nebula">
@@ -68,12 +66,6 @@ export function PROJECTS() {
                             <h5>YapPad</h5>
                         </div>
                         <p className="tagline">🤖 💬 Web-Based Interactive Story Generator, with the help of AI.</p>
-                        <ul>
-                            <li>Point 1</li>
-                            <li>Point 2</li>
-                            <li>Point 3</li>
-                            <li>Point 4</li>
-                        </ul>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://github.com/xinyang417/YapPad">
                                 <ArrowRightIcon />
@@ -90,20 +82,17 @@ export function PROJECTS() {
                         </div>
                     </div>
 
-                    <h3>2024 Hackathon Project</h3>
-
                     <div className="card">
                         <div className="link-and-icon-container">
                             <img className="project-small-icon" alt="Project Small Icon" src={CareLinkIcon} />
-                            <h5>CareLink</h5>
+                            <h5>CareLink (Hackathon Submission)</h5>
                         </div>
                         <p className="tagline">🤖 💬 Match-making AI and messaging app</p>
                         <p>An online platform for BCIT students to make it easier for them to find the right counselor to talk to.</p>
                         <ul>
-                            <li>Point 1</li>
-                            <li>Point 2</li>
-                            <li>Point 3</li>
-                            <li>Point 4</li>
+                            <li>Developed the frontend using React, ensuring smooth API integration for peer matching.</li>
+                            <li>Collaborated on real-time chat functionality, resolving technical issues with web sockets and database interactions.</li>
+                            <li>Gained hands-on experience in React, API integration, and teamwork through the hackathon project.</li>
                         </ul>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://github.com/BardiaTiM/CareLink">
@@ -133,21 +122,19 @@ export function PROJECTS() {
                         </div>
                     </div>
 
-                    <h3>2023 Projects</h3>
-
                     <div className="card">
                         <div className="link-and-icon-container">
                             <img className="project-small-icon" alt="Project Small Icon" src={OrcaSwipeIcon} />
                             <h5>OrcaSwipe</h5>
                         </div>
                         <p className="tagline">📲 📍 Tinder-style social media app for finding nearby group events</p>
-                        <p>"Discover, Host, and Link Up"</p>
-                        <p>"Uncover hidden gems in your city and grow lasting communities with the swipe of a finger."</p>
                         <ul>
-                            <li>Point 1</li>
-                            <li>Point 2</li>
-                            <li>Point 3</li>
-                            <li>Point 4</li>
+                            <li>Contributed over 15,000 lines of code to enhance the platform’s functionality by collaborating in a team of four
+                            developers</li>
+                            <li>Lead the UI/UX design, using Node.js, Express.js, and EJS, while contributing to backend architecture with
+                            MongoDB and Firestore Firebase.</li>
+                            <li>Secured Best UI/UX Design and Best Teamwork awards by delivering a seamless and engaging user interface
+                            for BCIT’s event.</li>
                         </ul>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://github.com/gathrean/OrcaSwipe">
@@ -179,10 +166,12 @@ export function PROJECTS() {
                         <p className="tagline">☕️ 🎮 Java Video Game</p>
                         <p>Survive waves of enemies in an endless dungeon, navigating through bullet-hell challenges with occasional flight aids.</p>
                         <ul>
-                            <li>Point 1</li>
-                            <li>Point 2</li>
-                            <li>Point 3</li>
-                            <li>Point 4</li>
+                            <li>Created an endless pixel shooter game by developing game-play mechanics in Java with IntelliJ IDEA, contributing
+                            to dynamic user experiences.</li>
+                            <li>Designed all in-game visuals, including sprites, UI, menus, and background art, by applying creative design
+                            principles and tools.</li>
+                            <li>Improved game performance by identifying and fixing bugs, enhancing the overall gameplay through code
+                            refactoring.</li>
                         </ul>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://github.com/BardiaTiM/DungeonQuad">
