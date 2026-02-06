@@ -10,6 +10,24 @@
   padding: 40px 24px;
 }
 
+.hero-datetime {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hero-time {
+  color: #2d2d2d;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.hero-date {
+  color: #2d2d2d;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
 .hero-text {
   width: 100%;
 }

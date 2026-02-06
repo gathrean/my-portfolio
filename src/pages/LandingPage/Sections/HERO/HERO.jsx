@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import heroImage from './2025-10-16-Gathrean.jpg';
 
 // Styles
@@ -52,8 +52,30 @@ const XIcon = () => (
 );
 
 const HERO = () => {
+  const [now, setNow] = useState(new Date());
+
+  useEffect(() => {
+    const interval = setInterval(() => setNow(new Date()), 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const timeStr = now.toLocaleTimeString('en-US', {
+    timeZone: 'America/Los_Angeles',
+    hour: 'numeric',
+    minute: '2-digit',
+    hour12: true,
+  });
+
+  const dateStr = now.toLocaleDateString('en-US', {
+    timeZone: 'America/Los_Angeles',
+    month: 'numeric',
+    day: '2-digit',
+    year: 'numeric',
+  });
+
   return (
     <div className="hero-container">
+
       <div className="hero-image-container">
         <img src={heroImage} alt="Gathrean Dela Cruz" className="hero-image" />
       </div>
@@ -92,6 +114,12 @@ const HERO = () => {
             <span>Twitter / X</span>
           </a>
         </div>
+        <br></br>
+        <div className="hero-datetime">
+          <span className="hero-time">{timeStr}</span>
+          <span className="hero-date">{dateStr}</span>
+        </div>
+
       </div>
     </div>
   );
