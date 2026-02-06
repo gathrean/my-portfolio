@@ -59,11 +59,11 @@ const HERO = () => {
       </div>
 
       <div className="hero-text">
-        <h1 className="hero-name">Gathrean Dela Cruz, {getAge()}</h1>
+        <h1 className="hero-name"><span className="hero-name-text">Gathrean Dela Cruz, {getAge()}</span></h1>
         <p className="hero-subtitle">Software Developer</p>
 
         <p className="hero-bio">
-          I'm a software developer with a passion for building reliable productivity apps. I like tech, finance, music, and arts.
+          I am a software developer with a passion for building reliable productivity apps. I like tech, finance, music, and arts.
         </p>
         <br />
         <p className="hero-bio">

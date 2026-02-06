@@ -15,8 +15,7 @@
 }
 
 .hero-name {
-  font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #111;
   margin-bottom: 4px;
 }
@@ -92,7 +91,7 @@
   }
 
   .hero-name {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 
   .hero-bio {
