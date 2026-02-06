@@ -43,8 +43,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout><LandingPage /></Layout>} />
         <Route path="/about" element={<Layout><AboutPage /></Layout>} />
-        <Route path="/developer" element={<Layout><DeveloperPage /></Layout>} />
-        <Route path="/photography" element={<Layout><PhotographyPage /></Layout>} />
+        <Route path="/projects" element={<Layout><DeveloperPage /></Layout>} />
+        <Route path="/gallery" element={<Layout><PhotographyPage /></Layout>} />
         <Route path="/contact" element={<Layout><ContactPage /></Layout>} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
