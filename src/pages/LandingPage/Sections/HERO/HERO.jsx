@@ -8,6 +8,7 @@ const BIRTHDAY = new Date(2000, 10, 20); // Nov 20, 2000 (month is 0-indexed)
 const RESUME_URL = '/Gathrean_DelaCruz__Resume.pdf';
 const LINKEDIN_URL = 'https://www.linkedin.com/in/gathrean/';
 const GITHUB_URL = 'https://github.com/gathrean';
+const TWITTER_URL = 'https://x.com/gathrean';
 
 function getAge() {
   const today = new Date();
@@ -43,11 +44,24 @@ const ResumeIcon = () => (
   </svg>
 );
 
+const XIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+  </svg>
+);
+
 const HERO = () => {
   return (
     <div className="hero-container">
+      <div className="hero-image-container">
+        <img src={heroImage} alt="Gathrean Dela Cruz" className="hero-image" />
+      </div>
+
       <div className="hero-text">
         <h1 className="hero-name">Gathrean Dela Cruz, {getAge()}</h1>
+        <p className="hero-subtitle">Software Developer</p>
+
         <p className="hero-bio">
           I'm a software developer with a passion for building reliable productivity apps. I like tech, finance, music, and arts.
         </p>
@@ -73,10 +87,11 @@ const HERO = () => {
             <GitHubIcon />
             <span>GitHub</span>
           </a>
+          <a href={TWITTER_URL} target="_blank" rel="noopener noreferrer" className="hero-link">
+            <XIcon />
+            <span>Twitter / X</span>
+          </a>
         </div>
-      </div>
-      <div className="hero-image-container">
-        <img src={heroImage} alt="Gathrean Dela Cruz" className="hero-image" />
       </div>
     </div>
   );
