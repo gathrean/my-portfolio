@@ -1,6 +1,6 @@
 {
   "short_name": "Gathrean",
-  "name": "Gathrean Dela Cruz: Portfolio",
+  "name": "Gathrean Dela Cruz — Software Developer",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#0000dc",
-  "background_color": "#0000dc"
+  "theme_color": "#000000",
+  "background_color": "#000000"
 }
