@@ -24,6 +24,7 @@ export function Navbar() {
     const [activeSection, setActiveSection] = useState('HOME');
     const [expanded, setExpanded] = useState(false);
     const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
+    const [localTime, setLocalTime] = useState('');
     const mobileViewRef = useRef(null);
 
     useScrollHandler(setActiveSection, navbarHeight);
@@ -32,6 +33,23 @@ export function Navbar() {
         const handleResize = () => setIsDesktop(window.innerWidth >= 768);
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    // Live clock in UTC-8 (PST), 12hr format
+    useEffect(() => {
+        const updateTime = () => {
+            const now = new Date();
+            const timeStr = now.toLocaleTimeString('en-US', {
+                timeZone: 'America/Los_Angeles',
+                hour: 'numeric',
+                minute: '2-digit',
+                hour12: true,
+            });
+            setLocalTime(timeStr);
+        };
+        updateTime();
+        const interval = setInterval(updateTime, 1000);
+        return () => clearInterval(interval);
     }, []);
 
     useEffect(() => {
@@ -79,13 +97,14 @@ export function Navbar() {
         </>
     );
 
-    return (
+    const navContent = (
         <nav ref={navbarRef} className={`navbar navbar-animation ${isDesktop ? 'navbar-desktop' : ''}`} style={{ height: isDesktop ? 40 : navbarHeight }}>
 
             <div className="navbar-container">
 
                 <div className="brand">
                     <span className="brand-text">{isDesktop ? 'Gathrean Dela Cruz' : 'Menu'}</span>
+                    {isDesktop && <span className="navbar-clock">{localTime}</span>}
                 </div>
 
                 {isDesktop ? (
@@ -110,4 +129,6 @@ export function Navbar() {
 
         </nav>
     );
+
+    return navContent;
 }

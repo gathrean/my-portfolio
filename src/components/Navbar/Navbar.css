@@ -55,11 +55,21 @@
 
 /* Desktop */
 @media only screen and (min-width: 768px) {
+    .navbar-clock {
+        color: #919191;
+        font-size: 0.75rem;
+        font-weight: 400;
+        white-space: nowrap;
+        margin-left: 10px;
+        position: relative;
+        top: 2px;
+    }
+
     .navbar.navbar-desktop {
         width: 700px;
         flex-direction: row;
         align-items: center;
-        height: 56px;
+        height: 40px;
         overflow: visible;
     }
 
