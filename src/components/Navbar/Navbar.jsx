@@ -74,9 +74,6 @@ export function Navbar() {
     const navLinks = (
         <>
             <li>
-                <Link to="/" onClick={handleNavClick} className={location.pathname === '/' ? 'active' : ''}>Home</Link>
-            </li>
-            <li>
                 <Link to="/about" onClick={handleNavClick} className={location.pathname === '/about' ? 'active' : ''}>About</Link>
             </li>
             <li>
@@ -97,7 +94,7 @@ export function Navbar() {
             <div className="navbar-container">
 
                 <div className="brand">
-                    <span className="brand-text">{isDesktop ? 'Gathrean Dela Cruz' : 'Menu'}</span>
+                    <Link to="/" className="brand-text" onClick={handleNavClick}>Gathrean Dela Cruz</Link>
                     {isDesktop && <span className="navbar-clock">{localTime}</span>}
                 </div>
 

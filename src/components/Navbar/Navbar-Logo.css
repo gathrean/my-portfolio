@@ -5,10 +5,14 @@
   align-items: center;
 }
 
-.brand-text {
+a.brand-text,
+a.brand-text:visited,
+a.brand-text:hover {
   color: #ffffff;
   font-size: 1.25rem;
   font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .mobile-view svg:hover {
