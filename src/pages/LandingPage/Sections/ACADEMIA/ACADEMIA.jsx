@@ -46,7 +46,7 @@ export function ACADEMIA() {
 
                     <div className="card">
                         <h5>AIM 2024: Artificial Intelligence Conference</h5>
-                        <p className="tagline">🇺🇸 San Francisco, California, United States of America</p>
+                        <p className="tagline">San Francisco, California, United States of America</p>
                         <p>June 9-11, 2024</p>
                         <ul>
                             <li>In-person conference</li>
@@ -65,7 +65,7 @@ export function ACADEMIA() {
 
                     <div className="card">
                         <h5>WSAI 2024 @ 人工智能专题讨论会</h5>
-                        <p className="tagline">🇨🇳 Guangzhou, Guangdong, China</p>
+                        <p className="tagline">Guangzhou, Guangdong, China</p>
                         <p>June 7-9, 2024</p>
                         <ul>
                             <li>Virtual Conference</li>

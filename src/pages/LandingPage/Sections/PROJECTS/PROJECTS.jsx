@@ -45,7 +45,7 @@ export function PROJECTS() {
                             <img className="project-small-icon" alt="Project Small Icon" src={NebulaIcon} />
                             <h5>Nebula</h5>
                         </div>
-                        <p className="tagline">🤖 🎵 Convolutional Neural Network</p>
+                        <p className="tagline">Convolutional Neural Network</p>
                         <p>Recognizing multiple musical instruments in music and audio recordings.</p>
                         <ul>
                             <li>Achieved a 56% F1-score by developing a convolutional neural network (CNN) that processed mel-spectrograms from the OpenMIC-2018 dataset to accurately recognize and classify up to 10 musical instruments.</li>
@@ -64,7 +64,7 @@ export function PROJECTS() {
                             <img className="project-small-icon" alt="Project Small Icon" src={YapPadIcon} />
                             <h5>YapPad</h5>
                         </div>
-                        <p className="tagline">🤖 💬 Web-Based Interactive Story Generator, with the help of AI.</p>
+                        <p className="tagline">Web-Based Interactive Story Generator, with the help of AI.</p>
                         <div className="small-link-container">
                             <a className="external-link small-link" href="https://github.com/xinyang417/YapPad">
                                 <ArrowRightIcon />
@@ -86,7 +86,7 @@ export function PROJECTS() {
                             <img className="project-small-icon" alt="Project Small Icon" src={CareLinkIcon} />
                             <h5>CareLink (Hackathon Submission)</h5>
                         </div>
-                        <p className="tagline">🤖 💬 Match-making AI and messaging app</p>
+                        <p className="tagline">Match-making AI and messaging app</p>
                         <p>An online platform for BCIT students to make it easier for them to find the right counselor to talk to.</p>
                         <ul>
                             <li>Developed the frontend using React, ensuring smooth API integration for peer matching.</li>
@@ -126,7 +126,7 @@ export function PROJECTS() {
                             <img className="project-small-icon" alt="Project Small Icon" src={OrcaSwipeIcon} />
                             <h5>OrcaSwipe</h5>
                         </div>
-                        <p className="tagline">📲 📍 Tinder-style social media app for finding nearby group events</p>
+                        <p className="tagline">Tinder-style social media app for finding nearby group events</p>
                         <ul>
                             <li>Contributed over 15,000 lines of code to enhance the platform’s functionality by collaborating in a team of four
                             developers</li>
@@ -162,7 +162,7 @@ export function PROJECTS() {
                             <img className="project-small-icon" alt="Project Small Icon" src={DungeonQuadIcon} />
                             <h5>DungeonQuad</h5>
                         </div>
-                        <p className="tagline">☕️ 🎮 Java Video Game</p>
+                        <p className="tagline">Java Video Game</p>
                         <p>Survive waves of enemies in an endless dungeon, navigating through bullet-hell challenges with occasional flight aids.</p>
                         <ul>
                             <li>Created an endless pixel shooter game by developing game-play mechanics in Java with IntelliJ IDEA, contributing
