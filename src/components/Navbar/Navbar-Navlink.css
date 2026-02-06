@@ -70,3 +70,30 @@ ul li a:hover {
         font-size: 35px;
     }
 }
+
+/* Desktop nav links */
+.navlink-ul-desktop {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.navlink-ul-desktop li a {
+    color: #919191;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.navlink-ul-desktop li a:hover {
+    color: #ffffff;
+}
+
+.navlink-ul-desktop li .active {
+    color: #eeeeee;
+}

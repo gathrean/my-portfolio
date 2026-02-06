@@ -23,13 +23,20 @@ export function Navbar() {
     const { navbarHeight, navbarRef, toggleHamburger } = useNavbarFunctions();
     const [activeSection, setActiveSection] = useState('HOME');
     const [expanded, setExpanded] = useState(false);
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
     const mobileViewRef = useRef(null);
 
     useScrollHandler(setActiveSection, navbarHeight);
 
     useEffect(() => {
+        const handleResize = () => setIsDesktop(window.innerWidth >= 768);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    useEffect(() => {
         const handleClickOutside = (event) => {
-            if (expanded && !mobileViewRef.current.contains(event.target)) {
+            if (expanded && mobileViewRef.current && !mobileViewRef.current.contains(event.target)) {
                 setExpanded(false);
             }
         };
@@ -55,37 +62,51 @@ export function Navbar() {
         }
     };
 
+    const navLinks = (
+        <>
+            <li>
+                <Link onClick={() => scrollToSection('ACADEMIA')} className={activeSection === 'ACADEMIA' ? 'active' : ''}>Academia</Link>
+            </li>
+            <li>
+                <Link onClick={() => scrollToSection('PROJECTS')} className={activeSection === 'PROJECTS' ? 'active' : ''}>Projects</Link>
+            </li>
+            <li>
+                <Link onClick={() => scrollToSection('SKILLS')} className={activeSection === 'SKILLS' ? 'active' : ''}>Tech Stack</Link>
+            </li>
+            <li>
+                <Link onClick={() => scrollToSection('ABOUT')} className={activeSection === 'ABOUT' ? 'active' : ''}>About Me</Link>
+            </li>
+        </>
+    );
+
     return (
-        <nav ref={navbarRef} className={`navbar navbar-animation`} style={{ height: navbarHeight }}>
+        <nav ref={navbarRef} className={`navbar navbar-animation ${isDesktop ? 'navbar-desktop' : ''}`} style={{ height: isDesktop ? 40 : navbarHeight }}>
 
             <div className="navbar-container">
 
                 <div className="brand">
-                    <span className="brand-text">Menu</span>
+                    <span className="brand-text">{isDesktop ? 'Gathrean Dela Cruz' : 'Menu'}</span>
                 </div>
 
-                <div ref={mobileViewRef} className="hamburger mobile-view clickable" onClick={() => { toggleHamburger(); setExpanded(!expanded); }}>
-                    <HamburgerIcon open={expanded} />
-                </div>
+                {isDesktop ? (
+                    <ul className="navlink-ul-desktop">
+                        {navLinks}
+                    </ul>
+                ) : (
+                    <div ref={mobileViewRef} className="hamburger mobile-view clickable" onClick={() => { toggleHamburger(); setExpanded(!expanded); }}>
+                        <HamburgerIcon open={expanded} />
+                    </div>
+                )}
 
             </div>
 
-            <div className="navlink-container">
-                <ul className={`navlink-ul prevent-overflow`}>
-                    <li>
-                        <Link onClick={() => scrollToSection('ACADEMIA')} className={activeSection === 'ACADEMIA' ? 'active' : ''}>Academia</Link>
-                    </li>
-                    <li>
-                        <Link onClick={() => scrollToSection('PROJECTS')} className={activeSection === 'PROJECTS' ? 'active' : ''}>Projects</Link>
-                    </li>
-                    <li>
-                        <Link onClick={() => scrollToSection('SKILLS')} className={activeSection === 'SKILLS' ? 'active' : ''}>Tech Stack</Link>
-                    </li>
-                    <li>
-                        <Link onClick={() => scrollToSection('ABOUT')} className={activeSection === 'ABOUT' ? 'active' : ''}>About Me</Link>
-                    </li>
-                </ul>
-            </div>
+            {!isDesktop && (
+                <div className="navlink-container">
+                    <ul className={`navlink-ul prevent-overflow`}>
+                        {navLinks}
+                    </ul>
+                </div>
+            )}
 
         </nav>
     );
