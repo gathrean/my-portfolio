@@ -278,7 +278,9 @@ hr {
 /* SECTION STYLES */
 /* ========================================== */
 .section-container {
-  padding: 0px 20vw 50px 5vw;
+  padding: 0px 24px 50px 24px;
+  max-width: 900px;
+  margin: 0 auto;
   max-height: fit-content;
 }
 
@@ -300,30 +302,9 @@ hr {
   justify-content: center;
 }
 
-@media screen and (max-width: 1400px) {
-  .section-container {
-    padding: 0px 10vw 50px 5vw;
-  }
-
-  .section-container-child {
-    padding: 0 0;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .section-container {
-    padding: 10px 10vw 10px 10vw;
-  }
-
-  .section-container-child {
-    padding: 0 0;
-  }
-}
-
-
 @media screen and (max-width: 800px) {
   .section-container {
-    padding: 50px 5vw 20px 5vw;
+    padding: 30px 20px 20px 20px;
   }
 }
 

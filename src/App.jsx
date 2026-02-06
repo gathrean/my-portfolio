@@ -3,9 +3,14 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Components //
 import { Navbar } from './components/Navbar/Navbar';
+import { Footer2 } from './components/Footer/Footer2';
 
-// Pages // 
+// Pages //
 import { LandingPage } from './pages/LandingPage/LandingPage';
+import { AboutPage } from './pages/AboutPage/AboutPage';
+import { DeveloperPage } from './pages/DeveloperPage/DeveloperPage';
+import { PhotographyPage } from './pages/PhotographyPage/PhotographyPage';
+import { ContactPage } from './pages/ContactPage/ContactPage';
 import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
 
 // CSS //
@@ -18,7 +23,10 @@ import './assets/fonts/Fonts.css';
 const Layout = ({ children }) => (
   <div className="App">
     <Navbar />
-    {children}
+    <div style={{ paddingTop: '64px' }}>
+      {children}
+    </div>
+    <Footer2 />
   </div>
 );
 
@@ -33,10 +41,11 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* LandingPage route with Navbar and Footer */}
         <Route path="/" element={<Layout><LandingPage /></Layout>} />
-
-        {/* NotFoundPage route without Navbar and Footer */}
+        <Route path="/about" element={<Layout><AboutPage /></Layout>} />
+        <Route path="/developer" element={<Layout><DeveloperPage /></Layout>} />
+        <Route path="/photography" element={<Layout><PhotographyPage /></Layout>} />
+        <Route path="/contact" element={<Layout><ContactPage /></Layout>} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>

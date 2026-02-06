@@ -53,8 +53,40 @@
 
 /* MEDIA QUERIES */
 
+/* Desktop */
+@media only screen and (min-width: 768px) {
+    .navbar-clock {
+        color: #919191;
+        font-size: 0.75rem;
+        font-weight: 400;
+        white-space: nowrap;
+        margin-left: 10px;
+        position: relative;
+        top: 2px;
+    }
+
+    .navbar.navbar-desktop {
+        width: 700px;
+        flex-direction: row;
+        align-items: center;
+        height: 40px;
+        overflow: visible;
+    }
+
+    .navbar-desktop .navbar-container {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .navbar.navbar-desktop {
+        width: 900px;
+    }
+}
+
 /* For tablets */
-@media only screen and (min-width: 300px) and (max-width: 499px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
     .navbar {
         width: 70%;
         margin-left: 15%;
