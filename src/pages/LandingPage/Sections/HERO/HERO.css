@@ -1,154 +1,118 @@
 .hero-container {
-  background-color: #1C1C1C !important;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-
-  position: relative;
-  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
   height: 100vh;
 
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-name {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #111;
+  margin-bottom: 16px;
+}
+
+.hero-bio {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.hero-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #555;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.hero-link:visited {
+  color: #555;
+}
+
+.hero-link:hover {
+  color: #111;
+}
+
+.hero-link svg {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  fill: none;
+  stroke: currentColor;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-link:hover svg {
+  transform: none;
+  fill: none;
 }
 
 .hero-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  height: auto;
+  flex-shrink: 0;
 }
 
 .hero-image {
-  width: 50vw; 
-  height: 50vw; 
-  max-width: 350px;
-  max-height: 350px; 
-  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  border-radius: 16px;
   object-fit: cover;
 }
 
-.hero-animation {
-  transition: font-size 0.3 ease, padding 0.3 ease, margin 0.3 ease, top 0.3s ease, left 0.3s ease;
-}
-
-.text-container {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 88px 20px 0px 20px;
-  margin-bottom: 50px;
-}
-
-.buttons-container {
-  position: relative;
-  width: 100%;
-
-  justify-content: center;
-
-  padding: 10px;
-  margin-top: 50px;
-}
-
-.overlay-text {
-  text-align: start;
-  color: var(--colorwhite) !important;
-}
-
-.overlay-text h1 {
-  font-weight: 400;
-  font-size: 3.5rem;
-  color: var(--colorwhite);
-  display: inline-block;
-}
-
-.overlay-text h2 {
-  font-weight: 400;
-  font-size: 3rem;
-  color: var(--colorwhite);
-}
-
-.overlay-text h3 {
-  font-weight: 400;
-  font-size: 2.5rem;
-  color: var(--colorwhite);
-}
-
-.buttons-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.bottom-buttons-container {
-  display: flex;
-  align-items: center;
-}
-
-@media screen and (min-width: 426px) and (max-width: 768px) {
-  .text-container {
-    margin-bottom: 0;
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    /* text-align: center; */
+    gap: 24px;
+    padding: 24px 20px;
+    display: flex;
   }
 
-  .buttons-container {
-    margin-top: 0;
+  .hero-name {
+    font-size: 1.6rem;
   }
 
-  .overlay-text h1 {
-    font-size: 2.5rem;
-  }
-
-  .overlay-text h2 {
-    font-size: 2rem;
-  }
-
-  .overlay-text h3 {
-    font-size: 1.5rem;
-  }
-
-  .overlay-text h4 {
-    font-size: 1.25rem;
-  }
-
-  .hero-button {
-    font-size: 1.5rem;
-    margin: 5px;
-    padding: 10px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  .hero-image {
+    width: 150px;
+    height: 150px;
   }
 }
 
+/* Small phones */
 @media screen and (max-width: 425px) {
-  .text-container {
-    margin-bottom: 0;
+  .hero-name {
+    font-size: 1.3rem;
   }
 
-  .buttons-container {
-    margin-top: 0;
+  .hero-bio {
+    font-size: 0.9rem;
   }
 
-  .overlay-text h1 {
-    font-size: 1.8rem;
-  }
-
-  .overlay-text h2 {
-    font-size: 1.8rem;
-  }
-
-  .overlay-text h3 {
-    font-size: 1.25rem;
-  }
-
-  .hero-button {
-    margin: 5px;
-    padding: 10px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  .hero-image {
+    width: 120px;
+    height: 120px;
   }
 }
