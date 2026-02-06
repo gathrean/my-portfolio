@@ -2,33 +2,33 @@
 
 ## Project Overview
 
-Portfolio website for Gathrean Dela Cruz — a single-page site deployed at gathrean.vercel.app.
+Portfolio website for Gathrean Dela Cruz — deployed at gathrean.com.
 
 ## Tech Stack
 
-- Next.js 15 (App Router)
-- React 19
-- TypeScript (strict mode)
-- Tailwind CSS 3.4
-- Geist + Geist Mono fonts
+- React 18 (Create React App)
+- React Router 6
+- Bootstrap 5 / React-Bootstrap
+- CSS (no preprocessor)
+- Vercel deployment
 
-## Structure
+## Routes
 
--
+| Path | Page Component | Content |
+|------|---------------|---------|
+| `/` | LandingPage | Hero (photo, bio, links, time/date) |
+| `/about` | AboutPage | ABOUT + ACADEMIA sections |
+| `/projects` | DeveloperPage | PROJECTS + SKILLS sections |
+| `/gallery` | PhotographyPage | Photography (under construction) |
+| `/contact` | ContactPage | Contact page |
+| `*` | NotFoundPage | 404 |
 
-## Site Sections (in order)
+## Key Files
 
-1. **Hero Header** — Name, photo, resume link, LinkedIn & GitHub links
-2. **Floating Left Sidebar** — Mirrors hero info, stays visible on scroll
-3. **Academia** — Education (BCIT CST Diploma), Research Papers & Conferences
-4. **Projects** — Portfolio of work
-5. **Skills & Technologies (Tech Stack)** — Technical competencies
-6. **About Me** — Personal section
-
-## Navigation
-
-- Single-page with anchor links in navbar that scroll to sections
-- Menu overlay with section links: Academia, Projects, Tech Stack, About Me
+- `src/App.jsx` — Router, Layout wrapper (Navbar + Footer)
+- `src/components/Navbar/Navbar.jsx` — Fixed navbar with live PST clock
+- `src/pages/LandingPage/Sections/HERO/HERO.jsx` — Hero section with time/date
+- `public/index.html` — SEO meta, OG/Twitter cards, JSON-LD structured data
 
 ## Workflow Orchestration (Don't Touch)
 
@@ -48,7 +48,7 @@ Portfolio website for Gathrean Dela Cruz — a single-page site deployed at gath
 
 ### 3. Self-Improvement Loop
 
-- After ANY correction from the user: update tasks/lessons. md" with the pattern
+- After ANY correction from the user: update tasks/lessons.md with the pattern
 - Write rules for yourself that prevent the same mistake
 - Ruthlessly iterate on these lessons until mistake rate drops
 - Review lessons at session start for relevant project
@@ -66,7 +66,7 @@ Portfolio website for Gathrean Dela Cruz — a single-page site deployed at gath
 - If a fix feels hacky: "Knowing everything I know now, implement the elegant solution"
 - Skip this for simple, obvious fixes - don't over-engineer
 - Challenge your own work before presenting it
-  
+
 ### 6. Autonomous Bug Fixing
 
 - When given a bug report: just fix it. Don't ask for hand-holding
@@ -76,12 +76,12 @@ Portfolio website for Gathrean Dela Cruz — a single-page site deployed at gath
 
 ## Task Management
 
-1. **PLan First**: Write plan to 'tasks/todo.md" with checkable items
+1. **Plan First**: Write plan to 'tasks/todo.md' with checkable items
 2. **Verify Plan**: Check in before starting implementation
 3. **Track Progress**: Mark items complete as you go
 4. **Explain Changes**: High-level summary at each step
-5. **Document Results**: Add review section to "tasks/todo.md"
-6. **Capture Lessons**: Update "tasks/lessons.md' after corrections
+5. **Document Results**: Add review section to 'tasks/todo.md'
+6. **Capture Lessons**: Update 'tasks/lessons.md' after corrections
 
 ## Core Principles
 
