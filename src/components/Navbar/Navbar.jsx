@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import { useNavbarFunctions, useScrollHandler } from './NavbarFunctions';
+import { Link, useLocation } from 'react-router-dom';
+import { useNavbarFunctions } from './NavbarFunctions';
 
 import './Navbar.css';
 import './Navbar-Logo.css';
@@ -21,13 +21,11 @@ const HamburgerIcon = ({ open }) => (
 
 export function Navbar() {
     const { navbarHeight, navbarRef, toggleHamburger } = useNavbarFunctions();
-    const [activeSection, setActiveSection] = useState('HOME');
     const [expanded, setExpanded] = useState(false);
     const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
     const [localTime, setLocalTime] = useState('');
     const mobileViewRef = useRef(null);
-
-    useScrollHandler(setActiveSection, navbarHeight);
+    const location = useLocation();
 
     useEffect(() => {
         const handleResize = () => setIsDesktop(window.innerWidth >= 768);
@@ -66,33 +64,29 @@ export function Navbar() {
         };
     }, [expanded]);
 
-    const scrollToSection = (sectionClassName) => {
-        if (activeSection !== sectionClassName) {
-            const section = document.querySelector(`.${sectionClassName}`);
-            if (section) {
-                const offsetTop = section.getBoundingClientRect().top + window.scrollY;
-                window.scrollTo({
-                    top: offsetTop - navbarHeight,
-                    behavior: "smooth"
-                });
-                setActiveSection(sectionClassName);
-            }
+    const handleNavClick = () => {
+        if (!isDesktop && expanded) {
+            toggleHamburger();
+            setExpanded(false);
         }
     };
 
     const navLinks = (
         <>
             <li>
-                <Link onClick={() => scrollToSection('ACADEMIA')} className={activeSection === 'ACADEMIA' ? 'active' : ''}>Academia</Link>
+                <Link to="/" onClick={handleNavClick} className={location.pathname === '/' ? 'active' : ''}>Home</Link>
             </li>
             <li>
-                <Link onClick={() => scrollToSection('PROJECTS')} className={activeSection === 'PROJECTS' ? 'active' : ''}>Projects</Link>
+                <Link to="/about" onClick={handleNavClick} className={location.pathname === '/about' ? 'active' : ''}>About</Link>
             </li>
             <li>
-                <Link onClick={() => scrollToSection('SKILLS')} className={activeSection === 'SKILLS' ? 'active' : ''}>Tech Stack</Link>
+                <Link to="/developer" onClick={handleNavClick} className={location.pathname === '/developer' ? 'active' : ''}>Developer</Link>
             </li>
             <li>
-                <Link onClick={() => scrollToSection('ABOUT')} className={activeSection === 'ABOUT' ? 'active' : ''}>About Me</Link>
+                <Link to="/photography" onClick={handleNavClick} className={location.pathname === '/photography' ? 'active' : ''}>Photography</Link>
+            </li>
+            <li>
+                <Link to="/contact" onClick={handleNavClick} className={location.pathname === '/contact' ? 'active' : ''}>Contact</Link>
             </li>
         </>
     );
