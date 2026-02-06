@@ -7,7 +7,6 @@ import './ABOUT.css';
 export function ABOUT() {
   return (
     <div className="section-container">
-      <hr />
       <h1>About Me</h1>
       <p>Here's a bit about me: a passionate software developer committed to continuous learning and innovation.</p>
       <br />
