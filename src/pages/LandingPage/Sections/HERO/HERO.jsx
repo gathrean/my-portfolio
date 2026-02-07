@@ -120,6 +120,14 @@ const HERO = () => {
           <span className="hero-date">{dateStr}</span>
         </div>
 
+        <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="github-graph-link">
+          <img
+            src="https://ghchart.rshah.org/gathrean"
+            alt="Gathrean's GitHub contribution graph"
+            className="github-graph"
+          />
+        </a>
+
       </div>
     </div>
   );
