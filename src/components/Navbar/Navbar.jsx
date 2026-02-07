@@ -94,7 +94,7 @@ export function Navbar() {
             <div className="navbar-container">
 
                 <div className="brand">
-                    <Link to="/" className="brand-text" onClick={handleNavClick}>Gathrean Dela Cruz</Link>
+                    <Link to="/" className="brand-text" onClick={handleNavClick}>{isDesktop ? 'Gathrean Dela Cruz' : 'Gathrean'}</Link>
                     {isDesktop && <span className="navbar-clock">{localTime}</span>}
                 </div>
 

@@ -102,6 +102,24 @@
   object-fit: cover;
 }
 
+.github-graph-link {
+  display: block;
+  margin-top: 24px;
+}
+
+.github-graph {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  border-radius: 8px;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.github-graph:hover {
+  opacity: 1;
+}
+
 /* Small phones */
 @media screen and (max-width: 425px) {
   .hero-container {
