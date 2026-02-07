@@ -6,7 +6,17 @@
       "Bash(git log:*)",
       "Bash(git checkout:*)",
       "Bash(git merge:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm install:*)",
+      "Bash(test:*)",
+      "Bash(python3:*)",
+      "Bash(git -C /Users/ean/.claude-worktrees/my-portfolio/priceless-agnesi status)",
+      "Bash(git -C /Users/ean/.claude-worktrees/my-portfolio/priceless-agnesi diff --stat)",
+      "Bash(git -C /Users/ean/.claude-worktrees/my-portfolio/priceless-agnesi log --oneline -10)",
+      "Bash(git -C /Users/ean/.claude-worktrees/my-portfolio/priceless-agnesi diff -- src/pages/LandingPage/Sections/HERO/HERO.jsx)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
