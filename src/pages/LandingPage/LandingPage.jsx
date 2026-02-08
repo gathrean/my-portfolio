@@ -126,7 +126,7 @@ export function LandingPage() {
           </p>
           <br />
           <p className="hero-bio">
-            When I'm not coding, I'm probably editing photos or making beats on Ableton.
+            When I'm not coding, I'm probably editing photos I took on my FujiFilm, cooking my favourite meals, or making beats on Ableton.
           </p>
 
           <div className="hero-links">
@@ -147,14 +147,14 @@ export function LandingPage() {
               <span>Twitter / X</span>
             </a>
           </div>
-
+{/* 
           <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="github-graph-link">
             <img
               src="https://ghchart.rshah.org/gathrean"
               alt="Gathrean's GitHub contribution graph"
               className="github-graph"
             />
-          </a>
+          </a> */}
 
         </div>
 
