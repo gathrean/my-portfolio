@@ -1,6 +1,9 @@
 import React from 'react';
 import ArrowRightIcon from '../../components/ArrowRight/ArrowRightBlack';
-import desktopImage from './2025-Desktop.JPG';
+import image1 from './2023-Jasper.JPG';
+import image2 from './2024-Fireworks.JPG';
+import image3 from './2025-Islands.JPG';
+import image4 from './2025-Desktop.JPG';
 
 import './AboutPage.css';
 
@@ -15,15 +18,55 @@ export function AboutPage() {
       <div className="about-philosophy">
         <p>ᜄᜇ᜔ᜍᜒᜌᜈ᜔</p>
         <p><em>a creative, a builder, an optimizer</em></p>
-        <p>To me, good software should feel invisible; Present when you need it, out of the way when you don't.</p>
-        <p>Tech. Music. Art. I'm drawn to projects where form meets function.</p>
-        <p>Always learning,</p>
-        <p>Always building,</p>
-        <p>Always asking 'how could this be better?'</p>
+        <p>To me, good software should feel invisible;<br></br>Present when you need it, out of the way when you don't.</p>
+        <p>Tech. Music. Art.<br></br>I find myself gravitating towards projects where form meets function, regardless of its medium.</p>
+        <p>Always learning,<br></br>always building,<br></br>always asking 'how could this be better?'</p>
         <p>The future is constantly now.</p>
       </div>
 
-      <img src={desktopImage} alt="Gathrean's Desk Setup'" className="desktop-image" />
+      {/* Photo gallery */}
+      <div className="about-photos">
+        <figure className="about-photo-wrap">
+          <img src={image1} alt="Jasper 2023" className="about-photo" />
+          <figcaption className="about-photo-caption">Jasper, Canada 2023</figcaption>
+        </figure>
+        <figure className="about-photo-wrap">
+          <img src={image2} alt="Fireworks 2024" className="about-photo" />
+          <figcaption className="about-photo-caption">Vancouver, Canada 2024</figcaption>
+        </figure>
+        <figure className="about-photo-wrap">
+          <img src={image3} alt="Islands 2025" className="about-photo" />
+          <figcaption className="about-photo-caption">Hundred Islands, Philippines 2025</figcaption>
+        </figure>
+        <figure className="about-photo-wrap">
+          <img src={image4} alt="Desk setup" className="about-photo" />
+          <figcaption className="about-photo-caption">My home</figcaption>
+        </figure>
+      </div>
+
+      {/* Experience section */}
+      <div className="experience-header">
+        <h2 className="experience-title">Experience</h2>
+        <a className="resume-btn" href="/Gathrean_DelaCruz__Resume.pdf" target="_blank" rel="noopener noreferrer">
+          Resume
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+        </a>
+      </div>
+
+      <div className="experience-list">
+        <div className="experience-row">
+          <span className="experience-year">Ongoing</span>
+          <span className="experience-role">Tuwina Tech (Founder)</span>
+        </div>
+        <div className="experience-row">
+          <span className="experience-year">2025</span>
+          <span className="experience-role">Freelance</span>
+        </div>
+        <div className="experience-row">
+          <span className="experience-year">2024</span>
+          <span className="experience-role">BCIT Graduate - Computer Systems Technology</span>
+        </div>
+      </div>
 
       <hr className="about-divider" />
 

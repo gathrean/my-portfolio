@@ -31,6 +31,14 @@
   box-sizing: border-box;
 }
 
+/* IMAGE PROTECTION */
+/* ========================================== */
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: auto;
+}
+
 /* BASE STYLES */
 /* ========================================== */
 html {
