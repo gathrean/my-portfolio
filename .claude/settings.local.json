@@ -18,7 +18,8 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(timeout 10 npm start:*)",
-      "Bash(git -C /Users/ean/.claude-worktrees/my-portfolio/pensive-lehmann diff --stat)"
+      "Bash(git -C /Users/ean/.claude-worktrees/my-portfolio/pensive-lehmann diff --stat)",
+      "Bash(curl:*)"
     ]
   }
 }
