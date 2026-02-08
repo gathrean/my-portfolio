@@ -1,15 +1,162 @@
-/* LAYOUT */
+/* HERO */
 /* ============================= */
-.LP-sections-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 24px;
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  min-height: 80vh;
 }
 
-@media screen and (max-width: 800px) {
-    .LP-sections-container {
-        padding: 0 20px;
-    }
+.hero-text {
+  width: 100%;
+}
+
+.hero-name {
+  font-size: 2.5rem;
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-weight: 400;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.hero-subtitle {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.hero-bio {
+  margin-bottom: 8px;
+}
+
+.hero-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #555;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.hero-link:visited {
+  color: #555;
+}
+
+.hero-link:hover {
+  color: #111;
+}
+
+.hero-link svg {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  fill: none;
+  stroke: currentColor;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-link:hover svg {
+  transform: none;
+  fill: none;
+}
+
+.hero-image-container {
+  flex-shrink: 0;
+}
+
+.hero-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.github-graph-link {
+  display: block;
+  margin-top: 24px;
+}
+
+.github-graph {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  border-radius: 8px;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.github-graph:hover {
+  opacity: 1;
+}
+
+/* Weather widget - bottom left on desktop */
+.hero-weather-widget {
+  position: absolute;
+  bottom: 40px;
+  left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.weather-line {
+  color: #888;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.widget-time {
+  color: #2d2d2d;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.widget-date {
+  color: #888;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+/* Small phones */
+@media screen and (max-width: 425px) {
+  .hero-container {
+    padding: 24px 20px;
+    min-height: auto;
+  }
+
+  .hero-name {
+    font-size: 1.8rem;
+  }
+
+  .hero-bio {
+    font-size: 0.9rem;
+  }
+
+  .hero-image {
+    width: 64px;
+    height: 64px;
+  }
+
+  .hero-weather-widget {
+    position: static;
+    margin-top: 24px;
+  }
 }

@@ -21,13 +21,13 @@
     right: 0;
     z-index: 1000;
 
-    height: 56px;
+    height: 40px;
     width: 300px;
 
     padding: 0 20px;
     margin: 8px auto 0 auto;
 
-    line-height: 56px;
+    line-height: 40px;
 
     border: 1px solid #343434;
     border-radius: 20px;
@@ -55,16 +55,6 @@
 
 /* Desktop */
 @media only screen and (min-width: 768px) {
-    .navbar-clock {
-        color: #919191;
-        font-size: 0.75rem;
-        font-weight: 400;
-        white-space: nowrap;
-        margin-left: 10px;
-        position: relative;
-        top: 2px;
-    }
-
     .navbar.navbar-desktop {
         width: 700px;
         flex-direction: row;
