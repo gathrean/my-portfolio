@@ -7,7 +7,7 @@ import CareLinkIcon from '../../assets/icons/project-icons/CareLink-Icon.png';
 import OrcaSwipeIcon from '../../assets/icons/project-icons/OrcaSwipe-Icon.png';
 import DungeonQuadIcon from '../../assets/icons/project-icons/DungeonQuad-Icon.png';
 
-import './DeveloperPage.css';
+import './WorkPage.css';
 
 const projects = [
   {
@@ -84,7 +84,7 @@ const skillCategories = [
   },
 ];
 
-export function DeveloperPage() {
+export function WorkPage() {
   return (
     <div className="developer-page">
       <h1 className="developer-heading">Projects</h1>

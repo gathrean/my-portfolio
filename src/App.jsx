@@ -8,7 +8,7 @@ import { Footer } from './components/Footer/Footer';
 // Pages //
 import { LandingPage } from './pages/LandingPage/LandingPage';
 import { AboutPage } from './pages/AboutPage/AboutPage';
-import { DeveloperPage } from './pages/DeveloperPage/DeveloperPage';
+import { WorkPage } from './pages/WorkPage/WorkPage';
 import { PhotographyPage } from './pages/PhotographyPage/PhotographyPage';
 import { ContactPage } from './pages/ContactPage/ContactPage';
 import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
@@ -60,7 +60,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout title="Gathrean Dela Cruz"><LandingPage /></Layout>} />
         <Route path="/about" element={<Layout title="who is Gathrean Dela Cruz"><AboutPage /></Layout>} />
-        <Route path="/projects" element={<Layout title="Gathrean's work"><DeveloperPage /></Layout>} />
+        <Route path="/work" element={<Layout title="Gathrean's work"><WorkPage /></Layout>} />
         <Route path="/gallery" element={<Layout title="Gathrean's photography"><PhotographyPage /></Layout>} />
         <Route path="/contact" element={<Layout title="contact Gathrean"><ContactPage /></Layout>} />
         <Route path="*" element={<NotFoundPage />} />
