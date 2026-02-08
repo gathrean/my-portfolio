@@ -1,6 +1,34 @@
 .site-footer {
-    text-align: center;
-    padding: 32px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 24px 160px 24px;
+    max-width: 900px;
+    margin: 0 auto;
     color: #999;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+}
+
+.site-footer p {
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    .site-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 32px 20px 160px 20px;
+    }
+
+    .footer-right {
+        text-align: left;
+    }
 }

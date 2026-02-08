@@ -43,9 +43,3 @@
     font-family: 'Inter Thin';
     src: url('Inter/Inter-Thin.ttf') format('truetype');
 }
-
-/* Baybayin Deko Font */
-@font-face {
-    font-family: 'Baybayin Deko';
-    src: url('BAYBAYIN DEKO.ttf') format('truetype');
-}

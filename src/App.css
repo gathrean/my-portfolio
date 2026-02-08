@@ -3,6 +3,7 @@
 :root {
   /* FONTS */
   --ff: 'Inter Regular', sans-serif;
+  --ff-display: 'Instrument Serif', serif;
   --ffh1: 'Inter Bold', sans-serif;
   --ffh2: 'Inter Medium', sans-serif;
   --ffh3: 'Inter Medium', sans-serif;
@@ -72,7 +73,8 @@ h5 {
 }
 
 p {
-  font: 400 14px/1.5 var(--ff);
+  font: 400 1rem/1.6 var(--ff);
+  color: #444;
   margin: 0 0 0.25em 0;
 }
 
@@ -107,15 +109,6 @@ e {
   background-color: var(--colorlightgrey);
   padding: 0.025em 0.5em;
   border-radius: 1em;
-}
-
-/* UTILITY CLASSES */
-/* ========================================== */
-.baybayin {
-  user-select: none;
-  margin-top: 2vw;
-  font: bold 5vw/1em var(--ffh1);
-  font-family: 'Baybayin Deko', sans-serif;
 }
 
 /* SVG STYLES */
@@ -308,38 +301,6 @@ hr {
   }
 }
 
-/* CARDS */
-/* ========================================== */
-.card {
-  padding: 28px;
-  margin-bottom: 16px;
-  box-shadow: var(--shadow);
-  background-color: var(--colorwhite);
-  border-radius: 30px;
-  width: fit-content;
-  transition: all 0.3s ease;
-  opacity: 0;
-  transform: translateX(20px);
-}
-
-.card p {
-  margin-bottom: 12px;
-}
-
-.card:hover {
-  box-shadow: var(--shadowhover);
-}
-
-.card.visible {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.tagline {
-  margin-top: 0.5rem;
-  font-weight: bold;
-}
-
 /* ANIMATIONS */
 /* ========================================== */
 
@@ -363,4 +324,30 @@ hr {
   100% {
     transform: scale(1);
   }
+}
+
+/* EDGE BLUR OVERLAYS */
+/* ========================================== */
+.edge-blur {
+  position: fixed;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 900;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.edge-blur-top {
+  top: 0;
+  height: 120px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.edge-blur-bottom {
+  bottom: 0;
+  height: 120px;
+  mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 }

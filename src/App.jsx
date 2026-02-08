@@ -22,8 +22,10 @@ import './assets/fonts/Fonts.css';
 // Custom Layout component for pages with Navbar and Footer
 const Layout = ({ children }) => (
   <div className="App">
+    <div className="edge-blur edge-blur-top" />
+    <div className="edge-blur edge-blur-bottom" />
     <Navbar />
-    <div style={{ paddingTop: '64px' }}>
+    <div style={{ paddingTop: '52px' }}>
       {children}
     </div>
     <Footer2 />

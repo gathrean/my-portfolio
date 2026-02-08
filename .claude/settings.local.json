@@ -16,7 +16,9 @@
       "Bash(git -C /Users/ean/.claude-worktrees/my-portfolio/priceless-agnesi log --oneline -10)",
       "Bash(git -C /Users/ean/.claude-worktrees/my-portfolio/priceless-agnesi diff -- src/pages/LandingPage/Sections/HERO/HERO.jsx)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(timeout 10 npm start:*)",
+      "Bash(git -C /Users/ean/.claude-worktrees/my-portfolio/pensive-lehmann diff --stat)"
     ]
   }
 }

@@ -10,7 +10,9 @@ a.brand-text:visited,
 a.brand-text:hover {
   color: #ffffff;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 400;
+  font-family: var(--ff-display);
+  font-style: italic;
   text-decoration: none;
   cursor: pointer;
 }
