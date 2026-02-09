@@ -1,7 +1,7 @@
 import React from 'react';
 import './ExternalLink.css';
 
-export function ExternalLink({ href, children }) {
+export function ExternalLink({ href, children, icon }) {
   return (
     <a
       className="external-link-component"
@@ -19,6 +19,7 @@ export function ExternalLink({ href, children }) {
         <line x1="7" y1="17" x2="17" y2="7" />
         <polyline points="7 7 17 7 17 17" />
       </svg>
+      {icon && <span className="external-link-icon">{icon}</span>}
       {children}
     </a>
   );

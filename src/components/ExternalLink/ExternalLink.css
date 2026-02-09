@@ -31,3 +31,19 @@
 .external-link-component:hover svg {
   transform: translate(2px, -2px);
 }
+
+/* Optional icon slot */
+.external-link-icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.external-link-icon svg {
+  width: 1em;
+  height: 1em;
+  transform: none;
+}
+
+.external-link-component:hover .external-link-icon svg {
+  transform: none;
+}
