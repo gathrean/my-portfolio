@@ -70,6 +70,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none !important;
+}
+
+/* Restore default cursor on touch devices */
+@media (hover: none), (pointer: coarse) {
+  * {
+    cursor: auto !important;
+  }
 }
 
 /* IMAGE PROTECTION */
