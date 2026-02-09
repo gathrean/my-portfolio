@@ -96,6 +96,8 @@ export function LandingPage() {
 
         <div className="hero-links">
           <ExternalButton href={RESUME_URL} tooltip="Last updated October 2024">Resume</ExternalButton>
+        </div>
+        <div className="hero-links">
           <ExternalLink href={LINKEDIN_URL} icon={<LinkedInIcon />}>LinkedIn</ExternalLink>
           <ExternalLink href={GITHUB_URL} icon={<GitHubIcon />}>GitHub</ExternalLink>
           <ExternalLink href={TWITTER_URL} icon={<XIcon />}>Twitter / X</ExternalLink>
