@@ -62,7 +62,7 @@ export function Navbar() {
                 <Link to="/work" onClick={handleNavClick} className={location.pathname === '/work' ? 'active' : ''}>Work</Link>
             </li>
             <li>
-                <Link to="/gallery" onClick={handleNavClick} className={location.pathname === '/gallery' ? 'active' : ''}>Gallery</Link>
+                <Link to="/photography" onClick={handleNavClick} className={location.pathname === '/photography' ? 'active' : ''}>Photography</Link>
             </li>
             <li>
                 <Link to="/contact" onClick={handleNavClick} className={location.pathname === '/contact' ? 'active' : ''}>Contact</Link>

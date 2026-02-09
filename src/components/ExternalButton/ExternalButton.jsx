@@ -1,8 +1,8 @@
 import React from 'react';
 import './ExternalButton.css';
 
-export function ExternalButton({ href, children }) {
-  return (
+export function ExternalButton({ href, children, tooltip }) {
+  const button = (
     <a
       className="external-button-component"
       href={href}
@@ -21,5 +21,14 @@ export function ExternalButton({ href, children }) {
         <polyline points="7 7 17 7 17 17" />
       </svg>
     </a>
+  );
+
+  if (!tooltip) return button;
+
+  return (
+    <span className="external-button-tooltip-wrap">
+      {button}
+      <span className="external-button-tooltip">{tooltip}</span>
+    </span>
   );
 }

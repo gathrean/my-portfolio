@@ -32,6 +32,11 @@
   flex-wrap: wrap;
 }
 
+.hero-links .external-link-component {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
 .hero-link {
   display: inline-flex;
   align-items: center;
