@@ -1,0 +1,33 @@
+/* External Link — global reusable link with northeast arrow */
+.external-link-component {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--coloraccent);
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.external-link-component:visited {
+  color: var(--coloraccent);
+}
+
+.external-link-component:hover {
+  color: var(--coloraccent);
+}
+
+.external-link-component svg {
+  width: 0.75em;
+  height: 0.75em;
+  margin: 0;
+  fill: none;
+  stroke: currentColor;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.external-link-component:hover svg {
+  transform: translate(2px, -2px);
+}

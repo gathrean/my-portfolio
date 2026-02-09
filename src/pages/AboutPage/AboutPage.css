@@ -1,29 +1,3 @@
-.about-page {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 40px 24px;
-}
-
-/* Intro */
-.about-name {
-  font-family: var(--ff-display);
-  font-style: italic;
-  font-weight: 400;
-  font-size: 3rem;
-  margin-bottom: 4px;
-}
-
-.about-pronunciation {
-  color: #888;
-  font-size: 0.95rem;
-  margin-bottom: 4px;
-}
-
-.about-tagline {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .about-philosophy {
   display: flex;
   flex-direction: column;
@@ -93,150 +67,20 @@
   opacity: 1;
 }
 
-/* Experience */
-.experience-header {
+/* Conference photos */
+.conference-photos {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+  gap: 8px;
+  margin: 8px 0;
+  overflow-x: auto;
 }
 
-.experience-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #999;
-  margin: 0;
-}
-
-.resume-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 16px;
-  background: #111;
-  color: #fff;
+.conference-photo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
   border-radius: 8px;
-  text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 500;
-  transition: background 0.2s ease;
-}
-
-.resume-btn:visited {
-  color: #fff;
-}
-
-.resume-btn:hover {
-  background: #333;
-}
-
-.resume-btn svg {
-  width: 14px;
-  height: 14px;
-  margin: 0;
-  fill: none;
-  stroke: currentColor;
-}
-
-.experience-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 16px;
-}
-
-.experience-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.experience-year {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #111;
-}
-
-.experience-role {
-  font-size: 0.95rem;
-  color: #444;
-}
-
-/* Divider */
-.about-divider {
-  border: none;
-  border-top: 1px solid #ddd;
-  margin: 48px 0 32px 0;
-}
-
-/* Section headings */
-.about-section-heading {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-/* Academia items */
-.academia-item {
-  margin-bottom: 32px;
-}
-
-.academia-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 2px;
-  line-height: 1.4;
-}
-
-.academia-org {
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 2px;
-}
-
-.academia-date {
-  color: #888;
-  font-size: 0.9rem;
-  margin: 0;
-  padding: 0;
-  line-height: 1.4;
-}
-
-.academia-list {
-  /* padding: 0 0 0 0.2em;
-  margin: 0 0 1px 0; */
-  text-align: left;
-}
-
-.academia-list li {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  margin-bottom: 4px;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-.academia-list li::before {
-  display: none;
-}
-
-/* Links */
-.about-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  color: var(--colorblue);
-  font-size: 1rem;
-  text-decoration: none;
-  transition: transform 0.2s ease;
-}
-
-.about-link:visited {
-  color: var(--colorblue);
-}
-
-.about-link:hover {
-  transform: translateX(4px);
+  object-fit: cover;
 }
 
 @media screen and (max-width: 767px) {
@@ -246,8 +90,8 @@
   }
 
   .about-photo {
-    width: 180px;
-    height: 180px;
+    width: 240px;
+    height: 240px;
   }
 
   .about-photo-wrap {
@@ -272,16 +116,7 @@
 }
 
 @media screen and (max-width: 425px) {
-  .about-page {
-    padding: 24px 20px;
-  }
-
   .about-name {
     font-size: 2.2rem;
   }
-
-  .about-baybayin {
-    font-size: 1.5rem;
-  }
 }
-

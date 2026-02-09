@@ -1,0 +1,37 @@
+/* External Button — global reusable button with northeast arrow */
+.external-button-component {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: var(--coloraccent);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.external-button-component:visited {
+  color: #fff;
+}
+
+.external-button-component:hover {
+  background: #2a6944;
+}
+
+.external-button-component svg {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  fill: none;
+  stroke: currentColor;
+  flex-shrink: 0;
+  transition: none;
+}
+
+.external-button-component:hover svg {
+  transform: none;
+}
