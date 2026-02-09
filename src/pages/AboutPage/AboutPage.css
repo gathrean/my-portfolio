@@ -67,22 +67,6 @@
   opacity: 1;
 }
 
-/* Conference photos */
-.conference-photos {
-  display: flex;
-  gap: 8px;
-  margin: 8px 0;
-  overflow-x: auto;
-}
-
-.conference-photo {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
 @media screen and (max-width: 767px) {
   .about-photos {
     flex-direction: column;
