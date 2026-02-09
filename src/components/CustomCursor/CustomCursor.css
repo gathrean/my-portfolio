@@ -1,0 +1,28 @@
+/* Custom circle cursor with invert blend */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  margin-left: -9px;
+  margin-top: -9px;
+  border-radius: 50%;
+  background: #fff;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: exclusion;
+  opacity: 0;
+  will-change: transform;
+}
+
+.custom-cursor.visible {
+  opacity: 1;
+}
+
+/* Hide on touch devices */
+@media (hover: none), (pointer: coarse) {
+  .custom-cursor {
+    display: none;
+  }
+}

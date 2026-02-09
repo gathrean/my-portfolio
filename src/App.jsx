@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-route
 // Components //
 import { Navbar } from './components/Navbar/Navbar';
 import { Footer } from './components/Footer/Footer';
+import { CustomCursor } from './components/CustomCursor/CustomCursor';
 
 // Pages //
 import { LandingPage } from './pages/LandingPage/LandingPage';
@@ -67,6 +68,7 @@ function App() {
 
   return (
     <Router>
+      <CustomCursor />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout title="Gathrean Dela Cruz"><LandingPage /></Layout>} />
