@@ -1,13 +1,11 @@
 import React from 'react';
-import ArrowRightIcon from '../../components/ArrowRight/ArrowRightBlack';
+import { ExternalLink } from '../../components/ExternalLink/ExternalLink';
 
 import NebulaIcon from '../../assets/icons/project-icons/Nebula-Icon.png';
 import YapPadIcon from '../../assets/icons/project-icons/YapPad-Icon.png';
 import CareLinkIcon from '../../assets/icons/project-icons/CareLink-Icon.png';
 import OrcaSwipeIcon from '../../assets/icons/project-icons/OrcaSwipe-Icon.png';
 import DungeonQuadIcon from '../../assets/icons/project-icons/DungeonQuad-Icon.png';
-
-import './WorkPage.css';
 
 const projects = [
   {
@@ -17,6 +15,9 @@ const projects = [
     description: 'Recognizing multiple musical instruments in music and audio recordings. Achieved a 56% F1-score processing mel-spectrograms from the OpenMIC-2018 dataset. Presented at WSAI 2024 in Guangzhou and AIM 2024 in San Francisco.',
     links: [
       { label: 'GitHub', url: 'https://github.com/gathrean/Nebula' },
+      { label: 'AIM 2024', url: 'https://artificialintelligence.unitedscientificgroup.org/2024/home' },
+      { label: 'WSAI 2024', url: 'https://wsai.org/wsai24.html' },
+      { label: 'IEEE Xplore Paper', url: 'https://ieeexplore.ieee.org/document/10829201' },
     ],
   },
   {
@@ -86,43 +87,45 @@ const skillCategories = [
 
 export function WorkPage() {
   return (
-    <div className="developer-page">
-      <h1 className="developer-heading">Projects</h1>
-      <p className="developer-intro">Software projects spanning AI, web apps, games, and hackathons.</p>
+    <div className="page">
+      <h1>Gathrean's Work</h1>
+      <hr className="divider-mini" />
 
-      <div className="projects-list">
+      <h2>Web Apps</h2>
+      <p className="subtitle">Software projects spanning AI, web apps, games, and hackathons.</p>
+
+      <div className="item-list">
         {projects.map((project, i) => (
-          <div key={i} className="project-item">
-            <div className="project-header">
-              <img className="project-icon" src={project.icon} alt={project.name} />
+          <div key={i} className="item">
+            <div className="item-header">
+              <img className="item-icon" src={project.icon} alt={project.name} />
               <div>
-                <h3 className="project-name">{project.name}</h3>
-                <p className="project-tagline">{project.tagline}</p>
+                <h3>{project.name}</h3>
+                <p className="subtitle">{project.tagline}</p>
               </div>
             </div>
-            <p className="project-desc">{project.description}</p>
-            <div className="project-links">
+            <p>{project.description}</p>
+            <div className="item-links">
               {project.links.map((link, j) => (
-                <a key={j} className="project-link" href={link.url} target="_blank" rel="noopener noreferrer">
-                  <ArrowRightIcon />
+                <ExternalLink key={j} href={link.url}>
                   {link.label}
-                </a>
+                </ExternalLink>
               ))}
             </div>
           </div>
         ))}
       </div>
 
-      <hr className="section-divider" />
+      <hr className="divider" />
 
-      <h1 className="developer-heading">Skills &amp; Technologies</h1>
-      <div className="skills-grid">
+      <h2>Skills &amp; Technologies</h2>
+      <div className="tag-grid">
         {skillCategories.map((cat, i) => (
-          <div key={i} className="skill-category">
-            <h4 className="skill-category-title">{cat.title}</h4>
-            <div className="skill-pills">
+          <div key={i}>
+            <h4>{cat.title}</h4>
+            <div className="tags">
               {cat.skills.map((skill, j) => (
-                <span key={j} className="skill-pill">{skill}</span>
+                <span key={j} className="tag">{skill}</span>
               ))}
             </div>
           </div>
