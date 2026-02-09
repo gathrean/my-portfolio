@@ -6,17 +6,17 @@
   min-height: 100vh;
   padding: 40px 24px;
   text-align: center;
-  background-color: var(--coloroffwhite);
+  background-color: var(--bg);
 }
 
 .not-found-page h1 {
   font-size: 6rem;
-  color: #111;
+  color: var(--text-heading);
   margin-bottom: 8px;
 }
 
 .not-found-page p {
-  color: #888;
+  color: var(--text-secondary);
   font-size: 1.1rem;
   margin-bottom: 32px;
 }

@@ -20,7 +20,7 @@
 
 .hero-name {
   font-size: 2.5rem;
-  color: #111;
+  color: var(--text-heading);
   margin-bottom: 4px;
 }
 
@@ -36,7 +36,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: #555;
+  color: var(--hero-link);
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
@@ -44,11 +44,11 @@
 }
 
 .hero-link:visited {
-  color: #555;
+  color: var(--hero-link);
 }
 
 .hero-link:hover {
-  color: #111;
+  color: var(--hero-link-hover);
 }
 
 .hero-link svg {
@@ -87,7 +87,7 @@
 }
 
 .widget-time {
-  color: #2d2d2d;
+  color: var(--text-label);
   font-size: 0.9rem;
   font-weight: 500;
   font-variant-numeric: tabular-nums;
