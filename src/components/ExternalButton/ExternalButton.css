@@ -4,7 +4,7 @@
   align-items: center;
   gap: 6px;
   padding: 8px 16px;
-  background: var(--coloraccent);
+  background: var(--accent);
   color: #fff;
   border-radius: 8px;
   text-decoration: none;
@@ -19,7 +19,7 @@
 }
 
 .external-button-component:hover {
-  background: #2a6944;
+  background: var(--accent-hover);
 }
 
 .external-button-component svg {

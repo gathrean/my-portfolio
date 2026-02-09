@@ -1,7 +1,7 @@
 .type-showcase-label {
   font-size: 0.85rem;
   font-weight: 600;
-  color: #999;
+  color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 8px;
@@ -13,7 +13,7 @@
   gap: 24px;
   margin-bottom: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--type-border);
 }
 
 .type-row:last-child {
@@ -25,7 +25,7 @@
   width: 100px;
   font-size: 0.7rem;
   font-weight: 600;
-  color: #bbb;
+  color: var(--type-label);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
