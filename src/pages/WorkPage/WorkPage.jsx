@@ -120,7 +120,7 @@ export function WorkPage() {
           <div className="item-header">
             <div className="item-icon placeholder-icon" />
             <div>
-              <h3>Vehicle Maintenance App</h3>
+              <h3>Codename: "VeMa"</h3>
               <p className="subtitle">TBA 2026</p>
             </div>
           </div>
@@ -129,7 +129,7 @@ export function WorkPage() {
           <div className="item-header">
             <div className="item-icon placeholder-icon" />
             <div>
-              <h3>Subscription Tracker App</h3>
+              <h3>Codename: "Subtra</h3>
               <p className="subtitle">TBA 2026</p>
             </div>
           </div>
