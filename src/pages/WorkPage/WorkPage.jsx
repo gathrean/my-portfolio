@@ -106,12 +106,38 @@ const skillCategories = [
 export function WorkPage() {
   return (
     <div className="page">
-      <h1>Gathrean's Work</h1>
+      <h1>Gathrean's Works</h1>
       <hr className="divider-mini" />
+
+      {/* Apps section */}
+      <h2>Apps</h2>
+      <p className="subtitle">iOS apps for day-to-day utility.</p>
+
+      <div className="item-list">
+        <div className="item">
+          <div className="item-header">
+            <div className="item-icon placeholder-icon" />
+            <div>
+              <h3>Vehicle Maintenance App</h3>
+              <p className="subtitle">TBA 2026</p>
+            </div>
+          </div>
+        </div>
+        <div className="item">
+          <div className="item-header">
+            <div className="item-icon placeholder-icon" />
+            <div>
+              <h3>Subscription Tracker App</h3>
+              <p className="subtitle">TBA 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr className="divider" />
 
       {/* Research section */}
       <h2>Research Papers &amp; Conferences</h2>
-      <hr className="divider-mini" />
 
       <div className="content-block">
         <h4>AIM 2024: Artificial Intelligence Conference</h4>
@@ -133,8 +159,6 @@ export function WorkPage() {
           BCIT Computing congratulating my team and I on LinkedIn
         </ExternalLink>
       </div>
-
-      <hr className="divider-mini" />
 
       <div className="content-block">
         <h4>WSAI 2024 @ 人工智能专题讨论会</h4>
@@ -162,7 +186,7 @@ export function WorkPage() {
       <hr className="divider" />
 
       <h2>Web Apps</h2>
-      <p className="subtitle">Software projects spanning AI, web apps, games, and hackathons.</p>
+      <p className="subtitle">Web application projects spanning AI, web apps, games, and hackathons.</p>
 
       <div className="item-list">
         {projects.map((project, i) => (

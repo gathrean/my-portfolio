@@ -241,6 +241,11 @@ ol {
   object-fit: cover;
 }
 
+.placeholder-icon {
+  background: var(--tag-bg);
+  flex-shrink: 0;
+}
+
 .item-links {
   display: flex;
   flex-wrap: wrap;

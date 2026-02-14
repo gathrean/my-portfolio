@@ -71,11 +71,11 @@ function App() {
       <CustomCursor />
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Layout title="Gathrean Dela Cruz"><LandingPage /></Layout>} />
-        <Route path="/about" element={<Layout title="who is Gathrean Dela Cruz"><AboutPage /></Layout>} />
-        <Route path="/work" element={<Layout title="Gathrean's work"><WorkPage /></Layout>} />
-        <Route path="/photography" element={<Layout title="Gathrean's photography"><PhotographyPage /></Layout>} />
-        <Route path="/contact" element={<Layout title="contact Gathrean"><ContactPage /></Layout>} />
+        <Route path="/" element={<Layout title="Gathrean Dela Cruz's Home Page"><LandingPage /></Layout>} />
+        <Route path="/about" element={<Layout title="Who is Gathrean Dela Cruz?"><AboutPage /></Layout>} />
+        <Route path="/work" element={<Layout title="Gathrean Dela Cruz's Work"><WorkPage /></Layout>} />
+        <Route path="/photography" element={<Layout title="Gathrean Dela Cruz's Photography"><PhotographyPage /></Layout>} />
+        <Route path="/contact" element={<Layout title="Gathrean Dela Cruz's Contact"><ContactPage /></Layout>} />
         <Route path="/typography" element={<Layout title="typography"><TypographyPage /></Layout>} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
