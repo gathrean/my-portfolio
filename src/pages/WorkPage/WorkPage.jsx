@@ -107,6 +107,8 @@ export function WorkPage() {
   return (
     <div className="page">
       <h1>Gathrean's Works</h1>
+      <p className="subtitle">My work in app development and research.</p>
+      
       <hr className="divider-mini" />
 
       {/* Apps section */}
@@ -134,7 +136,7 @@ export function WorkPage() {
         </div>
       </div>
 
-      <hr className="divider" />
+      <hr className="divider-mini" />
 
       {/* Research section */}
       <h2>Research Papers &amp; Conferences</h2>
@@ -183,8 +185,9 @@ export function WorkPage() {
         </ExternalLink>
       </div>
 
-      <hr className="divider" />
+      <hr className="divider-mini" />
 
+      {/* Web Apps Section */}
       <h2>Web Apps</h2>
       <p className="subtitle">Web application projects spanning AI, web apps, games, and hackathons.</p>
 
@@ -210,8 +213,9 @@ export function WorkPage() {
         ))}
       </div>
 
-      <hr className="divider" />
+      <hr className="divider-mini" />
 
+      {/* Skills Section */}
       <h2>Skills &amp; Technologies</h2>
       <div className="tag-grid">
         {skillCategories.map((cat, i) => (

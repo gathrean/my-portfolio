@@ -55,7 +55,6 @@
     --coloraccent: #4aa876;
     --colordarkgrey: #333;
     --colorlightgrey: #888;
-
     --bg: #1a1a1a;
     --text: #d4d4d4;
     --text-heading: #e8e8e8;
@@ -216,16 +215,17 @@ ol {
   flex-direction: column;
   gap: 32px;
   margin-top: 24px;
+  margin-bottom: 12px;
 }
 
 .item {
   padding-bottom: 24px;
-  border-bottom: 1px solid var(--border-light);
+  /* border-bottom: 1px solid var(--border-light); */
 }
 
-.item:last-child {
+/* .item:last-child {
   border-bottom: none;
-}
+} */
 
 .item-header {
   display: flex;
