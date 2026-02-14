@@ -3,9 +3,9 @@
 }
 
 .navbar {
-    background-color: rgba(17, 17, 17, 0.80);
-    color: #FFFFFF;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: var(--nav-bg);
+    color: var(--nav-text);
+    box-shadow: 0 0 20px var(--nav-shadow);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
 
@@ -30,7 +30,7 @@
 
     line-height: 40px;
 
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid var(--nav-border);
     border-radius: 20px;
 }
 
@@ -82,7 +82,7 @@
         width: 70%;
         margin-left: 15%;
         margin-right: 15%;
-        background-color: rgba(17, 17, 17, 0.90);
+        background-color: var(--nav-bg-mobile);
     }
 }
 
@@ -92,6 +92,6 @@
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
-        background-color: rgba(17, 17, 17, 0.90);
+        background-color: var(--nav-bg-mobile);
     }
 }

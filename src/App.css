@@ -35,6 +35,18 @@
   --marker: #ccc;
   --type-label: #bbb;
   --type-border: #eee;
+
+  /* NAVBAR COLORS */
+  --nav-bg: rgba(255, 255, 255, 0.75);
+  --nav-bg-mobile: rgba(255, 255, 255, 0.85);
+  --nav-text: #111111;
+  --nav-link: #666666;
+  --nav-link-hover: #111111;
+  --nav-link-active: #222222;
+  --nav-border: rgba(0, 0, 0, 0.10);
+  --nav-shadow: rgba(0, 0, 0, 0.06);
+  --nav-hamburger: #666666;
+  --nav-hamburger-hover: #111111;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,6 +73,18 @@
     --marker: #555;
     --type-label: #666;
     --type-border: #2a2a2a;
+
+    /* NAVBAR COLORS */
+    --nav-bg: rgba(17, 17, 17, 0.80);
+    --nav-bg-mobile: rgba(17, 17, 17, 0.90);
+    --nav-text: #ffffff;
+    --nav-link: #919191;
+    --nav-link-hover: #ffffff;
+    --nav-link-active: #eeeeee;
+    --nav-border: rgba(255, 255, 255, 0.12);
+    --nav-shadow: rgba(0, 0, 0, 0.10);
+    --nav-hamburger: #919191;
+    --nav-hamburger-hover: #ffffff;
   }
 }
 

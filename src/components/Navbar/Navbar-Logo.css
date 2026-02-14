@@ -8,7 +8,7 @@
 a.brand-text,
 a.brand-text:visited,
 a.brand-text:hover {
-  color: #ffffff;
+  color: var(--nav-text);
   font-size: 1.25rem;
   font-weight: 400;
   font-family: var(--ff-display);
@@ -22,13 +22,13 @@ a.brand-text:hover {
 }
 
 .mobile-view svg rect {
-  fill: #919191;
+  fill: var(--nav-hamburger);
   transition: transform 0.3s ease;
 }
 
 /* svg hover */
 .mobile-view svg:hover rect {
-  fill: #fff;
+  fill: var(--nav-hamburger-hover);
 }
 
 .mobile-view svg.open rect:nth-child(1) {

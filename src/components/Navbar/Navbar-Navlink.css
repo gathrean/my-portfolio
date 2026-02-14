@@ -35,18 +35,18 @@ ul {
 }
 
 ul li .active {
-    color: #eeeeee;
+    color: var(--nav-link-active);
 }
 
 /* "ul li a" specifically edits the String inside the >< brackets*/
 ul li a {
-    color: #919191;
+    color: var(--nav-link);
     text-decoration: none;
     font-size: 45px;
 }
 
 ul li a:hover {
-    color: #ffffff;
+    color: var(--nav-link-hover);
 }
 
 /* For iPads and iPhones*/
@@ -83,7 +83,7 @@ ul li a:hover {
 }
 
 .navlink-ul-desktop li a {
-    color: #919191;
+    color: var(--nav-link);
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 500;
@@ -91,9 +91,9 @@ ul li a:hover {
 }
 
 .navlink-ul-desktop li a:hover {
-    color: #ffffff;
+    color: var(--nav-link-hover);
 }
 
 .navlink-ul-desktop li .active {
-    color: #eeeeee;
+    color: var(--nav-link-active);
 }
