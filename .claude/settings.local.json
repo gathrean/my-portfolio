@@ -19,7 +19,14 @@
       "Bash(git commit:*)",
       "Bash(timeout 10 npm start:*)",
       "Bash(git -C /Users/ean/.claude-worktrees/my-portfolio/pensive-lehmann diff --stat)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(npm start)",
+      "Bash(ls:*)",
+      "Bash(while read dir)",
+      "Bash(do find \"$dir\" -type f \\\\\\( -name \"*.jsx\" -o -name \"*.js\" \\\\\\))",
+      "Bash(done)",
+      "Bash(timeout 10 npx next dev:*)",
+      "Bash(git rm:*)"
     ]
   }
 }

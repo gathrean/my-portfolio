@@ -1,0 +1,171 @@
+/* ========================================== */
+/* No-JS Navbar Fallback                      */
+/* Only visible inside <noscript>             */
+/* ========================================== */
+
+.noscript-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  height: 40px;
+  max-width: 700px;
+  margin: 8px auto 0 auto;
+  padding: 0 20px;
+
+  background-color: var(--nav-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--nav-border);
+  border-radius: 20px;
+  box-shadow: 0 0 20px var(--nav-shadow);
+
+  line-height: 40px;
+}
+
+/* Brand */
+.noscript-brand,
+.noscript-brand:visited,
+.noscript-brand:hover {
+  color: var(--nav-text);
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: var(--ff-display);
+  font-style: italic;
+  text-decoration: none;
+}
+
+/* Hidden checkbox that drives the mobile toggle */
+.noscript-toggle {
+  display: none;
+}
+
+/* Hamburger icon — hidden on desktop */
+.noscript-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.noscript-hamburger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--nav-hamburger);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Nav links — horizontal on desktop */
+.noscript-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 24px;
+  align-items: center;
+}
+
+.noscript-links li a {
+  color: var(--nav-link);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.noscript-links li a:visited {
+  color: var(--nav-link);
+  text-decoration: none;
+}
+
+.noscript-links li a:hover {
+  color: var(--nav-link-hover);
+}
+
+/* ========================================== */
+/* Mobile: show hamburger, hide links by default */
+/* ========================================== */
+@media (max-width: 767px) {
+  .noscript-navbar {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: var(--nav-bg-mobile);
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 40px;
+    overflow: hidden;
+  }
+
+  .noscript-brand {
+    font-size: 1.1rem;
+  }
+
+  /* Show hamburger on mobile */
+  .noscript-hamburger {
+    display: flex;
+  }
+
+  /* Hide links by default on mobile */
+  .noscript-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 8px 0 16px 0;
+    gap: 4px;
+    align-items: flex-start;
+  }
+
+  .noscript-links li a,
+  .noscript-links li a:visited {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--nav-link);
+    text-decoration: none;
+  }
+
+  /* When checkbox is checked, show links */
+  .noscript-toggle:checked ~ .noscript-links {
+    display: flex;
+  }
+
+  /* Animate hamburger to X when open */
+  .noscript-toggle:checked ~ .noscript-hamburger span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .noscript-toggle:checked ~ .noscript-hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .noscript-toggle:checked ~ .noscript-hamburger span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+}
+
+/* Foldable phones */
+@media (max-width: 299px) {
+  .noscript-navbar {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1024px) {
+  .noscript-navbar {
+    max-width: 900px;
+  }
+}

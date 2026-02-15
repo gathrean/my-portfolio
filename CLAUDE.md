@@ -6,29 +6,32 @@ Portfolio website for Gathrean Dela Cruz — deployed at gathrean.com.
 
 ## Tech Stack
 
-- React 18 (Create React App)
-- React Router 6
-- Bootstrap 5 / React-Bootstrap
-- CSS (no preprocessor)
+- Next.js 15 (App Router, SSR)
+- React 18
+- CSS custom properties (no preprocessor)
+- next/font for Inter + Instrument Serif
+- next/image for optimized images
 - Vercel deployment
 
 ## Routes
 
-| Path | Page Component | Content |
-|------|---------------|---------|
-| `/` | LandingPage | Hero (photo, bio, links, time/date) |
-| `/about` | AboutPage | ABOUT + ACADEMIA sections |
-| `/projects` | DeveloperPage | PROJECTS + SKILLS sections |
-| `/gallery` | PhotographyPage | Photography (under construction) |
-| `/contact` | ContactPage | Contact page |
-| `*` | NotFoundPage | 404 |
+| Path | Page File | Content |
+|------|-----------|---------|
+| `/` | `app/(main)/page.jsx` | Hero (photo, bio, links, weather, clock) |
+| `/about` | `app/(main)/about/page.jsx` | ABOUT + ACADEMIA sections |
+| `/work` | `app/(main)/work/page.jsx` | Apps, research, web apps, skills |
+| `/photography` | `app/(main)/photography/page.jsx` | Photography (under construction) |
+| `/contact` | `app/(main)/contact/page.jsx` | Contact (under construction) |
+| `/typography` | `app/(main)/typography/page.jsx` | Typography showcase |
+| `*` | `app/not-found.jsx` | 404 (no Navbar/Footer) |
 
 ## Key Files
 
-- `src/App.jsx` — Router, Layout wrapper (Navbar + Footer)
-- `src/components/Navbar/Navbar.jsx` — Fixed navbar with live PST clock
-- `src/pages/LandingPage/Sections/HERO/HERO.jsx` — Hero section with time/date
-- `public/index.html` — SEO meta, OG/Twitter cards, JSON-LD structured data
+- `app/layout.jsx` — Root layout (html, body, fonts, metadata, JSON-LD)
+- `app/(main)/layout.jsx` — Main layout (Navbar + Footer + edge blurs)
+- `app/globals.css` — All CSS variables, resets, utility classes
+- `components/Navbar/Navbar.jsx` — Fixed navbar (client component)
+- `lib/fonts.js` — next/font declarations
 
 ## Workflow Orchestration (Don't Touch)
 

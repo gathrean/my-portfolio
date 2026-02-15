@@ -7,8 +7,9 @@ package-lock.json
 # testing
 /coverage
 
-# production
-/build
+# Next.js
+.next/
+out/
 
 # misc
 .DS_Store
