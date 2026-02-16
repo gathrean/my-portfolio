@@ -11,21 +11,19 @@
   z-index: 1000;
   display: flex;
   align-items: center;
+  align-content: center;
   justify-content: space-between;
   flex-wrap: wrap;
-
   height: 40px;
   max-width: 700px;
   margin: 8px auto 0 auto;
   padding: 0 20px;
-
   background-color: var(--nav-bg);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--nav-border);
   border-radius: 20px;
   box-shadow: 0 0 20px var(--nav-shadow);
-
   line-height: 40px;
 }
 
@@ -106,6 +104,13 @@
     height: auto;
     min-height: 40px;
     overflow: hidden;
+    align-content: flex-start;
+  }
+
+  @media (max-width: 767px) {
+    .noscript-navbar:has(.noscript-toggle:checked) {
+      height: 280px;
+    }
   }
 
   .noscript-brand {
